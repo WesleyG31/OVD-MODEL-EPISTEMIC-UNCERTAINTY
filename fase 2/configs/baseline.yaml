@@ -1,7 +1,7 @@
 dataset:
-  image_dir: ..\data\bdd100k\bdd100k\bdd100k\images\100k\val
-  val_calib_json: ..\data\bdd100k_coco\val_calib.json
-  val_eval_json: ..\data\bdd100k_coco\val_eval.json
+  image_dir: ../data/bdd100k/bdd100k/bdd100k/images/100k/val
+  val_calib_json: ../data/bdd100k_coco/val_calib.json
+  val_eval_json: ../data/bdd100k_coco/val_eval.json
 inference:
   batch_size: 1
   conf_threshold: 0.3
@@ -9,13 +9,13 @@ inference:
   nms_iou: 0.65
 model:
   architecture: SwinT-OGC
-  checkpoint: ../installing_dino/GroundingDINO/weights/groundingdino_swint_ogc.pth
-  config: ../installing_dino/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py
-  device: cpu
+  checkpoint: /opt/program/GroundingDINO/weights/groundingdino_swint_ogc.pth
+  config: /opt/program/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py
+  device: cuda
   input_size:
   - 800
   - 1333
   name: Grounding-DINO
-prompts_file: ..\data\prompts\bdd100k.txt
+prompts_file: ../data/prompts/bdd100k.txt
 seed: 42
-timestamp: '2025-11-09T16:51:06.331137'
+timestamp: '2025-11-10T22:15:34.737010'

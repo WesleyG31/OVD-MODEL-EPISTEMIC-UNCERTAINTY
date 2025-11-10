@@ -2,12 +2,14 @@
 BASELINE PERFORMANCE METRICS
 ============================================================
 
-avg_time_per_image_s: 6.36004397213459
-std_time_per_image_s: 0.27870195149228966
-fps: 0.15723161732549704
-avg_detections_per_image: 11.153
-std_detections_per_image: 6.019766689831093
-total_predictions: 22306
+avg_time_per_image_s: 0.2749312506914139
+std_time_per_image_s: 0.011661738550055173
+fps: 3.637272945455051
+avg_detections_per_image: 11.081
+std_detections_per_image: 6.0175110303181
+total_predictions: 22162
 total_images: 2000
+avg_gpu_memory_mb: 1189.5625
+peak_gpu_memory_mb: 1189.5625
 
 ============================================================
