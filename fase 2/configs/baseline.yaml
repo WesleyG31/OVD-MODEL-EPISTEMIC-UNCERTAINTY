@@ -18,4 +18,4 @@ model:
   name: Grounding-DINO
 prompts_file: ../data/prompts/bdd100k.txt
 seed: 42
-timestamp: '2025-11-10T22:15:34.737010'
+timestamp: '2025-11-10T22:42:10.653385'

@@ -1,0 +1,50 @@
+================================================================================
+BASELINE EVALUATION REPORT
+================================================================================
+
+Generated: 2025-11-11T09:42:26.116458
+
+MODEL CONFIGURATION
+--------------------------------------------------------------------------------
+  Name:           Grounding-DINO
+  Architecture:   SwinT-OGC
+  Checkpoint:     groundingdino_swint_ogc.pth
+  Device:         cuda
+
+DETECTION METRICS
+--------------------------------------------------------------------------------
+  mAP            : 0.1705
+  AP50           : 0.2785
+  AP75           : 0.1705
+  AP_small       : 0.0633
+  AP_medium      : 0.1821
+  AP_large       : 0.3770
+
+PERFORMANCE METRICS
+--------------------------------------------------------------------------------
+  avg_time_per_image_s     : 0.2749
+  std_time_per_image_s     : 0.0117
+  fps                      : 3.6373
+  avg_detections_per_image : 11.0810
+  std_detections_per_image : 6.0175
+  total_predictions        : 22162.0000
+  total_images             : 2000.0000
+  avg_gpu_memory_mb        : 1189.5625
+  peak_gpu_memory_mb       : 1189.5625
+
+PER-CLASS METRICS (sorted by AP50)
+--------------------------------------------------------------------------------
+  person         : mAP=0.000  AP50=0.000  AP75=0.000
+  rider          : mAP=0.000  AP50=0.000  AP75=0.000
+  car            : mAP=0.000  AP50=0.000  AP75=0.000
+  truck          : mAP=0.000  AP50=0.000  AP75=0.000
+  bus            : mAP=0.000  AP50=0.000  AP75=0.000
+  train          : mAP=0.000  AP50=0.000  AP75=0.000
+  motorcycle     : mAP=0.000  AP50=0.000  AP75=0.000
+  bicycle        : mAP=0.000  AP50=0.000  AP75=0.000
+  traffic light  : mAP=0.000  AP50=0.000  AP75=0.000
+  traffic sign   : mAP=0.000  AP50=0.000  AP75=0.000
+
+================================================================================
+GO/NO-GO DECISION: ✅ GO
+================================================================================

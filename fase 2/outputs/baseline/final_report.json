@@ -1,0 +1,137 @@
+{
+  "baseline_config": {
+    "model": {
+      "name": "Grounding-DINO",
+      "checkpoint": "/opt/program/GroundingDINO/weights/groundingdino_swint_ogc.pth",
+      "config": "/opt/program/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py",
+      "architecture": "SwinT-OGC",
+      "input_size": [
+        800,
+        1333
+      ],
+      "device": "cuda"
+    },
+    "dataset": {
+      "image_dir": "../data/bdd100k/bdd100k/bdd100k/images/100k/val",
+      "val_eval_json": "../data/bdd100k_coco/val_eval.json",
+      "val_calib_json": "../data/bdd100k_coco/val_calib.json"
+    },
+    "inference": {
+      "conf_threshold": 0.3,
+      "nms_iou": 0.65,
+      "batch_size": 1,
+      "max_detections": 300
+    },
+    "prompts_file": "../data/prompts/bdd100k.txt",
+    "seed": 42,
+    "timestamp": "2025-11-10T22:42:10.653385"
+  },
+  "metrics": {
+    "mAP": 0.1704813675236083,
+    "AP50": 0.2785354731128005,
+    "AP75": 0.17054177911824953,
+    "AP_small": 0.06326777795360804,
+    "AP_medium": 0.182117704300831,
+    "AP_large": 0.3770055334283329,
+    "AR_max1": 0.18781069526674138,
+    "AR_max10": 0.2842332387016192,
+    "AR_max100": 0.2849732747592357,
+    "AR_small": 0.10708726444951602,
+    "AR_medium": 0.2718571998754682,
+    "AR_large": 0.5402809725502754,
+    "per_class": {
+      "person": {
+        "mAP": 0.0,
+        "AP50": 0.0,
+        "AP75": 0.0
+      },
+      "rider": {
+        "mAP": 0.0,
+        "AP50": 0.0,
+        "AP75": 0.0
+      },
+      "car": {
+        "mAP": 0.0,
+        "AP50": 0.0,
+        "AP75": 0.0
+      },
+      "truck": {
+        "mAP": 0.0,
+        "AP50": 0.0,
+        "AP75": 0.0
+      },
+      "bus": {
+        "mAP": 0.0,
+        "AP50": 0.0,
+        "AP75": 0.0
+      },
+      "train": {
+        "mAP": 0.0,
+        "AP50": 0.0,
+        "AP75": 0.0
+      },
+      "motorcycle": {
+        "mAP": 0.0,
+        "AP50": 0.0,
+        "AP75": 0.0
+      },
+      "bicycle": {
+        "mAP": 0.0,
+        "AP50": 0.0,
+        "AP75": 0.0
+      },
+      "traffic light": {
+        "mAP": 0.0,
+        "AP50": 0.0,
+        "AP75": 0.0
+      },
+      "traffic sign": {
+        "mAP": 0.0,
+        "AP50": 0.0,
+        "AP75": 0.0
+      }
+    }
+  },
+  "performance": {
+    "avg_time_per_image_s": 0.2749312506914139,
+    "std_time_per_image_s": 0.011661738550055173,
+    "fps": 3.637272945455051,
+    "avg_detections_per_image": 11.081,
+    "std_detections_per_image": 6.0175110303181,
+    "total_predictions": 22162.0,
+    "total_images": 2000.0,
+    "avg_gpu_memory_mb": 1189.5625,
+    "peak_gpu_memory_mb": 1189.5625
+  },
+  "artefacts": {
+    "predictions": "outputs/baseline/preds_raw.json",
+    "metrics": "outputs/baseline/metrics.json",
+    "pr_curves": "outputs/baseline/pr_curves",
+    "qualitative": "outputs/qualitative/baseline",
+    "performance": "outputs/baseline/perf.txt",
+    "calib_inputs": "outputs/baseline/calib_inputs.csv",
+    "threshold_sweep": "outputs/baseline/threshold_sweep.csv",
+    "summary_table": "outputs/baseline/summary_table.csv",
+    "error_analysis": "outputs/baseline/error_analysis.json"
+  },
+  "go_criteria": {
+    "mAP_reasonable": true,
+    "AP50_reasonable": true,
+    "latency_measured": true,
+    "artefacts_complete": true,
+    "calib_inputs_generated": true,
+    "errors_identified": true
+  },
+  "timestamp": "2025-11-11T09:42:26.116458",
+  "artefacts_status": {
+    "predictions": true,
+    "metrics": true,
+    "pr_curves": true,
+    "qualitative": true,
+    "performance": true,
+    "calib_inputs": true,
+    "threshold_sweep": true,
+    "summary_table": true,
+    "error_analysis": true
+  }
+}

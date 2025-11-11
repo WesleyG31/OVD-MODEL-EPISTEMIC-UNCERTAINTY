@@ -1,0 +1,406 @@
+{
+  "summary": {
+    "total_false_positives": 26,
+    "total_false_negatives": 988,
+    "total_confusion_pairs": 11,
+    "images_analyzed": 100
+  },
+  "false_positives_by_class": {
+    "rider": 1,
+    "truck": 2,
+    "person": 9,
+    "motorcycle": 3,
+    "car": 1,
+    "traffic light": 6,
+    "train": 1,
+    "traffic sign": 2,
+    "bus": 1
+  },
+  "false_negatives_by_class": {
+    "car": 598,
+    "person": 31,
+    "traffic sign": 223,
+    "traffic light": 108,
+    "bus": 6,
+    "truck": 12,
+    "rider": 2,
+    "bicycle": 8
+  },
+  "confusion_matrix": {
+    "person->rider": 3,
+    "truck->car": 2,
+    "traffic light->traffic sign": 2,
+    "rider->person": 1,
+    "person->truck": 1,
+    "motorcycle->rider": 1,
+    "car->truck": 1,
+    "train->car": 1,
+    "motorcycle->bicycle": 1,
+    "traffic sign->traffic light": 1,
+    "bus->car": 1
+  },
+  "sample_false_positives": [
+    {
+      "image_id": 46,
+      "pred_category": "rider",
+      "score": 0.5262436270713806,
+      "iou": 0.831600457898264,
+      "gt_category": "person"
+    },
+    {
+      "image_id": 86,
+      "pred_category": "truck",
+      "score": 0.6149289011955261,
+      "iou": 0.9215791227257428,
+      "gt_category": "car"
+    },
+    {
+      "image_id": 90,
+      "pred_category": "person",
+      "score": 0.5056700110435486,
+      "iou": 0.0333596198187654,
+      "gt_category": "truck"
+    },
+    {
+      "image_id": 106,
+      "pred_category": "motorcycle",
+      "score": 0.832807719707489,
+      "iou": 0.7211271676771103,
+      "gt_category": "rider"
+    },
+    {
+      "image_id": 106,
+      "pred_category": "person",
+      "score": 0.7185823321342468,
+      "iou": 0.7726696422326776,
+      "gt_category": "rider"
+    },
+    {
+      "image_id": 126,
+      "pred_category": "car",
+      "score": 0.513211727142334,
+      "iou": 0.8227212796167467,
+      "gt_category": "truck"
+    },
+    {
+      "image_id": 153,
+      "pred_category": "traffic light",
+      "score": 0.6498703956604004,
+      "iou": 0.4675822082568648,
+      "gt_category": "traffic light"
+    },
+    {
+      "image_id": 153,
+      "pred_category": "traffic light",
+      "score": 0.6412964463233948,
+      "iou": 0.44416987380610806,
+      "gt_category": "traffic light"
+    },
+    {
+      "image_id": 158,
+      "pred_category": "traffic light",
+      "score": 0.5658917427062988,
+      "iou": 0.36595195785315704,
+      "gt_category": "traffic light"
+    },
+    {
+      "image_id": 298,
+      "pred_category": "traffic light",
+      "score": 0.5516374111175537,
+      "iou": 0.5671513698666854,
+      "gt_category": "traffic sign"
+    },
+    {
+      "image_id": 339,
+      "pred_category": "train",
+      "score": 0.5103646516799927,
+      "iou": 0.002683137106456739,
+      "gt_category": "car"
+    },
+    {
+      "image_id": 371,
+      "pred_category": "motorcycle",
+      "score": 0.520267128944397,
+      "iou": 0.7254086354264171,
+      "gt_category": "bicycle"
+    },
+    {
+      "image_id": 371,
+      "pred_category": "person",
+      "score": 0.6178576946258545,
+      "iou": 0.7864831050184883,
+      "gt_category": "rider"
+    },
+    {
+      "image_id": 398,
+      "pred_category": "traffic light",
+      "score": 0.6698628067970276,
+      "iou": 0.7637099719134612,
+      "gt_category": "traffic sign"
+    },
+    {
+      "image_id": 410,
+      "pred_category": "person",
+      "score": 0.6311957240104675,
+      "iou": 0.7791745703800941,
+      "gt_category": "rider"
+    },
+    {
+      "image_id": 419,
+      "pred_category": "person",
+      "score": 0.5282638669013977,
+      "iou": 0.4646291243422627,
+      "gt_category": "person"
+    },
+    {
+      "image_id": 422,
+      "pred_category": "traffic sign",
+      "score": 0.515070378780365,
+      "iou": 0.021024234057208626,
+      "gt_category": "traffic light"
+    },
+    {
+      "image_id": 441,
+      "pred_category": "bus",
+      "score": 0.5918896198272705,
+      "iou": 0.9258974119450788,
+      "gt_category": "car"
+    },
+    {
+      "image_id": 474,
+      "pred_category": "truck",
+      "score": 0.5098909735679626,
+      "iou": 0.9465159381118693,
+      "gt_category": "car"
+    },
+    {
+      "image_id": 475,
+      "pred_category": "person",
+      "score": 0.6116470098495483,
+      "iou": 0.44473013530749306,
+      "gt_category": "person"
+    }
+  ],
+  "sample_false_negatives": [
+    {
+      "image_id": 6,
+      "category": "car",
+      "bbox": [
+        339.3891,
+        410.511081,
+        27.450589000000036,
+        21.211817999999994
+      ],
+      "area": 582.2768978608026
+    },
+    {
+      "image_id": 6,
+      "category": "car",
+      "bbox": [
+        308.195249,
+        405.520064,
+        19.964065000000005,
+        23.70732700000002
+      ],
+      "area": 473.29461720425553
+    },
+    {
+      "image_id": 6,
+      "category": "car",
+      "bbox": [
+        296.965462,
+        406.767818,
+        14.973049000000003,
+        24.955081000000007
+      ],
+      "area": 373.65365061196917
+    },
+    {
+      "image_id": 6,
+      "category": "car",
+      "bbox": [
+        267.019365,
+        414.254342,
+        14.973049000000003,
+        18.71631100000002
+      ],
+      "area": 280.24024170223936
+    },
+    {
+      "image_id": 6,
+      "category": "car",
+      "bbox": [
+        244.559792,
+        420.493111,
+        27.45058800000001,
+        31.193850999999995
+      ],
+      "area": 856.2895519343882
+    },
+    {
+      "image_id": 6,
+      "category": "car",
+      "bbox": [
+        222.100219,
+        415.502096,
+        32.44160499999998,
+        41.175883999999996
+      ],
+      "area": 1335.811764253819
+    },
+    {
+      "image_id": 6,
+      "category": "car",
+      "bbox": [
+        182.172091,
+        413.006588,
+        58.644439000000006,
+        51.157917
+      ],
+      "area": 3000.127342873563
+    },
+    {
+      "image_id": 6,
+      "category": "car",
+      "bbox": [
+        118.536634,
+        415.502096,
+        83.599521,
+        53.65342400000003
+      ],
+      "area": 4485.400546409906
+    },
+    {
+      "image_id": 6,
+      "category": "car",
+      "bbox": [
+        366.839689,
+        404.27231,
+        17.46855499999998,
+        22.459573999999975
+      ],
+      "area": 392.33630369556914
+    },
+    {
+      "image_id": 6,
+      "category": "car",
+      "bbox": [
+        698.742264,
+        406.767818,
+        37.43262100000004,
+        52.40567000000004
+      ],
+      "area": 1961.6815833610738
+    },
+    {
+      "image_id": 6,
+      "category": "car",
+      "bbox": [
+        1245.258536,
+        451.686963,
+        33.68935899999997,
+        139.74845300000004
+      ],
+      "area": 4708.035802811623
+    },
+    {
+      "image_id": 9,
+      "category": "person",
+      "bbox": [
+        937.813727,
+        292.949896,
+        14.849995000000035,
+        31.049991999999975
+      ],
+      "area": 461.0922259500407
+    },
+    {
+      "image_id": 9,
+      "category": "person",
+      "bbox": [
+        922.963734,
+        294.299896,
+        16.199993999999947,
+        36.44998800000002
+      ],
+      "area": 590.4895869000703
+    },
+    {
+      "image_id": 9,
+      "category": "car",
+      "bbox": [
+        778.598523,
+        290.249898,
+        43.11524499999996,
+        44.54998500000005
+      ],
+      "area": 1920.7835180213253
+    },
+    {
+      "image_id": 18,
+      "category": "traffic sign",
+      "bbox": [
+        645.612619,
+        236.605264,
+        6.394736999999964,
+        11.510527999999994
+      ],
+      "area": 73.60679929113554
+    },
+    {
+      "image_id": 18,
+      "category": "traffic sign",
+      "bbox": [
+        669.912619,
+        236.605264,
+        16.626316000000088,
+        16.626317
+      ],
+      "area": 276.4344003581735
+    },
+    {
+      "image_id": 18,
+      "category": "traffic sign",
+      "bbox": [
+        373.196828,
+        211.026316,
+        21.742106000000035,
+        10.23157999999998
+      ],
+      "area": 222.45609690747992
+    },
+    {
+      "image_id": 18,
+      "category": "traffic sign",
+      "bbox": [
+        48.344195,
+        193.121055,
+        34.531580000000005,
+        31.973682999999994
+      ],
+      "area": 1104.10179240914
+    },
+    {
+      "image_id": 18,
+      "category": "car",
+      "bbox": [
+        614.917882,
+        251.952633,
+        16.626316000000088,
+        19.184211000000005
+      ],
+      "area": 318.96275429667776
+    },
+    {
+      "image_id": 18,
+      "category": "car",
+      "bbox": [
+        622.591566,
+        253.231579,
+        57.55263200000002,
+        53.71579099999997
+      ],
+      "area": 3091.485152011911
+    }
+  ]
+}
