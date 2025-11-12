@@ -1,4 +1,4 @@
-# Fase 2: Baseline OVD - BDD100K Detection
+# Fase 2: Baseline OVD - BDD100K - Detection
 
 Pipeline completo para establecer el baseline de detección con Grounding-DINO sobre BDD100K.
 
