@@ -3,7 +3,7 @@
 REPORTE FINAL - FASE 3: MC-DROPOUT
 ======================================================================
 
-Fecha: 2025-11-15 20:18:32
+Fecha: 2025-11-15 20:54:45
 
 CONFIGURACIÓN
 -------------
@@ -33,8 +33,8 @@ Incertidumbre media:
 
 COSTE COMPUTACIONAL
 -------------------
-- Baseline: 0.353s (2.83 FPS)
-- MC-Dropout (K=5): 1.767s (0.57 FPS)
+- Baseline: 0.363s (2.75 FPS)
+- MC-Dropout (K=5): 1.817s (0.55 FPS)
 - Overhead: 5.00x (+400.0%)
 
 CRITERIOS DE ÉXITO

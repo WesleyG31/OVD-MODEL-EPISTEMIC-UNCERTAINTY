@@ -1,7 +1,7 @@
 {
   "fase": 3,
   "titulo": "MC-Dropout para Incertidumbre Epist\u00e9mica",
-  "fecha": "2025-11-15T20:18:32.717553",
+  "fecha": "2025-11-15T20:54:45.242511",
   "configuracion": {
     "K": 5,
     "categories": [
@@ -38,10 +38,10 @@
     "uncertainty_fp_mean": 3.349089063725962e-17
   },
   "coste_computacional": {
-    "baseline_time_seconds": 0.35338020610809323,
-    "baseline_fps": 2.8298132796213165,
-    "mc_dropout_time_seconds": 1.7669010305404662,
-    "mc_dropout_fps": 0.5659626559242632,
+    "baseline_time_seconds": 0.36348260927200315,
+    "baseline_fps": 2.751163259234983,
+    "mc_dropout_time_seconds": 1.8174130463600158,
+    "mc_dropout_fps": 0.5502326518469965,
     "overhead_factor": 5.0,
     "overhead_percent": 400.0,
     "K": 5
