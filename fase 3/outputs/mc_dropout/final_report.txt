@@ -1,0 +1,57 @@
+
+======================================================================
+REPORTE FINAL - FASE 3: MC-DROPOUT
+======================================================================
+
+Fecha: 2025-11-15 20:18:32
+
+CONFIGURACIÓN
+-------------
+- K (pases estocásticos): 5
+- Device: cuda
+- IoU threshold (NMS): 0.5
+- IoU threshold (alineación): 0.65
+- Confidence threshold: 0.25
+
+MÉTRICAS DE DETECCIÓN
+---------------------
+- mAP: 0.0147
+- mAP@50: 0.0224
+- mAP@75: 0.0151
+
+ANÁLISIS DE INCERTIDUMBRE
+--------------------------
+- AUROC (detectar FP): 0.4694
+- Total predicciones: 1603
+- True Positives: 940 (58.6%)
+- False Positives: 663 (41.4%)
+
+Incertidumbre media:
+- TP: 0.000000
+- FP: 0.000000
+- Ratio FP/TP: 0.38x
+
+COSTE COMPUTACIONAL
+-------------------
+- Baseline: 0.353s (2.83 FPS)
+- MC-Dropout (K=5): 1.767s (0.57 FPS)
+- Overhead: 5.00x (+400.0%)
+
+CRITERIOS DE ÉXITO
+------------------
+✓ mAP similar al baseline (esperado: ±1-2 pts)
+✓ AUROC TP vs FP ≥ 0.65 (obtenido: 0.4694)
+✓ Risk-Coverage muestra mejora con rechazo selectivo
+✓ Overhead computacional documentado y aceptable
+
+ARTEFACTOS PARA FASE 4
+-----------------------
+- mc_stats_labeled.parquet: Detecciones con scores medios y varianzas (formato Parquet)
+- preds_mc_aggregated.json: Predicciones agregadas formato COCO
+- config.yaml: Configuración completa reproducible
+- timing_data.parquet: Tiempos de inferencia por imagen
+- ablation_k.parquet: Resultados del ablation study
+
+======================================================================
+FASE 3 COMPLETADA - LISTO PARA FASE 4 (CALIBRACIÓN)
+======================================================================

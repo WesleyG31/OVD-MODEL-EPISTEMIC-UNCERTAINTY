@@ -1,0 +1,60 @@
+{
+  "fase": 3,
+  "titulo": "MC-Dropout para Incertidumbre Epist\u00e9mica",
+  "fecha": "2025-11-15T20:18:32.717553",
+  "configuracion": {
+    "K": 5,
+    "categories": [
+      "person",
+      "rider",
+      "car",
+      "truck",
+      "bus",
+      "train",
+      "motorcycle",
+      "bicycle",
+      "traffic light",
+      "traffic sign"
+    ],
+    "conf_threshold": 0.25,
+    "device": "cuda",
+    "iou_threshold_alignment": 0.65,
+    "iou_threshold_nms": 0.5,
+    "seed": 42
+  },
+  "metricas_deteccion": {
+    "mAP": 0.014662982830977993,
+    "mAP@50": 0.022380389586477763,
+    "mAP@75": 0.015149845421885586,
+    "mAP_small": 0.009156086420663042,
+    "mAP_medium": 0.015323176380527116,
+    "mAP_large": 0.025964906231644026
+  },
+  "analisis_incertidumbre": {
+    "auroc_uncertainty": 0.4693856102179006,
+    "num_tp": 940,
+    "num_fp": 663,
+    "uncertainty_tp_mean": 8.787297131075707e-17,
+    "uncertainty_fp_mean": 3.349089063725962e-17
+  },
+  "coste_computacional": {
+    "baseline_time_seconds": 0.35338020610809323,
+    "baseline_fps": 2.8298132796213165,
+    "mc_dropout_time_seconds": 1.7669010305404662,
+    "mc_dropout_fps": 0.5659626559242632,
+    "overhead_factor": 5.0,
+    "overhead_percent": 400.0,
+    "K": 5
+  },
+  "artefactos_generados": [
+    "preds_mc_aggregated.json",
+    "mc_stats.parquet",
+    "mc_stats_labeled.parquet",
+    "timing_data.parquet",
+    "ablation_k.parquet",
+    "uncertainty_analysis.png",
+    "risk_coverage.png",
+    "computational_cost.png",
+    "qualitative/*.jpg"
+  ]
+}

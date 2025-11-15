@@ -1,0 +1,26 @@
+[
+  {
+    "coverage": 0.5,
+    "risk_confidence": 0.243142144638404,
+    "risk_uncertainty": 0.40648379052369077,
+    "improvement": -0.16334164588528677
+  },
+  {
+    "coverage": 0.7,
+    "risk_confidence": 0.3223508459483526,
+    "risk_uncertainty": 0.4247551202137133,
+    "improvement": -0.1024042742653607
+  },
+  {
+    "coverage": 0.8,
+    "risk_confidence": 0.35385814497272017,
+    "risk_uncertainty": 0.42556508183943886,
+    "improvement": -0.0717069368667187
+  },
+  {
+    "coverage": 0.9,
+    "risk_confidence": 0.39015939015939016,
+    "risk_uncertainty": 0.4296604296604296,
+    "improvement": -0.03950103950103945
+  }
+]

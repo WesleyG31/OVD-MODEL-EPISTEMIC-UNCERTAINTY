@@ -1,0 +1,7 @@
+{
+  "auroc_uncertainty": 0.4693856102179006,
+  "num_tp": 940,
+  "num_fp": 663,
+  "uncertainty_tp_mean": 8.787297131075707e-17,
+  "uncertainty_fp_mean": 3.349089063725962e-17
+}
