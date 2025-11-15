@@ -1,0 +1,17 @@
+K: 5
+categories:
+- person
+- rider
+- car
+- truck
+- bus
+- train
+- motorcycle
+- bicycle
+- traffic light
+- traffic sign
+conf_threshold: 0.25
+device: cuda
+iou_threshold_alignment: 0.65
+iou_threshold_nms: 0.5
+seed: 42
