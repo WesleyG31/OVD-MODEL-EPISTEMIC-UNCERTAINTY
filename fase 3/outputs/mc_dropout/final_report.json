@@ -1,7 +1,7 @@
 {
   "fase": 3,
   "titulo": "MC-Dropout para Incertidumbre Epist\u00e9mica",
-  "fecha": "2025-11-15T21:24:37.973334",
+  "fecha": "2025-11-15T22:12:29.188691",
   "configuracion": {
     "K": 5,
     "categories": [
@@ -23,25 +23,25 @@
     "seed": 42
   },
   "metricas_deteccion": {
-    "mAP": 0.014662982830977993,
-    "mAP@50": 0.022380389586477763,
-    "mAP@75": 0.015149845421885586,
-    "mAP_small": 0.009156086420663042,
-    "mAP_medium": 0.015323176380527116,
-    "mAP_large": 0.025964906231644026
+    "mAP": 0.015015311437956556,
+    "mAP@50": 0.022873116844775884,
+    "mAP@75": 0.015642661946184837,
+    "mAP_small": 0.008398392865767556,
+    "mAP_medium": 0.01601169239275287,
+    "mAP_large": 0.02609822650893446
   },
   "analisis_incertidumbre": {
-    "auroc_uncertainty": 0.4693856102179006,
-    "num_tp": 940,
-    "num_fp": 663,
-    "uncertainty_tp_mean": 8.787297131075707e-17,
-    "uncertainty_fp_mean": 3.349089063725962e-17
+    "auroc_uncertainty": 0.634198341679665,
+    "num_tp": 937,
+    "num_fp": 650,
+    "uncertainty_tp_mean": 5.6947982927750344e-05,
+    "uncertainty_fp_mean": 0.0001273303798674109
   },
   "coste_computacional": {
-    "baseline_time_seconds": 0.3730838522911072,
-    "baseline_fps": 2.680362588353803,
-    "mc_dropout_time_seconds": 1.8654192614555358,
-    "mc_dropout_fps": 0.5360725176707607,
+    "baseline_time_seconds": 0.367881103515625,
+    "baseline_fps": 2.7182695453601275,
+    "mc_dropout_time_seconds": 1.839405517578125,
+    "mc_dropout_fps": 0.5436539090720255,
     "overhead_factor": 5.0,
     "overhead_percent": 400.0,
     "K": 5

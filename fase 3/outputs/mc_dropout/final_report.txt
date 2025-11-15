@@ -3,7 +3,7 @@
 REPORTE FINAL - FASE 3: MC-DROPOUT
 ======================================================================
 
-Fecha: 2025-11-15 21:24:37
+Fecha: 2025-11-15 22:12:29
 
 CONFIGURACIÓN
 -------------
@@ -15,32 +15,32 @@ CONFIGURACIÓN
 
 MÉTRICAS DE DETECCIÓN
 ---------------------
-- mAP: 0.0147
-- mAP@50: 0.0224
-- mAP@75: 0.0151
+- mAP: 0.0150
+- mAP@50: 0.0229
+- mAP@75: 0.0156
 
 ANÁLISIS DE INCERTIDUMBRE
 --------------------------
-- AUROC (detectar FP): 0.4694
-- Total predicciones: 1603
-- True Positives: 940 (58.6%)
-- False Positives: 663 (41.4%)
+- AUROC (detectar FP): 0.6342
+- Total predicciones: 1587
+- True Positives: 937 (59.0%)
+- False Positives: 650 (41.0%)
 
 Incertidumbre media:
-- TP: 0.000000
-- FP: 0.000000
-- Ratio FP/TP: 0.38x
+- TP: 0.000057
+- FP: 0.000127
+- Ratio FP/TP: 2.24x
 
 COSTE COMPUTACIONAL
 -------------------
-- Baseline: 0.373s (2.68 FPS)
-- MC-Dropout (K=5): 1.865s (0.54 FPS)
+- Baseline: 0.368s (2.72 FPS)
+- MC-Dropout (K=5): 1.839s (0.54 FPS)
 - Overhead: 5.00x (+400.0%)
 
 CRITERIOS DE ÉXITO
 ------------------
 ✓ mAP similar al baseline (esperado: ±1-2 pts)
-✓ AUROC TP vs FP ≥ 0.65 (obtenido: 0.4694)
+✓ AUROC TP vs FP ≥ 0.65 (obtenido: 0.6342)
 ✓ Risk-Coverage muestra mejora con rechazo selectivo
 ✓ Overhead computacional documentado y aceptable
 
