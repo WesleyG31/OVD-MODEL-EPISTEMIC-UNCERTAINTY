@@ -1,8 +1,8 @@
 {
-  "baseline_time_seconds": 0.36348260927200315,
-  "baseline_fps": 2.751163259234983,
-  "mc_dropout_time_seconds": 1.8174130463600158,
-  "mc_dropout_fps": 0.5502326518469965,
+  "baseline_time_seconds": 0.3730838522911072,
+  "baseline_fps": 2.680362588353803,
+  "mc_dropout_time_seconds": 1.8654192614555358,
+  "mc_dropout_fps": 0.5360725176707607,
   "overhead_factor": 5.0,
   "overhead_percent": 400.0,
   "K": 5
