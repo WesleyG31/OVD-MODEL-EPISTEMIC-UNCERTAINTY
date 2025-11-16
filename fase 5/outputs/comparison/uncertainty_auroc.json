@@ -1,0 +1,30 @@
+{
+  "mc_dropout": {
+    "auroc": 0.5,
+    "mean_unc_tp": 0.0,
+    "mean_unc_fp": 0.0,
+    "n_tp": 17828,
+    "n_fp": 12401
+  },
+  "mc_dropout_ts": {
+    "auroc": 0.5,
+    "mean_unc_tp": 0.0,
+    "mean_unc_fp": 0.0,
+    "n_tp": 17828,
+    "n_fp": 12401
+  },
+  "decoder_variance": {
+    "auroc": 0.5,
+    "mean_unc_tp": 0.0,
+    "mean_unc_fp": 0.0,
+    "n_tp": 17844,
+    "n_fp": 12402
+  },
+  "decoder_variance_ts": {
+    "auroc": 0.5,
+    "mean_unc_tp": 0.0,
+    "mean_unc_fp": 0.0,
+    "n_tp": 17844,
+    "n_fp": 12402
+  }
+}

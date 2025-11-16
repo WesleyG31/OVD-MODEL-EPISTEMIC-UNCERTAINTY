@@ -1,0 +1,20 @@
+{
+  "mc_dropout": {
+    "T": 2.7357694840134896,
+    "nll_before": 0.7071922717094092,
+    "nll_after": 0.6855993355321166,
+    "source": "calculated"
+  },
+  "decoder_variance": {
+    "T": 2.7357694840134896,
+    "nll_before": 0.7071922717094092,
+    "nll_after": 0.6855993355321166,
+    "source": "calculated"
+  },
+  "baseline": {
+    "T": 2.7357694840134896,
+    "nll_before": 0.7071922717094092,
+    "nll_after": 0.6855993355321166,
+    "source": "calculated"
+  }
+}
