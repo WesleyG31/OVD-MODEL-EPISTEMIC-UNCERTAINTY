@@ -1,5 +1,5 @@
 Method,AUROC (FP detection) ↑,Mean Unc. TP,Mean Unc. FP,Ratio (FP/TP)
-mc_dropout,0.5,0.0,0.0,0
-mc_dropout_ts,0.5,0.0,0.0,0
-decoder_variance,0.5,0.0,0.0,0
-decoder_variance_ts,0.5,0.0,0.0,0
+mc_dropout,0.6334619110364594,6.1003608914073764e-05,0.00012632143518545097,2.0707206906952047
+mc_dropout_ts,0.6334619110364594,6.1003608914073764e-05,0.00012632143518545097,2.0707206906952047
+decoder_variance,0.5,0.0,0.0,0.0
+decoder_variance_ts,0.5,0.0,0.0,0.0

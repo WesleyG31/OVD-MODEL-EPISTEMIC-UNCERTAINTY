@@ -1,26 +1,26 @@
 [
   {
     "coverage": 0.5,
-    "risk_confidence": 0.23173803526448367,
-    "risk_uncertainty": 0.30352644836272036,
-    "improvement": -0.07178841309823669
+    "risk_confidence": 0.2507019655034095,
+    "risk_uncertainty": 0.3110709987966306,
+    "improvement": -0.060369033293221075
   },
   {
     "coverage": 0.7,
-    "risk_confidence": 0.31233123312331235,
-    "risk_uncertainty": 0.33753375337533753,
-    "improvement": -0.025202520252025185
+    "risk_confidence": 0.3178127984718243,
+    "risk_uncertainty": 0.3425023877745941,
+    "improvement": -0.024689589302769765
   },
   {
     "coverage": 0.8,
-    "risk_confidence": 0.3503937007874016,
-    "risk_uncertainty": 0.35748031496062993,
-    "improvement": -0.007086614173228312
+    "risk_confidence": 0.3527494567942504,
+    "risk_uncertainty": 0.3611064683269263,
+    "improvement": -0.008357011532675873
   },
   {
     "coverage": 0.9,
-    "risk_confidence": 0.38068579426172144,
-    "risk_uncertainty": 0.38208537438768364,
-    "improvement": -0.0013995801259621965
+    "risk_confidence": 0.38539538684396246,
+    "risk_uncertainty": 0.3847639564684471,
+    "improvement": 0.0006314303755153849
   }
 ]
