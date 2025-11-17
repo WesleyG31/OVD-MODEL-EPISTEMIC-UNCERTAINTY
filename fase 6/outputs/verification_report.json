@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-11-17 21:41:38.574467",
+  "files_ok": true,
+  "files_checked": {
+    "Aplicaci\u00f3n Streamlit": "True",
+    "README": "True",
+    "Script Windows": "True",
+    "Script Linux": "True",
+    "Carpeta samples": "True",
+    "Carpeta outputs": "True",
+    "Screenshots": "True"
+  },
+  "dependencies": {
+    "Fase 4 - Temperatura": "True",
+    "Fase 5 - M\u00e9tricas": "False",
+    "BDD100K Val": "True"
+  }
+}
