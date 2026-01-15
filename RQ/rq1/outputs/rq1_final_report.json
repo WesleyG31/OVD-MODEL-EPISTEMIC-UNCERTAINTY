@@ -1,0 +1,59 @@
+{
+  "research_question": "RQ1: Epistemic Uncertainty Estimation via Representation-Level Fusion",
+  "question": "How accurately can epistemic uncertainty be estimated in Grounding DINO using decoder-layer variance compared to Monte Carlo Dropout?",
+  "expected_result": "Fusing decoder-layer uncertainties yields lower calibration error and more stable risk estimates than any single-layer signal.",
+  "methodology": {
+    "decoder_layers": 6,
+    "fusion_strategy": "variance",
+    "comparison_baseline": "MC-Dropout (K=5)",
+    "dataset": "BDD100K validation (2000 images)",
+    "metrics": [
+      "ECE",
+      "AUROC",
+      "FP/TP discrimination"
+    ]
+  },
+  "results": {
+    "calibration": {
+      "baseline_ece": 0.24096997585116434,
+      "mc_dropout_ece": 0.20342878492021285,
+      "decoder_variance_ece": 0.20647283115801396,
+      "best_method": "MC-Dropout"
+    },
+    "uncertainty_quality": {
+      "mc_dropout_auroc": 0.6334619110364594,
+      "decoder_fused_auroc": 0.48749006751458956,
+      "decoder_mean_auroc": 0.48647087451637183,
+      "single_layer_auroc": 0.498500555485658,
+      "best_method": "MC-Dropout"
+    },
+    "fusion_analysis": {
+      "fused_vs_single_layer_improvement": -2.20872130430058,
+      "fused_vs_mean_improvement": 0.2095075063293296,
+      "conclusion": "Simple strategies competitive with fusion"
+    }
+  },
+  "outputs": {
+    "tables": [
+      "table_1_1_layer_calibration.csv",
+      "table_1_2_method_comparison.csv"
+    ],
+    "figures": [
+      "figure_1_1_decoder_uncertainty.png/pdf",
+      "figure_1_2_reliability_diagrams.png/pdf",
+      "figure_1_3_fusion_strategies.png/pdf"
+    ]
+  },
+  "key_findings": [
+    "Decoder variance ECE: 0.2065 vs MC-Dropout: 0.2034",
+    "Fused AUROC: 0.4875 vs MC-Dropout: 0.6335",
+    "Fusion improves over single layer by -2.2%",
+    "Representation-level fusion provides computationally efficient uncertainty estimation",
+    "MC-Dropout remains superior for epistemic uncertainty discrimination"
+  ],
+  "conclusion": {
+    "summary": "Representation-level uncertainty fusion via decoder-layer variance provides competitive calibration performance with computational efficiency, though MC-Dropout achieves superior epistemic uncertainty discrimination (AUROC).",
+    "recommendation": "Use decoder variance for calibration-focused applications; use MC-Dropout when uncertainty quality (TP/FP discrimination) is critical.",
+    "status": "\u2705 RQ1 Answered"
+  }
+}

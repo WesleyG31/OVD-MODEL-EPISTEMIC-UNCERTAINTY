@@ -1,0 +1,8 @@
+Decoder Layer,ECE,AUROC (TP/FP)
+Layer 1,0.2065,0.4993
+Layer 2,0.2065,0.4944
+Layer 3,0.2065,0.4937
+Layer 4,0.2065,0.4987
+Layer 5,0.2065,0.4918
+Layer 6,0.2065,0.4985
+Fused (Variance),0.2065,0.4875
