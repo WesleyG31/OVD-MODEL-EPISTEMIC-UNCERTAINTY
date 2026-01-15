@@ -1,0 +1,35 @@
+{
+  "Early Fusion": {
+    "ece_global": 0.2003516870579267,
+    "ece_by_domain": {
+      "day": 0.2003516870579267
+    },
+    "stability_score": 1.0,
+    "failure_sensitivity": {
+      "Weather": 0.0,
+      "Unseen Classes": 0.9990601503759399
+    }
+  },
+  "Late Fusion": {
+    "ece_global": 0.2003516870579267,
+    "ece_by_domain": {
+      "day": 0.2003516870579267
+    },
+    "stability_score": 1.0,
+    "failure_sensitivity": {
+      "Weather": 0.0,
+      "Unseen Classes": 0.9990601503759399
+    }
+  },
+  "Hybrid Fusion": {
+    "ece_global": 0.2003516870579267,
+    "ece_by_domain": {
+      "day": 0.2003516870579267
+    },
+    "stability_score": 1.0,
+    "failure_sensitivity": {
+      "Weather": 0.0,
+      "Unseen Classes": 0.9990601503759399
+    }
+  }
+}
