@@ -1,0 +1,11 @@
+{
+  "domain_counts": {
+    "day": 29914
+  },
+  "timeofday_counts": {
+    "daytime": 29914
+  },
+  "weather_counts": {
+    "clear": 29914
+  }
+}

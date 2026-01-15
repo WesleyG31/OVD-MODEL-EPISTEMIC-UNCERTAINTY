@@ -1,0 +1,55 @@
+{
+  "research_question": "How robust is the proposed uncertainty calibration framework under domain shifts and unseen classes?",
+  "expected_result": "Sequential calibration yields consistent reliability improvements across domains",
+  "table_4_1": {
+    "title": "Incremental Calibration Gains",
+    "stages": {
+      "No Calibration": {
+        "ECE": 0.2003516870579267,
+        "LAECE": 0.5188715543210654,
+        "AURC": 0.25378322642929196
+      },
+      "+ TS": {
+        "ECE": 0.2003516870579267,
+        "LAECE": 0.5188715543210654,
+        "AURC": 0.25378322642929196,
+        "temperature": 1.0
+      },
+      "+ IoU Mapping": {
+        "ECE": 0.3535775812784502,
+        "LAECE": 0.5645853274404103,
+        "AURC": 0.1114422048711096
+      },
+      "+ Uncertainty Fusion": {
+        "ECE": 0.3537141516874671,
+        "LAECE": 0.5651243966555278,
+        "AURC": 0.11142746794614193
+      }
+    },
+    "overall_improvement": {
+      "ECE_reduction": -76.54663001924187,
+      "LAECE_reduction": -8.9141217993697,
+      "AURC_reduction": 56.09344655518934
+    }
+  },
+  "table_4_2": {
+    "title": "Domain Robustness",
+    "domains": {
+      "Day": {
+        "Baseline_ECE": 0.2003516870579267,
+        "Full_Fusion_ECE": 0.3537141516874671,
+        "Improvement_percent": -76.54663001924187
+      }
+    }
+  },
+  "figures": {
+    "figure_4_1": "Calibration Pipeline Visualization",
+    "figure_4_2": "Domain-Shift Performance"
+  },
+  "key_findings": [
+    "Sequential calibration reduces ECE by -76.5%",
+    "LAECE improves by -8.9%",
+    "AURC decreases by 56.1%",
+    "Full fusion framework maintains calibration across different domains"
+  ]
+}

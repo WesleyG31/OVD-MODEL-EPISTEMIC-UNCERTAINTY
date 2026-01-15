@@ -1,0 +1,15 @@
+categories:
+- person
+- rider
+- car
+- truck
+- bus
+- train
+- motorcycle
+- bicycle
+- traffic light
+- traffic sign
+device: cpu
+iou_threshold: 0.5
+n_bins: 10
+seed: 42
