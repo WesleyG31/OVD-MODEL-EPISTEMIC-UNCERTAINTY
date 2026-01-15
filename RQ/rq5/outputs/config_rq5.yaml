@@ -1,0 +1,17 @@
+categories:
+- person
+- rider
+- car
+- truck
+- bus
+- train
+- motorcycle
+- bicycle
+- traffic light
+- traffic sign
+coverage_levels:
+- 100
+- 80
+- 60
+iou_threshold: 0.5
+seed: 42

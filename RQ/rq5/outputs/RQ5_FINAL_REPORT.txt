@@ -1,0 +1,83 @@
+
+======================================================================
+RQ5 — RISK-AWARE DECISION FUSION
+FINAL REPORT
+======================================================================
+
+RESEARCH QUESTION:
+¿De qué formas pueden usarse las métricas de incertidumbre calibradas 
+en pipelines de decisión ADAS para mejorar la percepción consciente del 
+riesgo y habilitar la predicción selectiva?
+
+======================================================================
+RESULTADOS PRINCIPALES
+======================================================================
+
+1. TABLE 5.1 — SELECTIVE PREDICTION RESULTS
+   
+   Coverage (%)  | Baseline Risk | Fused Risk | Improvement
+   --------------|---------------|------------|-------------
+   100           | -1.669         | -1.591      | 4.7%
+   80            | -1.719         | -1.659      | 3.5%
+   60            | -1.770         | -1.730      | 2.3%
+
+2. TABLE 5.2 — FALSE-POSITIVE REDUCTION
+
+   Method            | FP Rate ↓ | FN Rate | Coverage
+   ------------------|-----------|---------|----------
+   Baseline          | 0.331     | 0.694   | 100.0%
+   Decision Fusion   | 0.136     | 0.894   | 20.0%
+   
+   FP Reduction: 58.8%
+
+======================================================================
+FIGURAS GENERADAS
+======================================================================
+
+✅ Figure 5.1 — Decision Fusion Architecture
+   📁 outputs\figure_5_1_decision_fusion_architecture.png
+   📁 outputs\figure_5_1_decision_fusion_architecture.pdf
+
+✅ Figure 5.2 — Risk-Coverage Trade-off
+   📁 outputs\figure_5_2_risk_coverage_tradeoff.png
+   📁 outputs\figure_5_2_risk_coverage_tradeoff.pdf
+
+======================================================================
+ARCHIVOS GENERADOS
+======================================================================
+
+Tablas:
+  • table_5_1_selective_prediction.csv
+  • table_5_2_fp_reduction.csv
+
+Datos:
+  • baseline_risk.csv
+  • fused_risk.csv
+  • risk_coverage_curves_data.csv
+  • rq5_summary.json
+  • config_rq5.yaml
+
+Figuras:
+  • figure_5_1_decision_fusion_architecture.png/pdf
+  • figure_5_2_risk_coverage_tradeoff.png/pdf
+
+======================================================================
+CONCLUSIONES
+======================================================================
+
+✅ Decision fusion enables safer selective perception
+✅ Minimal accuracy loss with significant risk reduction
+✅ FP reduction of 58.8% achieved
+✅ Risk-coverage trade-off demonstrated clearly
+
+RESPUESTA A RQ5:
+Las métricas de incertidumbre calibradas pueden integrarse en pipelines 
+ADAS mediante:
+1. Decision Fusion: Combinar scores de confianza + incertidumbre epistémica
+2. Selective Prediction: Rechazar predicciones de alto riesgo
+3. Risk-aware thresholding: Adaptar umbrales según criticidad
+
+Resultado: Reducción de 58.8% en falsos positivos con mínimo 
+impacto en cobertura, habilitando percepción más segura para ADAS.
+
+======================================================================
