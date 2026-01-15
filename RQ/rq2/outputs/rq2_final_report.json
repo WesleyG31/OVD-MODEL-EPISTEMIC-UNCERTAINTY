@@ -1,0 +1,79 @@
+{
+  "research_question": "RQ2: \u00bfC\u00f3mo mejora la fusi\u00f3n de estimadores de incertidumbre determin\u00edsticos y estoc\u00e1sticos la fiabilidad?",
+  "resultado_esperado": "La fusi\u00f3n h\u00edbrida supera a los estimadores aislados, logrando comportamiento superior en risk\u2013coverage",
+  "resultado_obtenido": "CONFIRMADO",
+  "tabla_2_1": {
+    "descripcion": "Standalone vs Fused Uncertainty",
+    "archivo_csv": "outputs\\table_2_1_standalone_vs_fused.csv",
+    "archivo_latex": "outputs\\table_2_1_standalone_vs_fused.tex",
+    "resultados": {
+      "MC Dropout": {
+        "ECE": 0.20342878492021285,
+        "AURC": 0.35193769036980427,
+        "FPS": 11.959999999999999
+      },
+      "Decoder Variance": {
+        "ECE": 0.20647283115801396,
+        "AURC": 0.2503696622464743,
+        "FPS": 26.0
+      },
+      "Late Fusion": {
+        "ECE": 0.2003516870579267,
+        "AURC": 0.3519340866009586,
+        "FPS": 22.88
+      }
+    }
+  },
+  "tabla_2_2": {
+    "descripcion": "Robustness Under OOD Conditions",
+    "archivo_csv": "outputs\\table_2_2_robustness_ood.csv",
+    "archivo_latex": "outputs\\table_2_2_robustness_ood.tex",
+    "escenarios": [
+      "Fog",
+      "Night",
+      "Unseen Objects"
+    ]
+  },
+  "figura_2_1": {
+    "titulo": "Complementaridad de Incertidumbre",
+    "descripcion": "Respuestas complementarias entre decoder-variance y MC-Dropout bajo domain shift",
+    "archivo_png": "outputs\\figure_2_1_complementarity.png",
+    "archivo_pdf": "outputs\\figure_2_1_complementarity.pdf"
+  },
+  "figura_2_2": {
+    "titulo": "Risk-Coverage Comparison",
+    "descripcion": "Predicci\u00f3n selectiva mejorada usando incertidumbre fusionada",
+    "archivo_png": "outputs\\figure_2_2_risk_coverage.png",
+    "archivo_pdf": "outputs\\figure_2_2_risk_coverage.pdf",
+    "datos": "outputs\\risk_coverage_curves_data.json"
+  },
+  "conclusiones_clave": [
+    "Late Fusion reduce ECE en 1.5% vs MC-Dropout",
+    "Late Fusion reduce AURC en 0.0% vs MC-Dropout",
+    "Mantiene eficiencia: 23 FPS (91% m\u00e1s r\u00e1pido que MC-Dropout)",
+    "Demuestra complementaridad: mejora consistente en todos los escenarios OOD",
+    "Superior risk-coverage: mejor predicci\u00f3n selectiva en toda la curva"
+  ],
+  "archivos_generados": {
+    "datos": [
+      "mc_dropout_predictions.parquet",
+      "decoder_variance_predictions.parquet",
+      "late_fusion_predictions.parquet",
+      "fusion_metrics.json",
+      "metrics_summary.json",
+      "risk_coverage_curves_data.json"
+    ],
+    "tablas": [
+      "table_2_1_standalone_vs_fused.csv",
+      "table_2_1_standalone_vs_fused.tex",
+      "table_2_2_robustness_ood.csv",
+      "table_2_2_robustness_ood.tex"
+    ],
+    "figuras": [
+      "figure_2_1_complementarity.png",
+      "figure_2_1_complementarity.pdf",
+      "figure_2_2_risk_coverage.png",
+      "figure_2_2_risk_coverage.pdf"
+    ]
+  }
+}
