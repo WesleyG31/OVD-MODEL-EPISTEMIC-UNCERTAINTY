@@ -8,14 +8,14 @@
   ],
   "key_findings": {
     "latency_comparison": {
-      "mc_dropout_ms": 83.0,
-      "fusion_ms": 43.0,
-      "speedup": 1.93
+      "mc_dropout_ms": 2025.1,
+      "fusion_ms": 403.91,
+      "speedup": 5.01
     },
     "fps_comparison": {
-      "mc_dropout_fps": 12.05,
-      "fusion_fps": 23.26,
-      "improvement": 93.0
+      "mc_dropout_fps": 0.49,
+      "fusion_fps": 2.48,
+      "improvement": 401.4
     },
     "reliability_comparison": {
       "mc_dropout_score": 0.7966,
