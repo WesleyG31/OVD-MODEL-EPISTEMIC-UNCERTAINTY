@@ -1,0 +1,31 @@
+{
+  "research_question": "RQ7 \u2014 Efficiency\u2013Reliability Trade-off",
+  "objective": "Demostrar que Fusion logra confiabilidad cercana a MC-Dropout a velocidad de tiempo real",
+  "methods_analyzed": [
+    "MC Dropout",
+    "Variance",
+    "Fusion"
+  ],
+  "key_findings": {
+    "latency_comparison": {
+      "mc_dropout_ms": 83.0,
+      "fusion_ms": 43.0,
+      "speedup": 1.93
+    },
+    "fps_comparison": {
+      "mc_dropout_fps": 12.05,
+      "fusion_fps": 23.26,
+      "improvement": 93.0
+    },
+    "reliability_comparison": {
+      "mc_dropout_score": 0.7966,
+      "fusion_score": 0.8591,
+      "difference": 0.0625
+    },
+    "ece_comparison": {
+      "mc_dropout_ece": 0.2034,
+      "fusion_ece": 0.1409,
+      "improvement": 30.7
+    },
+    "real_time_feasibility": {
+      "mc_dropout_ready": 

@@ -1,0 +1,20 @@
+[
+  {
+    "method": "MC Dropout",
+    "latency_ms": 83.0,
+    "reliability_score": 0.7965712150797871,
+    "ece": 0.20342878492021285
+  },
+  {
+    "method": "Variance",
+    "latency_ms": 43.0,
+    "reliability_score": 0.793527168841986,
+    "ece": 0.20647283115801396
+  },
+  {
+    "method": "Fusion",
+    "latency_ms": 43.0,
+    "reliability_score": 0.8590654454636135,
+    "ece": 0.14093455453638645
+  }
+]
