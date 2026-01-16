@@ -1,0 +1,4 @@
+Scenario,MC Dropout AURC,Variance AURC,Fusion AURC
+Low Confidence,0.568,0.677,0.609
+High Uncertainty,0.511,0.225,0.219
+Small Objects,0.529,0.518,0.664

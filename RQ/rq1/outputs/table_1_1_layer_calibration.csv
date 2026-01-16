@@ -1,8 +1,8 @@
-Decoder Layer,ECE,AUROC (TP/FP)
-Layer 1,0.2065,0.4993
-Layer 2,0.2065,0.4944
-Layer 3,0.2065,0.4937
-Layer 4,0.2065,0.4987
-Layer 5,0.2065,0.4918
-Layer 6,0.2065,0.4985
-Fused (Variance),0.2065,0.4875
+Decoder Layer,ECE ↓,LAECE ↓,Brier ↓
+Layer 1,0.310,0.325,0.333
+Layer 2,0.366,0.367,0.371
+Layer 3,0.353,0.353,0.359
+Layer 4,0.397,0.405,0.396
+Layer 5,0.408,0.410,0.409
+Layer 6,0.404,0.404,0.405
+Fused (Variance),0.406,0.406,0.406

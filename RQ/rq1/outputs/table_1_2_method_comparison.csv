@@ -1,5 +1,5 @@
 Method,ECE ↓,AUROC (TP/FP) ↑,FP/TP Unc. Ratio
 Baseline,0.2410,0.5000,1.00x
 MC-Dropout,0.2034,0.6335,2.07x
-Decoder Var (Mean),0.2065,0.4865,0.98x
-Decoder Var (Fused) ⭐,0.2065,0.4875,0.98x
+Decoder Var (Mean),0.2065,0.6615,1.01x
+Decoder Var (Fused) ⭐,0.2065,0.3040,0.83x

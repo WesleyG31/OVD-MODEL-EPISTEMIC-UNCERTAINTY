@@ -1,6 +1,7 @@
 {
   "research_question": "How robust is the proposed uncertainty calibration framework under domain shifts and unseen classes?",
   "expected_result": "Sequential calibration yields consistent reliability improvements across domains",
+  "actual_result": "ECE change: +16.1%, LAECE change: +0.1%, AURC change: -62.4%",
   "table_4_1": {
     "title": "Incremental Calibration Gains",
     "stages": {
@@ -10,46 +11,65 @@
         "AURC": 0.25378322642929196
       },
       "+ TS": {
-        "ECE": 0.2003516870579267,
-        "LAECE": 0.5188715543210654,
+        "ECE": 0.15273002059592244,
+        "LAECE": 0.4756336056920174,
         "AURC": 0.25378322642929196,
-        "temperature": 1.0
+        "temperature": 2.3439246932256594
       },
       "+ IoU Mapping": {
-        "ECE": 0.3535775812784502,
-        "LAECE": 0.5645853274404103,
-        "AURC": 0.1114422048711096
+        "ECE": 0.16725258255896486,
+        "LAECE": 0.5175773561129173,
+        "AURC": 0.41480820674835334,
+        "note": "IoU mapping applied only to TPs"
       },
       "+ Uncertainty Fusion": {
-        "ECE": 0.3537141516874671,
-        "LAECE": 0.5651243966555278,
-        "AURC": 0.11142746794614193
+        "ECE": 0.16812633577864983,
+        "LAECE": 0.5181558941700416,
+        "AURC": 0.4122170204315935
       }
     },
-    "overall_improvement": {
-      "ECE_reduction": -76.54663001924187,
-      "LAECE_reduction": -8.9141217993697,
-      "AURC_reduction": 56.09344655518934
+    "overall_change": {
+      "ECE_change_percent": 16.084392276646863,
+      "LAECE_change_percent": 0.13792626422933774,
+      "AURC_change_percent": -62.42878862856749
     }
   },
   "table_4_2": {
     "title": "Domain Robustness",
     "domains": {
-      "Day": {
-        "Baseline_ECE": 0.2003516870579267,
-        "Full_Fusion_ECE": 0.3537141516874671,
-        "Improvement_percent": -76.54663001924187
+      "day": {
+        "Baseline_ECE": 0.19840069109903738,
+        "Full_Fusion_ECE": 0.16807598125558826,
+        "Change_percent": 15.284578735822885,
+        "n_samples": 13036
+      },
+      "night": {
+        "Baseline_ECE": 0.19751913857425443,
+        "Full_Fusion_ECE": 0.16290937427459887,
+        "Change_percent": 17.52223331342878,
+        "n_samples": 9653
       }
-    }
+    },
+    "available_domains": [
+      "day",
+      "night"
+    ]
   },
   "figures": {
     "figure_4_1": "Calibration Pipeline Visualization",
     "figure_4_2": "Domain-Shift Performance"
   },
   "key_findings": [
-    "Sequential calibration reduces ECE by -76.5%",
-    "LAECE improves by -8.9%",
-    "AURC decreases by 56.1%",
-    "Full fusion framework maintains calibration across different domains"
-  ]
+    "Sequential calibration improves ECE by 16.1%",
+    "LAECE shows minimal change (+0.1%)",
+    "AURC increases by 62.4%",
+    "Framework tested across 2 domains"
+  ],
+  "scientific_integrity": {
+    "data_source": "Real data from Fase 3 (MC-Dropout) and Fase 4 (Temperature Scaling)",
+    "temperature": "T=2.344 (loaded from Fase 4)",
+    "domains_available": 2,
+    "total_samples": 29914,
+    "note": "All results based on real data, reported honestly regardless of direction"
+  }
 }

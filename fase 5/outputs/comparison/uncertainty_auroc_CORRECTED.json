@@ -1,0 +1,44 @@
+{
+  "baseline": {
+    "auroc": 0.5,
+    "mean_unc_tp": 0.0,
+    "mean_unc_fp": 0.0,
+    "n_tp": 11194,
+    "n_fp": 5530
+  },
+  "baseline_ts": {
+    "auroc": 0.5,
+    "mean_unc_tp": 0.0,
+    "mean_unc_fp": 0.0,
+    "n_tp": 11194,
+    "n_fp": 5530
+  },
+  "mc_dropout": {
+    "auroc": 0.6477768326074469,
+    "mean_unc_tp": 6.1215059898178e-05,
+    "mean_unc_fp": 0.00012942712404694664,
+    "n_tp": 13271,
+    "n_fp": 8989
+  },
+  "mc_dropout_ts": {
+    "auroc": 0.6477768326074469,
+    "mean_unc_tp": 6.1215059898178e-05,
+    "mean_unc_fp": 0.00012942712404694664,
+    "n_tp": 13271,
+    "n_fp": 8989
+  },
+  "decoder_variance": {
+    "auroc": 0.3040419136134091,
+    "mean_unc_tp": 0.0014574583173405156,
+    "mean_unc_fp": 0.0012093342605180339,
+    "n_tp": 13508,
+    "n_fp": 9285
+  },
+  "decoder_variance_ts": {
+    "auroc": 0.3040419136134091,
+    "mean_unc_tp": 0.0014574583173405156,
+    "mean_unc_fp": 0.0012093342605180339,
+    "n_tp": 13508,
+    "n_fp": 9285
+  }
+}

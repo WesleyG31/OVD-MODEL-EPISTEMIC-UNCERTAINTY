@@ -1,11 +1,23 @@
 {
   "domain_counts": {
-    "day": 29914
+    "day": 13036,
+    "night": 9653,
+    "challenging": 7225
   },
   "timeofday_counts": {
-    "daytime": 29914
+    "daytime": 17895,
+    "night": 9653,
+    "dawn/dusk": 2311,
+    "undefined": 55
   },
   "weather_counts": {
-    "clear": 29914
-  }
+    "clear": 14741,
+    "undefined": 4353,
+    "overcast": 4254,
+    "snowy": 2408,
+    "partly cloudy": 2193,
+    "rainy": 1920,
+    "foggy": 45
+  },
+  "metadata_source": "loaded"
 }

@@ -1,0 +1,30 @@
+{
+  "mc_dropout": {
+    "auroc": 0.6334619110364594,
+    "mean_unc_tp": 6.1003608914073764e-05,
+    "mean_unc_fp": 0.00012632143518545097,
+    "n_tp": 13317,
+    "n_fp": 9210
+  },
+  "mc_dropout_ts": {
+    "auroc": 0.6334619110364594,
+    "mean_unc_tp": 6.1003608914073764e-05,
+    "mean_unc_fp": 0.00012632143518545097,
+    "n_tp": 13317,
+    "n_fp": 9210
+  },
+  "decoder_variance": {
+    "auroc": 0.5,
+    "mean_unc_tp": 0.0,
+    "mean_unc_fp": 0.0,
+    "n_tp": 13508,
+    "n_fp": 9285
+  },
+  "decoder_variance_ts": {
+    "auroc": 0.5,
+    "mean_unc_tp": 0.0,
+    "mean_unc_fp": 0.0,
+    "n_tp": 13508,
+    "n_fp": 9285
+  }
+}

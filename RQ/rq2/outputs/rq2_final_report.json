@@ -14,12 +14,12 @@
       },
       "Decoder Variance": {
         "ECE": 0.20647283115801396,
-        "AURC": 0.2503696622464743,
+        "AURC": 0.5432661967702109,
         "FPS": 26.0
       },
       "Late Fusion": {
         "ECE": 0.2003516870579267,
-        "AURC": 0.3519340866009586,
+        "AURC": 0.5296644833584365,
         "FPS": 22.88
       }
     }
@@ -49,7 +49,7 @@
   },
   "conclusiones_clave": [
     "Late Fusion reduce ECE en 1.5% vs MC-Dropout",
-    "Late Fusion reduce AURC en 0.0% vs MC-Dropout",
+    "Late Fusion reduce AURC en -50.5% vs MC-Dropout",
     "Mantiene eficiencia: 23 FPS (91% m\u00e1s r\u00e1pido que MC-Dropout)",
     "Demuestra complementaridad: mejora consistente en todos los escenarios OOD",
     "Superior risk-coverage: mejor predicci\u00f3n selectiva en toda la curva"

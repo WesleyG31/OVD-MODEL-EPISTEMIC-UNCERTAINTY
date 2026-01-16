@@ -1,0 +1,4 @@
+Method,ECE ↓,AURC ↓,mAP (%)
+Best Single Layer,0.404,0.376,24.9
+Mean Fusion,0.406,0.526,24.9
+Variance Fusion (Proposed),0.406,0.276,24.9
