@@ -8,14 +8,14 @@
   ],
   "key_findings": {
     "latency_comparison": {
-      "mc_dropout_ms": 1986.3,
-      "fusion_ms": 405.67,
-      "speedup": 4.9
+      "mc_dropout_ms": 1405.31,
+      "fusion_ms": 281.53,
+      "speedup": 4.99
     },
     "fps_comparison": {
-      "mc_dropout_fps": 0.5,
-      "fusion_fps": 2.47,
-      "improvement": 389.6
+      "mc_dropout_fps": 0.71,
+      "fusion_fps": 3.55,
+      "improvement": 399.2
     },
     "reliability_comparison": {
       "mc_dropout_score": 0.7966,
@@ -28,4 +28,15 @@
       "improvement": 30.7
     },
     "real_time_feasibility": {
-      "mc_dropout_ready": 
+      "mc_dropout_ready": false,
+      "fusion_ready": false
+    }
+  },
+  "conclusions": [
+    "Fusion alcanza 3.6 FPS vs 0.7 FPS de MC-Dropout",
+    "Fusion mejora la confiabilidad con ECE=0.141 vs 0.203 de MC-Dropout",
+    "Fusion NO cumple requisitos de tiempo real (\u226520 FPS)",
+    "MC-Dropout NO cumple requisitos de tiempo real",
+    "Fusion ofrece el mejor trade-off entre eficiencia y confiabilidad para despliegue ADAS"
+  ]
+}
