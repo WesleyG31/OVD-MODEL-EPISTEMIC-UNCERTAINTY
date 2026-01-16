@@ -2,33 +2,45 @@
   "Early Fusion": {
     "ece_global": 0.2003516870579267,
     "ece_by_domain": {
-      "day": 0.2003516870579267
+      "day": 0.1985458407045351,
+      "night": 0.19751913857425443,
+      "overcast": 0.20602497405999054,
+      "rain": 0.1910493407434168,
+      "snow": 0.22314103116887968
     },
-    "stability_score": 1.0,
+    "stability_score": 0.9457835957429177,
     "failure_sensitivity": {
-      "Weather": 0.0,
+      "Weather": 0.4039279132048918,
       "Unseen Classes": 0.9990601503759399
     }
   },
   "Late Fusion": {
     "ece_global": 0.2003516870579267,
     "ece_by_domain": {
-      "day": 0.2003516870579267
+      "day": 0.1985458407045351,
+      "night": 0.19751913857425443,
+      "overcast": 0.20602497405999054,
+      "rain": 0.1910493407434168,
+      "snow": 0.22314103116887968
     },
-    "stability_score": 1.0,
+    "stability_score": 0.9457835957429177,
     "failure_sensitivity": {
-      "Weather": 0.0,
+      "Weather": 0.4039279132048918,
       "Unseen Classes": 0.9990601503759399
     }
   },
   "Hybrid Fusion": {
     "ece_global": 0.2003516870579267,
     "ece_by_domain": {
-      "day": 0.2003516870579267
+      "day": 0.1985458407045351,
+      "night": 0.19751913857425443,
+      "overcast": 0.20602497405999054,
+      "rain": 0.1910493407434168,
+      "snow": 0.22314103116887968
     },
-    "stability_score": 1.0,
+    "stability_score": 0.9457835957429177,
     "failure_sensitivity": {
-      "Weather": 0.0,
+      "Weather": 0.4039279132048918,
       "Unseen Classes": 0.9990601503759399
     }
   }

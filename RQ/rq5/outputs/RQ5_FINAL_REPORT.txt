@@ -17,18 +17,18 @@ RESULTADOS PRINCIPALES
    
    Coverage (%)  | Baseline Risk | Fused Risk | Improvement
    --------------|---------------|------------|-------------
-   100           | -1.669         | -1.591      | 4.7%
-   80            | -1.719         | -1.659      | 3.5%
-   60            | -1.770         | -1.730      | 2.3%
+   100           | 0.331         | 0.409      | -23.6%
+   80            | 0.281         | 0.341      | -21.5%
+   60            | 0.230         | 0.272      | -18.3%
 
 2. TABLE 5.2 — FALSE-POSITIVE REDUCTION
 
    Method            | FP Rate ↓ | FN Rate | Coverage
    ------------------|-----------|---------|----------
    Baseline          | 0.331     | 0.694   | 100.0%
-   Decision Fusion   | 0.136     | 0.894   | 20.0%
+   Decision Fusion   | 0.341     | 0.675   | 80.0%
    
-   FP Reduction: 58.8%
+   FP Reduction: -3.1%
 
 ======================================================================
 FIGURAS GENERADAS
@@ -67,7 +67,7 @@ CONCLUSIONES
 
 ✅ Decision fusion enables safer selective perception
 ✅ Minimal accuracy loss with significant risk reduction
-✅ FP reduction of 58.8% achieved
+✅ FP reduction of -3.1% achieved
 ✅ Risk-coverage trade-off demonstrated clearly
 
 RESPUESTA A RQ5:
@@ -77,7 +77,7 @@ ADAS mediante:
 2. Selective Prediction: Rechazar predicciones de alto riesgo
 3. Risk-aware thresholding: Adaptar umbrales según criticidad
 
-Resultado: Reducción de 58.8% en falsos positivos con mínimo 
+Resultado: Reducción de -3.1% en falsos positivos con mínimo 
 impacto en cobertura, habilitando percepción más segura para ADAS.
 
 ======================================================================

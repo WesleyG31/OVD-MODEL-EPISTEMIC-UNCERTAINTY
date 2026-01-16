@@ -7,16 +7,16 @@
   ],
   "table_5_1_selective_prediction": {
     "coverage_100": {
-      "baseline_risk": -1.6693374790719924,
-      "fused_risk": -1.5911572779331469
+      "baseline_risk": 0.33066252092800763,
+      "fused_risk": 0.4088427220668531
     },
     "coverage_80": {
-      "baseline_risk": -1.7193362732640705,
-      "fused_risk": -1.6586759891238
+      "baseline_risk": 0.28066372673592943,
+      "fused_risk": 0.34104655679485046
     },
     "coverage_60": {
-      "baseline_risk": -1.7698823998405422,
-      "fused_risk": -1.7297277300976621
+      "baseline_risk": 0.23011760015945784,
+      "fused_risk": 0.27212192956496006
     }
   },
   "table_5_2_fp_reduction": {
@@ -25,10 +25,10 @@
       "fn_rate": 0.6938100057441396
     },
     "decision_fusion": {
-      "fp_rate": 0.13626276076342655,
-      "fn_rate": 0.8935419458956755,
-      "fp_reduction_pct": 58.79098714272069,
-      "coverage_pct": 20.002663470502064
+      "fp_rate": 0.34104655679485046,
+      "fn_rate": 0.675182581580459,
+      "fp_reduction_pct": -3.1403727999471895,
+      "coverage_pct": 80
     }
   },
   "figures_generated": [
@@ -39,8 +39,8 @@
   ],
   "key_findings": [
     "Decision fusion enables safer selective prediction",
-    "Risk reduction at 100% coverage: 4.7%",
-    "False-positive reduction: 58.8%",
+    "Risk reduction at 100% coverage: -23.6%",
+    "False-positive reduction at 80% coverage: -3.1%",
     "Trade-off: slight increase in FN for significant FP reduction"
   ]
 }

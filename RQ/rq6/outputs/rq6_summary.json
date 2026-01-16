@@ -4,7 +4,7 @@
   "findings": {
     "best_strategy": "Late Fusion",
     "best_ece": 0.2003516870579267,
-    "best_stability": 1.0,
+    "best_stability": 0.9457835957429177,
     "improvement_over_early": {
       "ece_reduction": 0.0,
       "stability_gain": 0.0
