@@ -8,14 +8,14 @@
   ],
   "key_findings": {
     "latency_comparison": {
-      "mc_dropout_ms": 1424.12,
-      "fusion_ms": 285.94,
-      "speedup": 4.98
+      "mc_dropout_ms": 1409.96,
+      "fusion_ms": 279.03,
+      "speedup": 5.05
     },
     "fps_comparison": {
-      "mc_dropout_fps": 0.7,
-      "fusion_fps": 3.5,
-      "improvement": 398.0
+      "mc_dropout_fps": 0.71,
+      "fusion_fps": 3.58,
+      "improvement": 405.3
     },
     "reliability_comparison": {
       "mc_dropout_score": 0.7966,
@@ -33,7 +33,7 @@
     }
   },
   "conclusions": [
-    "Fusion alcanza 3.5 FPS vs 0.7 FPS de MC-Dropout",
+    "Fusion alcanza 3.6 FPS vs 0.7 FPS de MC-Dropout",
     "Fusion mejora la confiabilidad con ECE=0.141 vs 0.203 de MC-Dropout",
     "Fusion NO cumple requisitos de tiempo real (\u226520 FPS)",
     "MC-Dropout NO cumple requisitos de tiempo real",
