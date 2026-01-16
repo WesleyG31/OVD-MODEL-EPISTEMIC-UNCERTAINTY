@@ -1,32 +1,32 @@
 {
   "mc_dropout": {
     "display_name": "MC Dropout",
-    "mean_latency_s": 1.405306305885315,
-    "std_latency_s": 0.024796206592688202,
-    "mean_latency_ms": 1405.306305885315,
-    "fps": 0.7115886378735203,
+    "mean_latency_s": 1.4241161584854125,
+    "std_latency_s": 0.04383795584469468,
+    "mean_latency_ms": 1424.1161584854126,
+    "fps": 0.7021899119967349,
     "ece": 0.20342878492021285,
     "reliability_score": 0.7965712150797871,
-    "reliability_per_ms": 0.5668310259078807
+    "reliability_per_ms": 0.5593442714160078
   },
   "decoder_variance": {
     "display_name": "Variance",
-    "mean_latency_s": 0.2815281629562378,
-    "std_latency_s": 0.009717729652659357,
-    "mean_latency_ms": 281.5281629562378,
-    "fps": 3.552042500825913,
+    "mean_latency_s": 0.2859414768218994,
+    "std_latency_s": 0.01129776568384205,
+    "mean_latency_ms": 285.9414768218994,
+    "fps": 3.497219120200798,
     "ece": 0.20647283115801396,
     "reliability_score": 0.793527168841986,
-    "reliability_per_ms": 2.8186422292867945
+    "reliability_per_ms": 2.7751383872730004
   },
   "fusion": {
     "display_name": "Fusion",
-    "mean_latency_s": 0.2815281629562378,
-    "std_latency_s": 0.009717729652659357,
-    "mean_latency_ms": 281.5281629562378,
-    "fps": 3.552042500825913,
+    "mean_latency_s": 0.2859414768218994,
+    "std_latency_s": 0.01129776568384205,
+    "mean_latency_ms": 285.9414768218994,
+    "fps": 3.497219120200798,
     "ece": 0.14093455453638645,
     "reliability_score": 0.8590654454636135,
-    "reliability_per_ms": 3.0514369732777005
+    "reliability_per_ms": 3.0043401013791655
   }
 }
