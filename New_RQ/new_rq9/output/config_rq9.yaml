@@ -1,0 +1,28 @@
+categories:
+- person
+- rider
+- car
+- truck
+- bus
+- train
+- motorcycle
+- bicycle
+- traffic light
+- traffic sign
+conf_threshold: 0.25
+device: cuda
+iou_threshold: 0.5
+n_bins: 15
+perturbation_types:
+- blur
+- noise
+- brightness
+- contrast
+sample_size: 500
+seed: 42
+shift_levels:
+- 0.0
+- 0.2
+- 0.4
+- 0.6
+- 0.8
