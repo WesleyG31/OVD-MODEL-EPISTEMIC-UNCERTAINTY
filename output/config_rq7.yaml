@@ -1,0 +1,18 @@
+K_mc: 5
+categories:
+- person
+- rider
+- car
+- truck
+- bus
+- train
+- motorcycle
+- bicycle
+- traffic light
+- traffic sign
+conf_threshold: 0.25
+device: cuda
+iou_matching: 0.5
+n_bins: 10
+sample_size: 500
+seed: 42

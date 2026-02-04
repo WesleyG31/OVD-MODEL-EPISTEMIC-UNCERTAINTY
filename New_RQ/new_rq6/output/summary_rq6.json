@@ -1,0 +1,68 @@
+{
+  "research_question": "RQ6: Decoder dynamics as epistemic uncertainty signals",
+  "dataset": {
+    "source": "BDD100K",
+    "split": "val_eval",
+    "images_processed": 500,
+    "total_detections": 7788,
+    "true_positives": 4282,
+    "false_positives": 3506
+  },
+  "model": {
+    "architecture": "GroundingDINO SwinT-OGC",
+    "decoder_layers": 6,
+    "categories": [
+      "person",
+      "rider",
+      "car",
+      "truck",
+      "bus",
+      "train",
+      "motorcycle",
+      "bicycle",
+      "traffic light",
+      "traffic sign"
+    ]
+  },
+  "key_findings": {
+    "variance_separation": {
+      "description": "TP predictions stabilize earlier than FP",
+      "first_layer_tp_var": 0.0,
+      "first_layer_fp_var": 0.0,
+      "last_layer_tp_var": 0.0014439801904720384,
+      "last_layer_fp_var": 0.0012158135111264437,
+      "separation_improvement": -0.00022816667934559467
+    },
+    "auroc_improvement": {
+      "description": "Late layers yield higher AUROC for error detection",
+      "first_layer_auroc": 0.5,
+      "last_layer_auroc": 0.3151183012347153,
+      "total_improvement": -0.1848816987652847
+    },
+    "failure_conditions": {
+      "description": "Conditions where inter-layer variance becomes less predictive",
+      "top_failure": "normal",
+      "max_auroc_drop": 0.046259714259625606
+    }
+  },
+  "outputs": {
+    "figures": [
+      "Fig_RQ6_1_decoder_variance.png (+ PDF)",
+      "Fig_RQ6_2_auroc_by_layer.png (+ PDF)"
+    ],
+    "tables": [
+      "Table_RQ6_1.csv (+ LaTeX)",
+      "Table_RQ6_2.csv (+ LaTeX)"
+    ],
+    "data": [
+      "decoder_dynamics.parquet",
+      "layer_variance_stats.csv",
+      "auroc_by_layer.csv"
+    ]
+  },
+  "hypothesis_validation": {
+    "h1_tp_stabilize_earlier": false,
+    "h2_late_layer_better_auroc": false,
+    "h3_separation_increases": false
+  }
+}

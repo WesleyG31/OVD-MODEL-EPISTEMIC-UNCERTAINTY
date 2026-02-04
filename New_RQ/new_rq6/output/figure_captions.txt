@@ -1,0 +1,26 @@
+Fig_RQ6_1:
+Figure RQ6.1. Inter-layer bounding-box variance across decoder depth for true positives 
+and false positives. Separation increases at later layers, indicating that decoder dynamics 
+progressively concentrate epistemic signal on error-prone detections.
+
+================================================================================
+
+Fig_RQ6_2:
+Figure RQ6.2. AUROC of uncertainty-based error detection as a function of decoder layer. 
+Late layers yield higher AUROC, supporting the hypothesis that epistemic alignment emerges 
+after semantic stabilization.
+
+================================================================================
+
+Table_RQ6_1:
+Table RQ6.1. Layer-wise diagnostics of decoder-variance uncertainty. Later layers exhibit 
+improved error discrimination and better risk–coverage characteristics.
+
+================================================================================
+
+Table_RQ6_2:
+Table RQ6.2. Conditions under which inter-layer variance becomes less predictive of 
+epistemic uncertainty.
+
+================================================================================
+

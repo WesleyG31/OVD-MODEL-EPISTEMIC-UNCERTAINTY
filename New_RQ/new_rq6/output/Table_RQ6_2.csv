@@ -1,0 +1,5 @@
+Scenario,Observed effect,AUROC drop (Δ),Interpretation
+Low confidence predictions,High variance for both TP and FP,-0.06,Matching ambiguity dominates
+Extreme aspect ratios,Variance decouples from error,-0.12,Geometric distortion dominates
+Extreme small objects,Unstable early decoding,-0.13,Quantization + low signal-to-noise
+Boundary IoU matches,Variance saturates,-0.18,Ambiguity becomes mostly aleatoric
