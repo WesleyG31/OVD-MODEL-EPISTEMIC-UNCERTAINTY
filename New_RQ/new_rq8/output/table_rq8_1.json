@@ -1,0 +1,20 @@
+[
+  {
+    "Scoring rule": "Raw score",
+    "Spearman \u03c1(score, IoU) \u2191": 0.4396424500335503,
+    "Kendall \u03c4 \u2191": 0.30896181881663853,
+    "ECE-IoU \u2193": 0.0900069546333125
+  },
+  {
+    "Scoring rule": "Temp-scaled (cls only)",
+    "Spearman \u03c1(score, IoU) \u2191": 0.4396424500335503,
+    "Kendall \u03c4 \u2191": 0.30896181881663853,
+    "ECE-IoU \u2193": 0.10193268183443792
+  },
+  {
+    "Scoring rule": "Joint calibrated (cls+loc)",
+    "Spearman \u03c1(score, IoU) \u2191": 0.9712767354861364,
+    "Kendall \u03c4 \u2191": 0.8970149636196127,
+    "ECE-IoU \u2193": 0.03880155708239571
+  }
+]

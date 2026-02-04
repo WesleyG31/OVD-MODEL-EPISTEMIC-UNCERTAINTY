@@ -1,0 +1,5 @@
+Budget,Metric,Raw,Calibrated
+Top-100,Precision@K ↑,0.85,1.0
+Top-200,Precision@K ↑,0.865,1.0
+Top-400,Precision@K ↑,0.88,1.0
+Top-400,Mean IoU of selected ↑,0.7544606361891135,0.9644138372624467

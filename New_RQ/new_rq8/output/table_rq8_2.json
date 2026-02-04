@@ -1,0 +1,26 @@
+[
+  {
+    "Budget": "Top-100",
+    "Metric": "Precision@K \u2191",
+    "Raw": 0.85,
+    "Calibrated": 1.0
+  },
+  {
+    "Budget": "Top-200",
+    "Metric": "Precision@K \u2191",
+    "Raw": 0.865,
+    "Calibrated": 1.0
+  },
+  {
+    "Budget": "Top-400",
+    "Metric": "Precision@K \u2191",
+    "Raw": 0.88,
+    "Calibrated": 1.0
+  },
+  {
+    "Budget": "Top-400",
+    "Metric": "Mean IoU of selected \u2191",
+    "Raw": 0.7544606361891135,
+    "Calibrated": 0.9644138372624467
+  }
+]
