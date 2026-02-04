@@ -1,0 +1,4 @@
+Method,AUC_Risk_Coverage
+MC Dropout,0.3502299454406682
+Deterministic,0.00963336470539844
+Fusion,0.19926339444400054

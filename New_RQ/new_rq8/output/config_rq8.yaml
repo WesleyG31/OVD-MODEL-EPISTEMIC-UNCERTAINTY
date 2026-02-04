@@ -10,7 +10,7 @@ categories:
 - traffic light
 - traffic sign
 conf_threshold: 0.25
-device: cuda
+device: cpu
 iou_matching: 0.5
 n_bins: 10
 sample_size: 500

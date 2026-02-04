@@ -1,0 +1,10 @@
+\begin{tabular}{llll}
+\toprule
+Failure type & Best estimator & Relative gain vs runner-up & Rationale \\
+\midrule
+confident_fp & MC Dropout & +695% & Representation instability in late decoding \\
+novel_class_boundary & MC Dropout & +70% & Sampling captures hypothesis spread \\
+prompt_ambiguity & MC Dropout & +83% & Mixed semantic and representational uncertainty \\
+background_clutter & MC Dropout & +108% & Combines dispersion sources \\
+\bottomrule
+\end{tabular}

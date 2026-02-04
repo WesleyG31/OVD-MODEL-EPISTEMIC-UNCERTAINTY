@@ -1,0 +1,4 @@
+Method,Latency (ms/img) ↓,FPS ↑,ECE ↓,NLL ↓
+MC Dropout (T=10),85,11.8,0.191,0.7
+Deterministic (var),40,25.0,0.167,0.69
+Fusion (mean-var),45,22.2,0.142,0.65
