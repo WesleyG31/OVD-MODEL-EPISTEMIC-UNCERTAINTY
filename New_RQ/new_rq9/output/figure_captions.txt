@@ -1,0 +1,21 @@
+
+FIGURE CAPTIONS - RQ9
+=====================
+
+Figure RQ9.1. Metric degradation with increasing shift severity. 
+Calibration error grows faster than ranking risk (AURC), indicating that 
+post-hoc calibration is more fragile than uncertainty ordering.
+
+Figure RQ9.2. Accuracy collapse (mAP) under increasing shift severity. 
+The strong decline motivates reliability-aware rejection rather than reliance 
+on raw confidence alone.
+
+
+TABLE CAPTIONS - RQ9
+====================
+
+Table RQ9.1. Performance and reliability under controlled shift. 
+Calibration degrades sharply even when ranking remains partially preserved.
+
+Table RQ9.2. Component ablation under shift. Localization calibration tends 
+to fail earlier than uncertainty ranking.

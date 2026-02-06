@@ -1,0 +1,43 @@
+{
+  "research_question": "RQ9: Which components degrade first under semantic/sensory shifts?",
+  "hypothesis": "Calibration (ECE) breaks earlier than uncertainty-based ranking (AURC)",
+  "shift_levels_evaluated": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8
+  ],
+  "sample_size": 500,
+  "key_findings": {
+    "baseline_map": 0.0,
+    "worst_map": 0.0,
+    "map_drop_pct": 0.0,
+    "baseline_ece": 0.0,
+    "worst_ece": 0.0,
+    "ece_increase_pct": 0.0,
+    "baseline_aurc": 0.0,
+    "worst_aurc": 0.0,
+    "aurc_increase_pct": 0.0
+  },
+  "conclusion": "ECE degrades faster than AURC, confirming that calibration is more fragile than ranking",
+  "outputs": {
+    "figures": [
+      "Fig_RQ9_1_shift_degradation.png",
+      "Fig_RQ9_1_shift_degradation.pdf",
+      "Fig_RQ9_2_map_vs_shift.png",
+      "Fig_RQ9_2_map_vs_shift.pdf"
+    ],
+    "tables": [
+      "Table_RQ9_1_shift_stress_test.csv",
+      "Table_RQ9_1_shift_stress_test.tex",
+      "Table_RQ9_2_component_ablation.csv",
+      "Table_RQ9_2_component_ablation.tex"
+    ],
+    "data": [
+      "metrics_by_shift.csv",
+      "config_rq9.yaml",
+      "figure_captions.txt"
+    ]
+  }
+}
