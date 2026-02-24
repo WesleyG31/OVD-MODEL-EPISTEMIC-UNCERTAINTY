@@ -1,4 +1,4 @@
-Method,ece,nll,latency_ms,fps
-MC Dropout (T=10),0.191,0.7,85,11.8
-Deterministic (var),0.167,0.69,40,25.0
-Fusion (mean-var),0.142,0.65,45,22.2
+Method,latency_ms,fps,ece,nll
+MC Dropout (K=5),1788.9,0.56,0.2089,0.7096
+Deterministic (var),357.8,2.8,0.2051,0.7083
+Fusion (mean-var),393.6,2.54,0.2199,0.7165

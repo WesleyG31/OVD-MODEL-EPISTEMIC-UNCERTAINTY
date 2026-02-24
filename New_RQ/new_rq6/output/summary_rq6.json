@@ -3,7 +3,7 @@
   "dataset": {
     "source": "BDD100K",
     "split": "val_eval",
-    "images_processed": 500,
+    "images_processed": 498,
     "total_detections": 7788,
     "true_positives": 4282,
     "false_positives": 3506
@@ -22,47 +22,32 @@
       "bicycle",
       "traffic light",
       "traffic sign"
-    ]
+    ],
+    "uncertainty_signal": "Inter-layer bbox variance (real decoder ref_points)"
   },
   "key_findings": {
     "variance_separation": {
-      "description": "TP predictions stabilize earlier than FP",
-      "first_layer_tp_var": 0.0,
-      "first_layer_fp_var": 0.0,
-      "last_layer_tp_var": 0.0014439801904720384,
-      "last_layer_fp_var": 0.0012158135111264437,
-      "separation_improvement": -0.00022816667934559467
+      "description": "FP predictions are more variable across layers than TP",
+      "layer2_tp_var": 1.2148415862142116e-07,
+      "layer2_fp_var": 2.984220212002262e-07,
+      "layer6_tp_var": 1.5078828839454318e-07,
+      "layer6_fp_var": 3.7896134869600736e-07,
+      "separation_l2": 1.7693786257880506e-07,
+      "separation_l6": 2.2817306030146418e-07
     },
-    "auroc_improvement": {
-      "description": "Late layers yield higher AUROC for error detection",
-      "first_layer_auroc": 0.5,
-      "last_layer_auroc": 0.3151183012347153,
-      "total_improvement": -0.1848816987652847
+    "auroc": {
+      "layer2": 0.5823918521741471,
+      "layer6": 0.6158059127570192,
+      "delta": 0.03341406058287211
     },
     "failure_conditions": {
-      "description": "Conditions where inter-layer variance becomes less predictive",
-      "top_failure": "normal",
-      "max_auroc_drop": 0.046259714259625606
+      "top_failure": "boundary_match",
+      "max_auroc_drop": 0.09587921141613653
     }
   },
-  "outputs": {
-    "figures": [
-      "Fig_RQ6_1_decoder_variance.png (+ PDF)",
-      "Fig_RQ6_2_auroc_by_layer.png (+ PDF)"
-    ],
-    "tables": [
-      "Table_RQ6_1.csv (+ LaTeX)",
-      "Table_RQ6_2.csv (+ LaTeX)"
-    ],
-    "data": [
-      "decoder_dynamics.parquet",
-      "layer_variance_stats.csv",
-      "auroc_by_layer.csv"
-    ]
-  },
   "hypothesis_validation": {
-    "h1_tp_stabilize_earlier": false,
-    "h2_late_layer_better_auroc": false,
-    "h3_separation_increases": false
+    "H1_FP_more_variable_than_TP": true,
+    "H2_late_layer_higher_AUROC": true,
+    "H3_separation_grows_with_depth": true
   }
 }
