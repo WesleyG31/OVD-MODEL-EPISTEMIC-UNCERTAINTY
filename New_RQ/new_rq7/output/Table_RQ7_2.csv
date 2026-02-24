@@ -1,0 +1,5 @@
+Failure type,Best estimator,AUROC best,AUROC MC,AUROC Det,AUROC Fusion,Relative gain vs runner-up,Rationale,n_error,n_correct
+confident_fp,MC Dropout,0.8311,0.8311,0.6661,0.7481,+11.1%,Alta confianza → inestabilidad representacional en decoder,7,3609
+novel_class_boundary,MC Dropout,0.7063,0.7063,0.445,0.6571,+7.5%,person/rider → MC captura dispersión de hipótesis,592,3609
+prompt_ambiguity,MC Dropout,0.6983,0.6983,0.1794,0.4071,+71.5%,Ambigüedad semántica → señal MC más informativa,357,3609
+background_clutter,MC Dropout,0.6206,0.6206,0.5019,0.6166,+0.7%,Bbox pequeño → Det captura varianza geométrica local,1546,3609

@@ -1,0 +1,10 @@
+\begin{tabular}{lllrrrl}
+\toprule
+Failure type & Best estimator & Relative gain vs runner-up & AUROC MC & AUROC Det & AUROC Fusion & Rationale \\
+\midrule
+confident_fp & MC Dropout & +11.1% & 0.831100 & 0.666100 & 0.748100 & Alta confianza → inestabilidad representacional en decoder \\
+novel_class_boundary & MC Dropout & +7.5% & 0.706300 & 0.445000 & 0.657100 & person/rider → MC captura dispersión de hipótesis \\
+prompt_ambiguity & MC Dropout & +71.5% & 0.698300 & 0.179400 & 0.407100 & Ambigüedad semántica → señal MC más informativa \\
+background_clutter & MC Dropout & +0.7% & 0.620600 & 0.501900 & 0.616600 & Bbox pequeño → Det captura varianza geométrica local \\
+\bottomrule
+\end{tabular}
