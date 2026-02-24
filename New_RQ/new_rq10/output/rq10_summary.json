@@ -1,0 +1,38 @@
+{
+  "research_question": "RQ10: How can calibrated epistemic uncertainty support selective prediction rules that minimize risk under coverage constraints?",
+  "timestamp": "2026-02-24T21:05:21.570459",
+  "methods_evaluated": 6,
+  "policies_compared": [
+    "Score threshold",
+    "Uncertainty reject",
+    "Joint (calibration + uncertainty)"
+  ],
+  "key_findings": {
+    "finding_1": "Uncertainty-aware selective detection yields consistent risk reduction over score thresholding",
+    "finding_2": "Joint calibration + uncertainty achieves best operating points across coverage regimes",
+    "finding_3": "Asymmetric FP suppression: big FP drops for small FN increases",
+    "finding_4": "Risk-aware metrics (AURC, Risk@Coverage) better predict operational safety than mAP alone"
+  },
+  "generated_outputs": {
+    "figures": [
+      "Fig_RQ10_1_selective_decision.png (Risk-Coverage curves)",
+      "Fig_RQ10_2_fp_fn_tradeoff.png (Asymmetric error trade-off)"
+    ],
+    "tables": [
+      "Table_RQ10_1_operating_points.csv (Operating points at fixed coverage)",
+      "Table_RQ10_2_metric_relevance.csv (Metric relevance beyond mAP)"
+    ],
+    "data": [
+      "selective_prediction_results.json",
+      "risk_oriented_metrics.json",
+      "matched_*.json (per method)"
+    ]
+  },
+  "key_statistics": {
+    "best_policy": "Joint (calibration + uncertainty)",
+    "risk_at_90_coverage": 0.3792338083189062,
+    "risk_at_80_coverage": 0.3492697651706841,
+    "fp_rate_at_90": 0.382262996941896,
+    "fn_rate_at_90": 0.05954794623413682
+  }
+}

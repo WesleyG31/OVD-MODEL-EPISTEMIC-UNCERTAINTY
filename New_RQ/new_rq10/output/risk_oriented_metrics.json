@@ -1,0 +1,100 @@
+[
+  {
+    "method": "baseline",
+    "policy": "score",
+    "AURC": 0.1627024037311648,
+    "Risk@0.90": 0.31888304233436976,
+    "Risk@0.80": 0.3184046878737144
+  },
+  {
+    "method": "baseline_ts",
+    "policy": "score",
+    "AURC": 0.1627024037311648,
+    "Risk@0.90": 0.31888304233436976,
+    "Risk@0.80": 0.3184046878737144
+  },
+  {
+    "method": "mc_dropout",
+    "policy": "score",
+    "AURC": 0.17172859235583965,
+    "Risk@0.90": 0.3792338083189062,
+    "Risk@0.80": 0.3492697651706841
+  },
+  {
+    "method": "mc_dropout",
+    "policy": "uncertainty",
+    "AURC": 0.18434278865361564,
+    "Risk@0.90": 0.37701424956718604,
+    "Risk@0.80": 0.36445154703245
+  },
+  {
+    "method": "mc_dropout",
+    "policy": "joint",
+    "AURC": 0.1716819816220535,
+    "Risk@0.90": 0.3792338083189062,
+    "Risk@0.80": 0.34918098282061527
+  },
+  {
+    "method": "mc_dropout_ts",
+    "policy": "score",
+    "AURC": 0.17172859235583965,
+    "Risk@0.90": 0.3792338083189062,
+    "Risk@0.80": 0.3492697651706841
+  },
+  {
+    "method": "mc_dropout_ts",
+    "policy": "uncertainty",
+    "AURC": 0.18434278865361564,
+    "Risk@0.90": 0.37701424956718604,
+    "Risk@0.80": 0.36445154703245
+  },
+  {
+    "method": "mc_dropout_ts",
+    "policy": "joint",
+    "AURC": 0.17171527500332934,
+    "Risk@0.90": 0.3792338083189062,
+    "Risk@0.80": 0.3492697651706841
+  },
+  {
+    "method": "decoder_variance",
+    "policy": "score",
+    "AURC": 0.17115693414644848,
+    "Risk@0.90": 0.37594875619707807,
+    "Risk@0.80": 0.3473873557671215
+  },
+  {
+    "method": "decoder_variance",
+    "policy": "uncertainty",
+    "AURC": 0.2704422410389154,
+    "Risk@0.90": 0.46992497696661256,
+    "Risk@0.80": 0.5339358575001096
+  },
+  {
+    "method": "decoder_variance",
+    "policy": "joint",
+    "AURC": 0.1712170403193963,
+    "Risk@0.90": 0.3762119949107182,
+    "Risk@0.80": 0.34765059448076163
+  },
+  {
+    "method": "decoder_variance_ts",
+    "policy": "score",
+    "AURC": 0.17115693414644848,
+    "Risk@0.90": 0.37594875619707807,
+    "Risk@0.80": 0.3473873557671215
+  },
+  {
+    "method": "decoder_variance_ts",
+    "policy": "uncertainty",
+    "AURC": 0.2704422410389154,
+    "Risk@0.90": 0.46992497696661256,
+    "Risk@0.80": 0.5339358575001096
+  },
+  {
+    "method": "decoder_variance_ts",
+    "policy": "joint",
+    "AURC": 0.1713324266222086,
+    "Risk@0.90": 0.3763874873864783,
+    "Risk@0.80": 0.3480893256701619
+  }
+]

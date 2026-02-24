@@ -1,0 +1,26 @@
+[
+  {
+    "Metric": "mAP",
+    "Corr. with operational risk (|\u03c1|) \u2191": 0.9998913488152841,
+    "Sensitivity to shift \u2191": 0.10842811090177001,
+    "Recommended use": "Accuracy reporting"
+  },
+  {
+    "Metric": "ECE",
+    "Corr. with operational risk (|\u03c1|) \u2191": 0.09933947439855308,
+    "Sensitivity to shift \u2191": 1.0,
+    "Recommended use": "Confidence calibration"
+  },
+  {
+    "Metric": "AURC",
+    "Corr. with operational risk (|\u03c1|) \u2191": 0.9999770856757896,
+    "Sensitivity to shift \u2191": 0.08684540746122003,
+    "Recommended use": "Uncertainty ranking quality"
+  },
+  {
+    "Metric": "Risk@Coverage",
+    "Corr. with operational risk (|\u03c1|) \u2191": 1.0,
+    "Sensitivity to shift \u2191": 0.27399723971547546,
+    "Recommended use": "Deployment-facing selection"
+  }
+]
