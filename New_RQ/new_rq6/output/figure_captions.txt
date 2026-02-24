@@ -1,0 +1,20 @@
+Fig_RQ6_1:
+Figure RQ6.1. Inter-layer bounding-box variance across decoder depth for true positives (TP) and false positives (FP) on BDD100K val (N=498 images, 7,788 detections). FP predictions exhibit consistently higher variance than TP at all depths (Var(FP)/Var(TP) ≈ ×2.5 at layer 6: 3.79e-07 vs 1.51e-07). Separation Δ(FP−TP) grows from layer 2 (1.77e-07) to a peak at layer 5 (2.36e-07), indicating that decoder dynamics progressively concentrate epistemic signal on error-prone detections. All variance values are in normalised sigmoid coordinate space (cx, cy, w, h ∈ [0,1]); multiply by 1e7 to compare across layers.
+
+====================================================================================================
+
+Fig_RQ6_2:
+Figure RQ6.2. AUROC of inter-layer bounding-box variance as an error-detection signal, as a function of decoder layer depth, evaluated on BDD100K val (N=498 images). AUROC rises from 0.500 (layer 1, variance undefined with a single point) to 0.582 (layer 2) and reaches 0.616 (layer 6), yielding a net improvement of Δ=+0.033 from layers 2→6. AUPR at layer 6 is 0.567. The absolute AUROC is modest (~0.58–0.62), reflecting that single-pass inter-layer variance is a weak but real epistemic proxy; the monotonic trend confirms the hypothesis direction. Dashed line: random-classifier baseline (0.5).
+
+====================================================================================================
+
+Table_RQ6_1:
+Table RQ6.1. Layer-wise diagnostics of decoder-variance uncertainty on BDD100K val. Var(TP) and Var(FP) are mean inter-layer bounding-box variances in normalised sigmoid coordinate space (reported ×1e-7 for readability). AUROC measures error-detection performance using variance as the uncertainty score. AUROC improves from 0.582 (layer 2) to 0.616 (layer 6) (Δ=+0.033), confirming that later decoder layers provide better uncertainty discrimination. The signal is modest in absolute terms but statistically consistent. Layer 1 AUROC=0.500 by construction (variance of a single point is zero).
+
+====================================================================================================
+
+Table_RQ6_2:
+Table RQ6.2. Conditions under which inter-layer bounding-box variance becomes less (Δ>0, failure) or more (Δ<0, amplified) predictive of epistemic uncertainty, relative to the global baseline AUROC of 0.616. Conditions are derived from objective detection attributes available in BDD100K annotations. The primary failure condition is 'Boundary IoU matches (0.4 < IoU < 0.6)' (AUROC drop Δ=+0.096), where aleatoric localisation ambiguity near the IoU decision boundary dominates the variance signal. Conversely, 'Extreme aspect ratios (w/h < 0.3 or > 3.0)' amplifies the signal (Δ=-0.196), suggesting geometric distortion increases inter-layer instability specifically for FP predictions. Note: scenarios requiring metadata not present in BDD100K (e.g., occlusion labels, prompt-level grounding tokens) are not included to preserve empirical rigour.
+
+====================================================================================================
+

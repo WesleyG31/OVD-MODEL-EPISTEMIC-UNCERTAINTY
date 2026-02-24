@@ -1,0 +1,50 @@
+[
+  {
+    "Coverage": "0.90",
+    "Policy": "Score threshold",
+    "Risk \u2193": "0.379",
+    "FP rate \u2193": "0.382",
+    "FN rate \u2191": "0.060",
+    "\u0394Risk vs score": "\u2014"
+  },
+  {
+    "Coverage": "0.90",
+    "Policy": "Uncertainty reject",
+    "Risk \u2193": "0.377",
+    "FP rate \u2193": "0.381",
+    "FN rate \u2191": "0.058",
+    "\u0394Risk vs score": "-0.0022"
+  },
+  {
+    "Coverage": "0.90",
+    "Policy": "Joint + uncertainty",
+    "Risk \u2193": "0.379",
+    "FP rate \u2193": "0.382",
+    "FN rate \u2191": "0.060",
+    "\u0394Risk vs score": "+0.0000"
+  },
+  {
+    "Coverage": "0.80",
+    "Policy": "Score threshold",
+    "Risk \u2193": "0.349",
+    "FP rate \u2193": "0.349",
+    "FN rate \u2191": "0.119",
+    "\u0394Risk vs score": "\u2014"
+  },
+  {
+    "Coverage": "0.80",
+    "Policy": "Uncertainty reject",
+    "Risk \u2193": "0.364",
+    "FP rate \u2193": "0.358",
+    "FN rate \u2191": "0.132",
+    "\u0394Risk vs score": "+0.0152"
+  },
+  {
+    "Coverage": "0.80",
+    "Policy": "Joint + uncertainty",
+    "Risk \u2193": "0.349",
+    "FP rate \u2193": "0.349",
+    "FN rate \u2191": "0.119",
+    "\u0394Risk vs score": "+0.0000"
+  }
+]

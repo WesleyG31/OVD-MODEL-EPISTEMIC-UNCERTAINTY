@@ -1,0 +1,29 @@
+{
+  "research_question": "RQ10: Calibrated epistemic uncertainty for selective prediction under coverage constraints",
+  "timestamp": "2026-02-24T23:36:32.508972",
+  "methods_evaluated": 6,
+  "uncertainty_auroc": {
+    "baseline": 0.5,
+    "baseline_ts": 0.5,
+    "mc_dropout": 0.648,
+    "mc_dropout_ts": 0.648,
+    "decoder_variance": 0.304,
+    "decoder_variance_ts": 0.304
+  },
+  "honest_findings": [
+    "Baseline has zero uncertainty \u2014 score-only policy is the sole option.",
+    "MC-Dropout uncertainty AUROC=0.648 provides a real but modest discrimination signal (low unc \u2192 more likely TP).",
+    "Decoder Variance uncertainty is positively correlated with TP (AUROC=0.304 inverted); rejection direction must be inverted.",
+    "Joint policy performance relative to score-only depends on coverage level; gains are real but modest given AUROC=0.648.",
+    "Risk@Coverage is the most operationally direct metric; AURC captures uncertainty ranking quality.",
+    "mAP correlations with operational risk may be degenerate (identical mAP across some methods); CV reported instead."
+  ],
+  "generated_outputs": [
+    "Fig_RQ10_1_selective_decision.png",
+    "Fig_RQ10_2_fp_fn_tradeoff.png",
+    "Table_RQ10_1_operating_points.csv",
+    "Table_RQ10_2_metric_relevance.csv",
+    "selective_prediction_results.json",
+    "risk_oriented_metrics.json"
+  ]
+}

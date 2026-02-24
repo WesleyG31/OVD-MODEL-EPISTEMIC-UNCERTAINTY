@@ -1,0 +1,5 @@
+Metric,Corr. with operational risk (|ρ|) ↑,Sensitivity to shift (CV) ↑,Recommended use
+mAP,1.00,0.03,Accuracy reporting
+ECE,0.11,0.28,Confidence calibration
+AURC,1.00,0.02,Uncertainty ranking quality
+Risk@Coverage,1.00,0.08,Deployment-facing selection

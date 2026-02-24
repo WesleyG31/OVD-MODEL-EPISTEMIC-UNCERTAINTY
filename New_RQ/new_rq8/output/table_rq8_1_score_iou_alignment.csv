@@ -1,0 +1,4 @@
+Scoring rule,"Spearman ρ(score, IoU) ↑",Kendall τ ↑,ECE-IoU ↓
+Raw score,0.4383,0.3078,0.091
+Temp-scaled (cls only),0.4383,0.3078,0.1063
+Joint calibrated (cls+loc),0.4383,0.3078,0.0861

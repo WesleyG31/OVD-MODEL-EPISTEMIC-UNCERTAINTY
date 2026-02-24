@@ -1,0 +1,7 @@
+Coverage,Policy,Risk ↓,FP rate ↓,FN rate ↑,ΔRisk vs score
+0.90,Score threshold,0.379,0.382,0.060,—
+0.90,Uncertainty reject,0.377,0.381,0.058,-0.0022
+0.90,Joint + uncertainty,0.379,0.382,0.060,+0.0000
+0.80,Score threshold,0.349,0.349,0.119,—
+0.80,Uncertainty reject,0.364,0.358,0.132,+0.0152
+0.80,Joint + uncertainty,0.349,0.349,0.119,+0.0000

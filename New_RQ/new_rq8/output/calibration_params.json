@@ -1,0 +1,11 @@
+{
+  "temperature": 1.81260791169648,
+  "platt_w0": 1.3030842764171182,
+  "platt_w1": 3.626291989414126,
+  "n_calib": 5755,
+  "n_test": 2467,
+  "n_detections": 8222,
+  "n_tp": 4572,
+  "n_fp": 3650,
+  "note": "score_joint = Platt(logit/T). IoU used ONLY as supervision label (via is_correct=IoU>=0.5), NOT as inference-time feature. Calibration fit on 70% split, evaluation on disjoint 30% split."
+}

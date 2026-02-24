@@ -1,0 +1,8 @@
+\begin{tabular}{llrlrl}
+\toprule
+Scenario & Observed effect & AUROC & Δ vs baseline & n detections & Interpretation \\
+\midrule
+Dense scenes (≥ p75 objects/image) & Variance signal amplified — AUROC improves in this condition & 0.636000 & -0.020 & 3233 & Occlusion increases inter-layer instability, making FP more distinguishable \\
+Extreme aspect ratios (w/h < 0.3 or > 3.0) & Variance signal amplified — AUROC improves in this condition & 0.812000 & -0.196 & 435 & Geometric distortion amplifies inter-layer bbox oscillation specifically for FP \\
+\bottomrule
+\end{tabular}
