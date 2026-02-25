@@ -1,6 +1,6 @@
 {
   "research_question": "RQ10: Calibrated epistemic uncertainty for selective prediction under coverage constraints",
-  "timestamp": "2026-02-24T23:36:32.508972",
+  "timestamp": "2026-02-25T12:23:13.272358",
   "methods_evaluated": 6,
   "uncertainty_auroc": {
     "baseline": 0.5,
@@ -10,13 +10,24 @@
     "decoder_variance": 0.304,
     "decoder_variance_ts": 0.304
   },
+  "unc_scale": {
+    "baseline": 0.0,
+    "baseline_ts": 0.0,
+    "mc_dropout": 11401.426026604506,
+    "mc_dropout_ts": 11401.426026604506,
+    "decoder_variance": 737.2554188329614,
+    "decoder_variance_ts": 737.2554188329614
+  },
   "honest_findings": [
     "Baseline has zero uncertainty \u2014 score-only policy is the sole option.",
-    "MC-Dropout uncertainty AUROC=0.648 provides a real but modest discrimination signal (low unc \u2192 more likely TP).",
-    "Decoder Variance uncertainty is positively correlated with TP (AUROC=0.304 inverted); rejection direction must be inverted.",
-    "Joint policy performance relative to score-only depends on coverage level; gains are real but modest given AUROC=0.648.",
-    "Risk@Coverage is the most operationally direct metric; AURC captures uncertainty ranking quality.",
-    "mAP correlations with operational risk may be degenerate (identical mAP across some methods); CV reported instead."
+    "MC-Dropout raw uncertainty ~1e-4; joint formula requires normalisation (unc_scale~12000) to be effective.",
+    "After normalisation, joint policy is numerically distinct from score-only but improvement is marginal (AUROC=0.648).",
+    "MC-Dropout AUROC=0.648 provides a real but modest TP/FP discrimination signal.",
+    "Decoder Variance uncertainty is positively correlated with TP (AUROC=0.304 inverted); rejection direction inverted.",
+    "FP-dominant asymmetry is limited; uncertainty cannot strongly separate error types at AUROC=0.648.",
+    "mAP and AURC correlations with Risk@0.90 have low CV across methods \u2014 statistically unstable.",
+    "ECE correlation with Risk@0.90 is low (|rho|~0.11) but CV is high (0.28) \u2014 ECE is the most variable metric.",
+    "Risk@Coverage is operationally direct; AURC captures uncertainty ranking quality across coverage levels."
   ],
   "generated_outputs": [
     "Fig_RQ10_1_selective_decision.png",

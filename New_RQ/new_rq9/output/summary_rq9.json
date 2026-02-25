@@ -1,0 +1,62 @@
+{
+  "research_question": "RQ9: Which components degrade first under semantic/sensory shifts?",
+  "data_source": "BDD100K val set \u2014 500 images, real GroundingDINO inference",
+  "temperature_used": 2.3439246932256594,
+  "shift_levels_evaluated": [
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8
+  ],
+  "key_findings": {
+    "mAP": {
+      "baseline": 0.5613,
+      "shift_08": 0.4264,
+      "drop_pct": 24.02
+    },
+    "ECE": {
+      "baseline": 0.1505,
+      "shift_08": 0.1214,
+      "change_abs": -0.0291,
+      "change_pct": -19.32,
+      "interpretation": "ECE decreased 19.3% (from 0.150 to 0.121). This is a selection bias artifact: shift suppressed 62.1% of detections, leaving only high-confidence surviving detections. ECE improvement is NOT a real calibration gain."
+    },
+    "AURC": {
+      "baseline": 0.539,
+      "shift_08": 0.6485,
+      "increase_pct": 20.32
+    },
+    "detections": {
+      "baseline": 8297,
+      "shift_08": 3146,
+      "drop_pct": 62.08
+    },
+    "risk_at_80": {
+      "baseline": 0.4746,
+      "shift_08": 0.6021,
+      "increase_abs": 0.1275
+    }
+  },
+  "hypothesis_confirmed": false,
+  "conclusion": "mAP drops 24.0% under maximum shift, confirming detection quality collapse. AURC increases 20.3%, confirming uncertainty ranking degrades under shift. Risk@80% coverage increases by 0.128 absolute. ECE decreased 19.3% (from 0.150 to 0.121). This is a selection bias artifact: shift suppressed 62.1% of detections, leaving only high-confidence surviving detections. ECE improvement is NOT a real calibration gain. The dominant post-hoc reliability limit is ranking degradation (AURC), not miscalibration of surviving detections.",
+  "outputs": {
+    "figures": [
+      "Fig_RQ9_1_shift_degradation.png",
+      "Fig_RQ9_1_shift_degradation.pdf",
+      "Fig_RQ9_2_map_vs_shift.png",
+      "Fig_RQ9_2_map_vs_shift.pdf"
+    ],
+    "tables": [
+      "Table_RQ9_1_shift_stress_test.csv",
+      "Table_RQ9_1_shift_stress_test.tex",
+      "Table_RQ9_2_component_ablation.csv",
+      "Table_RQ9_2_component_ablation.tex"
+    ],
+    "data": [
+      "metrics_by_shift.csv",
+      "config_rq9.yaml",
+      "figure_captions.txt"
+    ]
+  }
+}

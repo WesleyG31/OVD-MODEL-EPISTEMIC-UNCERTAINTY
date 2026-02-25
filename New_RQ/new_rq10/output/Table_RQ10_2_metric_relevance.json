@@ -1,26 +1,30 @@
 [
   {
     "Metric": "mAP",
-    "Corr. with operational risk (|\u03c1|) \u2191": "1.00",
-    "Sensitivity to shift (CV) \u2191": "0.03",
-    "Recommended use": "Accuracy reporting"
+    "Corr. with Risk@0.90 (|\u03c1|) \u2191": "0.93",
+    "Sensitivity (CV) \u2191": "0.031",
+    "Recommended use": "Accuracy reporting",
+    "Validity": "valid"
   },
   {
     "Metric": "ECE",
-    "Corr. with operational risk (|\u03c1|) \u2191": "0.11",
-    "Sensitivity to shift (CV) \u2191": "0.28",
-    "Recommended use": "Confidence calibration"
+    "Corr. with Risk@0.90 (|\u03c1|) \u2191": "0.27",
+    "Sensitivity (CV) \u2191": "0.283",
+    "Recommended use": "Confidence calibration",
+    "Validity": "valid"
   },
   {
     "Metric": "AURC",
-    "Corr. with operational risk (|\u03c1|) \u2191": "1.00",
-    "Sensitivity to shift (CV) \u2191": "0.02",
-    "Recommended use": "Uncertainty ranking quality"
+    "Corr. with Risk@0.90 (|\u03c1|) \u2191": "0.14",
+    "Sensitivity (CV) \u2191": "0.016",
+    "Recommended use": "Uncertainty ranking quality",
+    "Validity": "\u26a0 near-zero variance"
   },
   {
     "Metric": "Risk@Coverage",
-    "Corr. with operational risk (|\u03c1|) \u2191": "1.00",
-    "Sensitivity to shift (CV) \u2191": "0.08",
-    "Recommended use": "Deployment-facing selection"
+    "Corr. with Risk@0.90 (|\u03c1|) \u2191": "1.00",
+    "Sensitivity (CV) \u2191": "0.060",
+    "Recommended use": "Deployment-facing selection",
+    "Validity": "tautological"
   }
 ]

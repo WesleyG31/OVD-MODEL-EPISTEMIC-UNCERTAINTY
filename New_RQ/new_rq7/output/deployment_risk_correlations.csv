@@ -1,0 +1,15 @@
+Safety proxy,Metric,col,rho,p_value,significant
+precision_mc (error rate proxy),R@C50 MC,rc50_mc,-0.717,0.0,True
+precision_mc (error rate proxy),R@C50 Det,rc50_det,-0.6788,0.0,True
+precision_mc (error rate proxy),R@C50 Fusion,rc50_fus,-0.7056,0.0,True
+precision_mc (error rate proxy),AURC MC,aurc_mc,-0.097,0.03408,True
+precision_mc (error rate proxy),AURC Det,aurc_det,-0.1155,0.011475,True
+precision_mc (error rate proxy),AURC Fusion,aurc_fus,-0.0825,0.071379,False
+precision_mc (error rate proxy),Mean score MC,mean_score_mc,0.2825,0.0,True
+AP (area under P-R curve),R@C50 MC,rc50_mc,-0.2658,0.0,True
+AP (area under P-R curve),R@C50 Det,rc50_det,-0.2836,0.0,True
+AP (area under P-R curve),R@C50 Fusion,rc50_fus,-0.2744,0.0,True
+AP (area under P-R curve),AURC MC,aurc_mc,-0.0181,0.692621,False
+AP (area under P-R curve),AURC Det,aurc_det,0.0092,0.8412,False
+AP (area under P-R curve),AURC Fusion,aurc_fus,0.0243,0.596146,False
+AP (area under P-R curve),Mean score MC,mean_score_mc,0.2178,2e-06,True

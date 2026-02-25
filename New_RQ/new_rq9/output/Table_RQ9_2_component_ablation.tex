@@ -1,0 +1,14 @@
+\begin{table}
+\caption{Table RQ9.2. Component ablation under shift. Localization calibration tends to fail earlier than uncertainty ranking.}
+\label{tab:rq9_2}
+\begin{tabular}{lllll}
+\toprule
+Component removed & ΔECE & ΔAURC & ΔRisk@80% cov & Conclusion \\
+\midrule
+Temperature scaling & -0.018 & +0.000 & +0.00 & Temperature scaling has marginal effect at this shift level \\
+IoU mapping & -0.018 & -0.307 & -0.12 & Score-only ranking competitive with IoU at this shift level \\
+Late-layer variance & +0.000 & -0.131 & -0.10 & MC variance alone sufficient for ranking at this shift level \\
+Fusion & +0.000 & +0.000 & +0.00 & Decoder variance alone competitive with fusion at this shift level \\
+\bottomrule
+\end{tabular}
+\end{table}

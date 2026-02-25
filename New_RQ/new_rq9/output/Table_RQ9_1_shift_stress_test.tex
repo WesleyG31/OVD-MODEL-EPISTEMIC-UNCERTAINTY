@@ -1,0 +1,15 @@
+\begin{table}
+\caption{Table RQ9.1. Performance and reliability under controlled shift (500 BDD100K images). mAP and AURC degrade with shift severity, confirming reduced detection quality and ranking reliability. ECE decreases due to detection suppression (selection bias): shift filters out low-confidence detections, not because calibration improves.}
+\label{tab:rq9_1}
+\begin{tabular}{rrllll}
+\toprule
+Shift severity & Detections & mAP ↑ & ECE ↓ & AURC ↓ & Risk@80% cov ↓ \\
+\midrule
+0.000000 & 8297 & 0.561 & 0.150 & 0.539 & 0.475 \\
+0.200000 & 8578 & 0.583 & 0.171 & 0.498 & 0.435 \\
+0.400000 & 6104 & 0.529 & 0.140 & 0.546 & 0.503 \\
+0.600000 & 4561 & 0.471 & 0.133 & 0.615 & 0.561 \\
+0.800000 & 3146 & 0.426 & 0.121 & 0.649 & 0.602 \\
+\bottomrule
+\end{tabular}
+\end{table}

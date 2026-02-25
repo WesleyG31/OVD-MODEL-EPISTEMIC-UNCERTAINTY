@@ -1,0 +1,13 @@
+\begin{tabular}{rlrlrl}
+\toprule
+Rank (by |ρ| vs Prec) & Metric & ρ vs Precision & p (vs Prec) & ρ vs AP & p (vs AP) \\
+\midrule
+1 & R@C50 (MC Dropout) & -0.717000 & *** & -0.265800 & *** \\
+2 & R@C50 (Fusion) & -0.705600 & *** & -0.274400 & *** \\
+3 & R@C50 (Deterministic) & -0.678800 & *** & -0.283600 & *** \\
+4 & Mean Score (MC) & 0.282500 & *** & 0.217800 & *** \\
+5 & AURC (Deterministic) & -0.115500 & * & 0.009200 & ns \\
+6 & AURC (MC Dropout) & -0.097000 & * & -0.018100 & ns \\
+7 & AURC (Fusion) & -0.082500 & ns & 0.024300 & ns \\
+\bottomrule
+\end{tabular}

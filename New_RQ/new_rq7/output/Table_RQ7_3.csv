@@ -1,0 +1,8 @@
+Rank (by |ρ| vs Prec),Metric,ρ vs Precision,p (vs Prec),ρ vs AP,p (vs AP)
+1,R@C50 (MC Dropout),-0.717,***,-0.2658,***
+2,R@C50 (Fusion),-0.7056,***,-0.2744,***
+3,R@C50 (Deterministic),-0.6788,***,-0.2836,***
+4,Mean Score (MC),0.2825,***,0.2178,***
+5,AURC (Deterministic),-0.1155,*,0.0092,ns
+6,AURC (MC Dropout),-0.097,*,-0.0181,ns
+7,AURC (Fusion),-0.0825,ns,0.0243,ns

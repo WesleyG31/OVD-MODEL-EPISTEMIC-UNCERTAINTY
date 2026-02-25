@@ -1,0 +1,89 @@
+{
+  "research_question": "RQ6: Decoder dynamics as epistemic uncertainty signals",
+  "dataset": {
+    "source": "BDD100K",
+    "split": "val_eval",
+    "images_processed": 498,
+    "total_detections": 7788,
+    "true_positives": 4282,
+    "false_positives": 3506
+  },
+  "model": {
+    "architecture": "GroundingDINO SwinT-OGC",
+    "decoder_layers": 6,
+    "categories": [
+      "person",
+      "rider",
+      "car",
+      "truck",
+      "bus",
+      "train",
+      "motorcycle",
+      "bicycle",
+      "traffic light",
+      "traffic sign"
+    ],
+    "uncertainty_signal": "Inter-layer bbox variance (real decoder ref_points, sigmoid cxcywh)"
+  },
+  "key_findings": {
+    "variance_separation": {
+      "description": "FP predictions are consistently more variable across layers than TP",
+      "layer2_tp_var": 1.2148415862142116e-07,
+      "layer2_fp_var": 2.984220212002262e-07,
+      "layer6_tp_var": 1.5078828839454318e-07,
+      "layer6_fp_var": 3.7896134869600736e-07,
+      "fp_to_tp_ratio_l6": 2.51320147427127,
+      "separation_l2": 1.7693786257880506e-07,
+      "separation_l6": 2.2817306030146418e-07,
+      "separation_peak": 2.3623207806412507e-07,
+      "separation_peak_layer": 5
+    },
+    "auroc": {
+      "layer1": 0.5,
+      "layer2": 0.5823918521741471,
+      "layer5": 0.6162736503220076,
+      "layer6": 0.6158059127570192,
+      "peak_auroc": 0.6162736503220076,
+      "peak_layer": 5,
+      "delta_l2_to_l6": 0.03341406058287211,
+      "delta_l2_to_peak": 0.03388179814786052,
+      "h2_global_trend": true,
+      "h2_strict_monotone": false,
+      "note": "Signal is modest (~0.58\u20130.62). Global trend confirms hypothesis direction (\u2113=2\u21925). Slight drop at \u2113=6 vs \u2113=5 (0.6158 < 0.6163) \u2014 decoder converges at \u2113=5."
+    },
+    "failure_conditions": {
+      "boundary_match": {
+        "auroc": 0.5199267013408827,
+        "auroc_drop": 0.09587921141613653,
+        "count": 615
+      },
+      "small_object": {
+        "auroc": 0.5863093955972947,
+        "auroc_drop": 0.029496517159724567,
+        "count": 779
+      },
+      "low_confidence": {
+        "auroc": 0.6130634777287131,
+        "auroc_drop": 0.0027424350283061782,
+        "count": 5029
+      },
+      "dense_crowd": {
+        "auroc": 0.6358739023220875,
+        "auroc_drop": -0.020067989565068278,
+        "count": 3233
+      },
+      "extreme_aspect": {
+        "auroc": 0.8120468029004615,
+        "auroc_drop": -0.19624089014344226,
+        "count": 435
+      }
+    }
+  },
+  "hypothesis_validation": {
+    "H1_FP_more_variable_than_TP": true,
+    "H2_global_trend_AUROC_improves": true,
+    "H2_strict_monotone_every_layer": false,
+    "H2_net_positive_l2_to_l6": true,
+    "H3_separation_grows_with_depth": true
+  }
+}

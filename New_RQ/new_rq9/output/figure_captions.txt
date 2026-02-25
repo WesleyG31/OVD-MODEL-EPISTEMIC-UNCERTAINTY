@@ -1,0 +1,15 @@
+
+FIGURE CAPTIONS — RQ9 (generated from real data)
+=================================================
+
+Figure RQ9.1. Metric behavior under distribution shift (500 BDD100K images). Left panel: ECE (calibration) and AURC (ranking risk) in absolute values across shift severities. ECE changes from 0.150 to 0.121 (-0.029 abs); this apparent decrease is a selection bias artifact — shift suppresses 62.1% of detections, leaving only high-confidence survivors. AURC increases 20.3% (from 0.539 to 0.649), confirming that uncertainty ranking genuinely degrades. Right panel: total detection count collapse alongside Risk@80% increase, providing the context needed to interpret ECE behavior.
+
+Figure RQ9.2. Accuracy and detection volume collapse under distribution shift. mAP drops 24.0% (from 0.561 to 0.426) as shift severity increases from 0.0 to 0.8. Total detections fall 62.1%, reflecting that the model rejects more candidates under perceptual degradation. This dual collapse motivates reliability-aware rejection based on uncertainty, even as raw confidence thresholding becomes insufficient.
+
+
+TABLE CAPTIONS — RQ9
+====================
+
+Table RQ9.1. Performance and reliability under controlled shift (500 BDD100K images, real GroundingDINO inference, T=2.3439). mAP and AURC degrade monotonically with shift. ECE decreases due to detection suppression (selection bias), not a genuine calibration improvement. Detection count column provides the context for interpreting ECE behavior.
+
+Table RQ9.2. Component ablation under shift severity=0.8. Positive delta = component removal hurts performance; negative delta = removal helps (indicating the component adds noise under this shift level). All values computed from real predictions — no synthetic data.
