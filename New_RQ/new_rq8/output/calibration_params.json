@@ -1,0 +1,31 @@
+{
+  "temperature": 1.81260791169648,
+  "joint_intercept": 0.3195673257453981,
+  "joint_coef_logit_T": 0.957589160457799,
+  "joint_coef_log_area": 0.1531762609193443,
+  "joint_coef_log_aspect": 0.13174058399265245,
+  "joint_coef_x_center": -0.14524852757756462,
+  "joint_coef_y_center": -0.08545062349678004,
+  "scaler_mean": [
+    -0.27282217629257427,
+    7.355406189354838,
+    0.028194605633686944,
+    0.4736770155151447,
+    0.46297333729617285
+  ],
+  "scaler_std": [
+    0.26306834950617547,
+    1.9214430488908345,
+    0.651828374019012,
+    0.24043604812787545,
+    0.14982505463520268
+  ],
+  "n_calib": 5755,
+  "n_test": 2467,
+  "n_detections": 8222,
+  "n_tp": 4572,
+  "n_fp": 3650,
+  "ranking_identical": false,
+  "pct_positions_swapped": 99.71625456019457,
+  "note": "score_joint = LogisticRegression([logit/T, log_area, log_aspect, x_center, y_center]). IoU used ONLY as supervision label (via is_correct = IoU >= 0.5), NOT as inference-time feature. Geometric features available at inference time without IoU. Calibration fit on 70% split, evaluation on disjoint 30% split."
+}

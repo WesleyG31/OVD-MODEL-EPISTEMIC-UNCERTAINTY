@@ -1,0 +1,44 @@
+[
+  {
+    "Budget": "Top-100",
+    "Metric": "Mean IoU of selected \u2191",
+    "Raw": 0.743,
+    "Calibrated": 0.7552,
+    "\u0394": 0.0122
+  },
+  {
+    "Budget": "Top-100",
+    "Metric": "Precision@K \u2191",
+    "Raw": 0.87,
+    "Calibrated": 0.88,
+    "\u0394": 0.01
+  },
+  {
+    "Budget": "Top-200",
+    "Metric": "Mean IoU of selected \u2191",
+    "Raw": 0.7257,
+    "Calibrated": 0.7437,
+    "\u0394": 0.018
+  },
+  {
+    "Budget": "Top-200",
+    "Metric": "Precision@K \u2191",
+    "Raw": 0.85,
+    "Calibrated": 0.85,
+    "\u0394": 0.0
+  },
+  {
+    "Budget": "Top-400",
+    "Metric": "Mean IoU of selected \u2191",
+    "Raw": 0.7305,
+    "Calibrated": 0.7305,
+    "\u0394": 0.0
+  },
+  {
+    "Budget": "Top-400",
+    "Metric": "Precision@K \u2191",
+    "Raw": 0.845,
+    "Calibrated": 0.84,
+    "\u0394": -0.005
+  }
+]
