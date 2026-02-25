@@ -1,9 +1,0 @@
-\begin{tabular}{llrlrl}
-\toprule
-Scenario & Observed effect & AUROC & Δ vs baseline & n detections & Interpretation \\
-\midrule
-Boundary IoU matches (0.4 < IoU < 0.6) & Variance saturates; TP/FP separation collapses near decision boundary & 0.520000 & +0.096 & 615 & Aleatoric localisation ambiguity dominates — bbox variance no longer discriminative \\
-Extreme small objects (area < p10) & Unstable early decoding; noisy ref\_points across layers & 0.586000 & +0.029 & 779 & Quantization artifacts + low signal-to-noise in bbox coords amplify or collapse variance \\
-Low confidence predictions (score < 0.4) & Elevated variance for both TP and FP — proxy degrades & 0.613000 & +0.003 & 5029 & Score-based ambiguity dominates; variance cannot distinguish error type \\
-\bottomrule
-\end{tabular}

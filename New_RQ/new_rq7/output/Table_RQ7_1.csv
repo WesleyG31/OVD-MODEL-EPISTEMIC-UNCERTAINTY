@@ -1,4 +1,0 @@
-Method,Latency (ms/img) ↓,FPS ↑,ECE ↓,NLL ↓,Origen latencia,Origen ECE/NLL
-MC Dropout (K=5),1788.9,0.56,0.2089,0.7096,Medida real (timing_data.parquet),"Real (datos emparejados, 6 111 detecciones)"
-Deterministic (var),357.8,2.8,0.2051,0.7083,Medida real (computational_cost.json),"Real (datos emparejados, 6 111 detecciones)"
-Fusion (mean-var),393.6,2.54,0.2199,0.7165,Estimada (Det + 10 %),"Real (datos emparejados, 6 111 detecciones)"

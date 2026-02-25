@@ -1,6 +1,0 @@
-Scenario,Observed effect,AUROC,Δ vs baseline,n detections,Interpretation
-Boundary IoU matches (0.4 < IoU < 0.6),Variance saturates; TP/FP separation collapses near decision boundary,0.52,+0.096,615,Aleatoric localisation ambiguity dominates — bbox variance no longer discriminative
-Extreme small objects (area < p10),Unstable early decoding; noisy ref_points across layers,0.586,+0.029,779,Quantization artifacts + low signal-to-noise in bbox coords amplify or collapse variance
-Low confidence predictions (score < 0.4),Elevated variance for both TP and FP — proxy degrades,0.613,+0.003,5029,Score-based ambiguity dominates; variance cannot distinguish error type
-Dense scenes (≥ p75 objects/image),Variance signal amplified — AUROC improves in this condition,0.636,-0.020,3233,"Occlusion increases inter-layer instability, making FP more distinguishable"
-Extreme aspect ratios (w/h < 0.3 or > 3.0),Variance signal amplified — AUROC improves in this condition,0.812,-0.196,435,Geometric distortion amplifies inter-layer bbox oscillation specifically for FP
