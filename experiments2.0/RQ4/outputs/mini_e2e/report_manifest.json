@@ -1,0 +1,67 @@
+{
+  "artifacts": {
+    "cost_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\Table_RQ4_computational_cost.csv",
+      "sha256": "3bd7f2ccc9ff286eb48a8b2c55855a29557bf2231f9cd7d7a5d35b5650ef5d19"
+    },
+    "domains_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\Table_RQ4_domains.csv",
+      "sha256": "413843f589eedfe502aef4c6cb64f3ba969261149be9b4754aab03aa4d4e9ba1"
+    },
+    "figure_captions": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\figure_captions.md",
+      "sha256": "f8acf0803e9caf0bad9eb84b9f18de57b2eb86ed2da58ddf39524ea3549ff30f"
+    },
+    "main_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\Table_RQ4_main.csv",
+      "sha256": "f797188d0faa608fdfa14a0584e5e2556dd3c24f2c433f9048a324b427ee9122"
+    },
+    "mc_sensitivity_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\Table_RQ4_mc_pass_sensitivity.csv",
+      "sha256": "4a8b1a25efeca9eee97e9930d3b64b1623adb4ed76849ebec973944bb07bc6ae"
+    },
+    "parameter_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\Table_RQ4_model_parameters.csv",
+      "sha256": "0614ea8fd1d09c31bb403efc9caa8eebecc05ed596a826eb8bb9e5bcbefa69ec"
+    },
+    "primary_improvements_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\Fig_RQ4_primary_improvements.pdf",
+      "sha256": "97bad4b62bf55c13316e0cfb328e997c49e26e2867b430712d2bdef200d80427"
+    },
+    "primary_improvements_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\Fig_RQ4_primary_improvements.png",
+      "sha256": "14a107532ea061519831ad0f5e23f581167afd57afc767fd843cc7fc054f791f"
+    },
+    "primary_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\Table_RQ4_primary_inference.csv",
+      "sha256": "6b0eb9876a0896b434b010a0d696be22cd0bd66c76e9a2efa0a80e85f20389be"
+    },
+    "reliability_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\Fig_RQ4_reliability.pdf",
+      "sha256": "c062756eb9a82b93932ef7b6bb4889b495a65482b1df916dae50af11b62dd080"
+    },
+    "reliability_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\Fig_RQ4_reliability.png",
+      "sha256": "8c00ea8402428cf599afdfba45413f20b664ede3be2282755d7d122249e02f03"
+    },
+    "risk_coverage_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\Fig_RQ4_risk_coverage.pdf",
+      "sha256": "ae70e33059a89211f0c6bc111ff2dae80c5f872ebd76ef37578f1d501605b90a"
+    },
+    "risk_coverage_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\Fig_RQ4_risk_coverage.png",
+      "sha256": "5c0a261cd852c1dc2236d513a2a04abc595049f8001f3b4dcc7eab89beeb5a9c"
+    }
+  },
+  "evidence_status": "diagnostic_not_scientific_evidence",
+  "inputs": {
+    "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\models\\mini_e2e\\model_index.json": "03ed2a44e37bafdf44fc9e907189323a1c58dba9a2fd66417cc25f698f5ca2d5",
+    "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\bootstrap_metrics.parquet": "302dc671b938647a5e15ab4576c745f25c5296a2590414b3fb42c13eab7980ff",
+    "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\calibrated_predictions.parquet": "b768b7b3d3c0eb1c16660ae66fb3b8aa3ccd96b17db96744bab69cf9c0dfd170",
+    "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\metrics.json": "c350d1c463382f1cca8f1d2cb4a40fdf9671528f641cac0f45fd04b610387d82"
+  },
+  "report_identity": "4b6dfee006a7bc776dea7cc690d9c7faf658d094e6215263b5e8e10936377e6b",
+  "rq": "rq4",
+  "schema_version": 2,
+  "test_partition": "diagnostic"
+}

@@ -1,0 +1,254 @@
+{
+  "annotation_sha256": "01517714a5ca4b69aae6e86256d017cc5f82fbdf33529e759b267d5ac89f4d47",
+  "checkpoint_sha256": "3b3ca2563c77c69f651d7bd133e97139c186df06231157a64c507099c52bc799",
+  "configuration_fingerprint": "6d743d27b329a8691eb4390bc4421fd17b574edc5d5d4dd42cb3870f92245ecf",
+  "detections": 397,
+  "diagnostic_only": false,
+  "elapsed_seconds": 0.5492506999871694,
+  "environment": {
+    "cuda": {
+      "available": true,
+      "build": "11.8",
+      "cudnn": 90100,
+      "deterministic_algorithms": true,
+      "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+    },
+    "git_revision": "69deb53677ae2fa6a8e7a37c54bd24e035b663ef",
+    "packages": {
+      "groundingdino-py": "0.4.0",
+      "numpy": "1.26.4",
+      "pandas": "2.2.3",
+      "pycocotools": "2.0.8",
+      "scikit-learn": "1.5.2",
+      "torch": "2.5.1+cu118",
+      "torchvision": "0.20.1+cu118",
+      "transformers": "4.40.2"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]"
+  },
+  "feature_schema": [
+    "image_id",
+    "file_name",
+    "sequence_id",
+    "timeofday",
+    "weather",
+    "scene",
+    "detection_index",
+    "query_index",
+    "category_index",
+    "category_id",
+    "category_name",
+    "score",
+    "confidence_uncertainty",
+    "bbox_x1",
+    "bbox_y1",
+    "bbox_x2",
+    "bbox_y2",
+    "bbox_area",
+    "object_size",
+    "is_true_positive",
+    "is_error",
+    "matched_iou",
+    "matched_ground_truth_index",
+    "false_negatives_image",
+    "mc_matches",
+    "mc_passes",
+    "localization_iou",
+    "localization_ground_truth_index",
+    "localization_class_agreement",
+    "is_class_correct",
+    "is_well_localized",
+    "shift_timeofday",
+    "shift_weather",
+    "shift_scene",
+    "unknown_timeofday",
+    "unknown_weather",
+    "unknown_scene",
+    "shift_axis_count",
+    "unknown_axis_count",
+    "is_domain_shift",
+    "domain_stratum",
+    "spatial_reference_iou_mean",
+    "spatial_reference_iou_std",
+    "spatial_pairwise_iou_loss",
+    "spatial_box_variance",
+    "spatial_absence_rate",
+    "deterministic_reference_variance",
+    "deterministic_reference_step",
+    "bbox_area_fraction",
+    "semantic_mutual_information",
+    "semantic_predictive_entropy",
+    "semantic_class_disagreement",
+    "semantic_score_variance",
+    "geometric_pairwise_iou_loss",
+    "geometric_box_variance",
+    "mc_absence_rate",
+    "representation_embedding_variance",
+    "representation_embedding_cosine_instability",
+    "deterministic_hidden_step",
+    "mc_score_mean",
+    "spatial_reference_iou_mean_mc02",
+    "spatial_reference_iou_std_mc02",
+    "spatial_pairwise_iou_loss_mc02",
+    "spatial_box_variance_mc02",
+    "spatial_absence_rate_mc02",
+    "deterministic_reference_variance_mc02",
+    "deterministic_reference_step_mc02",
+    "bbox_area_fraction_mc02",
+    "semantic_mutual_information_mc02",
+    "semantic_predictive_entropy_mc02",
+    "semantic_class_disagreement_mc02",
+    "semantic_score_variance_mc02",
+    "geometric_pairwise_iou_loss_mc02",
+    "geometric_box_variance_mc02",
+    "mc_absence_rate_mc02",
+    "representation_embedding_variance_mc02",
+    "representation_embedding_cosine_instability_mc02",
+    "deterministic_hidden_step_mc02",
+    "mc_score_mean_mc02",
+    "spatial_reference_iou_mean_mc05",
+    "spatial_reference_iou_std_mc05",
+    "spatial_pairwise_iou_loss_mc05",
+    "spatial_box_variance_mc05",
+    "spatial_absence_rate_mc05",
+    "deterministic_reference_variance_mc05",
+    "deterministic_reference_step_mc05",
+    "bbox_area_fraction_mc05",
+    "semantic_mutual_information_mc05",
+    "semantic_predictive_entropy_mc05",
+    "semantic_class_disagreement_mc05",
+    "semantic_score_variance_mc05",
+    "geometric_pairwise_iou_loss_mc05",
+    "geometric_box_variance_mc05",
+    "mc_absence_rate_mc05",
+    "representation_embedding_variance_mc05",
+    "representation_embedding_cosine_instability_mc05",
+    "deterministic_hidden_step_mc05",
+    "mc_score_mean_mc05"
+  ],
+  "feature_shard_inventory_sha256": "79c46382c3284de395e49354c848e054b830e030786413b2efbc831196ab80f7",
+  "feature_shards_recomputed": 2,
+  "feature_shards_reused": 0,
+  "features_sha256": "b6281f75a9db31e76abe153cf42fd8c5f21bce03d8b7e0c5ae47deaf8047e235",
+  "image_summary_path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\repeatability\\smoke_features_images.parquet",
+  "image_summary_sha256": "be869e4c7c803063002b00fe64023e55f7dba2c2fedca50870a828cc3b999e3e",
+  "images_completed": 2,
+  "images_requested": 2,
+  "manifest_path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\artifacts\\bdd100k_split_manifest.json",
+  "manifest_sha256": "b1535b25de4f52c26a12cbd82c59a8673e42c58761260baecf0be55cc4ae9df1",
+  "manifest_split_image_ids_sha256": "bf6ed6c78e53ee737c25aa84cbdfe7306543f4f0c9bc47d2159f329bf8a98fcf",
+  "manifest_test_partition": "confirmatory",
+  "materialization_fingerprint": "5a0f8a1fd4602e144404bb2510930652a079a29d8d8c85a150175c81cb2154b2",
+  "peak_gpu_memory_bytes": 2030990848,
+  "random_seeds": {
+    "deterministic_image_seed": "project_seed + image_id",
+    "mc_pass_seed": "project_seed + image_id + (pass_index + 1) * mc_seed_stride",
+    "mc_seed_stride": 1009,
+    "project_seed": 20260731
+  },
+  "schema_version": 1,
+  "shared_fingerprint": "94bb3675c7f700e8123ee9db9fcc4d7502e25991f72d99f8fde8282dbd33a710",
+  "shared_namespace": "rq4_smoke_b",
+  "shared_request_metadata_path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\data\\derived\\groundingdino_mc_v1\\rq4_smoke_b\\94bb3675c7f700e8123ee9db9fcc4d7502e25991f72d99f8fde8282dbd33a710\\requests\\4d70d1b4bb155b1d31a37915a93446f62f1653bcdc7a6db39a1d420dface01d6\\1785522737939490000.json",
+  "shared_request_metadata_sha256": "feb1d639bd92405106b1640c25246c75e6a0ba7c5123a0ea3f94fb96fae427a7",
+  "shared_shard_inventory_sha256": "424981000944c2f0cfa989dbd2a6301e0a88d0927c919f9330fbf5f6779b96bd",
+  "shared_shards_computed": 2,
+  "shared_shards_reused": 0,
+  "source_tree_sha256": "24cd45b677eac21ace6aae457ed9b64d04499a0dde164045754adde6515c6004",
+  "split": "train",
+  "split_image_ids_sha256": "8ab3eb7826e443cea1c98d632e8ab3230685eacb1f8cea14fd3d066f5351b949",
+  "stochastic_modules": [
+    {
+      "name": "transformer.encoder.fusion_layers.0.drop_path",
+      "probability": 0.1,
+      "type": "DropPath"
+    },
+    {
+      "name": "transformer.encoder.fusion_layers.1.drop_path",
+      "probability": 0.1,
+      "type": "DropPath"
+    },
+    {
+      "name": "transformer.encoder.fusion_layers.2.drop_path",
+      "probability": 0.1,
+      "type": "DropPath"
+    },
+    {
+      "name": "transformer.encoder.fusion_layers.3.drop_path",
+      "probability": 0.1,
+      "type": "DropPath"
+    },
+    {
+      "name": "transformer.encoder.fusion_layers.4.drop_path",
+      "probability": 0.1,
+      "type": "DropPath"
+    },
+    {
+      "name": "transformer.encoder.fusion_layers.5.drop_path",
+      "probability": 0.1,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.0.blocks.1.drop_path",
+      "probability": 0.0181818176060915,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.1.blocks.0.drop_path",
+      "probability": 0.036363635212183,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.1.blocks.1.drop_path",
+      "probability": 0.05454545468091965,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.2.blocks.0.drop_path",
+      "probability": 0.072727270424366,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.2.blocks.1.drop_path",
+      "probability": 0.09090908616781235,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.2.blocks.2.drop_path",
+      "probability": 0.10909091681241989,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.2.blocks.3.drop_path",
+      "probability": 0.12727272510528564,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.2.blocks.4.drop_path",
+      "probability": 0.1454545557498932,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.2.blocks.5.drop_path",
+      "probability": 0.16363637149333954,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.3.blocks.0.drop_path",
+      "probability": 0.1818181872367859,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.3.blocks.1.drop_path",
+      "probability": 0.20000000298023224,
+      "type": "DropPath"
+    }
+  ],
+  "timing_seconds": {
+    "aggregation_seconds": 0.8645391000318341,
+    "deterministic_seconds": 0.9979330999194644,
+    "preprocess_seconds": 0.03590030001942068,
+    "stochastic_seconds": 7.922646699997131
+  }
+}

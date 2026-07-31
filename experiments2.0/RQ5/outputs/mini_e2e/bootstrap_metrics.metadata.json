@@ -1,0 +1,8 @@
+{
+  "analysis_fingerprint": "a86eda0104c79f226b1575e82a65397080383a6899b09e026777b115c267fa54",
+  "bootstrap_sha256": "babd41d865f9e617c927b1be85515004fe53a5c5ef9db02e743dee0b76b19443",
+  "cluster": "sequence_id",
+  "repetitions": 50,
+  "rows": 300,
+  "schema_version": 1
+}

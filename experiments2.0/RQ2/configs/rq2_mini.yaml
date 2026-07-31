@@ -1,0 +1,30 @@
+extends: rq2.yaml
+
+evaluation:
+  bootstrap_repetitions: 50
+  minimum_subgroup_rows: 20
+
+rq2:
+  manifest:
+    path: artifacts/bdd100k_diagnostic_manifest.json
+    expected_test_partition: diagnostic
+
+  estimators:
+    minimum_validation_samples: 20
+    minimum_partition_samples: 5
+    random_forest:
+      n_estimators: 50
+      min_samples_leaf: 2
+
+  outputs:
+    root: RQ2/outputs/mini_e2e
+    models: RQ2/models/mini_e2e
+    train_features: RQ2/outputs/mini_e2e/features_train.parquet
+    validation_features: RQ2/outputs/mini_e2e/features_validation.parquet
+    test_features: RQ2/outputs/mini_e2e/features_test.parquet
+    train_image_summary: RQ2/outputs/mini_e2e/images_train.parquet
+    validation_image_summary: RQ2/outputs/mini_e2e/images_validation.parquet
+    test_image_summary: RQ2/outputs/mini_e2e/images_test.parquet
+    metrics: RQ2/outputs/mini_e2e/metrics.json
+    bootstrap: RQ2/outputs/mini_e2e/bootstrap_metrics.parquet
+    predictions: RQ2/outputs/mini_e2e/estimator_predictions.parquet

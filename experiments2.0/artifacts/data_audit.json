@@ -1,0 +1,33 @@
+{
+  "category_counts": {
+    "bicycle": 1007,
+    "bus": 1597,
+    "car": 102506,
+    "motorcycle": 452,
+    "person": 13262,
+    "rider": 649,
+    "traffic light": 26885,
+    "traffic sign": 34908,
+    "train": 15,
+    "truck": 4245
+  },
+  "counts": {
+    "development_annotations": 148855,
+    "development_images": 8000,
+    "full_annotations": 185526,
+    "full_images": 10000,
+    "test_annotations": 36671,
+    "test_images": 2000
+  },
+  "errors": [],
+  "hash_policy": "sha256-every-used-image",
+  "image_dimensions": {
+    "1280x720": 10000
+  },
+  "schema_version": 1,
+  "split_overlap": {
+    "image_files": 0,
+    "source_groups": 0
+  },
+  "status": "pass"
+}

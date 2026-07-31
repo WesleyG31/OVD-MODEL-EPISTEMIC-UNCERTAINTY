@@ -1,0 +1,67 @@
+{
+  "artifacts": {
+    "actions_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\Table_RQ5_actions.csv",
+      "sha256": "5733f0534e03d23ae4068a2bcb2897759fc87a1ee36b26d7e96ac11a2c55746d"
+    },
+    "criticality_sensitivity_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\Table_RQ5_criticality_sensitivity.csv",
+      "sha256": "a48e26e999f0c85e5fcd0c3d449af410d25fe01241acfba3929ba9bb21a2f751"
+    },
+    "figure_captions": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\figure_captions.md",
+      "sha256": "3dd647358cab89f1269933d6bd116202e4d16435e28efd887522d2e7ed0bd097"
+    },
+    "latency_frontier_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\Fig_RQ5_latency_frontier.pdf",
+      "sha256": "bb05d2d4355d4b6d095cb4fa3e1381de22b4898aa1026d1ff79bd6d1bbfc48a9"
+    },
+    "latency_frontier_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\Fig_RQ5_latency_frontier.png",
+      "sha256": "66e9961c898e708fa6d81c5764cd703ee97c4c0edc37be9897bd3516cf552858"
+    },
+    "latency_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\Table_RQ5_latency.csv",
+      "sha256": "889daadf92c7541a65ed3010908dbba79fda92fd766e4f8f922d15324afee14f"
+    },
+    "main_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\Table_RQ5_main.csv",
+      "sha256": "6cb99862d8d10ce9a0dddee254adaefce713ca7d8ced5122ae38bf4fb8ffc12f"
+    },
+    "model_parameters_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\Table_RQ5_model_parameters.csv",
+      "sha256": "43c7ae2e67e4307b98964376e5a7b3c6fd015f4479455bb045fe1ab295eeedaf"
+    },
+    "primary_inference_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\Table_RQ5_primary_inference.csv",
+      "sha256": "a92670c0072b815c5d225a6d249cba9e0b2e07fb255a33b65b1bb876ac68f09e"
+    },
+    "reliability_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\Fig_RQ5_reliability.pdf",
+      "sha256": "d7d16d2985e803dcd808565161ef67b973401179d94e1c2924a94c25097228c4"
+    },
+    "reliability_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\Fig_RQ5_reliability.png",
+      "sha256": "d7f6961d6e457b1b9d0a22b43e775629e8afa2aa321b4ddec70acc23cf2c4351"
+    },
+    "subgroups_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\Table_RQ5_subgroups.csv",
+      "sha256": "f8588a964777b7b3eb4477e585b6981c1d9a477792351a370ec865395ac50221"
+    },
+    "weighted_risk_coverage_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\Fig_RQ5_weighted_risk_coverage.pdf",
+      "sha256": "789a4775080b02e855aff08d13b30e09731ed4256d61ff04fc17cf9f0827f373"
+    },
+    "weighted_risk_coverage_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\Fig_RQ5_weighted_risk_coverage.png",
+      "sha256": "c3b2d18d71b94fc6fa18053b732fee1b186bb2e2b282049a76e012a30ee2119c"
+    }
+  },
+  "bootstrap_sha256": "babd41d865f9e617c927b1be85515004fe53a5c5ef9db02e743dee0b76b19443",
+  "evidence_status": "diagnostic_not_scientific_evidence",
+  "metrics_path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\mini_e2e\\metrics.json",
+  "metrics_sha256": "20c3f764764e4df6d34a1e46dfd09dd448c8eedd8a120b61d9f2af23086c1d10",
+  "predictions_sha256": "8b8bb76c2e691b90445fc8c70b0d6faf52dedb11104a78989271c76c2ba41c0d",
+  "rq": "RQ5",
+  "schema_version": 1
+}

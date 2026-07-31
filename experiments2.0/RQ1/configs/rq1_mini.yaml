@@ -1,0 +1,43 @@
+extends: rq1.yaml
+
+evaluation:
+  bootstrap_repetitions: 50
+  minimum_subgroup_rows: 20
+  calibration_bins: [5, 10, 15]
+
+rq1:
+  manifest:
+    test_partition: diagnostic
+
+  fusion:
+    minimum_validation_samples: 50
+    minimum_calibration_samples: 20
+    random_forest:
+      n_estimators: 50
+      max_depth: 6
+      min_samples_leaf: 2
+
+  robustness:
+    validation_image_limit: 2
+    independent_seed_offsets: [0, 1000003]
+    prompt_sets:
+      canonical: [person, rider, car, truck, bus, train, motorcycle, bicycle, traffic light, traffic sign]
+      synonyms: [pedestrian, cyclist, automobile, lorry, coach, railway train, motorbike, bike, traffic signal, road sign]
+    corruptions:
+      - {name: gaussian_blur, severities: [1.0]}
+
+  outputs:
+    root: RQ1/outputs/mini_e2e
+    models: RQ1/models/mini_e2e
+    manifest: artifacts/bdd100k_diagnostic_manifest.json
+    train_features: RQ1/outputs/mini_e2e/features_train.parquet
+    validation_features: RQ1/outputs/mini_e2e/features_validation.parquet
+    test_features: RQ1/outputs/mini_e2e/features_test.parquet
+    train_image_summary: RQ1/outputs/mini_e2e/images_train.parquet
+    validation_image_summary: RQ1/outputs/mini_e2e/images_validation.parquet
+    test_image_summary: RQ1/outputs/mini_e2e/images_test.parquet
+    metrics: RQ1/outputs/mini_e2e/metrics.json
+    bootstrap: RQ1/outputs/mini_e2e/bootstrap_metrics.parquet
+    predictions: RQ1/outputs/mini_e2e/fused_predictions.parquet
+    image_predictions: RQ1/outputs/mini_e2e/image_safety_predictions.parquet
+    robustness: RQ1/outputs/mini_e2e/robustness

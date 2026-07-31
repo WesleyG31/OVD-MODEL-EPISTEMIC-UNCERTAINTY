@@ -1,0 +1,97 @@
+extends: ../../configs/base.yaml
+
+rq3:
+  question: >-
+    How does fusing classification confidence with spatial localization
+    quality improve reliability, ranking, and calibration for pinned
+    GroundingDINO Swin-T detections on frozen BDD100K driving scenes?
+
+  manifest:
+    path: artifacts/bdd100k_split_manifest.json
+    expected_schema_version: 4
+    expected_test_partition: confirmatory
+    expected_diagnostic_image_ids: [6, 9, 18, 25, 27, 35, 42, 43]
+
+  extraction:
+    schema_version: 1
+    mc_passes: 10
+    mc_sensitivity_passes: [2, 5, 10]
+    mc_seed_stride: 1009
+    stochastic_module_types:
+      - DropPath
+    candidate_threshold: 0.01
+    association_iou: 0.30
+    association_class_penalty: 1.0
+    unmatched_cost: 2.0
+
+  targets:
+    localization_iou_threshold: 0.50
+    localization_iou_sensitivity: [0.50, 0.75]
+
+  feature_groups:
+    confidence:
+      - confidence_uncertainty
+    spatial_mc:
+      - spatial_reference_iou_mean
+      - spatial_reference_iou_std
+      - spatial_pairwise_iou_loss
+      - spatial_box_variance
+      - spatial_absence_rate
+    spatial_static:
+      - deterministic_reference_variance
+      - deterministic_reference_step
+      - bbox_area_fraction
+    nonspatial_control:
+      - semantic_mutual_information
+      - semantic_predictive_entropy
+      - semantic_class_disagreement
+      - semantic_score_variance
+      - representation_embedding_variance
+      - representation_embedding_cosine_instability
+      - deterministic_hidden_step
+      - mc_score_mean
+
+  estimators:
+    methods:
+      - confidence
+      - spatial_agreement
+      - learned_spatial_quality
+      - equal_fusion
+      - product_fusion
+      - capacity_control_product
+      - direct_spatial_fusion
+    primary_method: product_fusion
+    primary_baselines:
+      - confidence
+      - capacity_control_product
+    training_score_threshold: 0.20
+    validation_selection_fraction: 0.50
+    validation_group_column: sequence_id
+    regularization_grid: [0.01, 0.1, 1.0, 10.0]
+    validation_metric: auroc
+    calibrator: isotonic
+    minimum_selection_samples: 200
+    minimum_calibration_samples: 100
+
+  inference:
+    familywise_alpha: 0.05
+    correction: holm
+    primary_metrics: [auroc, aurc, brier]
+    success_rule: >-
+      Product fusion must improve AUROC, AURC and calibrated Brier score over
+      confidence and the capacity-matched non-spatial product control in all
+      six one-sided paired sequence-bootstrap comparisons after Holm
+      correction. Diagnostic results cannot satisfy this rule.
+
+  outputs:
+    root: RQ3/outputs
+    models: RQ3/models
+    train_features: RQ3/outputs/features_train.parquet
+    validation_features: RQ3/outputs/features_validation.parquet
+    test_features: RQ3/outputs/features_test.parquet
+    train_image_summary: RQ3/outputs/images_train.parquet
+    validation_image_summary: RQ3/outputs/images_validation.parquet
+    test_image_summary: RQ3/outputs/images_test.parquet
+    metrics: RQ3/outputs/metrics.json
+    bootstrap: RQ3/outputs/bootstrap_metrics.parquet
+    predictions: RQ3/outputs/calibrated_predictions.parquet

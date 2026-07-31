@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adas-ovd-uncertainty"
+version = "0.1.0"
+description = "Reproducible experiments for uncertainty-aware open-vocabulary ADAS perception"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "numpy==1.26.4",
+  "pandas>=2.2,<2.3",
+  "scipy>=1.14,<1.15",
+  "scikit-learn>=1.5,<1.6",
+  "pyarrow>=18,<19",
+  "PyYAML>=6,<7",
+  "tqdm>=4.67,<5",
+  "joblib>=1.4,<2",
+  "kagglehub==1.0.2",
+  "Pillow>=11,<12",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3,<9"]
+
+[project.scripts]
+shared-extraction = "adas_ovd.shared_extraction_cli:main"
+rq1 = "rq1.cli:main"
+rq2 = "rq2.cli:main"
+rq3 = "rq3.cli:main"
+rq4 = "rq4.cli:main"
+rq5 = "rq5.cli:main"
+
+[tool.setuptools]
+packages = ["adas_ovd", "rq1", "rq2", "rq3", "rq4", "rq5"]
+package-dir = {adas_ovd = "src/adas_ovd", rq1 = "RQ1/src/rq1", rq2 = "RQ2/src/rq2", rq3 = "RQ3/src/rq3", rq4 = "RQ4/src/rq4", rq5 = "RQ5/src/rq5"}
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "RQ1/tests", "RQ2/tests", "RQ3/tests", "RQ4/tests", "RQ5/tests"]
+addopts = "-q --import-mode=importlib"

@@ -1,0 +1,37 @@
+{
+  "acquisition": "verified_existing",
+  "bytes": 693997677,
+  "path": "data/models/groundingdino_swint_ogc.pth",
+  "schema_version": 1,
+  "sha256": "3b3ca2563c77c69f651d7bd133e97139c186df06231157a64c507099c52bc799",
+  "source_filename": null,
+  "text_encoder": {
+    "acquisition": "verified_existing",
+    "files": {
+      "config.json": {
+        "bytes": 570,
+        "sha256": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20"
+      },
+      "model.safetensors": {
+        "bytes": 440449768,
+        "sha256": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3"
+      },
+      "tokenizer.json": {
+        "bytes": 466062,
+        "sha256": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98"
+      },
+      "tokenizer_config.json": {
+        "bytes": 48,
+        "sha256": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10"
+      },
+      "vocab.txt": {
+        "bytes": 231508,
+        "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      }
+    },
+    "path": "data/models/bert-base-uncased",
+    "repository": "google-bert/bert-base-uncased",
+    "revision": "86b5e0934494bd15c9632b12f734a8a67f723594"
+  },
+  "url": "https://github.com/IDEA-Research/GroundingDINO/releases/download/weights/groundingdino_swint_ogc.pth"
+}

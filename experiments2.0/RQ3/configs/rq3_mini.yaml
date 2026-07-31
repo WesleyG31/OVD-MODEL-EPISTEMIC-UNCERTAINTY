@@ -1,0 +1,28 @@
+extends: rq3.yaml
+
+evaluation:
+  bootstrap_repetitions: 50
+  minimum_subgroup_rows: 20
+  calibration_bins: [5, 10, 15]
+
+rq3:
+  manifest:
+    path: artifacts/bdd100k_diagnostic_manifest.json
+    expected_test_partition: diagnostic
+
+  estimators:
+    minimum_selection_samples: 20
+    minimum_calibration_samples: 20
+
+  outputs:
+    root: RQ3/outputs/mini_e2e
+    models: RQ3/models/mini_e2e
+    train_features: RQ3/outputs/mini_e2e/features_train.parquet
+    validation_features: RQ3/outputs/mini_e2e/features_validation.parquet
+    test_features: RQ3/outputs/mini_e2e/features_test.parquet
+    train_image_summary: RQ3/outputs/mini_e2e/images_train.parquet
+    validation_image_summary: RQ3/outputs/mini_e2e/images_validation.parquet
+    test_image_summary: RQ3/outputs/mini_e2e/images_test.parquet
+    metrics: RQ3/outputs/mini_e2e/metrics.json
+    bootstrap: RQ3/outputs/mini_e2e/bootstrap_metrics.parquet
+    predictions: RQ3/outputs/mini_e2e/calibrated_predictions.parquet

@@ -1,0 +1,117 @@
+extends: ../../configs/base.yaml
+
+rq1:
+  question: >-
+    How can epistemic uncertainty extracted from multiple internal
+    representations of the pinned GroundingDINO Swin-T detector be fused into
+    a reliable uncertainty signal on the frozen BDD100K ADAS benchmark?
+
+  manifest:
+    train_fraction: 0.70
+    validation_fraction: 0.30
+    group_by_sequence: true
+    test_partition: confirmatory
+    # These images were used only to exercise the mini end-to-end path and
+    # are permanently excluded from the confirmatory paper evaluation.
+    diagnostic_evaluation_image_ids: [6, 9, 18, 25, 27, 35, 42, 43]
+
+  extraction:
+    mc_passes: 10
+    mc_sensitivity_passes: [2, 5, 10]
+    mc_seed_stride: 1009
+    stochastic_module_types:
+      - DropPath
+    candidate_threshold: 0.01
+    association_iou: 0.30
+    association_iou_sensitivity: [0.20, 0.30, 0.50]
+    association_class_penalty: 1.0
+    unmatched_cost: 2.0
+
+  feature_groups:
+    confidence:
+      - confidence_uncertainty
+    semantic:
+      - semantic_mutual_information
+      - semantic_predictive_entropy
+      - class_disagreement
+      - score_variance
+    geometric:
+      - box_variance
+      - box_mean_pairwise_iou_loss
+      - decoder_reference_variance
+      - decoder_reference_step
+    representation:
+      - embedding_variance
+      - embedding_cosine_instability
+      - decoder_hidden_step
+    presence:
+      - absence_rate
+
+  fusion:
+    methods:
+      - confidence
+      - semantic_mi
+      - predictive_entropy
+      - box_variance
+      - embedding_variance
+      - semantic
+      - geometric
+      - representation
+      - presence
+      - semantic_geometric
+      - all_internal
+      - all_internal_rf
+      - all_plus_confidence
+    primary_method: all_internal
+    primary_baseline: confidence
+    training_score_threshold: 0.20
+    validation_selection_fraction: 0.50
+    validation_group_column: sequence_id
+    regularization_grid: [0.01, 0.1, 1.0, 10.0]
+    validation_metric: auroc
+    calibrator: isotonic
+    minimum_validation_samples: 200
+    minimum_calibration_samples: 100
+    random_forest:
+      n_estimators: 500
+      max_depth: 12
+      min_samples_leaf: 10
+      max_features: sqrt
+
+  inference:
+    familywise_alpha: 0.05
+    correction: holm
+    primary_metrics: [auroc, aurc]
+    calibration_metric: brier
+    calibration_noninferiority_margin: 0.02
+    success_rule: >-
+      The primary all_internal fusion must improve both AUROC and AURC over
+      confidence with one-sided sequence-clustered bootstrap tests after Holm
+      correction, while its Brier score is non-inferior within an absolute
+      margin of 0.02. Diagnostic or robustness subsets cannot satisfy this rule.
+
+  robustness:
+    validation_image_limit: 100
+    independent_seed_offsets: [0, 1000003, 2000003]
+    prompt_sets:
+      canonical: [person, rider, car, truck, bus, train, motorcycle, bicycle, traffic light, traffic sign]
+      synonyms: [pedestrian, cyclist, automobile, lorry, coach, railway train, motorbike, bike, traffic signal, road sign]
+    corruptions:
+      - {name: gaussian_blur, severities: [1.0, 2.0]}
+      - {name: brightness, severities: [0.70, 0.40]}
+
+  outputs:
+    root: RQ1/outputs
+    models: RQ1/models
+    manifest: artifacts/bdd100k_split_manifest.json
+    train_features: RQ1/outputs/features_train.parquet
+    validation_features: RQ1/outputs/features_validation.parquet
+    test_features: RQ1/outputs/features_test.parquet
+    train_image_summary: RQ1/outputs/images_train.parquet
+    validation_image_summary: RQ1/outputs/images_validation.parquet
+    test_image_summary: RQ1/outputs/images_test.parquet
+    metrics: RQ1/outputs/metrics.json
+    bootstrap: RQ1/outputs/bootstrap_metrics.parquet
+    predictions: RQ1/outputs/fused_predictions.parquet
+    image_predictions: RQ1/outputs/image_safety_predictions.parquet
+    robustness: RQ1/outputs/robustness

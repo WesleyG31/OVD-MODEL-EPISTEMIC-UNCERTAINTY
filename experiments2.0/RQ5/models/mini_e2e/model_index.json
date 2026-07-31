@@ -1,0 +1,246 @@
+{
+  "fold_rows": {
+    "component_calibration": 32,
+    "policy_calibration": 24,
+    "selection": 56
+  },
+  "fusion_fingerprint": "e8d6b2e58d2bea2858b2625a78e503ada242062dca729373d059614b96b51f6b",
+  "group_audit": {
+    "column": "sequence_id",
+    "pairwise_overlap_count": 0,
+    "roles": {
+      "component_calibration": "fa47f95c64cac1eaa5361c00485cb19da75956669e969fd322639f2f278e9ab6",
+      "policy_calibration": "703847bf25991384a914d67579898fdea39a3ce9eafea0cdc5f538d3d84dd48d",
+      "selection": "aa090ce8051d11b2cd1eff670c27fde2779dbd5f61c572da6cee5eff098440ec"
+    }
+  },
+  "methods": {
+    "calibrated_confidence": {
+      "coefficient_count": 0,
+      "components": {},
+      "family": "confidence_control",
+      "mc_passes": 0,
+      "model_sha256": "64b4af64171c1ce26995191a2593f29167a7f2688d6d3534fd3e13232b3f0281",
+      "operating_threshold": 0.37660089088603854
+    },
+    "criticality_only": {
+      "coefficient_count": 0,
+      "components": {},
+      "family": "criticality_control",
+      "mc_passes": 0,
+      "model_sha256": "dfe76d8b54f9822102bc1ac418dc0d04231959eac13b0d5509dabac6e1217c84",
+      "operating_threshold": -Infinity
+    },
+    "flat_joint": {
+      "coefficient_count": 18,
+      "components": {
+        "flat": {
+          "coefficient_count": 18,
+          "features": [
+            "confidence_uncertainty",
+            "semantic_mutual_information_mc02",
+            "semantic_predictive_entropy_mc02",
+            "semantic_class_disagreement_mc02",
+            "semantic_score_variance_mc02",
+            "spatial_reference_iou_mean_mc02",
+            "spatial_reference_iou_std_mc02",
+            "geometric_pairwise_iou_loss_mc02",
+            "geometric_box_variance_mc02",
+            "mc_absence_rate_mc02",
+            "representation_embedding_variance_mc02",
+            "representation_embedding_cosine_instability_mc02",
+            "deterministic_reference_variance_mc02",
+            "deterministic_reference_step_mc02",
+            "deterministic_hidden_step_mc02",
+            "bbox_area_fraction_mc02",
+            "mc_score_mean_mc02"
+          ],
+          "selected_regularization": 1.0,
+          "selection_auroc": 0.8722580645161291
+        }
+      },
+      "family": "flat_capacity_control",
+      "mc_passes": 2,
+      "model_sha256": "d9b0e2cbf9727c15869b274753ccd082e5463cc40ea202e7e4c6bbb7354d4ae4",
+      "operating_threshold": 1.6935548977926372e-07
+    },
+    "late_fusion_unweighted": {
+      "coefficient_count": 17,
+      "components": {
+        "uncertainty": {
+          "coefficient_count": 17,
+          "features": [
+            "semantic_mutual_information_mc02",
+            "semantic_predictive_entropy_mc02",
+            "semantic_class_disagreement_mc02",
+            "semantic_score_variance_mc02",
+            "spatial_reference_iou_mean_mc02",
+            "spatial_reference_iou_std_mc02",
+            "geometric_pairwise_iou_loss_mc02",
+            "geometric_box_variance_mc02",
+            "mc_absence_rate_mc02",
+            "representation_embedding_variance_mc02",
+            "representation_embedding_cosine_instability_mc02",
+            "deterministic_reference_variance_mc02",
+            "deterministic_reference_step_mc02",
+            "deterministic_hidden_step_mc02",
+            "bbox_area_fraction_mc02",
+            "mc_score_mean_mc02"
+          ],
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8748387096774193
+        }
+      },
+      "family": "criticality_ablation",
+      "mc_passes": 2,
+      "model_sha256": "7e1f398f2507081ecbdd056738031288cc94d2c2d03908fef48df4df1d748034",
+      "operating_threshold": -Infinity
+    },
+    "raw_confidence": {
+      "coefficient_count": 0,
+      "components": {},
+      "family": "confidence_control",
+      "mc_passes": 0,
+      "model_sha256": "bff7a60ec78b9f8a7472f84b07d14a58d41b69b99813df8715441aa1aa53d5e3",
+      "operating_threshold": 0.8590592931998133
+    },
+    "risk_aware_fusion": {
+      "coefficient_count": 17,
+      "components": {
+        "uncertainty": {
+          "coefficient_count": 17,
+          "features": [
+            "semantic_mutual_information_mc02",
+            "semantic_predictive_entropy_mc02",
+            "semantic_class_disagreement_mc02",
+            "semantic_score_variance_mc02",
+            "spatial_reference_iou_mean_mc02",
+            "spatial_reference_iou_std_mc02",
+            "geometric_pairwise_iou_loss_mc02",
+            "geometric_box_variance_mc02",
+            "mc_absence_rate_mc02",
+            "representation_embedding_variance_mc02",
+            "representation_embedding_cosine_instability_mc02",
+            "deterministic_reference_variance_mc02",
+            "deterministic_reference_step_mc02",
+            "deterministic_hidden_step_mc02",
+            "bbox_area_fraction_mc02",
+            "mc_score_mean_mc02"
+          ],
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8748387096774193
+        }
+      },
+      "family": "primary_risk_aware",
+      "mc_passes": 2,
+      "model_sha256": "f3054388fcad72372b088d049e74dcee0e4c22106686bfa9e864b880aa769d57",
+      "operating_threshold": 0.42338872444815934
+    },
+    "risk_aware_fusion_mc05": {
+      "coefficient_count": 17,
+      "components": {
+        "uncertainty": {
+          "coefficient_count": 17,
+          "features": [
+            "semantic_mutual_information_mc05",
+            "semantic_predictive_entropy_mc05",
+            "semantic_class_disagreement_mc05",
+            "semantic_score_variance_mc05",
+            "spatial_reference_iou_mean_mc05",
+            "spatial_reference_iou_std_mc05",
+            "geometric_pairwise_iou_loss_mc05",
+            "geometric_box_variance_mc05",
+            "mc_absence_rate_mc05",
+            "representation_embedding_variance_mc05",
+            "representation_embedding_cosine_instability_mc05",
+            "deterministic_reference_variance_mc05",
+            "deterministic_reference_step_mc05",
+            "deterministic_hidden_step_mc05",
+            "bbox_area_fraction_mc05",
+            "mc_score_mean_mc05"
+          ],
+          "selected_regularization": 0.01,
+          "selection_auroc": 0.8490322580645161
+        }
+      },
+      "family": "mc_pass_sensitivity",
+      "mc_passes": 5,
+      "model_sha256": "2af37cf71f8d210154ec5341e5865a26ac6caf19b14082021d873e3230e18717",
+      "operating_threshold": 0.670199922285974
+    },
+    "risk_aware_fusion_mc10": {
+      "coefficient_count": 17,
+      "components": {
+        "uncertainty": {
+          "coefficient_count": 17,
+          "features": [
+            "semantic_mutual_information_mc10",
+            "semantic_predictive_entropy_mc10",
+            "semantic_class_disagreement_mc10",
+            "semantic_score_variance_mc10",
+            "spatial_reference_iou_mean_mc10",
+            "spatial_reference_iou_std_mc10",
+            "geometric_pairwise_iou_loss_mc10",
+            "geometric_box_variance_mc10",
+            "mc_absence_rate_mc10",
+            "representation_embedding_variance_mc10",
+            "representation_embedding_cosine_instability_mc10",
+            "deterministic_reference_variance_mc10",
+            "deterministic_reference_step_mc10",
+            "deterministic_hidden_step_mc10",
+            "bbox_area_fraction_mc10",
+            "mc_score_mean_mc10"
+          ],
+          "selected_regularization": 1.0,
+          "selection_auroc": 0.9135483870967741
+        }
+      },
+      "family": "mc_pass_sensitivity",
+      "mc_passes": 10,
+      "model_sha256": "8206ae7f9a1e2b5adce60212ce8adade2772d824008c01d78d049ab74b751e65",
+      "operating_threshold": 0.42338872444815934
+    },
+    "uncertainty_only": {
+      "coefficient_count": 17,
+      "components": {
+        "uncertainty": {
+          "coefficient_count": 17,
+          "features": [
+            "semantic_mutual_information_mc02",
+            "semantic_predictive_entropy_mc02",
+            "semantic_class_disagreement_mc02",
+            "semantic_score_variance_mc02",
+            "spatial_reference_iou_mean_mc02",
+            "spatial_reference_iou_std_mc02",
+            "geometric_pairwise_iou_loss_mc02",
+            "geometric_box_variance_mc02",
+            "mc_absence_rate_mc02",
+            "representation_embedding_variance_mc02",
+            "representation_embedding_cosine_instability_mc02",
+            "deterministic_reference_variance_mc02",
+            "deterministic_reference_step_mc02",
+            "deterministic_hidden_step_mc02",
+            "bbox_area_fraction_mc02",
+            "mc_score_mean_mc02"
+          ],
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8748387096774193
+        }
+      },
+      "family": "uncertainty_ablation",
+      "mc_passes": 2,
+      "model_sha256": "c2b104a3da67df94d7feb93fe0af3a4512dd5124b3a3eab24642f4b6cc575016",
+      "operating_threshold": 1.6935548977926372e-07
+    }
+  },
+  "schema_version": 1,
+  "source_tree_sha256": "225188467bda30419835a72e1ec50b04fc32652e1031086127a99f184d0b274f",
+  "train_features_sha256": "2da81d52b8a8904970e63722e6a2d3a7542f973dcb98d3f7af2e8662240c2d76",
+  "train_rows_extracted": 1183,
+  "train_rows_operational": 131,
+  "training_score_threshold": 0.2,
+  "validation_features_sha256": "9d57280fc542f6997e62a7eeac708b5ea8406c36974dc392da2c21c59d5b20c5",
+  "validation_predictions_sha256": "5ed296b620e280123785a4b7dc74c6f675c555619c5b10dfcf1f2f4376d68a7c",
+  "validation_rows_extracted": 822,
+  "validation_rows_operational": 112
+}

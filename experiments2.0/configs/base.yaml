@@ -1,0 +1,102 @@
+project:
+  seed: 20260731
+  deterministic_algorithms: true
+  deterministic_warn_only: true
+  artifacts_dir: artifacts
+
+paper_inference:
+  family_structure: separate_prespecified_rq_families
+  report_all_rq_outcomes: true
+  allow_cross_rq_rescue: false
+  omnibus_all_supported_claim: false
+  empirical_scope: groundingdino_swint_fixed_bdd10_bdd100k
+
+model:
+  package: groundingdino-py
+  package_version: 0.4.0
+  config: package://groundingdino/config/GroundingDINO_SwinT_OGC.py
+  checkpoint: data/models/groundingdino_swint_ogc.pth
+  checkpoint_url: >-
+    https://github.com/IDEA-Research/GroundingDINO/releases/download/weights/groundingdino_swint_ogc.pth
+  checkpoint_sha256: 3b3ca2563c77c69f651d7bd133e97139c186df06231157a64c507099c52bc799
+  text_encoder:
+    repository: google-bert/bert-base-uncased
+    revision: 86b5e0934494bd15c9632b12f734a8a67f723594
+    local_dir: data/models/bert-base-uncased
+    required_files:
+      - config.json
+      - model.safetensors
+      - tokenizer.json
+      - tokenizer_config.json
+      - vocab.txt
+  device: cuda
+  amp: false
+  box_threshold: 0.05
+  # Preserve the full eligible deterministic reference universe (the pinned
+  # GroundingDINO architecture has 900 object queries).
+  reference_max_detections: 900
+  # Nominal MC association pool; eligible deterministic query IDs are added
+  # even when they fall below this top-K boundary.
+  max_detections: 300
+  nms_iou: null
+
+# Label-free detector inference shared by RQ1--RQ5 and future compatible RQs.
+# RQ-specific features, fitting, calibration, metrics and reports remain
+# isolated. Changing this block invalidates the shared inference cache.
+shared_extraction:
+  schema_version: 1
+  artifact_root: data/derived/groundingdino_mc_v1
+  cache_namespace: canonical
+  format: npz_compressed
+  mc_passes: 10
+  mc_seed_stride: 1009
+  stochastic_module_types: [DropPath]
+  candidate_threshold: 0.01
+  association_iou: 0.30
+  association_class_penalty: 1.0
+  unmatched_cost: 2.0
+
+data:
+  source:
+    provider: kaggle
+    handle: solesensei/solesensei_bdd100k/versions/2
+    dataset_id: 161598
+    version: 2
+    published_at: "2019-05-21T21:10:21.507Z"
+    expected_total_bytes: 9884138351
+    url: https://www.kaggle.com/datasets/solesensei/solesensei_bdd100k
+    download_strategy: full_version_archive
+  raw_dir: data/raw/kaggle/solesensei_bdd100k_v2
+  processed_dir: data/processed/bdd100k_v2
+  images_dir: >-
+    data/raw/kaggle/solesensei_bdd100k_v2/bdd100k/bdd100k/images/100k/val
+  calibration_annotations: data/processed/bdd100k_v2/annotations/development.json
+  evaluation_annotations: data/processed/bdd100k_v2/annotations/test.json
+  audit_report: artifacts/data_audit.json
+  provenance_manifest: artifacts/data_provenance.json
+  original_split_seed: 42
+  original_development_fraction: 0.80
+  expected_validation_images: 10000
+  classes:
+    - person
+    - rider
+    - car
+    - truck
+    - bus
+    - train
+    - motorcycle
+    - bicycle
+    - traffic light
+    - traffic sign
+
+evaluation:
+  match_iou: 0.5
+  primary_score_threshold: 0.20
+  score_threshold_sensitivity: [0.05, 0.10, 0.20, 0.30]
+  bootstrap_repetitions: 2000
+  confidence_level: 0.95
+  calibration_bins: [10, 15, 20]
+  risk_coverages: [0.5, 0.7, 0.8, 0.9, 1.0]
+  risk_targets: [0.05, 0.10, 0.20]
+  subgroup_attributes: [timeofday, weather, scene]
+  minimum_subgroup_rows: 200

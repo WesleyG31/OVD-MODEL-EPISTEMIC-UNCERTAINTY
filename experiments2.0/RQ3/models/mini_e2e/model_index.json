@@ -1,0 +1,226 @@
+{
+  "calibration_rows": 56,
+  "fusion_fingerprint": "59f4694e51d7fbb821cf736e497e98b858b80bbcd8a7f5e878ef1b0273f3ac2a",
+  "group_audit": {
+    "calibration_groups_sha256": "aa090ce8051d11b2cd1eff670c27fde2779dbd5f61c572da6cee5eff098440ec",
+    "column": "sequence_id",
+    "overlap_count": 0,
+    "selection_groups_sha256": "82511100dddb5dfe39aa7fa1bf0a76adf8992e1e2ab79512530bb92a1f87168d"
+  },
+  "methods": {
+    "capacity_control_product": {
+      "calibration_metrics": {
+        "brier": 0.15733745421245743,
+        "ece": 3.214285711071006e-08,
+        "nll": 0.44518310258003674
+      },
+      "family": "capacity_matched_nonspatial_control",
+      "features": [
+        "score",
+        "semantic_mutual_information",
+        "semantic_predictive_entropy",
+        "semantic_class_disagreement",
+        "semantic_score_variance",
+        "representation_embedding_variance",
+        "representation_embedding_cosine_instability",
+        "deterministic_hidden_step",
+        "mc_score_mean"
+      ],
+      "model_sha256": "64c0246efb411cb97519e1f5e61f4331234e4d2fc04cffef318511ebb4bdadf5",
+      "selected_regularization": 10.0,
+      "selection_auroc": 0.7589743589743589
+    },
+    "confidence": {
+      "calibration_metrics": {
+        "brier": 0.16017628205128404,
+        "ece": 1.9642857139097458e-08,
+        "nll": 0.46722088102552195
+      },
+      "family": "confidence_control",
+      "features": [
+        "score"
+      ],
+      "model_sha256": "4e3d17bc0959cde0a2b4dfbdd9ebe85f5ee594d210d375db3bb703d91e1ea8f9",
+      "selected_regularization": null,
+      "selection_auroc": null
+    },
+    "direct_spatial_fusion": {
+      "calibration_metrics": {
+        "brier": 0.12053571428571805,
+        "ece": 3.749999995021544e-08,
+        "nll": 0.3565228475023031
+      },
+      "family": "direct_learned_sensitivity",
+      "features": [
+        "score",
+        "spatial_reference_iou_mean",
+        "spatial_reference_iou_std",
+        "spatial_pairwise_iou_loss",
+        "spatial_box_variance",
+        "spatial_absence_rate",
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "bbox_area_fraction"
+      ],
+      "model_sha256": "7811a48fdfad71fed7e7a388bc7924795cb74abb947de5c94ab5119be6011036",
+      "selected_regularization": 1.0,
+      "selection_auroc": 0.7474358974358974
+    },
+    "equal_fusion": {
+      "calibration_metrics": {
+        "brier": 0.1386479591836774,
+        "ece": 3.9285714278451666e-08,
+        "nll": 0.3932922138303807
+      },
+      "family": "fixed_equal_fusion",
+      "features": [
+        "score",
+        "spatial_reference_iou_mean",
+        "spatial_reference_iou_std",
+        "spatial_pairwise_iou_loss",
+        "spatial_box_variance",
+        "spatial_absence_rate",
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "bbox_area_fraction"
+      ],
+      "model_sha256": "63e5bfc51ae504bdfbbf23667dfb8ca95a98ef20fb44d8ebef31f1bd082b2744",
+      "selected_regularization": 0.01,
+      "selection_auroc": 0.6756410256410257
+    },
+    "learned_spatial_quality": {
+      "calibration_metrics": {
+        "brier": 0.14680735930736302,
+        "ece": 3.750000003754995e-08,
+        "nll": 0.4138641227128566
+      },
+      "family": "spatial_quality_only",
+      "features": [
+        "spatial_reference_iou_mean",
+        "spatial_reference_iou_std",
+        "spatial_pairwise_iou_loss",
+        "spatial_box_variance",
+        "spatial_absence_rate",
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "bbox_area_fraction"
+      ],
+      "model_sha256": "a60ac5ba0fddd1e7f7178d55a9a0ec1840d59d5c5e6f0662919834d8ee6df14e",
+      "selected_regularization": 0.01,
+      "selection_auroc": 0.6756410256410257
+    },
+    "product_fusion": {
+      "calibration_metrics": {
+        "brier": 0.13390619405657428,
+        "ece": 4.285714282817498e-08,
+        "nll": 0.3776864822868167
+      },
+      "family": "localization_aware_product",
+      "features": [
+        "score",
+        "spatial_reference_iou_mean",
+        "spatial_reference_iou_std",
+        "spatial_pairwise_iou_loss",
+        "spatial_box_variance",
+        "spatial_absence_rate",
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "bbox_area_fraction"
+      ],
+      "model_sha256": "e4d3b0d963cd1ef0e51cabcd54396748f9018ceeaff517ebe545a899bedd9f07",
+      "selected_regularization": 0.01,
+      "selection_auroc": 0.6756410256410257
+    },
+    "product_fusion_mc02": {
+      "calibration_metrics": {
+        "brier": 0.14030612244898297,
+        "ece": 3.3928571407379667e-08,
+        "nll": 0.40390598673728967
+      },
+      "family": "mc_pass_sensitivity",
+      "features": [
+        "score",
+        "spatial_reference_iou_mean_mc02",
+        "spatial_reference_iou_std_mc02",
+        "spatial_pairwise_iou_loss_mc02",
+        "spatial_box_variance_mc02",
+        "spatial_absence_rate_mc02",
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "bbox_area_fraction"
+      ],
+      "model_sha256": "076e1593a0292aa3844861d0054714a225dd77b3632a74751d8070729582ed8c",
+      "selected_regularization": 0.01,
+      "selection_auroc": 0.617948717948718
+    },
+    "product_fusion_mc05": {
+      "calibration_metrics": {
+        "brier": 0.1355602730602768,
+        "ece": 3.749999993132995e-08,
+        "nll": 0.3885160157567245
+      },
+      "family": "mc_pass_sensitivity",
+      "features": [
+        "score",
+        "spatial_reference_iou_mean_mc05",
+        "spatial_reference_iou_std_mc05",
+        "spatial_pairwise_iou_loss_mc05",
+        "spatial_box_variance_mc05",
+        "spatial_absence_rate_mc05",
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "bbox_area_fraction"
+      ],
+      "model_sha256": "577d9379902939948cb8f89434dfd42ace97eb7ad37107f0a9f94644d802826f",
+      "selected_regularization": 0.01,
+      "selection_auroc": 0.6705128205128205
+    },
+    "product_fusion_mc10": {
+      "calibration_metrics": {
+        "brier": 0.13390619405657428,
+        "ece": 4.285714282817498e-08,
+        "nll": 0.3776864822868167
+      },
+      "family": "mc_pass_sensitivity",
+      "features": [
+        "score",
+        "spatial_reference_iou_mean_mc10",
+        "spatial_reference_iou_std_mc10",
+        "spatial_pairwise_iou_loss_mc10",
+        "spatial_box_variance_mc10",
+        "spatial_absence_rate_mc10",
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "bbox_area_fraction"
+      ],
+      "model_sha256": "689a27949bb03dc74257438612e36674ce698fc69ef9eeababab6c1a0102cd04",
+      "selected_regularization": 0.01,
+      "selection_auroc": 0.6756410256410257
+    },
+    "spatial_agreement": {
+      "calibration_metrics": {
+        "brier": 0.14603174603174907,
+        "ece": 3.035714284210412e-08,
+        "nll": 0.4235294273663217
+      },
+      "family": "fixed_spatial_control",
+      "features": [
+        "spatial_reference_iou_mean"
+      ],
+      "model_sha256": "0c95148d601648ae4108dba31d7eacd327fa97c0a5a15e0f62f553714e3e7b0d",
+      "selected_regularization": null,
+      "selection_auroc": null
+    }
+  },
+  "schema_version": 1,
+  "selection_rows": 56,
+  "source_tree_sha256": "f1f446091f9b717d0c5515436ec5b7597b208429a81d8216a01fc6d0c91b9ea4",
+  "train_features_sha256": "2adbf7e4acb73961125dfd3180b5b3920f3664b16ca7468e2096e36f854df335",
+  "train_rows_extracted": 1183,
+  "train_rows_operational": 131,
+  "training_score_threshold": 0.2,
+  "validation_features_sha256": "f21fa53ec4fc68aeb2ce3906156ab9be93aeee67f609718473a67f1f09700dae",
+  "validation_predictions_sha256": "aebcf19bbb4d3727347206941b6d362792c2a80ee9bd1d3790fb490f0b08f4fd",
+  "validation_rows_extracted": 822,
+  "validation_rows_operational": 112
+}

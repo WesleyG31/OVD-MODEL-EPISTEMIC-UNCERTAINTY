@@ -1,0 +1,118 @@
+extends: ../../configs/base.yaml
+
+rq4:
+  question: >-
+    To what extent does multi-level post-hoc calibration--combining
+    class-level, localization-level, and uncertainty-level calibration--
+    enhance detection reliability across prespecified, overlapping BDD100K
+    attribute strata relative to a daytime-clear-city-street reference?
+
+  manifest:
+    path: artifacts/bdd100k_split_manifest.json
+    expected_schema_version: 4
+    expected_test_partition: confirmatory
+    expected_diagnostic_image_ids: [6, 9, 18, 25, 27, 35, 42, 43]
+
+  extraction:
+    schema_version: 1
+    mc_passes: 10
+    mc_sensitivity_passes: [2, 5, 10]
+    mc_seed_stride: 1009
+    stochastic_module_types:
+      - DropPath
+    candidate_threshold: 0.01
+    association_iou: 0.30
+    association_class_penalty: 1.0
+    unmatched_cost: 2.0
+
+  targets:
+    localization_iou_threshold: 0.50
+    class_assignment_iou_threshold: 0.10
+
+  domain_shift:
+    development_policy: source_only
+    reference:
+      timeofday: daytime
+      weather: clear
+      scene: city street
+    attributes: [timeofday, weather, scene]
+    undefined_values: [undefined, unknown, ""]
+    minimum_rows: 200
+
+  feature_groups:
+    class:
+      - score
+      - category_index
+    localization:
+      - spatial_reference_iou_mean
+      - spatial_reference_iou_std
+      - spatial_pairwise_iou_loss
+      - spatial_box_variance
+      - spatial_absence_rate
+      - deterministic_reference_variance
+      - deterministic_reference_step
+      - bbox_area_fraction
+    uncertainty:
+      - semantic_mutual_information
+      - semantic_predictive_entropy
+      - semantic_class_disagreement
+      - semantic_score_variance
+      - geometric_pairwise_iou_loss
+      - geometric_box_variance
+      - mc_absence_rate
+      - representation_embedding_variance
+      - representation_embedding_cosine_instability
+      - deterministic_hidden_step
+      - mc_score_mean
+
+  calibration:
+    methods:
+      - raw_confidence
+      - confidence_calibrated
+      - class_only
+      - localization_only
+      - uncertainty_only
+      - class_localization
+      - class_uncertainty
+      - localization_uncertainty
+      - multilevel
+      - flat_joint
+    primary_method: multilevel
+    primary_baselines: [confidence_calibrated, flat_joint]
+    training_score_threshold: 0.20
+    validation_selection_fraction: 0.50
+    validation_group_column: sequence_id
+    regularization_grid: [0.01, 0.1, 1.0, 10.0]
+    validation_metric: auroc
+    final_calibrator: isotonic
+    minimum_class_rows: 100
+    minimum_selection_samples: 200
+    minimum_calibration_samples: 100
+
+  execution:
+    materialization_workers: 4
+
+  inference:
+    evaluation_domain: shifted
+    familywise_alpha: 0.05
+    correction: holm
+    primary_metrics: [brier, nll, aurc]
+    success_rule: >-
+      On the frozen confirmatory shifted subset, multilevel calibration must
+      improve Brier score, negative log likelihood, and AURC over both
+      calibrated confidence and the flat joint capacity control in all six
+      one-sided paired sequence-bootstrap comparisons after Holm correction.
+      Diagnostic results cannot satisfy this rule.
+
+  outputs:
+    root: RQ4/outputs
+    models: RQ4/models
+    train_features: RQ4/outputs/features_train.parquet
+    validation_features: RQ4/outputs/features_validation.parquet
+    test_features: RQ4/outputs/features_test.parquet
+    train_image_summary: RQ4/outputs/images_train.parquet
+    validation_image_summary: RQ4/outputs/images_validation.parquet
+    test_image_summary: RQ4/outputs/images_test.parquet
+    metrics: RQ4/outputs/metrics.json
+    bootstrap: RQ4/outputs/bootstrap_metrics.parquet
+    predictions: RQ4/outputs/calibrated_predictions.parquet

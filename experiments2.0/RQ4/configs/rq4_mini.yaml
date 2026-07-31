@@ -1,0 +1,38 @@
+extends: rq4.yaml
+
+evaluation:
+  bootstrap_repetitions: 50
+  minimum_subgroup_rows: 20
+  calibration_bins: [5, 10, 15]
+
+rq4:
+  manifest:
+    path: artifacts/bdd100k_diagnostic_manifest.json
+    expected_test_partition: diagnostic
+
+  domain_shift:
+    minimum_rows: 5
+
+  calibration:
+    minimum_class_rows: 5
+    minimum_selection_samples: 20
+    minimum_calibration_samples: 20
+
+  mini:
+    selection_basis: metadata_only_first_source_domain_ids
+    train_image_ids: [39, 89, 111, 138, 161, 171]
+    validation_image_ids: [51, 79, 174, 230]
+    test_image_ids: [6, 9, 18, 25, 27, 35, 42, 43]
+
+  outputs:
+    root: RQ4/outputs/mini_e2e
+    models: RQ4/models/mini_e2e
+    train_features: RQ4/outputs/mini_e2e/features_train.parquet
+    validation_features: RQ4/outputs/mini_e2e/features_validation.parquet
+    test_features: RQ4/outputs/mini_e2e/features_test.parquet
+    train_image_summary: RQ4/outputs/mini_e2e/images_train.parquet
+    validation_image_summary: RQ4/outputs/mini_e2e/images_validation.parquet
+    test_image_summary: RQ4/outputs/mini_e2e/images_test.parquet
+    metrics: RQ4/outputs/mini_e2e/metrics.json
+    bootstrap: RQ4/outputs/mini_e2e/bootstrap_metrics.parquet
+    predictions: RQ4/outputs/mini_e2e/calibrated_predictions.parquet

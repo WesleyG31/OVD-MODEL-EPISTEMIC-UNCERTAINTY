@@ -1,0 +1,10 @@
+method,component,mc_passes,coefficient_count,selected_regularization,selection_auroc
+calibrated_confidence,none,0,0,,
+criticality_only,none,0,0,,
+flat_joint,flat,2,18,1.0,0.8722580645161291
+late_fusion_unweighted,uncertainty,2,17,10.0,0.8748387096774193
+raw_confidence,none,0,0,,
+risk_aware_fusion,uncertainty,2,17,10.0,0.8748387096774193
+risk_aware_fusion_mc05,uncertainty,5,17,0.01,0.8490322580645161
+risk_aware_fusion_mc10,uncertainty,10,17,1.0,0.9135483870967741
+uncertainty_only,uncertainty,2,17,10.0,0.8748387096774193

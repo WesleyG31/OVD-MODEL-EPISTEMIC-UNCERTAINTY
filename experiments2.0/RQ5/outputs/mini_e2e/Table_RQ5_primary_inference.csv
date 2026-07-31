@@ -1,0 +1,7 @@
+comparison,baseline,bootstrap_improvement_mean,candidate,confidence_interval,favorable_and_significant,improvement,metric,p_value_holm,p_value_one_sided,holm_adjusted_p,margin,passed,raw_one_sided_p
+coverage_at_weighted_risk_0.10__risk_aware_fusion__vs__calibrated_confidence,calibrated_confidence,-0.026904175288861517,risk_aware_fusion,"[-0.1503730869492192, 0.09871299300651604]",False,0.057225460231241046,coverage_at_weighted_risk_0.10,0.19607843137254902,0.0392156862745098,,,,
+coverage_at_weighted_risk_0.10__risk_aware_fusion__vs__flat_joint,flat_joint,-0.02688628071825396,risk_aware_fusion,"[-0.19412660007713647, 0.09782467925401915]",False,0.13904246656807617,coverage_at_weighted_risk_0.10,0.11764705882352941,0.0196078431372549,,,,
+weighted_aurc__risk_aware_fusion__vs__calibrated_confidence,calibrated_confidence,-0.06048303809319749,risk_aware_fusion,"[-0.0864216757931843, -0.04478144030150889]",False,-0.05965709926324114,weighted_aurc,1.0,1.0,,,,
+weighted_aurc__risk_aware_fusion__vs__flat_joint,flat_joint,-0.02955480007658868,risk_aware_fusion,"[-0.04777895386067571, 0.0037550791367777954]",False,-0.033916294689011806,weighted_aurc,1.0,1.0,,,,
+brier_noninferiority__calibrated_confidence,calibrated_confidence,,risk_aware_fusion,"[-0.03939281547284489, -0.01495819788028674]",,-0.024713650249415353,brier_noninferiority,,,1.0,0.01,False,0.9607843137254902
+brier_noninferiority__flat_joint,flat_joint,,risk_aware_fusion,"[-0.04076972811483319, 0.011398580942901184]",,-0.013328195776621643,brier_noninferiority,,,1.0,0.01,False,0.5882352941176471

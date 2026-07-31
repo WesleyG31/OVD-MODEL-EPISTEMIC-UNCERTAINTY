@@ -1,0 +1,95 @@
+extends: ../../configs/base.yaml
+
+rq2:
+  question: >-
+    How does fusing deterministic and stochastic uncertainty estimators
+    improve reliability for pinned GroundingDINO Swin-T on frozen BDD100K?
+
+  manifest:
+    path: artifacts/bdd100k_split_manifest.json
+    expected_schema_version: 4
+    expected_test_partition: confirmatory
+    expected_diagnostic_image_ids: [6, 9, 18, 25, 27, 35, 42, 43]
+
+  extraction:
+    schema_version: 1
+    mc_passes: 10
+    mc_sensitivity_passes: [2, 5, 10]
+    # Must match configs/base.yaml shared_extraction. Confirmatory inference
+    # has not run; the neutral shared sequence is frozen before that run.
+    mc_seed_stride: 1009
+    stochastic_module_types:
+      - DropPath
+    candidate_threshold: 0.01
+    association_iou: 0.30
+    association_class_penalty: 1.0
+    unmatched_cost: 2.0
+
+  feature_groups:
+    confidence:
+      - confidence_uncertainty
+    deterministic:
+      - deterministic_reference_variance
+      - deterministic_reference_step
+      - deterministic_hidden_step
+    stochastic:
+      - stochastic_mutual_information
+      - stochastic_predictive_entropy
+      - stochastic_class_disagreement
+      - stochastic_score_variance
+      - stochastic_box_variance
+      - stochastic_pairwise_iou_loss
+      - stochastic_embedding_variance
+      - stochastic_embedding_cosine_instability
+      - stochastic_absence_rate
+
+  estimators:
+    methods:
+      - confidence
+      - deterministic_fixed
+      - stochastic_fixed
+      - equal_fixed_fusion
+      - learned_deterministic
+      - learned_stochastic
+      - learned_fusion
+      - learned_fusion_plus_confidence
+      - nonlinear_fusion
+    primary_fusion: learned_fusion
+    primary_standalones:
+      - learned_deterministic
+      - learned_stochastic
+    regularization_grid: [0.01, 0.1, 1.0, 10.0]
+    validation_metric: auroc
+    calibrator: isotonic
+    minimum_validation_samples: 200
+    validation_calibration_fraction: 0.5
+    minimum_partition_samples: 50
+    random_forest:
+      n_estimators: 300
+      max_depth: 8
+      min_samples_leaf: 20
+      max_features: sqrt
+      class_weight: balanced
+      n_jobs: -1
+
+  inference:
+    familywise_alpha: 0.05
+    correction: holm
+    bootstrap_test: null_centered_paired_cluster_bootstrap
+    primary_metrics: [auroc, aurc]
+    comparison_baselines:
+      - learned_deterministic
+      - learned_stochastic
+
+  outputs:
+    root: RQ2/outputs
+    models: RQ2/models
+    train_features: RQ2/outputs/features_train.parquet
+    validation_features: RQ2/outputs/features_validation.parquet
+    test_features: RQ2/outputs/features_test.parquet
+    train_image_summary: RQ2/outputs/images_train.parquet
+    validation_image_summary: RQ2/outputs/images_validation.parquet
+    test_image_summary: RQ2/outputs/images_test.parquet
+    metrics: RQ2/outputs/metrics.json
+    bootstrap: RQ2/outputs/bootstrap_metrics.parquet
+    predictions: RQ2/outputs/estimator_predictions.parquet

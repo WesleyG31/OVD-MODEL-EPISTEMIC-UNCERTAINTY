@@ -1,0 +1,131 @@
+extends: ../../configs/base.yaml
+
+rq5:
+  question: >-
+    How can fused uncertainty and calibrated detection outputs be integrated
+    into a decision-level fusion layer to improve risk-aware selective
+    perception while characterizing the offline latency-quality frontier?
+
+  manifest:
+    path: artifacts/bdd100k_split_manifest.json
+    expected_schema_version: 4
+    expected_test_partition: confirmatory
+    expected_diagnostic_image_ids: [6, 9, 18, 25, 27, 35, 42, 43]
+
+  extraction:
+    schema_version: 1
+    mc_passes: 10
+    mc_operating_passes: 2
+    mc_sensitivity_passes: [2, 5, 10]
+    mc_seed_stride: 1009
+    stochastic_module_types: [DropPath]
+    candidate_threshold: 0.01
+    association_iou: 0.30
+    association_class_penalty: 1.0
+    unmatched_cost: 2.0
+
+  feature_groups:
+    uncertainty:
+      - semantic_mutual_information
+      - semantic_predictive_entropy
+      - semantic_class_disagreement
+      - semantic_score_variance
+      - spatial_reference_iou_mean
+      - spatial_reference_iou_std
+      - geometric_pairwise_iou_loss
+      - geometric_box_variance
+      - mc_absence_rate
+      - representation_embedding_variance
+      - representation_embedding_cosine_instability
+      - deterministic_reference_variance
+      - deterministic_reference_step
+      - deterministic_hidden_step
+      - bbox_area_fraction
+      - mc_score_mean
+
+  criticality:
+    class_severity:
+      person: 2.0
+      rider: 2.0
+      motorcycle: 2.0
+      bicycle: 2.0
+      truck: 1.5
+      bus: 1.5
+      train: 1.5
+      car: 1.25
+      traffic light: 1.0
+      traffic sign: 1.0
+    bottomness_coefficient: 0.5
+    centrality_coefficient: 0.5
+    sensitivity_coefficients:
+      no_geometry: {bottomness: 0.0, centrality: 0.0}
+      half_geometry: {bottomness: 0.25, centrality: 0.25}
+      primary: {bottomness: 0.5, centrality: 0.5}
+      strong_geometry: {bottomness: 1.0, centrality: 1.0}
+    tier_boundaries: [1.75, 2.75]
+
+  fusion:
+    methods:
+      - raw_confidence
+      - calibrated_confidence
+      - uncertainty_only
+      - criticality_only
+      - late_fusion_unweighted
+      - risk_aware_fusion
+      - flat_joint
+    primary_method: risk_aware_fusion
+    primary_baselines: [calibrated_confidence, flat_joint]
+    training_score_threshold: 0.20
+    validation_group_column: sequence_id
+    validation_fractions:
+      selection: 0.40
+      component_calibration: 0.30
+      policy_calibration: 0.30
+    regularization_grid: [0.01, 0.1, 1.0, 10.0]
+    validation_metric: auroc
+    calibrator: isotonic
+    confidence_weight: 0.5
+    uncertainty_weight: 0.5
+    target_weighted_risk: 0.10
+    minimum_selection_samples: 200
+    minimum_component_calibration_samples: 100
+    minimum_policy_calibration_samples: 100
+
+  realtime:
+    claim_mode: offline_latency_quality_frontier
+    enforce_total_latency_gate: false
+    primary_budget_ms: 100.0
+    budgets_ms: [33.3, 50.0, 100.0]
+    maximum_decision_p95_ms: 5.0
+    benchmark_warmup_repetitions: 5
+    benchmark_repetitions: 25
+    benchmark_max_images: 128
+    prefix_latency_model: linear_fraction_of_measured_stochastic_block
+
+  inference:
+    familywise_alpha: 0.05
+    correction: holm
+    primary_metrics: [weighted_aurc, coverage_at_weighted_risk_0.10]
+    brier_noninferiority_margin: 0.01
+    success_rule: >-
+      On the frozen confirmatory set, risk-aware mc02 fusion must improve
+      weighted AURC and coverage at weighted risk 0.10 over calibrated
+      confidence and the flat capacity control in all four one-sided paired
+      sequence-bootstrap comparisons after Holm correction; it must also pass
+      a Brier non-inferiority test with confidence interval in the same Holm
+      family and the decision-overhead gate. Total detector latency is an
+      explicitly descriptive offline frontier, not a 10 Hz deployment claim.
+      Diagnostic results cannot satisfy this rule.
+
+  outputs:
+    root: RQ5/outputs
+    models: RQ5/models
+    train_features: RQ5/outputs/features_train.parquet
+    validation_features: RQ5/outputs/features_validation.parquet
+    test_features: RQ5/outputs/features_test.parquet
+    train_image_summary: RQ5/outputs/images_train.parquet
+    validation_image_summary: RQ5/outputs/images_validation.parquet
+    test_image_summary: RQ5/outputs/images_test.parquet
+    metrics: RQ5/outputs/metrics.json
+    bootstrap: RQ5/outputs/bootstrap_metrics.parquet
+    predictions: RQ5/outputs/calibrated_predictions.parquet
