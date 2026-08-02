@@ -170,6 +170,19 @@ def source_domain_image_ids(
     return selected
 
 
+def materialization_image_ids(
+    config: dict[str, Any], split: str, manifest_image_ids: list[int]
+) -> list[int]:
+    """Resolve the exact image universe used by both writers and readers."""
+    configured = configured_mini_image_ids(config, split)
+    if configured is not None:
+        return configured
+    source_only = source_domain_image_ids(config, split, manifest_image_ids)
+    if source_only is not None:
+        return source_only
+    return [int(image_id) for image_id in manifest_image_ids]
+
+
 def _materialization_identity(
     config: dict[str, Any],
     split: str,
@@ -205,8 +218,7 @@ def _materialization_identity(
         "requested_image_ids": (
             requested_image_ids
             if requested_image_ids is not None
-            else configured_mini_image_ids(config, split)
-            or manifest["splits"][split]
+            else materialization_image_ids(config, split, manifest["splits"][split])
         ),
     }
     active_image_ids = configuration["requested_image_ids"]
@@ -421,15 +433,15 @@ def extract_split(
         if output_override is not None
         else project_path(config, config["rq4"]["outputs"][f"{split}_image_summary"])
     )
-    configured_ids = configured_mini_image_ids(config, split)
-    requested_image_ids = image_ids_override if image_ids_override is not None else configured_ids
-    if requested_image_ids is None:
-        requested_image_ids = source_domain_image_ids(config, split, manifest["splits"][split])
+    requested_image_ids = (
+        image_ids_override
+        if image_ids_override is not None
+        else materialization_image_ids(config, split, manifest["splits"][split])
+    )
     shared_limit = limit
-    if requested_image_ids is not None:
-        if limit is not None:
-            requested_image_ids = requested_image_ids[: int(limit)]
-        shared_limit = None
+    if limit is not None:
+        requested_image_ids = requested_image_ids[: int(limit)]
+    shared_limit = None
     shared_split = ensure_shared_split(
         config,
         manifest_path=manifest_path,

@@ -1,0 +1,5 @@
+budgets_met,estimated_fps_from_mean,mc_passes,mean_ms,measurement_kind,p50_ms,p95_ms
+"{'100_ms': False, '33.3_ms': False, '50_ms': False}",2.4776257022167365,0,403.61221596357274,linear_prefix_estimate_from_measured_stochastic_block_plus_measured_decision,394.5899499957014,424.4179050203675
+"{'100_ms': False, '33.3_ms': False, '50_ms': False}",0.8307548679239928,2,1203.7245144273916,linear_prefix_estimate_from_measured_stochastic_block_plus_measured_decision,1178.8588399793516,1224.9614549909747
+"{'100_ms': False, '33.3_ms': False, '50_ms': False}",0.41599189970455236,5,2403.8929621231196,linear_prefix_estimate_from_measured_stochastic_block_plus_measured_decision,2354.237824983851,2446.184612487399
+"{'100_ms': False, '33.3_ms': False, '50_ms': False}",0.22705734747005085,10,4404.173708282668,measured_synchronized_gpu_blocks_plus_measured_decision,4313.508650011339,4485.24469503884

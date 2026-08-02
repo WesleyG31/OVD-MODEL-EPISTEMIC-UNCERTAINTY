@@ -62,7 +62,7 @@ def weighted_risk_at_coverage(
     if len(curve_coverage) == 0:
         return float("nan")
     index = min(
-        max(int(np.ceil(float(coverage) * len(curve_coverage))) - 1, 0),
+        int(np.searchsorted(curve_coverage, float(coverage), side="left")),
         len(curve_risk) - 1,
     )
     return float(curve_risk[index])
@@ -176,6 +176,24 @@ def _one_sided_p(
 ) -> float:
     return centered_bootstrap_p_value(
         improvements, observed, null_value=null_value
+    )
+
+
+def _analysis_fingerprint(
+    config: dict[str, Any],
+    test_metadata: dict[str, Any],
+    models_sha256: str,
+    evaluation_source_sha256: str,
+) -> str:
+    return stable_fingerprint(
+        {
+            "manifest_sha256": test_metadata["manifest_sha256"],
+            "test_features_sha256": test_metadata["features_sha256"],
+            "models_sha256": models_sha256,
+            "evaluation_source_sha256": evaluation_source_sha256,
+            "inference": config["rq5"]["inference"],
+            "realtime": config["rq5"]["realtime"],
+        }
     )
 
 
@@ -582,6 +600,8 @@ def evaluate_policies(config: dict[str, Any]) -> dict[str, Any]:
         )
 
     model_index_path = project_path(config, outputs["models"]) / "model_index.json"
+    models_sha256 = sha256_file(model_index_path)
+    evaluation_source_sha256 = sha256_file(Path(__file__).resolve())
     artifacts = {
         "test_features": {
             "path": str(project_path(config, outputs["test_features"])),
@@ -593,7 +613,7 @@ def evaluate_policies(config: dict[str, Any]) -> dict[str, Any]:
         },
         "model_index": {
             "path": str(model_index_path),
-            "sha256": sha256_file(model_index_path),
+            "sha256": models_sha256,
         },
         "predictions": {"path": str(prediction_path), "sha256": sha256_file(prediction_path)},
         "bootstrap": {"path": str(bootstrap_path), "sha256": sha256_file(bootstrap_path)},
@@ -633,14 +653,12 @@ def evaluate_policies(config: dict[str, Any]) -> dict[str, Any]:
         "computational_cost": latency,
         "artifact_integrity": artifacts,
         "shared_fingerprint": test_metadata["shared_fingerprint"],
-        "analysis_fingerprint": stable_fingerprint(
-            {
-                "manifest_sha256": test_metadata["manifest_sha256"],
-                "test_features_sha256": test_metadata["features_sha256"],
-                "models_sha256": sha256_file(model_index_path),
-                "inference": config["rq5"]["inference"],
-                "realtime": config["rq5"]["realtime"],
-            }
+        "analysis_source_sha256": evaluation_source_sha256,
+        "analysis_fingerprint": _analysis_fingerprint(
+            config,
+            test_metadata,
+            models_sha256,
+            evaluation_source_sha256,
         ),
         "environment": environment_metadata(config["_meta"]["project_root"]),
         "limitations": [

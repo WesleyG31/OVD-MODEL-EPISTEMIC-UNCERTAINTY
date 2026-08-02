@@ -1,0 +1,1592 @@
+{
+  "calibration_fingerprint": "4c00f0b5792fb1a6f62e2622f531a360865630e16886978d096a19e598b8a535",
+  "calibration_rows": 3645,
+  "development_policy": "source_only",
+  "domain_audit": {
+    "shifted_rows_used": 0,
+    "source_only_development": true,
+    "train_source_image_ids_sha256": "7fc898ab7a949c7325be677e92b36a5a99beec220043e0329a5836b2033d1aa7",
+    "validation_source_image_ids_sha256": "aaf1c57c6e9ffc123acffcbc0733704ff368a8ed563e13caba04a95ec0d7b689"
+  },
+  "group_audit": {
+    "calibration_groups_sha256": "360356a766495d86945778eb73ceb62f3e24d07d778699fefe95d72fd3f0e9c9",
+    "column": "sequence_id",
+    "overlap_count": 0,
+    "selection_groups_sha256": "c107c7eea4f165b512da41b37f11c6f448dd0a4e6b20438ecf93e768af2b9dab"
+  },
+  "methods": {
+    "class_localization": {
+      "calibration_metrics": {
+        "brier": 0.1258942051595297,
+        "ece": 2.2496571271941154e-09,
+        "nll": 0.38962068530219907
+      },
+      "coefficient_count": 20,
+      "components": {
+        "class": {
+          "coefficient_count": 11,
+          "features": [
+            "score",
+            "category_index"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8697962171759681,
+          "target": "is_class_correct"
+        },
+        "flat": {
+          "coefficient_count": 30,
+          "features": [
+            "score",
+            "category_index",
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction",
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 1.0,
+          "selection_auroc": 0.8998322936850852,
+          "target": "is_detection_correct"
+        },
+        "localization": {
+          "coefficient_count": 9,
+          "features": [
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.01,
+          "selection_auroc": 0.7782513696968196,
+          "target": "is_well_localized"
+        },
+        "uncertainty": {
+          "coefficient_count": 12,
+          "features": [
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.1,
+          "selection_auroc": 0.8335714899859665,
+          "target": "is_detection_correct"
+        }
+      },
+      "family": "level_ablation",
+      "features": [
+        "score",
+        "category_index",
+        "spatial_reference_iou_mean",
+        "spatial_reference_iou_std",
+        "spatial_pairwise_iou_loss",
+        "spatial_box_variance",
+        "spatial_absence_rate",
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "bbox_area_fraction"
+      ],
+      "model_sha256": "71b13f802f25870b339bb2720f9a6bde37e10c8e4d2f9f60f5b07a679c412268"
+    },
+    "class_only": {
+      "calibration_metrics": {
+        "brier": 0.13171869762008592,
+        "ece": 4.170096050729512e-09,
+        "nll": 0.4049652863574729
+      },
+      "coefficient_count": 11,
+      "components": {
+        "class": {
+          "coefficient_count": 11,
+          "features": [
+            "score",
+            "category_index"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8697962171759681,
+          "target": "is_class_correct"
+        },
+        "flat": {
+          "coefficient_count": 30,
+          "features": [
+            "score",
+            "category_index",
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction",
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 1.0,
+          "selection_auroc": 0.8998322936850852,
+          "target": "is_detection_correct"
+        },
+        "localization": {
+          "coefficient_count": 9,
+          "features": [
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.01,
+          "selection_auroc": 0.7782513696968196,
+          "target": "is_well_localized"
+        },
+        "uncertainty": {
+          "coefficient_count": 12,
+          "features": [
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.1,
+          "selection_auroc": 0.8335714899859665,
+          "target": "is_detection_correct"
+        }
+      },
+      "family": "level_ablation",
+      "features": [
+        "score",
+        "category_index"
+      ],
+      "model_sha256": "50111d7334671904dbc008acbfd7ea4ad4d20785dcf40073d15a4a0924c8b42c"
+    },
+    "class_uncertainty": {
+      "calibration_metrics": {
+        "brier": 0.13071307115339223,
+        "ece": 2.3593964391770374e-09,
+        "nll": 0.40308607409279595
+      },
+      "coefficient_count": 23,
+      "components": {
+        "class": {
+          "coefficient_count": 11,
+          "features": [
+            "score",
+            "category_index"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8697962171759681,
+          "target": "is_class_correct"
+        },
+        "flat": {
+          "coefficient_count": 30,
+          "features": [
+            "score",
+            "category_index",
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction",
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 1.0,
+          "selection_auroc": 0.8998322936850852,
+          "target": "is_detection_correct"
+        },
+        "localization": {
+          "coefficient_count": 9,
+          "features": [
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.01,
+          "selection_auroc": 0.7782513696968196,
+          "target": "is_well_localized"
+        },
+        "uncertainty": {
+          "coefficient_count": 12,
+          "features": [
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.1,
+          "selection_auroc": 0.8335714899859665,
+          "target": "is_detection_correct"
+        }
+      },
+      "family": "level_ablation",
+      "features": [
+        "score",
+        "category_index",
+        "semantic_mutual_information",
+        "semantic_predictive_entropy",
+        "semantic_class_disagreement",
+        "semantic_score_variance",
+        "geometric_pairwise_iou_loss",
+        "geometric_box_variance",
+        "mc_absence_rate",
+        "representation_embedding_variance",
+        "representation_embedding_cosine_instability",
+        "deterministic_hidden_step",
+        "mc_score_mean"
+      ],
+      "model_sha256": "78d37cde114f62ffe10ca01eb222ad8799823532caeee6fc0d531df55226713d"
+    },
+    "confidence_calibrated": {
+      "calibration_metrics": {
+        "brier": 0.1746811593098647,
+        "ece": 2.4691361787062377e-10,
+        "nll": 0.5259279950595992
+      },
+      "coefficient_count": 0,
+      "components": {
+        "class": {
+          "coefficient_count": 11,
+          "features": [
+            "score",
+            "category_index"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8697962171759681,
+          "target": "is_class_correct"
+        },
+        "flat": {
+          "coefficient_count": 30,
+          "features": [
+            "score",
+            "category_index",
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction",
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 1.0,
+          "selection_auroc": 0.8998322936850852,
+          "target": "is_detection_correct"
+        },
+        "localization": {
+          "coefficient_count": 9,
+          "features": [
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.01,
+          "selection_auroc": 0.7782513696968196,
+          "target": "is_well_localized"
+        },
+        "uncertainty": {
+          "coefficient_count": 12,
+          "features": [
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.1,
+          "selection_auroc": 0.8335714899859665,
+          "target": "is_detection_correct"
+        }
+      },
+      "family": "confidence_control",
+      "features": [
+        "score"
+      ],
+      "model_sha256": "4e554b4d4e1e09593dfb1d8ccf74b9ce3935cd13c0ce5ef3b23f5b1dbe80dda5"
+    },
+    "flat_joint": {
+      "calibration_metrics": {
+        "brier": 0.11817511057293936,
+        "ece": 3.1001372441895243e-09,
+        "nll": 0.37011172253191316
+      },
+      "coefficient_count": 30,
+      "components": {
+        "class": {
+          "coefficient_count": 11,
+          "features": [
+            "score",
+            "category_index"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8697962171759681,
+          "target": "is_class_correct"
+        },
+        "flat": {
+          "coefficient_count": 30,
+          "features": [
+            "score",
+            "category_index",
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction",
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 1.0,
+          "selection_auroc": 0.8998322936850852,
+          "target": "is_detection_correct"
+        },
+        "localization": {
+          "coefficient_count": 9,
+          "features": [
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.01,
+          "selection_auroc": 0.7782513696968196,
+          "target": "is_well_localized"
+        },
+        "uncertainty": {
+          "coefficient_count": 12,
+          "features": [
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.1,
+          "selection_auroc": 0.8335714899859665,
+          "target": "is_detection_correct"
+        }
+      },
+      "family": "flat_capacity_control",
+      "features": [
+        "score",
+        "category_index",
+        "spatial_reference_iou_mean",
+        "spatial_reference_iou_std",
+        "spatial_pairwise_iou_loss",
+        "spatial_box_variance",
+        "spatial_absence_rate",
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "bbox_area_fraction",
+        "semantic_mutual_information",
+        "semantic_predictive_entropy",
+        "semantic_class_disagreement",
+        "semantic_score_variance",
+        "geometric_pairwise_iou_loss",
+        "geometric_box_variance",
+        "mc_absence_rate",
+        "representation_embedding_variance",
+        "representation_embedding_cosine_instability",
+        "deterministic_hidden_step",
+        "mc_score_mean"
+      ],
+      "model_sha256": "eeb6c3a239e407b61b839f0cab159c5d0ba6ee10818bef183e65b287c4122953"
+    },
+    "localization_only": {
+      "calibration_metrics": {
+        "brier": 0.18323600832780398,
+        "ece": 1.6460908798774114e-10,
+        "nll": 0.5458411028530169
+      },
+      "coefficient_count": 9,
+      "components": {
+        "class": {
+          "coefficient_count": 11,
+          "features": [
+            "score",
+            "category_index"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8697962171759681,
+          "target": "is_class_correct"
+        },
+        "flat": {
+          "coefficient_count": 30,
+          "features": [
+            "score",
+            "category_index",
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction",
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 1.0,
+          "selection_auroc": 0.8998322936850852,
+          "target": "is_detection_correct"
+        },
+        "localization": {
+          "coefficient_count": 9,
+          "features": [
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.01,
+          "selection_auroc": 0.7782513696968196,
+          "target": "is_well_localized"
+        },
+        "uncertainty": {
+          "coefficient_count": 12,
+          "features": [
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.1,
+          "selection_auroc": 0.8335714899859665,
+          "target": "is_detection_correct"
+        }
+      },
+      "family": "level_ablation",
+      "features": [
+        "spatial_reference_iou_mean",
+        "spatial_reference_iou_std",
+        "spatial_pairwise_iou_loss",
+        "spatial_box_variance",
+        "spatial_absence_rate",
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "bbox_area_fraction"
+      ],
+      "model_sha256": "aceb2a0a7ec0c7f6f34107a41b73e3d26a13536e5996c5cb9304a79d7c110ae3"
+    },
+    "localization_uncertainty": {
+      "calibration_metrics": {
+        "brier": 0.1519861892820069,
+        "ece": 1.3717424305501765e-10,
+        "nll": 0.46807533197232193
+      },
+      "coefficient_count": 21,
+      "components": {
+        "class": {
+          "coefficient_count": 11,
+          "features": [
+            "score",
+            "category_index"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8697962171759681,
+          "target": "is_class_correct"
+        },
+        "flat": {
+          "coefficient_count": 30,
+          "features": [
+            "score",
+            "category_index",
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction",
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 1.0,
+          "selection_auroc": 0.8998322936850852,
+          "target": "is_detection_correct"
+        },
+        "localization": {
+          "coefficient_count": 9,
+          "features": [
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.01,
+          "selection_auroc": 0.7782513696968196,
+          "target": "is_well_localized"
+        },
+        "uncertainty": {
+          "coefficient_count": 12,
+          "features": [
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.1,
+          "selection_auroc": 0.8335714899859665,
+          "target": "is_detection_correct"
+        }
+      },
+      "family": "level_ablation",
+      "features": [
+        "spatial_reference_iou_mean",
+        "spatial_reference_iou_std",
+        "spatial_pairwise_iou_loss",
+        "spatial_box_variance",
+        "spatial_absence_rate",
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "bbox_area_fraction",
+        "semantic_mutual_information",
+        "semantic_predictive_entropy",
+        "semantic_class_disagreement",
+        "semantic_score_variance",
+        "geometric_pairwise_iou_loss",
+        "geometric_box_variance",
+        "mc_absence_rate",
+        "representation_embedding_variance",
+        "representation_embedding_cosine_instability",
+        "deterministic_hidden_step",
+        "mc_score_mean"
+      ],
+      "model_sha256": "459555fa7bff625400981d9c1fd351d377f4edad6e27de1ebf52d1ceccb2db2e"
+    },
+    "multilevel": {
+      "calibration_metrics": {
+        "brier": 0.13004081486800084,
+        "ece": 6.858710785684082e-10,
+        "nll": 0.40273939851663726
+      },
+      "coefficient_count": 32,
+      "components": {
+        "class": {
+          "coefficient_count": 11,
+          "features": [
+            "score",
+            "category_index"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8697962171759681,
+          "target": "is_class_correct"
+        },
+        "flat": {
+          "coefficient_count": 30,
+          "features": [
+            "score",
+            "category_index",
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction",
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 1.0,
+          "selection_auroc": 0.8998322936850852,
+          "target": "is_detection_correct"
+        },
+        "localization": {
+          "coefficient_count": 9,
+          "features": [
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.01,
+          "selection_auroc": 0.7782513696968196,
+          "target": "is_well_localized"
+        },
+        "uncertainty": {
+          "coefficient_count": 12,
+          "features": [
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.1,
+          "selection_auroc": 0.8335714899859665,
+          "target": "is_detection_correct"
+        }
+      },
+      "family": "primary_multilevel",
+      "features": [
+        "score",
+        "category_index",
+        "spatial_reference_iou_mean",
+        "spatial_reference_iou_std",
+        "spatial_pairwise_iou_loss",
+        "spatial_box_variance",
+        "spatial_absence_rate",
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "bbox_area_fraction",
+        "semantic_mutual_information",
+        "semantic_predictive_entropy",
+        "semantic_class_disagreement",
+        "semantic_score_variance",
+        "geometric_pairwise_iou_loss",
+        "geometric_box_variance",
+        "mc_absence_rate",
+        "representation_embedding_variance",
+        "representation_embedding_cosine_instability",
+        "deterministic_hidden_step",
+        "mc_score_mean"
+      ],
+      "model_sha256": "5639bfcb41a0d1a5b282b1611f46d35a46744f026a285957b010c05da4a0f28a"
+    },
+    "multilevel_mc02": {
+      "calibration_metrics": {
+        "brier": 0.1324704427233809,
+        "ece": 8.779149498478893e-10,
+        "nll": 0.4080117085850584
+      },
+      "coefficient_count": 45,
+      "components": {
+        "class": {
+          "coefficient_count": 11,
+          "features": [
+            "score",
+            "category_index"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8697962171759681,
+          "target": "is_class_correct"
+        },
+        "localization": {
+          "coefficient_count": 13,
+          "features": [
+            "spatial_reference_iou_mean_mc02",
+            "spatial_reference_iou_std_mc02",
+            "spatial_pairwise_iou_loss_mc02",
+            "spatial_box_variance_mc02",
+            "spatial_absence_rate_mc02",
+            "deterministic_reference_variance_mc02",
+            "deterministic_reference_step_mc02",
+            "bbox_area_fraction_mc02"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.1,
+          "selection_auroc": 0.7455844359160554,
+          "target": "is_well_localized"
+        },
+        "uncertainty": {
+          "coefficient_count": 21,
+          "features": [
+            "semantic_mutual_information_mc02",
+            "semantic_predictive_entropy_mc02",
+            "semantic_class_disagreement_mc02",
+            "semantic_score_variance_mc02",
+            "geometric_pairwise_iou_loss_mc02",
+            "geometric_box_variance_mc02",
+            "mc_absence_rate_mc02",
+            "representation_embedding_variance_mc02",
+            "representation_embedding_cosine_instability_mc02",
+            "deterministic_hidden_step_mc02",
+            "mc_score_mean_mc02"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 1.0,
+          "selection_auroc": 0.8121980832628979,
+          "target": "is_detection_correct"
+        }
+      },
+      "family": "mc_pass_sensitivity",
+      "features": [
+        "score",
+        "category_index",
+        "spatial_reference_iou_mean_mc02",
+        "spatial_reference_iou_std_mc02",
+        "spatial_pairwise_iou_loss_mc02",
+        "spatial_box_variance_mc02",
+        "spatial_absence_rate_mc02",
+        "deterministic_reference_variance_mc02",
+        "deterministic_reference_step_mc02",
+        "bbox_area_fraction_mc02",
+        "semantic_mutual_information_mc02",
+        "semantic_predictive_entropy_mc02",
+        "semantic_class_disagreement_mc02",
+        "semantic_score_variance_mc02",
+        "geometric_pairwise_iou_loss_mc02",
+        "geometric_box_variance_mc02",
+        "mc_absence_rate_mc02",
+        "representation_embedding_variance_mc02",
+        "representation_embedding_cosine_instability_mc02",
+        "deterministic_hidden_step_mc02",
+        "mc_score_mean_mc02"
+      ],
+      "model_sha256": "a5a5a3258d6efbbd3e0c6621cacede6eff258f1b5739f2714582f60a74c1f05f"
+    },
+    "multilevel_mc05": {
+      "calibration_metrics": {
+        "brier": 0.12915293083949939,
+        "ece": 7.407407839354773e-10,
+        "nll": 0.4001688125163415
+      },
+      "coefficient_count": 32,
+      "components": {
+        "class": {
+          "coefficient_count": 11,
+          "features": [
+            "score",
+            "category_index"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8697962171759681,
+          "target": "is_class_correct"
+        },
+        "localization": {
+          "coefficient_count": 9,
+          "features": [
+            "spatial_reference_iou_mean_mc05",
+            "spatial_reference_iou_std_mc05",
+            "spatial_pairwise_iou_loss_mc05",
+            "spatial_box_variance_mc05",
+            "spatial_absence_rate_mc05",
+            "deterministic_reference_variance_mc05",
+            "deterministic_reference_step_mc05",
+            "bbox_area_fraction_mc05"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.1,
+          "selection_auroc": 0.7804198290646673,
+          "target": "is_well_localized"
+        },
+        "uncertainty": {
+          "coefficient_count": 12,
+          "features": [
+            "semantic_mutual_information_mc05",
+            "semantic_predictive_entropy_mc05",
+            "semantic_class_disagreement_mc05",
+            "semantic_score_variance_mc05",
+            "geometric_pairwise_iou_loss_mc05",
+            "geometric_box_variance_mc05",
+            "mc_absence_rate_mc05",
+            "representation_embedding_variance_mc05",
+            "representation_embedding_cosine_instability_mc05",
+            "deterministic_hidden_step_mc05",
+            "mc_score_mean_mc05"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 1.0,
+          "selection_auroc": 0.8269822413382233,
+          "target": "is_detection_correct"
+        }
+      },
+      "family": "mc_pass_sensitivity",
+      "features": [
+        "score",
+        "category_index",
+        "spatial_reference_iou_mean_mc05",
+        "spatial_reference_iou_std_mc05",
+        "spatial_pairwise_iou_loss_mc05",
+        "spatial_box_variance_mc05",
+        "spatial_absence_rate_mc05",
+        "deterministic_reference_variance_mc05",
+        "deterministic_reference_step_mc05",
+        "bbox_area_fraction_mc05",
+        "semantic_mutual_information_mc05",
+        "semantic_predictive_entropy_mc05",
+        "semantic_class_disagreement_mc05",
+        "semantic_score_variance_mc05",
+        "geometric_pairwise_iou_loss_mc05",
+        "geometric_box_variance_mc05",
+        "mc_absence_rate_mc05",
+        "representation_embedding_variance_mc05",
+        "representation_embedding_cosine_instability_mc05",
+        "deterministic_hidden_step_mc05",
+        "mc_score_mean_mc05"
+      ],
+      "model_sha256": "f0da4bf199af817014f6e04e695c40a97eec5bcf442591e2487657357809af39"
+    },
+    "multilevel_mc10": {
+      "calibration_metrics": {
+        "brier": 0.13004081486800084,
+        "ece": 6.858710785684082e-10,
+        "nll": 0.40273939851663726
+      },
+      "coefficient_count": 32,
+      "components": {
+        "class": {
+          "coefficient_count": 11,
+          "features": [
+            "score",
+            "category_index"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8697962171759681,
+          "target": "is_class_correct"
+        },
+        "localization": {
+          "coefficient_count": 9,
+          "features": [
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.01,
+          "selection_auroc": 0.7782513696968196,
+          "target": "is_well_localized"
+        },
+        "uncertainty": {
+          "coefficient_count": 12,
+          "features": [
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.1,
+          "selection_auroc": 0.8335714899859665,
+          "target": "is_detection_correct"
+        }
+      },
+      "family": "mc_pass_sensitivity",
+      "features": [
+        "score",
+        "category_index",
+        "spatial_reference_iou_mean",
+        "spatial_reference_iou_std",
+        "spatial_pairwise_iou_loss",
+        "spatial_box_variance",
+        "spatial_absence_rate",
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "bbox_area_fraction",
+        "semantic_mutual_information",
+        "semantic_predictive_entropy",
+        "semantic_class_disagreement",
+        "semantic_score_variance",
+        "geometric_pairwise_iou_loss",
+        "geometric_box_variance",
+        "mc_absence_rate",
+        "representation_embedding_variance",
+        "representation_embedding_cosine_instability",
+        "deterministic_hidden_step",
+        "mc_score_mean"
+      ],
+      "model_sha256": "7ae98a4ea6c3a2fa64ce949c8e524abefbe4033acb0c215c18cb92a33ce17cce"
+    },
+    "raw_confidence": {
+      "calibration_metrics": {
+        "brier": 0.2086119834533777,
+        "ece": 0.13063643255024454,
+        "nll": 0.6047119736418466
+      },
+      "coefficient_count": 0,
+      "components": {
+        "class": {
+          "coefficient_count": 11,
+          "features": [
+            "score",
+            "category_index"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8697962171759681,
+          "target": "is_class_correct"
+        },
+        "flat": {
+          "coefficient_count": 30,
+          "features": [
+            "score",
+            "category_index",
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction",
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 1.0,
+          "selection_auroc": 0.8998322936850852,
+          "target": "is_detection_correct"
+        },
+        "localization": {
+          "coefficient_count": 9,
+          "features": [
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.01,
+          "selection_auroc": 0.7782513696968196,
+          "target": "is_well_localized"
+        },
+        "uncertainty": {
+          "coefficient_count": 12,
+          "features": [
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.1,
+          "selection_auroc": 0.8335714899859665,
+          "target": "is_detection_correct"
+        }
+      },
+      "family": "confidence_control",
+      "features": [
+        "score"
+      ],
+      "model_sha256": "a1c9c4be57cfbec062bdc5f86ef2e490fc019767437c5ebbaa4ca119d414385d"
+    },
+    "uncertainty_only": {
+      "calibration_metrics": {
+        "brier": 0.15563257122133142,
+        "ece": 4.938272075668634e-10,
+        "nll": 0.476148591596097
+      },
+      "coefficient_count": 12,
+      "components": {
+        "class": {
+          "coefficient_count": 11,
+          "features": [
+            "score",
+            "category_index"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 10.0,
+          "selection_auroc": 0.8697962171759681,
+          "target": "is_class_correct"
+        },
+        "flat": {
+          "coefficient_count": 30,
+          "features": [
+            "score",
+            "category_index",
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction",
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            6,
+            7,
+            8,
+            9
+          ],
+          "rare_or_unseen_category_fallback": "all_zero_category_encoding",
+          "selected_regularization": 1.0,
+          "selection_auroc": 0.8998322936850852,
+          "target": "is_detection_correct"
+        },
+        "localization": {
+          "coefficient_count": 9,
+          "features": [
+            "spatial_reference_iou_mean",
+            "spatial_reference_iou_std",
+            "spatial_pairwise_iou_loss",
+            "spatial_box_variance",
+            "spatial_absence_rate",
+            "deterministic_reference_variance",
+            "deterministic_reference_step",
+            "bbox_area_fraction"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.01,
+          "selection_auroc": 0.7782513696968196,
+          "target": "is_well_localized"
+        },
+        "uncertainty": {
+          "coefficient_count": 12,
+          "features": [
+            "semantic_mutual_information",
+            "semantic_predictive_entropy",
+            "semantic_class_disagreement",
+            "semantic_score_variance",
+            "geometric_pairwise_iou_loss",
+            "geometric_box_variance",
+            "mc_absence_rate",
+            "representation_embedding_variance",
+            "representation_embedding_cosine_instability",
+            "deterministic_hidden_step",
+            "mc_score_mean"
+          ],
+          "known_categories": [],
+          "rare_or_unseen_category_fallback": null,
+          "selected_regularization": 0.1,
+          "selection_auroc": 0.8335714899859665,
+          "target": "is_detection_correct"
+        }
+      },
+      "family": "level_ablation",
+      "features": [
+        "semantic_mutual_information",
+        "semantic_predictive_entropy",
+        "semantic_class_disagreement",
+        "semantic_score_variance",
+        "geometric_pairwise_iou_loss",
+        "geometric_box_variance",
+        "mc_absence_rate",
+        "representation_embedding_variance",
+        "representation_embedding_cosine_instability",
+        "deterministic_hidden_step",
+        "mc_score_mean"
+      ],
+      "model_sha256": "e1f93ec9a27ffd17ac74d0ec14c261de1e63de4f9f39eec29386f4bf7a0c1d9f"
+    }
+  },
+  "schema_version": 2,
+  "selection_rows": 3694,
+  "source_domain": {
+    "scene": "city street",
+    "timeofday": "daytime",
+    "weather": "clear"
+  },
+  "source_tree_sha256": "685df17241f8069c7e586e9aca1657623ca814ee692aa6cd9a6812c2146fc85f",
+  "train_features_sha256": "21cb3c05499a98121d38fa07d50717d751852f62a2b4605db87d8ad04f35f396",
+  "train_rows_extracted": 122452,
+  "train_rows_operational_all_domains": 16058,
+  "train_rows_source_operational": 16058,
+  "training_score_threshold": 0.2,
+  "validation_features_sha256": "e15d91a9b617a350bcd375252b4209c01f836600964dd00d4f8cd96571f7f09c",
+  "validation_predictions_sha256": "c280daf1345207424882cc7a741cc3d64ce22eb429ae28f3e2011a175071e9e6",
+  "validation_rows_extracted": 56396,
+  "validation_rows_operational_all_domains": 7339,
+  "validation_rows_source_operational": 7339
+}

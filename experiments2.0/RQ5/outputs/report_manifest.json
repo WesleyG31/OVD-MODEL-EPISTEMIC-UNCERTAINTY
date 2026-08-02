@@ -1,0 +1,67 @@
+{
+  "artifacts": {
+    "actions_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\Table_RQ5_actions.csv",
+      "sha256": "2c0e3ccd50951cb0a5e60931b428092e2504174b7331345861c60a1a815b7809"
+    },
+    "criticality_sensitivity_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\Table_RQ5_criticality_sensitivity.csv",
+      "sha256": "2a50575c08f3e7086ad213c910221317ebbcb1bb726f17f1dd79ff11948c1470"
+    },
+    "figure_captions": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\figure_captions.md",
+      "sha256": "3dd647358cab89f1269933d6bd116202e4d16435e28efd887522d2e7ed0bd097"
+    },
+    "latency_frontier_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\Fig_RQ5_latency_frontier.pdf",
+      "sha256": "76163d951b346c37e9bb06dedd5a9d822ae19421f9e77a7ea865ef83e6887ac6"
+    },
+    "latency_frontier_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\Fig_RQ5_latency_frontier.png",
+      "sha256": "a531963cd1f54f7853bc3355245efe72570820c7a527f463e3fbf76dc7385e63"
+    },
+    "latency_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\Table_RQ5_latency.csv",
+      "sha256": "68cafaa0738cdfbb4d473816ad8b5aa1c29ee069230352903a7ca929e2bd9284"
+    },
+    "main_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\Table_RQ5_main.csv",
+      "sha256": "de707e8d6896bad14e8a3f468364eb1ae866c5599bf71925a2fe09620914d326"
+    },
+    "model_parameters_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\Table_RQ5_model_parameters.csv",
+      "sha256": "5831b9311dbd2c0843df2a54c32380597b97fbd3d14f50222507ed1208700cf8"
+    },
+    "primary_inference_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\Table_RQ5_primary_inference.csv",
+      "sha256": "f1a58b6cc3057615fa2f6a3c4345302d8930321fd37717e60a78d9469b386394"
+    },
+    "reliability_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\Fig_RQ5_reliability.pdf",
+      "sha256": "6fda0aa178771990eafff10a38f90465e3d1f16a40c445d831499ac990e7ce87"
+    },
+    "reliability_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\Fig_RQ5_reliability.png",
+      "sha256": "5b6ade2e954bd2879cf348a6a6650c9686a82d3e4237a21016dd0bb96b83aeb2"
+    },
+    "subgroups_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\Table_RQ5_subgroups.csv",
+      "sha256": "4837ff359bd54f422e1b05fdf5ef7fec616c6255536f2b0b44e326ed22d1c35e"
+    },
+    "weighted_risk_coverage_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\Fig_RQ5_weighted_risk_coverage.pdf",
+      "sha256": "dd129ac4e7545c41d3445f1ca84355711a5dfc6fae220a71b4f154735954e121"
+    },
+    "weighted_risk_coverage_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\Fig_RQ5_weighted_risk_coverage.png",
+      "sha256": "d60775d1c1f71a56ba72e7b2d4d3069c3617a13575aab5fe956efc0c4ba63c9b"
+    }
+  },
+  "bootstrap_sha256": "7608c2f9ce9ddc3dd3cbc16175d4175296cbbb7eae93976f7bbc2aa2ea0e9c69",
+  "evidence_status": "confirmatory_evaluation",
+  "metrics_path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ5\\outputs\\metrics.json",
+  "metrics_sha256": "2dd2be4ed973bce839964048736aa537a4df91428f50da07e1100e410ae33310",
+  "predictions_sha256": "8773a5ffa3bea345d5462f23e0c56abcabcc422b8db791985adf4a525d6d0ce1",
+  "rq": "RQ5",
+  "schema_version": 1
+}

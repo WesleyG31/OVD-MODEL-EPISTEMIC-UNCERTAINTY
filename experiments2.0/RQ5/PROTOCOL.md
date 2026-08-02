@@ -238,9 +238,12 @@ se difiere todo.
 H1 exige menor AURC ponderado que confianza calibrada y `flat_joint`; H2 mayor
 cobertura a riesgo 0,10 frente a ambos. Las cuatro comparaciones usan bootstrap
 pareado por secuencia (2.000) y Holm unilateral con alfa familiar 0,05. H3
-exige no inferioridad Brier con margen 0,01. H4 exige overhead p95 <= 5 ms y
-latencia end-to-end mc02 estimada p95 <= 100 ms. El éxito confirmatorio requiere
-todos los gates; mini nunca puede satisfacerlos.
+exige no inferioridad Brier con margen 0,01. H4 exige overhead decisional p95
+<= 5 ms. La latencia end-to-end mc02 frente a presupuestos de 33,3/50/100 ms
+se reporta como factibilidad offline y no constituye un gate ni una afirmación
+de despliegue a 10 Hz. Las cuatro comparaciones H1--H2 y las dos comparaciones
+H3 forman una sola familia Holm de seis tests. El éxito confirmatorio exige los
+seis tests corregidos y el gate de overhead; mini nunca puede satisfacerlo.
 
 Se reportan además AUROC/AUPRC/AURC, Brier/NLL/ECE, curvas riesgo-cobertura,
 acciones operativas, defer rate, subgrupos congelados, thresholds

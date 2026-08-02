@@ -6,10 +6,11 @@
 
 RQ5 asks how fused epistemic uncertainty and calibrated detector outputs can
 feed an `accept`/`defer` decision layer under ADAS latency constraints. The
-implementation has passed a two-image, two-namespace GPU repeatability smoke
-test and a diagnostic 6/4/8 mini end-to-end run. It is technically ready for
-an explicitly authorized confirmatory run, but it has **no confirmatory
-scientific answer**. Mini values must not be used for tuning or paper claims.
+frozen confirmatory run completed on all 1,992 test images. The primary success
+rule was not met: mc02 risk-aware fusion improved over calibrated confidence
+but did not lower weighted AURC versus the same-feature `flat_joint` control.
+This negative/mixed result is the confirmatory scientific answer and must not
+trigger post-test retuning. Mini values remain diagnostic only.
 
 `Defer` requests a hypothetical fallback, tracker, or additional sensor. It
 does not suppress an object as absent and RQ5 does not evaluate fallback
@@ -48,9 +49,11 @@ subgroups, and capacity counts are reported.
 
 The primary family compares mc02 risk-aware fusion with calibrated confidence
 and the flat control for weighted AURC and coverage at weighted risk 0.10.
-Four paired sequence-bootstrap comparisons receive Holm correction. Brier
-non-inferiority (margin 0.01), p95 decision overhead <= 5 ms, and estimated
-mc02 p95 end-to-end latency <= 100 ms are additional gates.
+Those four paired sequence-bootstrap comparisons and two Brier
+non-inferiority comparisons form one six-test Holm family. Confirmatory
+success additionally requires p95 decision overhead <= 5 ms. Total mc02/mc05/
+mc10 latency is an offline feasibility frontier, not a confirmatory gate or a
+deployed 10 Hz claim.
 
 ### Exact commands
 
@@ -75,13 +78,40 @@ Individual stages are:
 & $python -m rq5.cli report --config ".\experiments2.0\RQ5\configs\rq5_mini.yaml"
 ```
 
-After explicit authorization, the confirmatory command is:
+A clean confirmatory reproduction command is:
 
 ```powershell
 & $python ".\experiments2.0\scripts\run_rq5.py" --mode full
 ```
 
 Linux uses `experiments2.0/.venv/bin/python` with the same arguments.
+
+To apply a metric/reporting-only correction after a completed full run, reuse
+the existing validated features and models:
+
+```powershell
+& $python -m rq5.cli evaluate --config ".\experiments2.0\RQ5\configs\rq5.yaml"
+& $python -m rq5.cli report --config ".\experiments2.0\RQ5\configs\rq5.yaml"
+```
+
+This does not run GroundingDINO, extract features, or refit policies. See
+[POST_CONFIRMATORY_CORRECTIONS.md](POST_CONFIRMATORY_CORRECTIONS.md).
+
+### Confirmatory result
+
+The full evaluation processed 1,992/1,992 test images and 47,805 operational
+detections. Risk-aware mc02 reduced weighted AURC from 0.36684 to 0.34818
+versus calibrated confidence and increased criticality-mass coverage at risk
+0.10 from 0.01323 to 0.08328. It did not beat `flat_joint` weighted AURC
+(0.34818 versus 0.34626), so the frozen Holm family and overall success rule
+failed. Brier non-inferiority passed against both controls.
+
+Decision overhead passed at p95 1.17 ms, while estimated mc02 end-to-end p95
+was 1,224.92 ms and met none of the 33.3/50/100 ms budgets. The decision layer
+is lightweight, but the evaluated detector-plus-MC pipeline is not a real-time
+ADAS implementation on the recorded hardware. The coverage comparison versus
+`flat_joint` has a significant null-centered test but a percentile interval
+that crosses zero; both prespecified summaries must be reported.
 
 ### Diagnostic validation (not paper evidence)
 
@@ -97,7 +127,8 @@ The mini result is deliberately retained even though it is negative:
 risk-aware mc02 fusion did not improve the frozen primary comparisons and did
 not pass Brier non-inferiority. Its directly measured decision p95 was about
 3.58 ms, but estimated mc02 end-to-end p95 was about 2,497 ms, so the 100 ms
-systems gate failed. The deterministic-only estimate also exceeded 100 ms.
+feasibility budget was not met. The deterministic-only estimate also exceeded
+100 ms.
 These eight diagnostic images cannot establish effect size, significance, or
 confirmatory feasibility and did not trigger retuning.
 
@@ -128,10 +159,12 @@ sidecars remain unchanged when `shared_shards_computed == 0`.
 
 RQ5 pregunta cómo integrar incertidumbre epistémica fusionada y salidas
 calibradas del detector en una capa `aceptar`/`diferir` bajo restricciones
-ADAS de latencia. La implementación superó smoke GPU repetible de dos imágenes
-y mini diagnóstico 6/4/8. Está técnicamente lista para una corrida
-confirmatoria explícitamente autorizada, pero **no existe respuesta científica
-confirmatoria**. Mini no debe usarse para tuning ni claims del paper.
+ADAS de latencia. La corrida confirmatoria congelada completó las 1.992
+imágenes de test. La regla primaria no se cumplió: la fusión mc02 mejoró frente
+a confianza calibrada, pero no redujo AURC ponderado frente al control
+`flat_joint` con los mismos features. Este resultado negativo/mixto es la
+respuesta científica confirmatoria y no debe provocar tuning sobre test. Mini
+sigue siendo exclusivamente diagnóstico.
 
 `Diferir` solicita un fallback, tracker o sensor hipotético; no declara que el
 objeto esté ausente. RQ5 no evalúa el fallback, objetos omitidos, fusión de
@@ -161,9 +194,11 @@ fusión sin criticidad y logística plana con los mismos features. Se reportan
 prefijos 2/5/10, thresholds 0,05/0,10/0,20/0,30, subgrupos y capacidad.
 
 La familia primaria compara fusión mc02 con confianza calibrada y control
-plano en AURC ponderado y cobertura a riesgo 0,10, con cuatro bootstrap por
-secuencia y Holm. También se exigen no inferioridad Brier 0,01, overhead p95
-<= 5 ms y latencia mc02 p95 estimada <= 100 ms.
+plano en AURC ponderado y cobertura a riesgo 0,10. Esas cuatro comparaciones
+bootstrap y dos comparaciones de no inferioridad Brier forman una familia Holm
+de seis tests. El éxito también exige overhead decisional p95 <= 5 ms. La
+latencia total mc02/mc05/mc10 es una frontera de factibilidad offline, no un
+gate confirmatorio ni una afirmación de despliegue a 10 Hz.
 
 ### Comandos exactos
 
@@ -188,13 +223,41 @@ Etapas individuales:
 & $python -m rq5.cli report --config ".\experiments2.0\RQ5\configs\rq5_mini.yaml"
 ```
 
-Tras autorización explícita:
+El comando para una reproducción confirmatoria limpia es:
 
 ```powershell
 & $python ".\experiments2.0\scripts\run_rq5.py" --mode full
 ```
 
 Linux usa `experiments2.0/.venv/bin/python` con los mismos argumentos.
+
+Para aplicar una corrección únicamente de métricas/reportes después de una
+corrida full terminada, se reutilizan features y modelos ya validados:
+
+```powershell
+& $python -m rq5.cli evaluate --config ".\experiments2.0\RQ5\configs\rq5.yaml"
+& $python -m rq5.cli report --config ".\experiments2.0\RQ5\configs\rq5.yaml"
+```
+
+Esto no ejecuta GroundingDINO, no extrae features y no reajusta políticas. Ver
+[POST_CONFIRMATORY_CORRECTIONS.md](POST_CONFIRMATORY_CORRECTIONS.md).
+
+### Resultado confirmatorio
+
+La evaluación procesó 1.992/1.992 imágenes y 47.805 detecciones operativas.
+MC02 redujo AURC ponderado de 0,36684 a 0,34818 frente a confianza calibrada y
+aumentó cobertura de masa de criticidad a riesgo 0,10 de 0,01323 a 0,08328. No
+superó el AURC ponderado de `flat_joint` (0,34818 frente a 0,34626), por lo que
+fallaron la familia Holm y la regla de éxito congelada. La no inferioridad
+Brier pasó frente a ambos controles.
+
+El overhead decisional pasó con p95 1,17 ms, pero mc02 end-to-end estimado tuvo
+p95 1.224,92 ms y no cumplió ningún presupuesto de 33,3/50/100 ms. La capa de
+decisión es ligera, pero el pipeline detector+MC evaluado no es una
+implementación ADAS en tiempo real en el hardware registrado. La comparación
+de cobertura frente a `flat_joint` tiene test centrado significativo e
+intervalo percentil que cruza cero; ambos resúmenes preespecificados deben
+reportarse.
 
 ### Validación diagnóstica (no es evidencia)
 
@@ -207,8 +270,9 @@ segunda corrida. Recibos inmutables y 13 artefactos del reporte validaron hash.
 
 Se conserva el resultado mini negativo: mc02 no mejoró las comparaciones
 primarias ni superó no inferioridad Brier. El overhead p95 medido fue ~3,58 ms,
-pero la latencia end-to-end mc02 estimada p95 fue ~2.497 ms y falló el gate de
-100 ms; incluso la estimación determinista lo excedió. Ocho imágenes no
+pero la latencia end-to-end mc02 estimada p95 fue ~2.497 ms y no cumplió el
+presupuesto de factibilidad de 100 ms; incluso la estimación determinista lo
+excedió. Ocho imágenes no
 establecen efecto, significancia ni factibilidad confirmatoria y no provocaron
 tuning.
 

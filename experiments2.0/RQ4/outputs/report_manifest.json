@@ -1,0 +1,67 @@
+{
+  "artifacts": {
+    "cost_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\Table_RQ4_computational_cost.csv",
+      "sha256": "b2338770296be8666a6e0432ebadfefe272dc2d7275d95aa6bf659ae0e7bc536"
+    },
+    "domains_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\Table_RQ4_domains.csv",
+      "sha256": "03c075ed7c877ca6d60b08d0893aa06761df7d5a7ccac202cae818cc8a729781"
+    },
+    "figure_captions": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\figure_captions.md",
+      "sha256": "f8acf0803e9caf0bad9eb84b9f18de57b2eb86ed2da58ddf39524ea3549ff30f"
+    },
+    "main_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\Table_RQ4_main.csv",
+      "sha256": "bebf63c17ac3f1fce5546fcb96498f314448e04710db234ef93e73c405fb2ad5"
+    },
+    "mc_sensitivity_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\Table_RQ4_mc_pass_sensitivity.csv",
+      "sha256": "bc6ba4614b9897807bfdac7e3692d33199f3c00939b5bdd34c505ee2c65dadb0"
+    },
+    "parameter_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\Table_RQ4_model_parameters.csv",
+      "sha256": "6db01c114f29a7ca6522274717c2666a91b276505aff348c59e9cd53d442bfcb"
+    },
+    "primary_improvements_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\Fig_RQ4_primary_improvements.pdf",
+      "sha256": "538390a51125dfc0229fa27adb261ac060ee04aeddc5829dd7a2f9dcfbec476f"
+    },
+    "primary_improvements_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\Fig_RQ4_primary_improvements.png",
+      "sha256": "51679b62bedbdeb288d3e02ac73b65631da53aaab9c2db0b6ac13a1e39b1489e"
+    },
+    "primary_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\Table_RQ4_primary_inference.csv",
+      "sha256": "906784c89c8eb0a6beb9a94571ff866cfd075131221dfb9593ef98c542df7282"
+    },
+    "reliability_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\Fig_RQ4_reliability.pdf",
+      "sha256": "a1d086efd428476850378dcbe2a830e08200cb340e8a8d0b39c27788bc338b57"
+    },
+    "reliability_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\Fig_RQ4_reliability.png",
+      "sha256": "8c4ecf4d4d849474a8537f8c14a15241586d4e31938136ddbd8cf1a8663b5153"
+    },
+    "risk_coverage_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\Fig_RQ4_risk_coverage.pdf",
+      "sha256": "bc4d86059a1da4a67baa6a8bee533e1c932a7b274054f086bfd9723d8496b258"
+    },
+    "risk_coverage_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\Fig_RQ4_risk_coverage.png",
+      "sha256": "731f9a2afad814b97b974c1e42ba08ccc694b079d8c1aa3fefb8481d54cb6e84"
+    }
+  },
+  "evidence_status": "confirmatory_requires_human_interpretation",
+  "inputs": {
+    "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\models\\model_index.json": "53778601800e7bfc8899a80281ec7dbfb00f6aa94bbca32d288b22dcccb62146",
+    "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\bootstrap_metrics.parquet": "a36a30658b9563df6df711f179cb1bded75c4ce5bbe335ac73a6e1c31b0a1444",
+    "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\calibrated_predictions.parquet": "14b6a17b6522a288e278830a50126e56081ddc0fefae94b7bd5c066a3226dd75",
+    "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\metrics.json": "0f6559702c5010397f700ec4ae3fee1f90269e398157b133c9939436cc102285"
+  },
+  "report_identity": "05134661f7db279a72dd21ec74c9e9ed4030a08856f97b22d926317a16ac520c",
+  "rq": "rq4",
+  "schema_version": 2,
+  "test_partition": "confirmatory"
+}

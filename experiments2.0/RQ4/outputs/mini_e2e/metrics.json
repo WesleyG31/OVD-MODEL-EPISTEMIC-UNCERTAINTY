@@ -4,9 +4,9 @@
     "bootstrap_sha256": "302dc671b938647a5e15ab4576c745f25c5296a2590414b3fb42c13eab7980ff",
     "model_index_sha256": "03ed2a44e37bafdf44fc9e907189323a1c58dba9a2fd66417cc25f698f5ca2d5",
     "predictions_sha256": "b768b7b3d3c0eb1c16660ae66fb3b8aa3ccd96b17db96744bab69cf9c0dfd170",
-    "shared_request_metadata_sha256": "afb591eeeeedd013e6896644d7ab88f89ba93dcc551ce13bdabe69f3e3c16d99",
+    "shared_request_metadata_sha256": "9bea243bb2574a4134280aafaf74d7e38ea966051a3a64ae26d2120d39cec112",
     "test_features_sha256": "33a2ebc50c533d441139773e200cffafad22528d05dad0b891bef8be79b50f98",
-    "test_image_summary_sha256": "8e45322cb2f17f9e585a98063d57a8cda81c6f575a1bb8fc6955d73137fa9f2a"
+    "test_image_summary_sha256": "d491e56288bd6b5a3cd4ce438a631107a23e5c5c4744d180f40f4def9d4e54f6"
   },
   "bootstrap_design": {
     "clusters": 7,
@@ -15,17 +15,17 @@
     "repetitions": 50
   },
   "computational_cost": {
-    "all_method_prediction_seconds": 0.08223230001749471,
+    "all_method_prediction_seconds": 0.07449849997647107,
     "deterministic_detector_seconds": 2.9964770000078715,
     "environment": {
       "cuda": {
         "available": true,
         "build": "11.8",
         "cudnn": 90100,
-        "deterministic_algorithms": true,
+        "deterministic_algorithms": false,
         "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
       },
-      "git_revision": "69deb53677ae2fa6a8e7a37c54bd24e035b663ef",
+      "git_revision": "dce1f07a0ebb70f817f98a8f5945d93c28fb0616",
       "packages": {
         "groundingdino-py": "0.4.0",
         "numpy": "1.26.4",
@@ -43,7 +43,7 @@
     "mc_passes": 10,
     "peak_gpu_memory_bytes": 2030990848,
     "preprocess_seconds": 0.1572371000656858,
-    "rq4_feature_aggregation_seconds": 10.781782800040673,
+    "rq4_feature_aggregation_seconds": 9.740942299948074,
     "shared_shards_computed_for_test_request": 0,
     "shared_shards_reused_for_test_request": 8,
     "stochastic_detector_seconds": 31.76412900001742,
@@ -2101,7 +2101,7 @@
       "5": 0.07133116486280332
     }
   },
-  "evaluation_identity": "a1d907b169c5da3d097aade754eeb839786887fcf49952e6b81a2fc620cba97c",
+  "evaluation_identity": "8f29a9e19661b2c7c8909b3fc3be265624a18f664825eaad3c82ad8328ff4dd7",
   "evidence_status": "diagnostic_not_scientific_evidence",
   "extracted_test_rows": 1521,
   "mc_pass_sensitivity": {

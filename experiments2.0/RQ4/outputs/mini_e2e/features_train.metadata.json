@@ -1,10 +1,10 @@
 {
   "annotation_sha256": "01517714a5ca4b69aae6e86256d017cc5f82fbdf33529e759b267d5ac89f4d47",
   "checkpoint_sha256": "3b3ca2563c77c69f651d7bd133e97139c186df06231157a64c507099c52bc799",
-  "configuration_fingerprint": "ccaca9134ce3fb5f17acc56ae940aae8f29610de2e8762512fbf4c8f396b01db",
+  "configuration_fingerprint": "e6409e3fc7fb5034fc0117baa1b6dfdddeafc54f58414bb69ba8e80f3566d498",
   "detections": 1331,
   "diagnostic_only": true,
-  "elapsed_seconds": 0.11689609999302775,
+  "elapsed_seconds": 2.34811229998013,
   "environment": {
     "cuda": {
       "available": true,
@@ -13,7 +13,7 @@
       "deterministic_algorithms": false,
       "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
     },
-    "git_revision": "69deb53677ae2fa6a8e7a37c54bd24e035b663ef",
+    "git_revision": "dce1f07a0ebb70f817f98a8f5945d93c28fb0616",
     "packages": {
       "groundingdino-py": "0.4.0",
       "numpy": "1.26.4",
@@ -127,19 +127,19 @@
     "deterministic_hidden_step_mc05",
     "mc_score_mean_mc05"
   ],
-  "feature_shard_inventory_sha256": "aa012bf3a7f20683d60664e5bdc04f20627e96fa73c976eab72b7f52c100e25e",
-  "feature_shards_recomputed": 0,
-  "feature_shards_reused": 6,
+  "feature_shard_inventory_sha256": "897315c680727203be53b19d7743e9d9ff9b7c11c58f5fd78093b07e20b0c6a6",
+  "feature_shards_recomputed": 6,
+  "feature_shards_reused": 0,
   "features_sha256": "85010a368f651dcd4bca778fc7a510c658cfe806caa3baf8d4d993d492f742fb",
   "image_summary_path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ4\\outputs\\mini_e2e\\images_train.parquet",
-  "image_summary_sha256": "cd94e85955f83eb6d28d5c3130db248fbb2a5684342bf6714701029cb5fdc3aa",
+  "image_summary_sha256": "0af1faa5a4db46b389d59f0a55d3cdcabe6653b785d2e4278d71bf9a7b8e4502",
   "images_completed": 6,
   "images_requested": 6,
   "manifest_path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\artifacts\\bdd100k_diagnostic_manifest.json",
   "manifest_sha256": "65e3825a8053333ff267f4b12f3e87f557b25a44d2aef0138c932111cdb71333",
   "manifest_split_image_ids_sha256": "bf6ed6c78e53ee737c25aa84cbdfe7306543f4f0c9bc47d2159f329bf8a98fcf",
   "manifest_test_partition": "diagnostic",
-  "materialization_fingerprint": "999ec9199bf265db56679d286d2893bb3a2789bd2366631e79c60d34c4deac06",
+  "materialization_fingerprint": "ec573d28236e5ade784dcde53022ba0227bd8339001792a8200911085ae7286b",
   "peak_gpu_memory_bytes": 2029759488,
   "random_seeds": {
     "deterministic_image_seed": "project_seed + image_id",
@@ -150,12 +150,12 @@
   "schema_version": 1,
   "shared_fingerprint": "94bb3675c7f700e8123ee9db9fcc4d7502e25991f72d99f8fde8282dbd33a710",
   "shared_namespace": "canonical",
-  "shared_request_metadata_path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\data\\derived\\groundingdino_mc_v1\\canonical\\94bb3675c7f700e8123ee9db9fcc4d7502e25991f72d99f8fde8282dbd33a710\\requests\\a14c9f70fc0a78df1c76d50f52b221492b30bf62675f4c5efbb508936bcf911e\\1785521821137766800.json",
-  "shared_request_metadata_sha256": "dfb5b2703edb759411513eb0ea628e335ab173259c277b191f35cfd1b71ff69d",
+  "shared_request_metadata_path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\data\\derived\\groundingdino_mc_v1\\canonical\\94bb3675c7f700e8123ee9db9fcc4d7502e25991f72d99f8fde8282dbd33a710\\requests\\a14c9f70fc0a78df1c76d50f52b221492b30bf62675f4c5efbb508936bcf911e\\1785648957578310900.json",
+  "shared_request_metadata_sha256": "d6dafbe3c5f09c103e1f72feb1830d137b50c7d300598b9aee2171f465bc59b5",
   "shared_shard_inventory_sha256": "ed2bb2a35552cc8b8aa26b4646f5e4f29fca3b5be941b9dad1b1278c6c3de93a",
   "shared_shards_computed": 0,
   "shared_shards_reused": 6,
-  "source_tree_sha256": "24cd45b677eac21ace6aae457ed9b64d04499a0dde164045754adde6515c6004",
+  "source_tree_sha256": "e804f6a349d32aafe89c1f9738abd74d47aa40f75e34af2e129429e75c80d2de",
   "split": "train",
   "split_image_ids_sha256": "5e197e5b39c2bf15f6e4ca4c3046206e8ddc73f66ccbd020daf0f17fcd80715d",
   "stochastic_modules": [
@@ -246,7 +246,7 @@
     }
   ],
   "timing_seconds": {
-    "aggregation_seconds": 8.400282400019933,
+    "aggregation_seconds": 7.648631700023543,
     "deterministic_seconds": 2.5453348999726586,
     "preprocess_seconds": 0.12644899997394532,
     "stochastic_seconds": 23.82145450002281
