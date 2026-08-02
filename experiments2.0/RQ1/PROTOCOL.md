@@ -1,7 +1,19 @@
 # RQ1 frozen protocol
 
-Pre-confirmatory revision 3 is defined in
-[`METHODOLOGICAL_AMENDMENTS.md`](../METHODOLOGICAL_AMENDMENTS.md).
+Pre-confirmatory revision 3 was frozen on 2026-07-31 before confirmatory
+feature extraction or test evaluation. Its final rules are incorporated
+directly in this protocol: one-sided superiority tests use the paired
+sequence-cluster bootstrap centered at the zero-boundary null;
+non-inferiority tests use their frozen negative margin; and uncentered
+replicates are used only for percentile intervals. The deterministic
+reference universe retains all 900 eligible queries, while every MC pool
+contains the nominal top 300 plus all eligible reference query IDs.
+
+The empirical scope is limited to the pinned GroundingDINO Swin-T checkpoint,
+ten fixed BDD prompts, the frozen BDD100K partition, and recorded hardware.
+RQ1 is a separately prespecified family, its outcome must be reported, and it
+cannot rescue or be rescued by another RQ. Diagnostic MINI results are not
+scientific evidence.
 
 ## Research question
 
@@ -178,13 +190,6 @@ diagnostics delimit sensitivity but cannot rescue a failed primary claim.
 The enabled backbone and fusion DropPath modules are perturbed together. The
 study therefore attributes performance to signal families and the combined
 stochastic-depth intervention, not causally to an individual layer or block.
-
-### Enmienda metodologica congelada antes de confirmatory
-
-Los tests unilaterales usan el bootstrap pareado por secuencia centrado bajo la
-nula; el bootstrap no centrado se conserva solo para intervalos percentiles.
-Backbone y fusion se perturban conjuntamente, por lo que no se atribuye
-causalmente el resultado a una capa individual.
 
 ## Prohibited analyses
 

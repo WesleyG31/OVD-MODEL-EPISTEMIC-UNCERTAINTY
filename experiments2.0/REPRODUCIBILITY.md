@@ -348,9 +348,8 @@ measured-versus-estimated latency distinction, offline budgets, hashes and all
   either RQ's output shards.
 - **Mini results exist**: never copy them into the manuscript.
 
-Publication readiness is tracked in `SUBMISSION_READINESS.md`; the frozen
-protocols are in `RQ1/PROTOCOL.md`, `RQ2/PROTOCOL.md`, `RQ3/PROTOCOL.md`,
-`RQ4/PROTOCOL.md` and `RQ5/PROTOCOL.md`.
+The frozen protocols are in `RQ1/PROTOCOL.md`, `RQ2/PROTOCOL.md`,
+`RQ3/PROTOCOL.md`, `RQ4/PROTOCOL.md` and `RQ5/PROTOCOL.md`.
 
 ---
 
@@ -709,6 +708,5 @@ seguro demostrado.
   los shards de salida de ninguna RQ.
 - **Resultados mini presentes**: no los copie al manuscrito; son diagnósticos.
 
-El estado de preparación para publicación se mantiene en
-`SUBMISSION_READINESS.md` y los protocolos congelados en `RQ1/PROTOCOL.md` y
-`RQ2/PROTOCOL.md`, `RQ3/PROTOCOL.md`, `RQ4/PROTOCOL.md` y `RQ5/PROTOCOL.md`.
+Los protocolos congelados están en `RQ1/PROTOCOL.md`, `RQ2/PROTOCOL.md`,
+`RQ3/PROTOCOL.md`, `RQ4/PROTOCOL.md` y `RQ5/PROTOCOL.md`.

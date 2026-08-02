@@ -94,8 +94,8 @@ the existing validated features and models:
 & $python -m rq5.cli report --config ".\experiments2.0\RQ5\configs\rq5.yaml"
 ```
 
-This does not run GroundingDINO, extract features, or refit policies. See
-[POST_CONFIRMATORY_CORRECTIONS.md](POST_CONFIRMATORY_CORRECTIONS.md).
+This does not run GroundingDINO, extract features, or refit policies. The
+post-confirmatory correction is summarized in `RESULTS_AND_CONCLUSION.md`.
 
 ### Confirmatory result
 
@@ -239,8 +239,8 @@ corrida full terminada, se reutilizan features y modelos ya validados:
 & $python -m rq5.cli report --config ".\experiments2.0\RQ5\configs\rq5.yaml"
 ```
 
-Esto no ejecuta GroundingDINO, no extrae features y no reajusta políticas. Ver
-[POST_CONFIRMATORY_CORRECTIONS.md](POST_CONFIRMATORY_CORRECTIONS.md).
+Esto no ejecuta GroundingDINO, no extrae features y no reajusta políticas. La
+corrección posconfirmatoria se resume en `RESULTS_AND_CONCLUSION.md`.
 
 ### Resultado confirmatorio
 

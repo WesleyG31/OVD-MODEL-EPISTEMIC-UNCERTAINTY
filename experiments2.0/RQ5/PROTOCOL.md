@@ -1,7 +1,32 @@
 # RQ5 frozen protocol / Protocolo congelado de RQ5
 
 Pre-confirmatory revision 3 / Revisión preconfirmatoria 3:
-[`METHODOLOGICAL_AMENDMENTS.md`](../METHODOLOGICAL_AMENDMENTS.md).
+The final rules are incorporated directly in this protocol. One-sided
+superiority tests use the paired sequence-cluster bootstrap centered at zero;
+Brier non-inferiority uses the frozen -0.01 margin; and uncentered replicates
+are used only for percentile intervals. The deterministic reference universe
+retains all 900 eligible queries, while every MC pool contains the nominal top
+300 plus all eligible reference query IDs. Coverage and weighted AURC use
+criticality mass. Four superiority and two Brier non-inferiority tests form one
+six-test Holm family. Decision-layer p95 <= 5 ms is the systems gate; total
+mc02/mc05/mc10 latency against 33.3/50/100 ms budgets is an offline feasibility
+frontier, not a deployed 10 Hz claim. The empirical scope is limited to the
+pinned checkpoint, prompts, BDD100K partition, and recorded hardware. RQ5 is a
+separately prespecified family and cannot rescue or be rescued by another RQ.
+MINI results are not evidence.
+
+Las reglas finales están integradas directamente en este protocolo. Los tests
+de superioridad usan bootstrap pareado por secuencia centrado en cero; la no
+inferioridad Brier usa el margen congelado -0,01; y las réplicas no centradas
+se reservan para intervalos percentiles. El universo determinista conserva las
+900 queries elegibles y cada pool MC contiene el top 300 nominal más todas las
+queries de referencia elegibles. Cobertura y AURC ponderado usan masa de
+criticidad. Cuatro tests de superioridad y dos de no inferioridad Brier forman
+una familia Holm de seis tests. El gate de sistema es overhead p95 <= 5 ms; la
+latencia total mc02/mc05/mc10 frente a 33,3/50/100 ms es una frontera offline,
+no un claim de despliegue a 10 Hz. El alcance se limita al checkpoint, prompts,
+partición BDD100K y hardware registrados. RQ5 es una familia separada y no
+rescata ni puede ser rescatada por otra RQ. MINI no constituye evidencia.
 
 Protocol status: **frozen before implementation and before any confirmatory
 RQ5 result was inspected (2026-07-31)**.

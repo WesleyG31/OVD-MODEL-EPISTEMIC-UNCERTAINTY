@@ -11,9 +11,9 @@ and Docker are not required.
 The empirical claim is restricted to the pinned GroundingDINO Swin-T
 checkpoint, ten fixed BDD prompts, the frozen BDD100K partition and recorded
 hardware. “Open-vocabulary” describes the architecture; this experiment does
-not establish base-to-novel or cross-backbone generalization. The frozen
-pre-confirmatory corrections are listed in
-[`METHODOLOGICAL_AMENDMENTS.md`](METHODOLOGICAL_AMENDMENTS.md).
+not establish base-to-novel or cross-backbone generalization. The final frozen
+methodological rules are incorporated directly in each RQ-specific
+`PROTOCOL.md`.
 
 Each RQ is a separately prespecified family and all five outcomes are reported;
 there is no paper-level omnibus “all hypotheses supported” claim.
@@ -186,9 +186,9 @@ experiments2.0/
     `-- outputs/
 ```
 
-See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for the clean-machine procedure,
-the RQ-specific `PROTOCOL.md` and `README.md` files for frozen designs and
-commands, and `SUBMISSION_READINESS.md` for remaining technical/editorial gates.
+See [REPRODUCIBILITY.md](REPRODUCIBILITY.md) for the clean-machine procedure
+and the RQ-specific `PROTOCOL.md` and `README.md` files for frozen designs and
+commands.
 
 ---
 
@@ -201,9 +201,9 @@ requiere Conda ni Docker.
 El alcance empírico se limita al checkpoint GroundingDINO Swin-T, diez prompts
 BDD fijados, la partición BDD100K congelada y el hardware registrado.
 “Open-vocabulary” describe la arquitectura; no se demuestra generalización a
-categorías nuevas ni a otros backbones. Las correcciones preconfirmatorias
-congeladas están en
-[`METHODOLOGICAL_AMENDMENTS.md`](METHODOLOGICAL_AMENDMENTS.md).
+categorías nuevas ni a otros backbones. Las reglas metodológicas
+preconfirmatorias finales están integradas directamente en el `PROTOCOL.md`
+de cada RQ.
 
 Cada RQ es una familia preespecificada separada y se informan las cinco; no se
 formula una conclusión ómnibus de que todas las hipótesis fueron apoyadas.
@@ -386,6 +386,5 @@ experiments2.0/
 ```
 
 Consulte [REPRODUCIBILITY.md](REPRODUCIBILITY.md) para el procedimiento desde
-una máquina limpia, los archivos `PROTOCOL.md` y `README.md` de cada RQ para
-los diseños congelados y comandos, y `SUBMISSION_READINESS.md` para los gates
-técnicos/editoriales pendientes.
+una máquina limpia y los archivos `PROTOCOL.md` y `README.md` de cada RQ para
+los diseños congelados y comandos.

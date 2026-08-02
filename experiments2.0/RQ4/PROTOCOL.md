@@ -1,7 +1,26 @@
 # RQ4 frozen protocol / Protocolo congelado de RQ4
 
 Pre-confirmatory revision 3 / Revisión preconfirmatoria 3:
-[`METHODOLOGICAL_AMENDMENTS.md`](../METHODOLOGICAL_AMENDMENTS.md).
+The final revision includes the RQ4 revision-2 rules below and is incorporated
+directly in this protocol. One-sided superiority tests use the paired
+sequence-cluster bootstrap centered at the zero-boundary null;
+non-inferiority tests use their frozen negative margin; and uncentered
+replicates are used only for percentile intervals. The deterministic reference
+universe retains all 900 eligible queries, while every MC pool contains the
+nominal top 300 plus all eligible reference query IDs. The empirical scope is
+limited to the pinned checkpoint, prompts, BDD100K partition, and recorded
+hardware. RQ4 is a separately prespecified family and cannot rescue or be
+rescued by another RQ. MINI results are not evidence.
+
+La revisión final incluye las reglas de la revisión 2 de RQ4 descritas abajo y
+está integrada directamente en este protocolo. Los tests unilaterales usan
+bootstrap pareado por secuencia centrado en la frontera nula; la no
+inferioridad usa su margen negativo congelado; y las réplicas no centradas se
+reservan para intervalos percentiles. El universo determinista conserva las
+900 queries elegibles y cada pool MC contiene el top 300 nominal más todas las
+queries de referencia elegibles. El alcance se limita al checkpoint, prompts,
+partición BDD100K y hardware registrados. RQ4 es una familia separada y no
+rescata ni puede ser rescatada por otra RQ. MINI no constituye evidencia.
 
 Protocol freeze date / Fecha de congelación: 2026-07-31.
 Pre-confirmatory revision / Revisión preconfirmatoria: 2026-07-31, revision 2.

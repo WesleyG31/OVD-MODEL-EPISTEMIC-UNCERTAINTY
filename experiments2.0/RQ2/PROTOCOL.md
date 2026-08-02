@@ -1,7 +1,20 @@
 # RQ2 frozen protocol
 
-Pre-confirmatory revision 3 is defined in
-[`METHODOLOGICAL_AMENDMENTS.md`](../METHODOLOGICAL_AMENDMENTS.md).
+Pre-confirmatory revision 3 is incorporated directly in this protocol.
+One-sided superiority tests use the paired sequence-cluster bootstrap centered
+at the zero-boundary null; non-inferiority tests use their frozen negative
+margin; and uncentered replicates are used only for percentile intervals. The
+deterministic reference universe retains all 900 eligible queries, while every
+MC pool contains the nominal top 300 plus all eligible reference query IDs.
+RQ2 fitting and primary evaluation use the same score-threshold 0.20
+population, and validation sequence groups are divided 50/50 into disjoint
+model-selection and isotonic-calibration folds.
+
+The empirical scope is limited to the pinned GroundingDINO Swin-T checkpoint,
+ten fixed BDD prompts, the frozen BDD100K partition, and recorded hardware.
+RQ2 is a separately prespecified family, its outcome must be reported, and it
+cannot rescue or be rescued by another RQ. Diagnostic MINI results are not
+scientific evidence.
 
 Protocol freeze date: 2026-07-31. This protocol was specified before any RQ2
 confirmatory output was generated or inspected. Results under `New_RQ/` are

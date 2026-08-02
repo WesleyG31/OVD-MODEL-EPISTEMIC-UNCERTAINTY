@@ -154,7 +154,7 @@ claim, or conclusion.
 
 The authoritative machine-readable evidence is in `outputs/metrics.json`,
 with artifact hashes in `outputs/report_manifest.json`. The correction history
-is documented in `POST_CONFIRMATORY_CORRECTIONS.md`.
+is documented in this section.
 
 ---
 
@@ -312,4 +312,4 @@ bootstrap, decisiones Holm, gate Brier, claim de latencia ni conclusión.
 
 La evidencia machine-readable autoritativa está en `outputs/metrics.json` y
 los hashes de artefactos en `outputs/report_manifest.json`. El historial de
-correcciones está documentado en `POST_CONFIRMATORY_CORRECTIONS.md`.
+correcciones está documentado en esta sección.
