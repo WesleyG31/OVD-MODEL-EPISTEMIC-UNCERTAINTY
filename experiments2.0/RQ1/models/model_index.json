@@ -1,0 +1,518 @@
+{
+  "calibration_group_fingerprint": "431de1195f386885ad4e61df8eebc93bd5c7fc66088b053f2dd00b0cd3910ca7",
+  "calibration_groups": 1200,
+  "calibration_rows": 29826,
+  "fusion_fingerprint": "be83a2b17be8791a74b954a6f3d4093fd1ab8c6941de464b307b4623d99c7a41",
+  "fusion_source_sha256": "5f88a457eeeeb77b6979d7303b248c29f2aa8df3226c285571d9ef525288a5b8",
+  "methods": {
+    "all_internal": {
+      "calibration_probability_metrics": {
+        "brier": 0.18889797398938632,
+        "ece": 1.3411144642048045e-11,
+        "nll": 0.5601667913526205
+      },
+      "experiment": "primary_ablation",
+      "family": "logistic",
+      "features": [
+        "semantic_mutual_information",
+        "semantic_predictive_entropy",
+        "class_disagreement",
+        "score_variance",
+        "box_variance",
+        "box_mean_pairwise_iou_loss",
+        "decoder_reference_variance",
+        "decoder_reference_step",
+        "embedding_variance",
+        "embedding_cosine_instability",
+        "decoder_hidden_step",
+        "absence_rate"
+      ],
+      "model_sha256": "c3b479a78d712836cab0c5d59782eaa6bd3b0d035327f9b6e1399d525c4213ae",
+      "selected_regularization": 10.0,
+      "selection_auroc": 0.7717413185367636,
+      "selection_rank_metrics": {
+        "auprc": 0.801257219612842,
+        "aurc": 0.3595179855568937,
+        "auroc": 0.7717413185367636,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.3601389078033501,
+        "risk_at_0.80": 0.4915521130357067,
+        "risk_at_0.90": 0.5287886812438526,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "all_internal_rf": {
+      "calibration_probability_metrics": {
+        "brier": 0.16026941371080322,
+        "ece": 1.0594783301708065e-09,
+        "nll": 0.48577141764311393
+      },
+      "experiment": "primary_ablation",
+      "family": "random_forest",
+      "features": [
+        "semantic_mutual_information",
+        "semantic_predictive_entropy",
+        "class_disagreement",
+        "score_variance",
+        "box_variance",
+        "box_mean_pairwise_iou_loss",
+        "decoder_reference_variance",
+        "decoder_reference_step",
+        "embedding_variance",
+        "embedding_cosine_instability",
+        "decoder_hidden_step",
+        "absence_rate"
+      ],
+      "model_sha256": "e29dddb08bbf8f0115964d539c8bae29fcfb0790b30a123db196aafe4c9d9a7c",
+      "selected_regularization": null,
+      "selection_auroc": 0.8334087776486065,
+      "selection_rank_metrics": {
+        "auprc": 0.8520957877314763,
+        "aurc": 0.30118813263704064,
+        "auroc": 0.8334087776486065,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.32125834127740704,
+        "risk_at_0.80": 0.48035919479082434,
+        "risk_at_0.90": 0.5239464326246501,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "all_plus_confidence": {
+      "calibration_probability_metrics": {
+        "brier": 0.16618985573606562,
+        "ece": 9.723064476336789e-11,
+        "nll": 0.5045244425107285
+      },
+      "experiment": "primary_ablation",
+      "family": "logistic",
+      "features": [
+        "confidence_uncertainty",
+        "semantic_mutual_information",
+        "semantic_predictive_entropy",
+        "class_disagreement",
+        "score_variance",
+        "box_variance",
+        "box_mean_pairwise_iou_loss",
+        "decoder_reference_variance",
+        "decoder_reference_step",
+        "embedding_variance",
+        "embedding_cosine_instability",
+        "decoder_hidden_step",
+        "absence_rate"
+      ],
+      "model_sha256": "80b3994933f53238dde0d8456f8572cb7df76f6382aa463da40f42a7c1d653ab",
+      "selected_regularization": 10.0,
+      "selection_auroc": 0.8240870856573881,
+      "selection_rank_metrics": {
+        "auprc": 0.8460599042081223,
+        "aurc": 0.31612699789802334,
+        "auroc": 0.8240870856573881,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.3235053792727768,
+        "risk_at_0.80": 0.47912499468017195,
+        "risk_at_0.90": 0.5249678444427631,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "box_variance": {
+      "calibration_probability_metrics": {
+        "brier": 0.2278573458291256,
+        "ece": 2.011670326116449e-11,
+        "nll": 0.6472327354724516
+      },
+      "experiment": "primary_ablation",
+      "family": "logistic",
+      "features": [
+        "box_variance"
+      ],
+      "model_sha256": "78e5e627f4125f1671a33074d8c1db744e1957273c1b604d246470df4ceabebf",
+      "selected_regularization": 0.01,
+      "selection_auroc": 0.6482306696480755,
+      "selection_rank_metrics": {
+        "auprc": 0.6769072480148177,
+        "aurc": 0.43837031559371364,
+        "auroc": 0.6482306696480755,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.4606427890507967,
+        "risk_at_0.80": 0.5293016129718687,
+        "risk_at_0.90": 0.5491034274041008,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "confidence": {
+      "calibration_probability_metrics": {
+        "brier": 0.1843659918974104,
+        "ece": 6.705565725841036e-11,
+        "nll": 0.5506885568438067
+      },
+      "experiment": "primary_ablation",
+      "family": "logistic",
+      "features": [
+        "confidence_uncertainty"
+      ],
+      "model_sha256": "2c75f2127ae53540046106a760d6e3c1c8745c5fb3cab5b52db7353bbe9ad10b",
+      "selected_regularization": 0.01,
+      "selection_auroc": 0.7800424793128979,
+      "selection_rank_metrics": {
+        "auprc": 0.7900633057379265,
+        "aurc": 0.34281493360102616,
+        "auroc": 0.7800424793128979,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.35618956829633663,
+        "risk_at_0.80": 0.4970421755968847,
+        "risk_at_0.90": 0.5327230082469547,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "embedding_variance": {
+      "calibration_probability_metrics": {
+        "brier": 0.2237035311661277,
+        "ece": 2.1003263650665347e-17,
+        "nll": 0.6390672037056365
+      },
+      "experiment": "primary_ablation",
+      "family": "logistic",
+      "features": [
+        "embedding_variance"
+      ],
+      "model_sha256": "45dd322324b74e6abcfe0a7c98a13d6a280c207ff80eca8a713bd84d40c4c8f1",
+      "selected_regularization": 0.01,
+      "selection_auroc": 0.6344872118725328,
+      "selection_rank_metrics": {
+        "auprc": 0.6461091050376508,
+        "aurc": 0.43444256440166495,
+        "auroc": 0.6344872118725328,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.4616641699577829,
+        "risk_at_0.80": 0.5454738902838661,
+        "risk_at_0.90": 0.5564046304002421,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "geometric": {
+      "calibration_probability_metrics": {
+        "brier": 0.20056433754905506,
+        "ece": 1.676394323887443e-11,
+        "nll": 0.587102279193493
+      },
+      "experiment": "primary_ablation",
+      "family": "logistic",
+      "features": [
+        "box_variance",
+        "box_mean_pairwise_iou_loss",
+        "decoder_reference_variance",
+        "decoder_reference_step"
+      ],
+      "model_sha256": "eaf08a74ed66b204458085e50dc9f570294f97617f3ce4c4c00cc2910614a542",
+      "selected_regularization": 0.01,
+      "selection_auroc": 0.735335453830527,
+      "selection_rank_metrics": {
+        "auprc": 0.7498510795011009,
+        "aurc": 0.36726803851764894,
+        "auroc": 0.735335453830527,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.3982023696037042,
+        "risk_at_0.80": 0.5085330042133038,
+        "risk_at_0.90": 0.5377165771355074,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "mc_passes_02": {
+      "calibration_probability_metrics": {
+        "brier": 0.20808158562849755,
+        "ece": 1.0058401687023423e-11,
+        "nll": 0.6037660525576078
+      },
+      "experiment": "mc_pass_sensitivity",
+      "family": "logistic",
+      "features": [
+        "semantic_mutual_information_mc02",
+        "semantic_predictive_entropy_mc02",
+        "class_disagreement_mc02",
+        "score_variance_mc02",
+        "box_variance_mc02",
+        "box_mean_pairwise_iou_loss_mc02",
+        "decoder_reference_variance_mc02",
+        "decoder_reference_step_mc02",
+        "embedding_variance_mc02",
+        "embedding_cosine_instability_mc02",
+        "decoder_hidden_step_mc02",
+        "absence_rate_mc02"
+      ],
+      "model_sha256": "f9234b025ab29bd19f09ea14d88a8fffa99d941a5672b63f792b29c9df7484d3",
+      "selected_regularization": 0.1,
+      "selection_auroc": 0.7219850269134042,
+      "selection_rank_metrics": {
+        "auprc": 0.751304442336464,
+        "aurc": 0.3950288253847781,
+        "auroc": 0.7219850269134042,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.3999727631758137,
+        "risk_at_0.80": 0.5027024726560838,
+        "risk_at_0.90": 0.5359763940379814,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "mc_passes_05": {
+      "calibration_probability_metrics": {
+        "brier": 0.19700736362304377,
+        "ece": 4.6938925795149596e-11,
+        "nll": 0.5784554774213129
+      },
+      "experiment": "mc_pass_sensitivity",
+      "family": "logistic",
+      "features": [
+        "semantic_mutual_information_mc05",
+        "semantic_predictive_entropy_mc05",
+        "class_disagreement_mc05",
+        "score_variance_mc05",
+        "box_variance_mc05",
+        "box_mean_pairwise_iou_loss_mc05",
+        "decoder_reference_variance_mc05",
+        "decoder_reference_step_mc05",
+        "embedding_variance_mc05",
+        "embedding_cosine_instability_mc05",
+        "decoder_hidden_step_mc05",
+        "absence_rate_mc05"
+      ],
+      "model_sha256": "4fc1e525344a9af5860aba6f9859b3d58d8856a0a9ea7af7114321501a6d045b",
+      "selected_regularization": 1.0,
+      "selection_auroc": 0.754794742989044,
+      "selection_rank_metrics": {
+        "auprc": 0.7865025100532669,
+        "aurc": 0.372506200785977,
+        "auroc": 0.754794742989044,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.37511916110581506,
+        "risk_at_0.80": 0.49648891347831636,
+        "risk_at_0.90": 0.5311341454187788,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "mc_passes_10": {
+      "calibration_probability_metrics": {
+        "brier": 0.18889797398938632,
+        "ece": 1.3411144642048045e-11,
+        "nll": 0.5601667913526205
+      },
+      "experiment": "mc_pass_sensitivity",
+      "family": "logistic",
+      "features": [
+        "semantic_mutual_information_mc10",
+        "semantic_predictive_entropy_mc10",
+        "class_disagreement_mc10",
+        "score_variance_mc10",
+        "box_variance_mc10",
+        "box_mean_pairwise_iou_loss_mc10",
+        "decoder_reference_variance_mc10",
+        "decoder_reference_step_mc10",
+        "embedding_variance_mc10",
+        "embedding_cosine_instability_mc10",
+        "decoder_hidden_step_mc10",
+        "absence_rate_mc10"
+      ],
+      "model_sha256": "7c09ddc301e8ed75bc7de797d40b7fd4c4994133b234730c0075f185b7425140",
+      "selected_regularization": 10.0,
+      "selection_auroc": 0.7717413185367636,
+      "selection_rank_metrics": {
+        "auprc": 0.801257219612842,
+        "aurc": 0.3595179855568937,
+        "auroc": 0.7717413185367636,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.3601389078033501,
+        "risk_at_0.80": 0.4915521130357067,
+        "risk_at_0.90": 0.5287886812438526,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "predictive_entropy": {
+      "calibration_probability_metrics": {
+        "brier": 0.2296754308833261,
+        "ece": 7.040851073405667e-11,
+        "nll": 0.6501363188826929
+      },
+      "experiment": "primary_ablation",
+      "family": "logistic",
+      "features": [
+        "semantic_predictive_entropy"
+      ],
+      "model_sha256": "0bf0d06c62f1aee7f36b991ba2d93c3b01e7c27560f761e71e387255947eb36a",
+      "selected_regularization": 0.01,
+      "selection_auroc": 0.6154156707094122,
+      "selection_rank_metrics": {
+        "auprc": 0.6641174804232661,
+        "aurc": 0.45566895276078373,
+        "auroc": 0.6154156707094122,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.49754868582323303,
+        "risk_at_0.80": 0.5323658339362471,
+        "risk_at_0.90": 0.5444881591889233,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "presence": {
+      "calibration_probability_metrics": {
+        "brier": 0.24419996574423353,
+        "ece": 2.346956919545917e-11,
+        "nll": 0.6812126484066996
+      },
+      "experiment": "primary_ablation",
+      "family": "logistic",
+      "features": [
+        "absence_rate"
+      ],
+      "model_sha256": "ebcd298d7acc16ec4fb0b7cc4d2211852548784fffe0e312400625a6e2c6f845",
+      "selected_regularization": 0.01,
+      "selection_auroc": 0.5086106634382588,
+      "selection_rank_metrics": {
+        "auprc": 0.5709606827393259,
+        "aurc": 0.5616949104707186,
+        "auroc": 0.5086106634382588,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.5615552226610377,
+        "risk_at_0.80": 0.5599012639911478,
+        "risk_at_0.90": 0.560755088144057,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "representation": {
+      "calibration_probability_metrics": {
+        "brier": 0.23739323002499632,
+        "ece": 3.35279047041186e-12,
+        "nll": 0.6675617571435948
+      },
+      "experiment": "primary_ablation",
+      "family": "logistic",
+      "features": [
+        "embedding_variance",
+        "embedding_cosine_instability",
+        "decoder_hidden_step"
+      ],
+      "model_sha256": "1a7436cdd0fabb29f02b9916c4751a85ccacb375042b7143fd3d519ec1c7ae38",
+      "selected_regularization": 0.01,
+      "selection_auroc": 0.58993157815052,
+      "selection_rank_metrics": {
+        "auprc": 0.6296229435390371,
+        "aurc": 0.5050161289987612,
+        "auroc": 0.58993157815052,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.4882200735394253,
+        "risk_at_0.80": 0.5455164489083713,
+        "risk_at_0.90": 0.5562154800635545,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "semantic": {
+      "calibration_probability_metrics": {
+        "brier": 0.22446901515370293,
+        "ece": 1.1734739406797586e-10,
+        "nll": 0.6387495106151204
+      },
+      "experiment": "primary_ablation",
+      "family": "logistic",
+      "features": [
+        "semantic_mutual_information",
+        "semantic_predictive_entropy",
+        "class_disagreement",
+        "score_variance"
+      ],
+      "model_sha256": "fed38feb13b2cbe93ff1a1a601581fecfadd3afc0b2e5af4433c0bec1d34562b",
+      "selected_regularization": 10.0,
+      "selection_auroc": 0.6415591824946825,
+      "selection_rank_metrics": {
+        "auprc": 0.6911311552890088,
+        "aurc": 0.44124823153523285,
+        "auroc": 0.6415591824946825,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.48243224839983656,
+        "risk_at_0.80": 0.5169596118653446,
+        "risk_at_0.90": 0.5394945903003707,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "semantic_geometric": {
+      "calibration_probability_metrics": {
+        "brier": 0.19701412758051723,
+        "ece": 1.0058384769116593e-11,
+        "nll": 0.5793731014829727
+      },
+      "experiment": "primary_ablation",
+      "family": "logistic",
+      "features": [
+        "semantic_mutual_information",
+        "semantic_predictive_entropy",
+        "class_disagreement",
+        "score_variance",
+        "box_variance",
+        "box_mean_pairwise_iou_loss",
+        "decoder_reference_variance",
+        "decoder_reference_step"
+      ],
+      "model_sha256": "2f6e1c8dbe11c42979c5e846eabc265ee62b4a9e1c175ed1e1018f43c5675b7f",
+      "selected_regularization": 10.0,
+      "selection_auroc": 0.7521072420816415,
+      "selection_rank_metrics": {
+        "auprc": 0.7772788957932129,
+        "aurc": 0.3699512657288295,
+        "auroc": 0.7521072420816415,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.3781833038267738,
+        "risk_at_0.80": 0.4997659275652211,
+        "risk_at_0.90": 0.5320420670348793,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "semantic_mi": {
+      "calibration_probability_metrics": {
+        "brier": 0.23943245470908675,
+        "ece": 1.6764523138604887e-11,
+        "nll": 0.6716178105311004
+      },
+      "experiment": "primary_ablation",
+      "family": "logistic",
+      "features": [
+        "semantic_mutual_information"
+      ],
+      "model_sha256": "3c2346bd4a057bb7793a960b0aa8925161d678e6a519029570d75874db5a4200",
+      "selected_regularization": 0.01,
+      "selection_auroc": 0.5627735113889611,
+      "selection_rank_metrics": {
+        "auprc": 0.5927638144838324,
+        "aurc": 0.5033109740956865,
+        "auroc": 0.5627735113889611,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.5052430886558628,
+        "risk_at_0.80": 0.5618589607183896,
+        "risk_at_0.90": 0.5664295982446849,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    }
+  },
+  "schema_version": 3,
+  "selection_group_fingerprint": "719e1119096598460cd46d19cc076ef9014407ce61f4a4550f64495181f198e9",
+  "selection_groups": 1200,
+  "selection_rows": 29371,
+  "source_tree_sha256": "389b1c09a9c0878356fa01fe9376ea729883166d516aa41cd45e3ca94bb9e2f6",
+  "train_features_sha256": "a4bb65a78521cffcda1ff8f55e054f575df11272cfa4fbeee46915b0ada1f9d8",
+  "train_rows": 137456,
+  "training_score_threshold": 0.2,
+  "validation_features_sha256": "2e32c9b332fbbdfaf833bbddb32a1e5232f076bbddc3ee71e2e82e50d31ce097",
+  "validation_group_column": "sequence_id",
+  "validation_rows": 59197
+}

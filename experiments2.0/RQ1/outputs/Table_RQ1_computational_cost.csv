@@ -1,0 +1,2 @@
+aggregation_seconds,all_fusion_prediction_seconds,deterministic_seconds,device,full_path_images_per_second,images,mc_passes,peak_gpu_memory_bytes,preprocess_seconds,stochastic_over_deterministic_ratio,stochastic_seconds,timing_scope,total_seconds
+478.1157533992082,29.275433300004806,755.1302814999945,cuda,0.21536854393820032,1992,10,2030990848,46.89705709944246,10.5533027716353,7969.118492699636,per-image preprocessing and synchronized warm-model inference; one-time model loading is excluded,9249.26158469828

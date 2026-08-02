@@ -1,0 +1,4154 @@
+{
+  "artifact_integrity": {
+    "all_required_metrics_finite": true,
+    "bootstrap_sha256": "c927b37c669854ad27028a6ebb2670faa7dc6cde0da5f4aba1fd91ab96c8f3d5",
+    "model_index_sha256": "6f1f917cba932d2035bbf526f429be600e4033227b492143223afdbd4462c90d",
+    "predictions_sha256": "c7b288c32ae4bf7461470c63babd095685bb559e72f9fdc0d1365e5ac9680900",
+    "test_features_sha256": "d30be321f469cf5d15f6d96a7014846f4fe18b9a8b16fb52eb4da9cb827b28eb",
+    "test_image_summary_sha256": "d7ffcf485290e9bfec471dd9bcdfa9133a1c54f14fbde1bedcd04d351d9cb322"
+  },
+  "comparisons_vs_confidence": {
+    "deterministic_fixed": {
+      "aurc": {
+        "improvement": -0.13617860116568598,
+        "lower": -0.14257398593772708,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": -0.12981502944560896
+      },
+      "auroc": {
+        "improvement": -0.1529150496494469,
+        "lower": -0.16022445927918827,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": -0.14567449093315732
+      }
+    },
+    "equal_fixed_fusion": {
+      "aurc": {
+        "improvement": -0.07084490060963677,
+        "lower": -0.07658798561173172,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": -0.06525222256817613
+      },
+      "auroc": {
+        "improvement": -0.09319277118298364,
+        "lower": -0.10040753532817412,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": -0.08626732177651028
+      }
+    },
+    "learned_deterministic": {
+      "aurc": {
+        "improvement": -0.14032802362541363,
+        "lower": -0.1467099761882422,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": -0.1338554396675216
+      },
+      "auroc": {
+        "improvement": -0.15127083184066337,
+        "lower": -0.1587161331318387,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": -0.1435298610446511
+      }
+    },
+    "learned_fusion": {
+      "aurc": {
+        "improvement": -0.010562893647954208,
+        "lower": -0.014399755484299446,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": -0.006914251224197699
+      },
+      "auroc": {
+        "improvement": 0.0017953566036638113,
+        "lower": -0.0032706184771125434,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": 0.007077430687514957
+      }
+    },
+    "learned_fusion_plus_confidence": {
+      "aurc": {
+        "improvement": 0.03129634959626676,
+        "lower": 0.02919478904373344,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": 0.03343836779865474
+      },
+      "auroc": {
+        "improvement": 0.05247855012129621,
+        "lower": 0.049296195421828296,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": 0.05576899046147941
+      }
+    },
+    "learned_stochastic": {
+      "aurc": {
+        "improvement": -0.018940060168223194,
+        "lower": -0.022127853633567014,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": -0.015844777398005383
+      },
+      "auroc": {
+        "improvement": -0.017484187307496457,
+        "lower": -0.022678911112085757,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": -0.01263406031134775
+      }
+    },
+    "nonlinear_fusion": {
+      "aurc": {
+        "improvement": 0.03483422084328247,
+        "lower": 0.031027895241335403,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": 0.03842346987290303
+      },
+      "auroc": {
+        "improvement": 0.04495621255179305,
+        "lower": 0.03959472741430025,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": 0.050317819484075745
+      }
+    },
+    "stochastic_fixed": {
+      "aurc": {
+        "improvement": -0.056573491800868625,
+        "lower": -0.062283073380316294,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": -0.05113901485615403
+      },
+      "auroc": {
+        "improvement": -0.10427058831969938,
+        "lower": -0.11152092523352382,
+        "multiplicity_adjusted": false,
+        "positive_is_better": true,
+        "upper": -0.09708179908100452
+      }
+    }
+  },
+  "computational_cost": {
+    "all_estimator_prediction_seconds": 4.918756800005212,
+    "deterministic_detector_seconds": 755.1302814999945,
+    "deterministic_proxy_images_per_second": 2.6379553949857257,
+    "environment": {
+      "cuda": {
+        "available": true,
+        "build": "11.8",
+        "cudnn": 90100,
+        "deterministic_algorithms": false,
+        "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+      },
+      "git_revision": "dce1f07a0ebb70f817f98a8f5945d93c28fb0616",
+      "packages": {
+        "groundingdino-py": "0.4.0",
+        "numpy": "1.26.4",
+        "pandas": "2.2.3",
+        "pycocotools": "2.0.8",
+        "scikit-learn": "1.5.2",
+        "torch": "2.5.1+cu118",
+        "torchvision": "0.20.1+cu118",
+        "transformers": "4.40.2"
+      },
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]"
+    },
+    "feature_aggregation_seconds": 1665.5450515985722,
+    "full_fused_path_images_per_second": 0.1917266149260631,
+    "images": 1992,
+    "mc_incremental_overhead_ratio": 10.5533027716353,
+    "mc_passes": 10,
+    "stochastic_detector_seconds": 7969.118492699636,
+    "stochastic_modules": [
+      {
+        "name": "transformer.encoder.fusion_layers.0.drop_path",
+        "probability": 0.1,
+        "type": "DropPath"
+      },
+      {
+        "name": "transformer.encoder.fusion_layers.1.drop_path",
+        "probability": 0.1,
+        "type": "DropPath"
+      },
+      {
+        "name": "transformer.encoder.fusion_layers.2.drop_path",
+        "probability": 0.1,
+        "type": "DropPath"
+      },
+      {
+        "name": "transformer.encoder.fusion_layers.3.drop_path",
+        "probability": 0.1,
+        "type": "DropPath"
+      },
+      {
+        "name": "transformer.encoder.fusion_layers.4.drop_path",
+        "probability": 0.1,
+        "type": "DropPath"
+      },
+      {
+        "name": "transformer.encoder.fusion_layers.5.drop_path",
+        "probability": 0.1,
+        "type": "DropPath"
+      },
+      {
+        "name": "backbone.0.layers.0.blocks.1.drop_path",
+        "probability": 0.0181818176060915,
+        "type": "DropPath"
+      },
+      {
+        "name": "backbone.0.layers.1.blocks.0.drop_path",
+        "probability": 0.036363635212183,
+        "type": "DropPath"
+      },
+      {
+        "name": "backbone.0.layers.1.blocks.1.drop_path",
+        "probability": 0.05454545468091965,
+        "type": "DropPath"
+      },
+      {
+        "name": "backbone.0.layers.2.blocks.0.drop_path",
+        "probability": 0.072727270424366,
+        "type": "DropPath"
+      },
+      {
+        "name": "backbone.0.layers.2.blocks.1.drop_path",
+        "probability": 0.09090908616781235,
+        "type": "DropPath"
+      },
+      {
+        "name": "backbone.0.layers.2.blocks.2.drop_path",
+        "probability": 0.10909091681241989,
+        "type": "DropPath"
+      },
+      {
+        "name": "backbone.0.layers.2.blocks.3.drop_path",
+        "probability": 0.12727272510528564,
+        "type": "DropPath"
+      },
+      {
+        "name": "backbone.0.layers.2.blocks.4.drop_path",
+        "probability": 0.1454545557498932,
+        "type": "DropPath"
+      },
+      {
+        "name": "backbone.0.layers.2.blocks.5.drop_path",
+        "probability": 0.16363637149333954,
+        "type": "DropPath"
+      },
+      {
+        "name": "backbone.0.layers.3.blocks.0.drop_path",
+        "probability": 0.1818181872367859,
+        "type": "DropPath"
+      },
+      {
+        "name": "backbone.0.layers.3.blocks.1.drop_path",
+        "probability": 0.20000000298023224,
+        "type": "DropPath"
+      }
+    ]
+  },
+  "detector_performance": {
+    "ap_50": 0.3693422706209172,
+    "ap_75": 0.20376952383029162,
+    "ap_large": 0.41500014430739524,
+    "ap_medium": 0.2347699567824021,
+    "ap_small": 0.09052720626597593,
+    "ar_1": 0.23215952811014795,
+    "ar_10": 0.4126330013640392,
+    "ar_100": 0.4547700481588809,
+    "ar_large": 0.6749319770343511,
+    "ar_medium": 0.4663801764761862,
+    "ar_small": 0.264295555811474,
+    "images": 1992,
+    "map_50_95": 0.21206593058541365,
+    "max_detections_per_image": 100,
+    "predictions_at_extraction_threshold": 422843
+  },
+  "evidence_status": "confirmatory_requires_human_interpretation",
+  "extracted_test_rows": 422843,
+  "mc_pass_sensitivity": {
+    "learned_fusion_mc02": {
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step",
+        "stochastic_mutual_information_mc02",
+        "stochastic_predictive_entropy_mc02",
+        "stochastic_class_disagreement_mc02",
+        "stochastic_score_variance_mc02",
+        "stochastic_box_variance_mc02",
+        "stochastic_pairwise_iou_loss_mc02",
+        "stochastic_embedding_variance_mc02",
+        "stochastic_embedding_cosine_instability_mc02",
+        "stochastic_absence_rate_mc02"
+      ],
+      "mc_passes": 2,
+      "metrics": {
+        "auprc": 0.7675171737807942,
+        "aurc": 0.3955659250412252,
+        "auroc": 0.727147788705744,
+        "brier": 0.2079553011129928,
+        "coverage_at_risk_0.05": 0.0,
+        "coverage_at_risk_0.10": 0.0,
+        "coverage_at_risk_0.20": 0.04612488233448384,
+        "ece": 0.006618722689394841,
+        "error_prevalence": 0.5685179374542412,
+        "n": 47805,
+        "nll": 0.6030700583335646,
+        "risk_at_0.50": 0.4019579132326486,
+        "risk_at_0.70": 0.46987807793449676,
+        "risk_at_0.80": 0.5032946344524631,
+        "risk_at_0.90": 0.5362231260894829,
+        "risk_at_1.00": 0.5685179374542412
+      }
+    },
+    "learned_fusion_mc05": {
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step",
+        "stochastic_mutual_information_mc05",
+        "stochastic_predictive_entropy_mc05",
+        "stochastic_class_disagreement_mc05",
+        "stochastic_score_variance_mc05",
+        "stochastic_box_variance_mc05",
+        "stochastic_pairwise_iou_loss_mc05",
+        "stochastic_embedding_variance_mc05",
+        "stochastic_embedding_cosine_instability_mc05",
+        "stochastic_absence_rate_mc05"
+      ],
+      "mc_passes": 5,
+      "metrics": {
+        "auprc": 0.7924302634284602,
+        "aurc": 0.37259472243996045,
+        "auroc": 0.7573578898343181,
+        "brier": 0.19760463930981387,
+        "coverage_at_risk_0.05": 0.0,
+        "coverage_at_risk_0.10": 0.0015270369208241815,
+        "coverage_at_risk_0.20": 0.09155946030749922,
+        "ece": 0.013108186485372616,
+        "error_prevalence": 0.5685179374542412,
+        "n": 47805,
+        "nll": 0.5806352770498844,
+        "risk_at_0.50": 0.3798686357361001,
+        "risk_at_0.70": 0.45953860865407603,
+        "risk_at_0.80": 0.49796046438657043,
+        "risk_at_0.90": 0.5331319000581057,
+        "risk_at_1.00": 0.5685179374542412
+      }
+    },
+    "learned_fusion_mc10": {
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step",
+        "stochastic_mutual_information_mc10",
+        "stochastic_predictive_entropy_mc10",
+        "stochastic_class_disagreement_mc10",
+        "stochastic_score_variance_mc10",
+        "stochastic_box_variance_mc10",
+        "stochastic_pairwise_iou_loss_mc10",
+        "stochastic_embedding_variance_mc10",
+        "stochastic_embedding_cosine_instability_mc10",
+        "stochastic_absence_rate_mc10"
+      ],
+      "mc_passes": 10,
+      "metrics": {
+        "auprc": 0.8067234318216439,
+        "aurc": 0.3592232445827871,
+        "auroc": 0.7754978060084367,
+        "brier": 0.19023502924486596,
+        "coverage_at_risk_0.05": 0.0,
+        "coverage_at_risk_0.10": 0.0,
+        "coverage_at_risk_0.20": 0.14425269323292542,
+        "ece": 0.01059046764360373,
+        "error_prevalence": 0.5685179374542412,
+        "n": 47805,
+        "nll": 0.5639648286996429,
+        "risk_at_0.50": 0.36501694347989794,
+        "risk_at_0.70": 0.4535919196748745,
+        "risk_at_0.80": 0.49503190042882544,
+        "risk_at_0.90": 0.5319465427077281,
+        "risk_at_1.00": 0.5685179374542412
+      }
+    }
+  },
+  "methods": {
+    "confidence": {
+      "clustered_bootstrap_interval": {
+        "auprc": {
+          "lower": 0.7769129163515838,
+          "upper": 0.790412764065103
+        },
+        "aurc": {
+          "lower": 0.34224151110923795,
+          "upper": 0.35526077210604456
+        },
+        "auroc": {
+          "lower": 0.7683582081414589,
+          "upper": 0.7787638706076587
+        },
+        "brier": {
+          "lower": 0.18583120433487177,
+          "upper": 0.19019643053954535
+        },
+        "ece": {
+          "lower": 0.007656850340017876,
+          "upper": 0.015232381012877765
+        },
+        "nll": {
+          "lower": 0.5549971060254797,
+          "upper": 0.5659812957332824
+        }
+      },
+      "family": "direct_control",
+      "features": [
+        "confidence_uncertainty"
+      ],
+      "metrics": {
+        "auprc": 0.7834117786759655,
+        "aurc": 0.3486603509348329,
+        "auroc": 0.7737024494047728,
+        "brier": 0.18804549830807665,
+        "coverage_at_risk_0.05": 0.004246417738730258,
+        "coverage_at_risk_0.10": 0.024286162535299655,
+        "coverage_at_risk_0.20": 0.22618972910783391,
+        "ece": 0.009551712783551172,
+        "error_prevalence": 0.5685179374542412,
+        "n": 47805,
+        "nll": 0.5606324344839984,
+        "risk_at_0.50": 0.36815462494247586,
+        "risk_at_0.70": 0.4633934974898398,
+        "risk_at_0.80": 0.5034515218073423,
+        "risk_at_0.90": 0.5385241138872748,
+        "risk_at_1.00": 0.5685179374542412
+      }
+    },
+    "deterministic_fixed": {
+      "clustered_bootstrap_interval": {
+        "auprc": {
+          "lower": 0.6793038799377135,
+          "upper": 0.6914291771981224
+        },
+        "aurc": {
+          "lower": 0.47685770223745183,
+          "upper": 0.49212883806697283
+        },
+        "auroc": {
+          "lower": 0.6155634527737813,
+          "upper": 0.6260770945437363
+        },
+        "brier": {
+          "lower": 0.23308374890769515,
+          "upper": 0.23520893730919792
+        },
+        "ece": {
+          "lower": 0.0030265979319110364,
+          "upper": 0.009774019269075325
+        },
+        "nll": {
+          "lower": 0.6576497073973493,
+          "upper": 0.6620889103982102
+        }
+      },
+      "family": "fixed_empirical_cdf",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step"
+      ],
+      "metrics": {
+        "auprc": 0.6851554142193512,
+        "aurc": 0.48483895210051886,
+        "auroc": 0.6207873997553259,
+        "brier": 0.23415169265413777,
+        "coverage_at_risk_0.05": 2.0918313983892897e-05,
+        "coverage_at_risk_0.10": 2.0918313983892897e-05,
+        "coverage_at_risk_0.20": 2.0918313983892897e-05,
+        "ece": 0.00442974591190203,
+        "error_prevalence": 0.5685179374542412,
+        "n": 47805,
+        "nll": 0.6599232137916083,
+        "risk_at_0.50": 0.4852110613730494,
+        "risk_at_0.70": 0.5112359550561798,
+        "risk_at_0.80": 0.5269061813617822,
+        "risk_at_0.90": 0.5444741429401511,
+        "risk_at_1.00": 0.5685179374542412
+      }
+    },
+    "equal_fixed_fusion": {
+      "clustered_bootstrap_interval": {
+        "auprc": {
+          "lower": 0.7141356611200439,
+          "upper": 0.7263852237600937
+        },
+        "aurc": {
+          "lower": 0.41187537568726373,
+          "upper": 0.4273989408170866
+        },
+        "auroc": {
+          "lower": 0.6752752041812994,
+          "upper": 0.6855947964997836
+        },
+        "brier": {
+          "lower": 0.21899524654744115,
+          "upper": 0.22188381488746545
+        },
+        "ece": {
+          "lower": 0.00582123319334067,
+          "upper": 0.012639174933172239
+        },
+        "nll": {
+          "lower": 0.6289117874882695,
+          "upper": 0.6357827496985529
+        }
+      },
+      "family": "fixed_equal_late_fusion",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step",
+        "stochastic_mutual_information",
+        "stochastic_predictive_entropy",
+        "stochastic_class_disagreement",
+        "stochastic_score_variance",
+        "stochastic_box_variance",
+        "stochastic_pairwise_iou_loss",
+        "stochastic_embedding_variance",
+        "stochastic_embedding_cosine_instability",
+        "stochastic_absence_rate"
+      ],
+      "metrics": {
+        "auprc": 0.7203538695728775,
+        "aurc": 0.41950525154446966,
+        "auroc": 0.6805096782217892,
+        "brier": 0.220421567297393,
+        "coverage_at_risk_0.05": 0.00010459156991946449,
+        "coverage_at_risk_0.10": 0.00029285639577450055,
+        "coverage_at_risk_0.20": 0.059198828574416905,
+        "ece": 0.007645952109059438,
+        "error_prevalence": 0.5685179374542412,
+        "n": 47805,
+        "nll": 0.6322531701644131,
+        "risk_at_0.50": 0.4431242940216709,
+        "risk_at_0.70": 0.4952486253884772,
+        "risk_at_0.80": 0.5186695952306244,
+        "risk_at_0.90": 0.5428471818710052,
+        "risk_at_1.00": 0.5685179374542412
+      }
+    },
+    "learned_deterministic": {
+      "clustered_bootstrap_interval": {
+        "auprc": {
+          "lower": 0.6892743530294173,
+          "upper": 0.7014238623916768
+        },
+        "aurc": {
+          "lower": 0.48129918566597213,
+          "upper": 0.49679135725612056
+        },
+        "auroc": {
+          "lower": 0.6170274131753346,
+          "upper": 0.6276310707589027
+        },
+        "brier": {
+          "lower": 0.23182215237580645,
+          "upper": 0.23390423428436982
+        },
+        "ece": {
+          "lower": 0.004371622039854631,
+          "upper": 0.01110174667290356
+        },
+        "nll": {
+          "lower": 0.6545951344663443,
+          "upper": 0.6592534689766608
+        }
+      },
+      "family": "regularized_logistic",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step"
+      ],
+      "metrics": {
+        "auprc": 0.6951917846387303,
+        "aurc": 0.4889883745602465,
+        "auroc": 0.6224316175641095,
+        "brier": 0.232870480864188,
+        "coverage_at_risk_0.05": 0.0,
+        "coverage_at_risk_0.10": 0.0,
+        "coverage_at_risk_0.20": 0.0,
+        "ece": 0.004515526900567177,
+        "error_prevalence": 0.5685179374542412,
+        "n": 47805,
+        "nll": 0.6568308507439468,
+        "risk_at_0.50": 0.48747019202610553,
+        "risk_at_0.70": 0.5061558689935453,
+        "risk_at_0.80": 0.521101349231252,
+        "risk_at_0.90": 0.5411272515979082,
+        "risk_at_1.00": 0.5685179374542412
+      }
+    },
+    "learned_fusion": {
+      "clustered_bootstrap_interval": {
+        "auprc": {
+          "lower": 0.8013523834611387,
+          "upper": 0.8121003401500635
+        },
+        "aurc": {
+          "lower": 0.3523608747418984,
+          "upper": 0.3661590505985516
+        },
+        "auroc": {
+          "lower": 0.771115119295257,
+          "upper": 0.7800182199394289
+        },
+        "brier": {
+          "lower": 0.18828930508393668,
+          "upper": 0.19213746986086258
+        },
+        "ece": {
+          "lower": 0.008469391592328252,
+          "upper": 0.015138572309701951
+        },
+        "nll": {
+          "lower": 0.5595312783430976,
+          "upper": 0.5688064232633119
+        }
+      },
+      "family": "regularized_logistic",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step",
+        "stochastic_mutual_information",
+        "stochastic_predictive_entropy",
+        "stochastic_class_disagreement",
+        "stochastic_score_variance",
+        "stochastic_box_variance",
+        "stochastic_pairwise_iou_loss",
+        "stochastic_embedding_variance",
+        "stochastic_embedding_cosine_instability",
+        "stochastic_absence_rate"
+      ],
+      "metrics": {
+        "auprc": 0.8067234318216439,
+        "aurc": 0.3592232445827871,
+        "auroc": 0.7754978060084367,
+        "brier": 0.19023502924486596,
+        "coverage_at_risk_0.05": 0.0,
+        "coverage_at_risk_0.10": 0.0,
+        "coverage_at_risk_0.20": 0.14425269323292542,
+        "ece": 0.01059046764360373,
+        "error_prevalence": 0.5685179374542412,
+        "n": 47805,
+        "nll": 0.5639648286996429,
+        "risk_at_0.50": 0.36501694347989794,
+        "risk_at_0.70": 0.4535919196748745,
+        "risk_at_0.80": 0.49503190042882544,
+        "risk_at_0.90": 0.5319465427077281,
+        "risk_at_1.00": 0.5685179374542412
+      }
+    },
+    "learned_fusion_plus_confidence": {
+      "clustered_bootstrap_interval": {
+        "auprc": {
+          "lower": 0.8446947644517508,
+          "upper": 0.8545089627967806
+        },
+        "aurc": {
+          "lower": 0.3109301256044019,
+          "upper": 0.32380871295637015
+        },
+        "auroc": {
+          "lower": 0.8221374084694016,
+          "upper": 0.8301720003074996
+        },
+        "brier": {
+          "lower": 0.16521960851703463,
+          "upper": 0.1692822627048994
+        },
+        "ece": {
+          "lower": 0.006394147694548715,
+          "upper": 0.012668444147778294
+        },
+        "nll": {
+          "lower": 0.5018823010907386,
+          "upper": 0.5124773808891575
+        }
+      },
+      "family": "regularized_logistic",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step",
+        "stochastic_mutual_information",
+        "stochastic_predictive_entropy",
+        "stochastic_class_disagreement",
+        "stochastic_score_variance",
+        "stochastic_box_variance",
+        "stochastic_pairwise_iou_loss",
+        "stochastic_embedding_variance",
+        "stochastic_embedding_cosine_instability",
+        "stochastic_absence_rate",
+        "confidence_uncertainty"
+      ],
+      "metrics": {
+        "auprc": 0.8494950288332752,
+        "aurc": 0.3173640013385661,
+        "auroc": 0.826180999526069,
+        "brier": 0.16721319209985577,
+        "coverage_at_risk_0.05": 0.028197887250287625,
+        "coverage_at_risk_0.10": 0.1069135027716766,
+        "coverage_at_risk_0.20": 0.28852630477983476,
+        "ece": 0.006681962245015721,
+        "error_prevalence": 0.5685179374542412,
+        "n": 47805,
+        "nll": 0.5072145854547881,
+        "risk_at_0.50": 0.3258586788269255,
+        "risk_at_0.70": 0.43470595266555107,
+        "risk_at_0.80": 0.48352682773768435,
+        "risk_at_0.90": 0.5285531667635096,
+        "risk_at_1.00": 0.5685179374542412
+      }
+    },
+    "learned_stochastic": {
+      "clustered_bootstrap_interval": {
+        "auprc": {
+          "lower": 0.7781984841495485,
+          "upper": 0.7896484843339797
+        },
+        "aurc": {
+          "lower": 0.3608074339083684,
+          "upper": 0.37450602412438916
+        },
+        "auroc": {
+          "lower": 0.7512544342836927,
+          "upper": 0.7609673817634665
+        },
+        "brier": {
+          "lower": 0.19471984325439518,
+          "upper": 0.19848439815937258
+        },
+        "ece": {
+          "lower": 0.006435854819692399,
+          "upper": 0.013197208069203839
+        },
+        "nll": {
+          "lower": 0.5739690482363489,
+          "upper": 0.5827377491629988
+        }
+      },
+      "family": "regularized_logistic",
+      "features": [
+        "stochastic_mutual_information",
+        "stochastic_predictive_entropy",
+        "stochastic_class_disagreement",
+        "stochastic_score_variance",
+        "stochastic_box_variance",
+        "stochastic_pairwise_iou_loss",
+        "stochastic_embedding_variance",
+        "stochastic_embedding_cosine_instability",
+        "stochastic_absence_rate"
+      ],
+      "metrics": {
+        "auprc": 0.783838779283285,
+        "aurc": 0.3676004111030561,
+        "auroc": 0.7562182620972764,
+        "brier": 0.1966361849235333,
+        "coverage_at_risk_0.05": 0.00014642819788725028,
+        "coverage_at_risk_0.10": 0.0006903043614684656,
+        "coverage_at_risk_0.20": 0.16012969354670015,
+        "ece": 0.008483011836626506,
+        "error_prevalence": 0.5685179374542412,
+        "n": 47805,
+        "nll": 0.5782907769686387,
+        "risk_at_0.50": 0.3837175249968623,
+        "risk_at_0.70": 0.46557494621085344,
+        "risk_at_0.80": 0.5016211693337517,
+        "risk_at_0.90": 0.5352004648460198,
+        "risk_at_1.00": 0.5685179374542412
+      }
+    },
+    "nonlinear_fusion": {
+      "clustered_bootstrap_interval": {
+        "auprc": {
+          "lower": 0.8344192890161581,
+          "upper": 0.8446420119968804
+        },
+        "aurc": {
+          "lower": 0.30737446528297335,
+          "upper": 0.31987345362725644
+        },
+        "auroc": {
+          "lower": 0.8143678469694136,
+          "upper": 0.8233468436662776
+        },
+        "brier": {
+          "lower": 0.16682908118988896,
+          "upper": 0.1711137332608668
+        },
+        "ece": {
+          "lower": 0.007840663923723857,
+          "upper": 0.013811184525382816
+        },
+        "nll": {
+          "lower": 0.5034936068729753,
+          "upper": 0.5144281049505436
+        }
+      },
+      "family": "random_forest_sensitivity",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step",
+        "stochastic_mutual_information",
+        "stochastic_predictive_entropy",
+        "stochastic_class_disagreement",
+        "stochastic_score_variance",
+        "stochastic_box_variance",
+        "stochastic_pairwise_iou_loss",
+        "stochastic_embedding_variance",
+        "stochastic_embedding_cosine_instability",
+        "stochastic_absence_rate"
+      ],
+      "metrics": {
+        "auprc": 0.8395752698240679,
+        "aurc": 0.3138261300915504,
+        "auroc": 0.8186586619565659,
+        "brier": 0.16893779063716982,
+        "coverage_at_risk_0.05": 0.09478088066101872,
+        "coverage_at_risk_0.10": 0.16448070285534985,
+        "coverage_at_risk_0.20": 0.2975211797929087,
+        "ece": 0.008818143422621693,
+        "error_prevalence": 0.5685179374542412,
+        "n": 47805,
+        "nll": 0.5089492063656216,
+        "risk_at_0.50": 0.3426348157135088,
+        "risk_at_0.70": 0.4426547932106144,
+        "risk_at_0.80": 0.48744901160966425,
+        "risk_at_0.90": 0.5290412550842534,
+        "risk_at_1.00": 0.5685179374542412
+      }
+    },
+    "stochastic_fixed": {
+      "clustered_bootstrap_interval": {
+        "auprc": {
+          "lower": 0.6726681447250218,
+          "upper": 0.6864037679502466
+        },
+        "aurc": {
+          "lower": 0.39812115126454195,
+          "upper": 0.41235342955169113
+        },
+        "auroc": {
+          "lower": 0.6637732033653901,
+          "upper": 0.6750767349619569
+        },
+        "brier": {
+          "lower": 0.21385730664924016,
+          "upper": 0.2173536095215899
+        },
+        "ece": {
+          "lower": 0.00462920842614993,
+          "upper": 0.011594654781902945
+        },
+        "nll": {
+          "lower": 0.6173098718969442,
+          "upper": 0.6250174766161488
+        }
+      },
+      "family": "fixed_empirical_cdf",
+      "features": [
+        "stochastic_mutual_information",
+        "stochastic_predictive_entropy",
+        "stochastic_class_disagreement",
+        "stochastic_score_variance",
+        "stochastic_box_variance",
+        "stochastic_pairwise_iou_loss",
+        "stochastic_embedding_variance",
+        "stochastic_embedding_cosine_instability",
+        "stochastic_absence_rate"
+      ],
+      "metrics": {
+        "auprc": 0.6791788529166864,
+        "aurc": 0.4052338427357015,
+        "auroc": 0.6694318610850735,
+        "brier": 0.21558128801243326,
+        "coverage_at_risk_0.05": 0.010124463968204163,
+        "coverage_at_risk_0.10": 0.03434787156155214,
+        "coverage_at_risk_0.20": 0.12762263361573056,
+        "ece": 0.006300861198308533,
+        "error_prevalence": 0.5685179374542412,
+        "n": 47805,
+        "nll": 0.6212384974521211,
+        "risk_at_0.50": 0.4608626532234448,
+        "risk_at_0.70": 0.5193939756155869,
+        "risk_at_0.80": 0.5374699299236482,
+        "risk_at_0.90": 0.5525392213829169,
+        "risk_at_1.00": 0.5685179374542412
+      }
+    }
+  },
+  "primary_inference": {
+    "comparisons": {
+      "learned_deterministic": {
+        "aurc": {
+          "holm_adjusted_p": 0.001999000499750125,
+          "improvement": 0.12976512997745943,
+          "lower": 0.12435113619684772,
+          "positive_is_better": true,
+          "raw_one_sided_p": 0.0004997501249375312,
+          "reject_no_improvement": true,
+          "upper": 0.1352669288694461
+        },
+        "auroc": {
+          "holm_adjusted_p": 0.001999000499750125,
+          "improvement": 0.15306618844432718,
+          "lower": 0.14749138816119461,
+          "positive_is_better": true,
+          "raw_one_sided_p": 0.0004997501249375312,
+          "reject_no_improvement": true,
+          "upper": 0.1588411532739613
+        }
+      },
+      "learned_stochastic": {
+        "aurc": {
+          "holm_adjusted_p": 0.001999000499750125,
+          "improvement": 0.008377166520268986,
+          "lower": 0.006455413602624979,
+          "positive_is_better": true,
+          "raw_one_sided_p": 0.0004997501249375312,
+          "reject_no_improvement": true,
+          "upper": 0.01032567134306541
+        },
+        "auroc": {
+          "holm_adjusted_p": 0.001999000499750125,
+          "improvement": 0.01927954391116027,
+          "lower": 0.01694609673501512,
+          "positive_is_better": true,
+          "raw_one_sided_p": 0.0004997501249375312,
+          "reject_no_improvement": true,
+          "upper": 0.02157959821857924
+        }
+      }
+    },
+    "correction": "holm",
+    "familywise_alpha": 0.05,
+    "interpretation_guard": "Report negative or mixed outcomes without retuning.",
+    "method": "learned_fusion",
+    "success_criterion_met": true,
+    "test": "null_centered_paired_cluster_bootstrap"
+  },
+  "primary_score_threshold": 0.2,
+  "research_question": "How does fusing deterministic and stochastic uncertainty estimators improve reliability for pinned GroundingDINO Swin-T on frozen BDD100K?",
+  "schema_version": 1,
+  "score_threshold_sensitivity": {
+    "0.05": {
+      "error_prevalence": 0.9323602377241671,
+      "methods": {
+        "confidence": {
+          "auprc": 0.9912335626270516,
+          "aurc": 0.7943012027760278,
+          "auroc": 0.9143525633945312,
+          "error_prevalence": 0.9323602377241671,
+          "n": 422843,
+          "risk_at_0.50": 0.8709263936581813,
+          "risk_at_0.80": 0.9164437218239598,
+          "risk_at_0.90": 0.9252231585641123,
+          "risk_at_1.00": 0.9323602377241671
+        },
+        "deterministic_fixed": {
+          "auprc": 0.9776039968592376,
+          "aurc": 0.8579739682318193,
+          "auroc": 0.7870417645025207,
+          "error_prevalence": 0.9323602377241671,
+          "n": 422843,
+          "risk_at_0.50": 0.8833896188665323,
+          "risk_at_0.80": 0.9181996896016554,
+          "risk_at_0.90": 0.9259326411936125,
+          "risk_at_1.00": 0.9323602377241671
+        },
+        "equal_fixed_fusion": {
+          "auprc": 0.9774296759793772,
+          "aurc": 0.8426127083125909,
+          "auroc": 0.7952130859121409,
+          "error_prevalence": 0.9323602377241671,
+          "n": 422843,
+          "risk_at_0.50": 0.8843024850772389,
+          "risk_at_0.80": 0.9186046855369152,
+          "risk_at_0.90": 0.9261086979942663,
+          "risk_at_1.00": 0.9323602377241671
+        },
+        "learned_deterministic": {
+          "auprc": 0.9791638379602374,
+          "aurc": 0.863102725830979,
+          "auroc": 0.7896402980191489,
+          "error_prevalence": 0.9323602377241671,
+          "n": 422843,
+          "risk_at_0.50": 0.882032144242321,
+          "risk_at_0.80": 0.9173896977311359,
+          "risk_at_0.90": 0.9253781936572253,
+          "risk_at_1.00": 0.9323602377241671
+        },
+        "learned_fusion": {
+          "auprc": 0.9874247105419716,
+          "aurc": 0.8137416348296312,
+          "auroc": 0.8775736007084667,
+          "error_prevalence": 0.9323602377241671,
+          "n": 422843,
+          "risk_at_0.50": 0.8752022022306098,
+          "risk_at_0.80": 0.9167984627891509,
+          "risk_at_0.90": 0.9253256393883734,
+          "risk_at_1.00": 0.9323602377241671
+        },
+        "learned_fusion_plus_confidence": {
+          "auprc": 0.991264504294443,
+          "aurc": 0.7959596277695365,
+          "auroc": 0.915787239675891,
+          "error_prevalence": 0.9323602377241671,
+          "n": 422843,
+          "risk_at_0.50": 0.8716358751690931,
+          "risk_at_0.80": 0.916517626191708,
+          "risk_at_0.90": 0.9251995091431289,
+          "risk_at_1.00": 0.9323602377241671
+        },
+        "learned_stochastic": {
+          "auprc": 0.9842758130847858,
+          "aurc": 0.8176426560448806,
+          "auroc": 0.8518224180457284,
+          "error_prevalence": 0.9323602377241671,
+          "n": 422843,
+          "risk_at_0.50": 0.8787165006479931,
+          "risk_at_0.80": 0.9172418889956396,
+          "risk_at_0.90": 0.9254727913411587,
+          "risk_at_1.00": 0.9323602377241671
+        },
+        "nonlinear_fusion": {
+          "auprc": 0.984181120000365,
+          "aurc": 0.8144326322581991,
+          "auroc": 0.8510509830937962,
+          "error_prevalence": 0.9323602377241671,
+          "n": 422843,
+          "risk_at_0.50": 0.8780874270416513,
+          "risk_at_0.80": 0.9174163033035252,
+          "risk_at_0.90": 0.9255437396041087,
+          "risk_at_1.00": 0.9323602377241671
+        },
+        "stochastic_fixed": {
+          "auprc": 0.957182314507743,
+          "aurc": 0.8560839481022083,
+          "auroc": 0.6933579527361046,
+          "error_prevalence": 0.9323602377241671,
+          "n": 422843,
+          "risk_at_0.50": 0.9055017926232842,
+          "risk_at_0.80": 0.9256374251718277,
+          "risk_at_0.90": 0.9296035568729158,
+          "risk_at_1.00": 0.9323602377241671
+        }
+      },
+      "rows": 422843
+    },
+    "0.10": {
+      "error_prevalence": 0.8272550010832671,
+      "methods": {
+        "confidence": {
+          "auprc": 0.9572377654264449,
+          "aurc": 0.6142112103598617,
+          "auroc": 0.8585928078655032,
+          "error_prevalence": 0.8272550010832671,
+          "n": 152317,
+          "risk_at_0.50": 0.6919471106500873,
+          "risk_at_0.80": 0.7901997472384985,
+          "risk_at_0.90": 0.8106444129962214,
+          "risk_at_1.00": 0.8272550010832671
+        },
+        "deterministic_fixed": {
+          "auprc": 0.9168066994965323,
+          "aurc": 0.7280714964903076,
+          "auroc": 0.7091648497252658,
+          "error_prevalence": 0.8272550010832671,
+          "n": 152317,
+          "risk_at_0.50": 0.7392691605719612,
+          "risk_at_0.80": 0.7950826398805128,
+          "risk_at_0.90": 0.8117750900894329,
+          "risk_at_1.00": 0.8272550010832671
+        },
+        "equal_fixed_fusion": {
+          "auprc": 0.922058015458641,
+          "aurc": 0.6911129829066306,
+          "auroc": 0.7387799462344038,
+          "error_prevalence": 0.8272550010832671,
+          "n": 152317,
+          "risk_at_0.50": 0.7329665568087816,
+          "risk_at_0.80": 0.7963792735568795,
+          "risk_at_0.90": 0.8122638343813373,
+          "risk_at_1.00": 0.8272550010832671
+        },
+        "learned_deterministic": {
+          "auprc": 0.9198856079505711,
+          "aurc": 0.732472802725878,
+          "auroc": 0.7100391710483529,
+          "error_prevalence": 0.8272550010832671,
+          "n": 152317,
+          "risk_at_0.50": 0.73760159665962,
+          "risk_at_0.80": 0.7936957342393356,
+          "risk_at_0.90": 0.8108048961965482,
+          "risk_at_1.00": 0.8272550010832671
+        },
+        "learned_fusion": {
+          "auprc": 0.9512535212143305,
+          "aurc": 0.6346369458395059,
+          "auroc": 0.8305739311092359,
+          "error_prevalence": 0.8272550010832671,
+          "n": 152317,
+          "risk_at_0.50": 0.7024645806798934,
+          "risk_at_0.80": 0.7903802911681193,
+          "risk_at_0.90": 0.8099368279765986,
+          "risk_at_1.00": 0.8272550010832671
+        },
+        "learned_fusion_plus_confidence": {
+          "auprc": 0.9665426172663142,
+          "aurc": 0.6008321398825966,
+          "auroc": 0.8819444104788199,
+          "error_prevalence": 0.8272550010832671,
+          "n": 152317,
+          "risk_at_0.50": 0.684830420567497,
+          "risk_at_0.80": 0.7880168069985393,
+          "risk_at_0.90": 0.809353252702683,
+          "risk_at_1.00": 0.8272550010832671
+        },
+        "learned_stochastic": {
+          "auprc": 0.9408183207187814,
+          "aurc": 0.6435009514063335,
+          "auroc": 0.8044210944130805,
+          "error_prevalence": 0.8272550010832671,
+          "n": 152317,
+          "risk_at_0.50": 0.7145708320750009,
+          "risk_at_0.80": 0.793162308992729,
+          "risk_at_0.90": 0.8110383263061144,
+          "risk_at_1.00": 0.8272550010832671
+        },
+        "nonlinear_fusion": {
+          "auprc": 0.9544812506289491,
+          "aurc": 0.6217269633937552,
+          "auroc": 0.839585620634121,
+          "error_prevalence": 0.8272550010832671,
+          "n": 152317,
+          "risk_at_0.50": 0.6990375398836645,
+          "risk_at_0.80": 0.7896252892806145,
+          "risk_at_0.90": 0.8096377456487168,
+          "risk_at_1.00": 0.8272550010832671
+        },
+        "stochastic_fixed": {
+          "auprc": 0.8815100246272771,
+          "aurc": 0.6950658129637385,
+          "auroc": 0.677609406507285,
+          "error_prevalence": 0.8272550010832671,
+          "n": 152317,
+          "risk_at_0.50": 0.7700731364645019,
+          "risk_at_0.80": 0.812578987969209,
+          "risk_at_0.90": 0.8208132121442014,
+          "risk_at_1.00": 0.8272550010832671
+        }
+      },
+      "rows": 152317
+    },
+    "0.20": {
+      "error_prevalence": 0.5685179374542412,
+      "methods": {
+        "confidence": {
+          "auprc": 0.7834117786759655,
+          "aurc": 0.3486603509348329,
+          "auroc": 0.7737024494047728,
+          "error_prevalence": 0.5685179374542412,
+          "n": 47805,
+          "risk_at_0.50": 0.36815462494247586,
+          "risk_at_0.80": 0.5034515218073423,
+          "risk_at_0.90": 0.5385241138872748,
+          "risk_at_1.00": 0.5685179374542412
+        },
+        "deterministic_fixed": {
+          "auprc": 0.6851554142193512,
+          "aurc": 0.48483895210051886,
+          "auroc": 0.6207873997553259,
+          "error_prevalence": 0.5685179374542412,
+          "n": 47805,
+          "risk_at_0.50": 0.4852110613730494,
+          "risk_at_0.80": 0.5269061813617822,
+          "risk_at_0.90": 0.5444741429401511,
+          "risk_at_1.00": 0.5685179374542412
+        },
+        "equal_fixed_fusion": {
+          "auprc": 0.7203538695728775,
+          "aurc": 0.41950525154446966,
+          "auroc": 0.6805096782217892,
+          "error_prevalence": 0.5685179374542412,
+          "n": 47805,
+          "risk_at_0.50": 0.4431242940216709,
+          "risk_at_0.80": 0.5186695952306244,
+          "risk_at_0.90": 0.5428471818710052,
+          "risk_at_1.00": 0.5685179374542412
+        },
+        "learned_deterministic": {
+          "auprc": 0.6951917846387303,
+          "aurc": 0.4889883745602465,
+          "auroc": 0.6224316175641095,
+          "error_prevalence": 0.5685179374542412,
+          "n": 47805,
+          "risk_at_0.50": 0.48747019202610553,
+          "risk_at_0.80": 0.521101349231252,
+          "risk_at_0.90": 0.5411272515979082,
+          "risk_at_1.00": 0.5685179374542412
+        },
+        "learned_fusion": {
+          "auprc": 0.8067234318216439,
+          "aurc": 0.3592232445827871,
+          "auroc": 0.7754978060084367,
+          "error_prevalence": 0.5685179374542412,
+          "n": 47805,
+          "risk_at_0.50": 0.36501694347989794,
+          "risk_at_0.80": 0.49503190042882544,
+          "risk_at_0.90": 0.5319465427077281,
+          "risk_at_1.00": 0.5685179374542412
+        },
+        "learned_fusion_plus_confidence": {
+          "auprc": 0.8494950288332752,
+          "aurc": 0.3173640013385661,
+          "auroc": 0.826180999526069,
+          "error_prevalence": 0.5685179374542412,
+          "n": 47805,
+          "risk_at_0.50": 0.3258586788269255,
+          "risk_at_0.80": 0.48352682773768435,
+          "risk_at_0.90": 0.5285531667635096,
+          "risk_at_1.00": 0.5685179374542412
+        },
+        "learned_stochastic": {
+          "auprc": 0.783838779283285,
+          "aurc": 0.3676004111030561,
+          "auroc": 0.7562182620972764,
+          "error_prevalence": 0.5685179374542412,
+          "n": 47805,
+          "risk_at_0.50": 0.3837175249968623,
+          "risk_at_0.80": 0.5016211693337517,
+          "risk_at_0.90": 0.5352004648460198,
+          "risk_at_1.00": 0.5685179374542412
+        },
+        "nonlinear_fusion": {
+          "auprc": 0.8395752698240679,
+          "aurc": 0.3138261300915504,
+          "auroc": 0.8186586619565659,
+          "error_prevalence": 0.5685179374542412,
+          "n": 47805,
+          "risk_at_0.50": 0.3426348157135088,
+          "risk_at_0.80": 0.48744901160966425,
+          "risk_at_0.90": 0.5290412550842534,
+          "risk_at_1.00": 0.5685179374542412
+        },
+        "stochastic_fixed": {
+          "auprc": 0.6791788529166864,
+          "aurc": 0.4052338427357015,
+          "auroc": 0.6694318610850735,
+          "error_prevalence": 0.5685179374542412,
+          "n": 47805,
+          "risk_at_0.50": 0.4608626532234448,
+          "risk_at_0.80": 0.5374699299236482,
+          "risk_at_0.90": 0.5525392213829169,
+          "risk_at_1.00": 0.5685179374542412
+        }
+      },
+      "rows": 47805
+    },
+    "0.30": {
+      "error_prevalence": 0.3492707729360867,
+      "methods": {
+        "confidence": {
+          "auprc": 0.5324729667500908,
+          "aurc": 0.20899550221502586,
+          "auroc": 0.7093204202660575,
+          "error_prevalence": 0.3492707729360867,
+          "n": 22421,
+          "risk_at_0.50": 0.2047096601552047,
+          "risk_at_0.80": 0.29101856497742096,
+          "risk_at_0.90": 0.32092769711085783,
+          "risk_at_1.00": 0.3492707729360867
+        },
+        "deterministic_fixed": {
+          "auprc": 0.41236541228317103,
+          "aurc": 0.3081003480333638,
+          "auroc": 0.5629594083513189,
+          "error_prevalence": 0.3492707729360867,
+          "n": 22421,
+          "risk_at_0.50": 0.31255017393631257,
+          "risk_at_0.80": 0.32803701845347605,
+          "risk_at_0.90": 0.33653798503394616,
+          "risk_at_1.00": 0.3492707729360867
+        },
+        "equal_fixed_fusion": {
+          "auprc": 0.47356607930086125,
+          "aurc": 0.24446415380804332,
+          "auroc": 0.6450642203456869,
+          "error_prevalence": 0.3492707729360867,
+          "n": 22421,
+          "risk_at_0.50": 0.2559093747212559,
+          "risk_at_0.80": 0.31047555332552823,
+          "risk_at_0.90": 0.3274691510976758,
+          "risk_at_1.00": 0.3492707729360867
+        },
+        "learned_deterministic": {
+          "auprc": 0.43009760375201495,
+          "aurc": 0.30663474018044085,
+          "auroc": 0.5718505974699069,
+          "error_prevalence": 0.3492707729360867,
+          "n": 22421,
+          "risk_at_0.50": 0.308001070377308,
+          "risk_at_0.80": 0.3216256899147015,
+          "risk_at_0.90": 0.3307894345606819,
+          "risk_at_1.00": 0.3492707729360867
+        },
+        "learned_fusion": {
+          "auprc": 0.5921998992798816,
+          "aurc": 0.21397192915344146,
+          "auroc": 0.7239486849902966,
+          "error_prevalence": 0.3492707729360867,
+          "n": 22421,
+          "risk_at_0.50": 0.19623583980019624,
+          "risk_at_0.80": 0.273512850532419,
+          "risk_at_0.90": 0.30848902324198424,
+          "risk_at_1.00": 0.3492707729360867
+        },
+        "learned_fusion_plus_confidence": {
+          "auprc": 0.6467763825600568,
+          "aurc": 0.17435120801254292,
+          "auroc": 0.7758403995158518,
+          "error_prevalence": 0.3492707729360867,
+          "n": 22421,
+          "risk_at_0.50": 0.1667112657211667,
+          "risk_at_0.80": 0.2591849250153314,
+          "risk_at_0.90": 0.3024926904207344,
+          "risk_at_1.00": 0.3492707729360867
+        },
+        "learned_stochastic": {
+          "auprc": 0.5732972852917317,
+          "aurc": 0.21992794764664128,
+          "auroc": 0.7115353918001679,
+          "error_prevalence": 0.3492707729360867,
+          "n": 22421,
+          "risk_at_0.50": 0.2072964053162073,
+          "risk_at_0.80": 0.27947817360762667,
+          "risk_at_0.90": 0.3115615243570048,
+          "risk_at_1.00": 0.3492707729360867
+        },
+        "nonlinear_fusion": {
+          "auprc": 0.6405345008734495,
+          "aurc": 0.1579023415051949,
+          "auroc": 0.7883153534103622,
+          "error_prevalence": 0.3492707729360867,
+          "n": 22421,
+          "risk_at_0.50": 0.1535991436981536,
+          "risk_at_0.80": 0.2694988013603167,
+          "risk_at_0.90": 0.30526785271817236,
+          "risk_at_1.00": 0.3492707729360867
+        },
+        "stochastic_fixed": {
+          "auprc": 0.4683772543106623,
+          "aurc": 0.2213827310528664,
+          "auroc": 0.6652187020723686,
+          "error_prevalence": 0.3492707729360867,
+          "n": 22421,
+          "risk_at_0.50": 0.2345018285612345,
+          "risk_at_0.80": 0.31538161342476445,
+          "risk_at_0.90": 0.3307398780910848,
+          "risk_at_1.00": 0.3492707729360867
+        }
+      },
+      "rows": 22421
+    }
+  },
+  "subgroups": {
+    "category_name": {
+      "bicycle": {
+        "error_prevalence": 0.9087624209575429,
+        "methods": {
+          "confidence": {
+            "auprc": 0.9750466005710225,
+            "aurc": 0.7495255592371234,
+            "auroc": 0.8624293840914907,
+            "error_prevalence": 0.9087624209575429,
+            "n": 1107,
+            "risk_at_0.50": 0.8393501805054152,
+            "risk_at_0.80": 0.8905191873589164,
+            "risk_at_0.90": 0.9027081243731193,
+            "risk_at_1.00": 0.9087624209575429
+          },
+          "deterministic_fixed": {
+            "auprc": 0.9063178741204456,
+            "aurc": 0.9210902401492732,
+            "auroc": 0.4664193059464992,
+            "error_prevalence": 0.9087624209575429,
+            "n": 1107,
+            "risk_at_0.50": 0.9151624548736462,
+            "risk_at_0.80": 0.9119638826185101,
+            "risk_at_0.90": 0.905717151454363,
+            "risk_at_1.00": 0.9087624209575429
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.9206975485873918,
+            "aurc": 0.8865124241563497,
+            "auroc": 0.5625553609038837,
+            "error_prevalence": 0.9087624209575429,
+            "n": 1107,
+            "risk_at_0.50": 0.8880866425992779,
+            "risk_at_0.80": 0.9063205417607223,
+            "risk_at_0.90": 0.9097291875626881,
+            "risk_at_1.00": 0.9087624209575429
+          },
+          "learned_deterministic": {
+            "auprc": 0.9013376442996732,
+            "aurc": 0.9206018002332736,
+            "auroc": 0.46936204554849126,
+            "error_prevalence": 0.9087624209575429,
+            "n": 1107,
+            "risk_at_0.50": 0.9133574007220217,
+            "risk_at_0.80": 0.909706546275395,
+            "risk_at_0.90": 0.9107321965897693,
+            "risk_at_1.00": 0.9087624209575429
+          },
+          "learned_fusion": {
+            "auprc": 0.971970459875277,
+            "aurc": 0.7815159739432219,
+            "auroc": 0.8152176052595319,
+            "error_prevalence": 0.9087624209575429,
+            "n": 1107,
+            "risk_at_0.50": 0.8411552346570397,
+            "risk_at_0.80": 0.8905191873589164,
+            "risk_at_0.90": 0.8996990972918756,
+            "risk_at_1.00": 0.9087624209575429
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.9709265260721263,
+            "aurc": 0.7696821094870564,
+            "auroc": 0.8239277208038895,
+            "error_prevalence": 0.9087624209575429,
+            "n": 1107,
+            "risk_at_0.50": 0.8429602888086642,
+            "risk_at_0.80": 0.8905191873589164,
+            "risk_at_0.90": 0.9007021063189569,
+            "risk_at_1.00": 0.9087624209575429
+          },
+          "learned_stochastic": {
+            "auprc": 0.9771350090024362,
+            "aurc": 0.7647281967441938,
+            "auroc": 0.8401767612148888,
+            "error_prevalence": 0.9087624209575429,
+            "n": 1107,
+            "risk_at_0.50": 0.8483754512635379,
+            "risk_at_0.80": 0.8871331828442438,
+            "risk_at_0.90": 0.8986960882647944,
+            "risk_at_1.00": 0.9087624209575429
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.9739839482693269,
+            "aurc": 0.7648137572935751,
+            "auroc": 0.8549691947325946,
+            "error_prevalence": 0.9087624209575429,
+            "n": 1107,
+            "risk_at_0.50": 0.8339350180505415,
+            "risk_at_0.80": 0.8927765237020316,
+            "risk_at_0.90": 0.9027081243731193,
+            "risk_at_1.00": 0.9087624209575429
+          },
+          "stochastic_fixed": {
+            "auprc": 0.9336367212175642,
+            "aurc": 0.8490815524154346,
+            "auroc": 0.62701021593213,
+            "error_prevalence": 0.9087624209575429,
+            "n": 1107,
+            "risk_at_0.50": 0.8898916967509025,
+            "risk_at_0.80": 0.9018058690744921,
+            "risk_at_0.90": 0.9027081243731193,
+            "risk_at_1.00": 0.9087624209575429
+          }
+        },
+        "rows": 1107
+      },
+      "bus": {
+        "error_prevalence": 0.9169449081803005,
+        "methods": {
+          "confidence": {
+            "auprc": 0.9911826466802667,
+            "aurc": 0.7566734451976296,
+            "auroc": 0.9230334650036711,
+            "error_prevalence": 0.9169449081803005,
+            "n": 2396,
+            "risk_at_0.50": 0.8380634390651085,
+            "risk_at_0.80": 0.8972352634324465,
+            "risk_at_0.90": 0.9082058414464534,
+            "risk_at_1.00": 0.9169449081803005
+          },
+          "deterministic_fixed": {
+            "auprc": 0.8848285461959067,
+            "aurc": 0.9360633172425119,
+            "auroc": 0.3940103338723659,
+            "error_prevalence": 0.9169449081803005,
+            "n": 2396,
+            "risk_at_0.50": 0.9365609348914858,
+            "risk_at_0.80": 0.9347939488784559,
+            "risk_at_0.90": 0.9272137227630969,
+            "risk_at_1.00": 0.9169449081803005
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.9197167030897571,
+            "aurc": 0.9081955024400244,
+            "auroc": 0.5356367637001576,
+            "error_prevalence": 0.9169449081803005,
+            "n": 2396,
+            "risk_at_0.50": 0.9098497495826378,
+            "risk_at_0.80": 0.9149713093375065,
+            "risk_at_0.90": 0.9174779786740844,
+            "risk_at_1.00": 0.9169449081803005
+          },
+          "learned_deterministic": {
+            "auprc": 0.9230586362246502,
+            "aurc": 0.9258951129121509,
+            "auroc": 0.49246002429077573,
+            "error_prevalence": 0.9169449081803005,
+            "n": 2396,
+            "risk_at_0.50": 0.9207011686143572,
+            "risk_at_0.80": 0.9113197704747,
+            "risk_at_0.90": 0.914696337505795,
+            "risk_at_1.00": 0.9169449081803005
+          },
+          "learned_fusion": {
+            "auprc": 0.9787144122760524,
+            "aurc": 0.7942526140238326,
+            "auroc": 0.8430088540106082,
+            "error_prevalence": 0.9169449081803005,
+            "n": 2396,
+            "risk_at_0.50": 0.8505843071786311,
+            "risk_at_0.80": 0.8998435054773083,
+            "risk_at_0.90": 0.9091330551692165,
+            "risk_at_1.00": 0.9169449081803005
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.9839529187893439,
+            "aurc": 0.7729362228761022,
+            "auroc": 0.881087275247425,
+            "error_prevalence": 0.9169449081803005,
+            "n": 2396,
+            "risk_at_0.50": 0.8480801335559266,
+            "risk_at_0.80": 0.8982785602503912,
+            "risk_at_0.90": 0.9091330551692165,
+            "risk_at_1.00": 0.9169449081803005
+          },
+          "learned_stochastic": {
+            "auprc": 0.979049427055293,
+            "aurc": 0.779024985820746,
+            "auroc": 0.8530362325967571,
+            "error_prevalence": 0.9169449081803005,
+            "n": 2396,
+            "risk_at_0.50": 0.8522537562604341,
+            "risk_at_0.80": 0.8993218570683359,
+            "risk_at_0.90": 0.9091330551692165,
+            "risk_at_1.00": 0.9169449081803005
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.9780558032812063,
+            "aurc": 0.8030193376782127,
+            "auroc": 0.8385280979316245,
+            "error_prevalence": 0.9169449081803005,
+            "n": 2396,
+            "risk_at_0.50": 0.8514190317195326,
+            "risk_at_0.80": 0.8988002086593636,
+            "risk_at_0.90": 0.9086694483078349,
+            "risk_at_1.00": 0.9169449081803005
+          },
+          "stochastic_fixed": {
+            "auprc": 0.9416478911054279,
+            "aurc": 0.86408165597786,
+            "auroc": 0.6488290336525595,
+            "error_prevalence": 0.9169449081803005,
+            "n": 2396,
+            "risk_at_0.50": 0.8889816360601002,
+            "risk_at_0.80": 0.9134063641105895,
+            "risk_at_0.90": 0.9142327306444136,
+            "risk_at_1.00": 0.9169449081803005
+          }
+        },
+        "rows": 2396
+      },
+      "car": {
+        "error_prevalence": 0.28678716904276985,
+        "methods": {
+          "confidence": {
+            "auprc": 0.551765289278847,
+            "aurc": 0.11397065949661678,
+            "auroc": 0.7976584099618815,
+            "error_prevalence": 0.28678716904276985,
+            "n": 15712,
+            "risk_at_0.50": 0.09826883910386966,
+            "risk_at_0.80": 0.21073985680190932,
+            "risk_at_0.90": 0.24998232091082667,
+            "risk_at_1.00": 0.28678716904276985
+          },
+          "deterministic_fixed": {
+            "auprc": 0.4508183868985973,
+            "aurc": 0.2211914451007732,
+            "auroc": 0.6321928011743756,
+            "error_prevalence": 0.28678716904276985,
+            "n": 15712,
+            "risk_at_0.50": 0.21677698574338086,
+            "risk_at_0.80": 0.23858392999204456,
+            "risk_at_0.90": 0.2567003747966905,
+            "risk_at_1.00": 0.28678716904276985
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.49501274999777045,
+            "aurc": 0.16628802877755677,
+            "auroc": 0.7045694779895273,
+            "error_prevalence": 0.28678716904276985,
+            "n": 15712,
+            "risk_at_0.50": 0.16662423625254583,
+            "risk_at_0.80": 0.2299920445505171,
+            "risk_at_0.90": 0.2530231242486387,
+            "risk_at_1.00": 0.28678716904276985
+          },
+          "learned_deterministic": {
+            "auprc": 0.4964922923888064,
+            "aurc": 0.22593234346427266,
+            "auroc": 0.6422365317102728,
+            "error_prevalence": 0.28678716904276985,
+            "n": 15712,
+            "risk_at_0.50": 0.21563136456211812,
+            "risk_at_0.80": 0.22720763723150358,
+            "risk_at_0.90": 0.24340569973834947,
+            "risk_at_1.00": 0.28678716904276985
+          },
+          "learned_fusion": {
+            "auprc": 0.598033860422729,
+            "aurc": 0.11681270599647353,
+            "auroc": 0.8062252491551709,
+            "error_prevalence": 0.28678716904276985,
+            "n": 15712,
+            "risk_at_0.50": 0.09432281059063137,
+            "risk_at_0.80": 0.20238663484486874,
+            "risk_at_0.90": 0.24326426702496287,
+            "risk_at_1.00": 0.28678716904276985
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.6321604213176595,
+            "aurc": 0.1082749344271932,
+            "auroc": 0.8187965058031573,
+            "error_prevalence": 0.28678716904276985,
+            "n": 15712,
+            "risk_at_0.50": 0.09241344195519348,
+            "risk_at_0.80": 0.19856801909307875,
+            "risk_at_0.90": 0.23711194399264549,
+            "risk_at_1.00": 0.28678716904276985
+          },
+          "learned_stochastic": {
+            "auprc": 0.514084731685682,
+            "aurc": 0.13056386581614768,
+            "auroc": 0.7674194337745798,
+            "error_prevalence": 0.28678716904276985,
+            "n": 15712,
+            "risk_at_0.50": 0.11328920570264765,
+            "risk_at_0.80": 0.22195704057279236,
+            "risk_at_0.90": 0.2544374513825048,
+            "risk_at_1.00": 0.28678716904276985
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.6253301194231772,
+            "aurc": 0.10864177125149828,
+            "auroc": 0.8154115451910194,
+            "error_prevalence": 0.28678716904276985,
+            "n": 15712,
+            "risk_at_0.50": 0.0889765784114053,
+            "risk_at_0.80": 0.19976133651551312,
+            "risk_at_0.90": 0.2373948094194187,
+            "risk_at_1.00": 0.28678716904276985
+          },
+          "stochastic_fixed": {
+            "auprc": 0.42027059508100084,
+            "aurc": 0.14827409676492637,
+            "auroc": 0.708763669580029,
+            "error_prevalence": 0.28678716904276985,
+            "n": 15712,
+            "risk_at_0.50": 0.1414205702647658,
+            "risk_at_0.80": 0.2515513126491647,
+            "risk_at_0.90": 0.26985361714164485,
+            "risk_at_1.00": 0.28678716904276985
+          }
+        },
+        "rows": 15712
+      },
+      "motorcycle": {
+        "error_prevalence": 0.9663951120162932,
+        "methods": {
+          "confidence": {
+            "auprc": 0.9926271728004117,
+            "aurc": 0.8889017894022216,
+            "auroc": 0.8691046396525848,
+            "error_prevalence": 0.9663951120162932,
+            "n": 1964,
+            "risk_at_0.50": 0.9389002036659878,
+            "risk_at_0.80": 0.9592875318066157,
+            "risk_at_0.90": 0.9638009049773756,
+            "risk_at_1.00": 0.9663951120162932
+          },
+          "deterministic_fixed": {
+            "auprc": 0.9529522436914118,
+            "aurc": 0.9802782484998444,
+            "auroc": 0.35603665740652035,
+            "error_prevalence": 0.9663951120162932,
+            "n": 1964,
+            "risk_at_0.50": 0.9837067209775967,
+            "risk_at_0.80": 0.9701017811704835,
+            "risk_at_0.90": 0.9688914027149321,
+            "risk_at_1.00": 0.9663951120162932
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.9669278407983732,
+            "aurc": 0.9710729617483452,
+            "auroc": 0.4836909665676789,
+            "error_prevalence": 0.9663951120162932,
+            "n": 1964,
+            "risk_at_0.50": 0.9663951120162932,
+            "risk_at_0.80": 0.9662849872773537,
+            "risk_at_0.90": 0.9660633484162896,
+            "risk_at_1.00": 0.9663951120162932
+          },
+          "learned_deterministic": {
+            "auprc": 0.9537593258738845,
+            "aurc": 0.9804572302981693,
+            "auroc": 0.35685091164543226,
+            "error_prevalence": 0.9663951120162932,
+            "n": 1964,
+            "risk_at_0.50": 0.9826883910386965,
+            "risk_at_0.80": 0.9707379134860051,
+            "risk_at_0.90": 0.9688914027149321,
+            "risk_at_1.00": 0.9663951120162932
+          },
+          "learned_fusion": {
+            "auprc": 0.9859373968328919,
+            "aurc": 0.9071325391949637,
+            "auroc": 0.7833285436025162,
+            "error_prevalence": 0.9663951120162932,
+            "n": 1964,
+            "risk_at_0.50": 0.9480651731160896,
+            "risk_at_0.80": 0.960559796437659,
+            "risk_at_0.90": 0.9632352941176471,
+            "risk_at_1.00": 0.9663951120162932
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.9885489049234599,
+            "aurc": 0.897387202172754,
+            "auroc": 0.8139109748698791,
+            "error_prevalence": 0.9663951120162932,
+            "n": 1964,
+            "risk_at_0.50": 0.945010183299389,
+            "risk_at_0.80": 0.960559796437659,
+            "risk_at_0.90": 0.9638009049773756,
+            "risk_at_1.00": 0.9663951120162932
+          },
+          "learned_stochastic": {
+            "auprc": 0.9879787359875791,
+            "aurc": 0.898024317583726,
+            "auroc": 0.8230034805377271,
+            "error_prevalence": 0.9663951120162932,
+            "n": 1964,
+            "risk_at_0.50": 0.9429735234215886,
+            "risk_at_0.80": 0.9599236641221374,
+            "risk_at_0.90": 0.9632352941176471,
+            "risk_at_1.00": 0.9663951120162932
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.9871295558444981,
+            "aurc": 0.9157927663842003,
+            "auroc": 0.7801353897244309,
+            "error_prevalence": 0.9663951120162932,
+            "n": 1964,
+            "risk_at_0.50": 0.945010183299389,
+            "risk_at_0.80": 0.960559796437659,
+            "risk_at_0.90": 0.9638009049773756,
+            "risk_at_1.00": 0.9663951120162932
+          },
+          "stochastic_fixed": {
+            "auprc": 0.9769054263586255,
+            "aurc": 0.9436808721627001,
+            "auroc": 0.6463981224255196,
+            "error_prevalence": 0.9663951120162932,
+            "n": 1964,
+            "risk_at_0.50": 0.9541751527494908,
+            "risk_at_0.80": 0.9618320610687023,
+            "risk_at_0.90": 0.9643665158371041,
+            "risk_at_1.00": 0.9663951120162932
+          }
+        },
+        "rows": 1964
+      },
+      "person": {
+        "error_prevalence": 0.682473098668612,
+        "methods": {
+          "confidence": {
+            "auprc": 0.8764332767421945,
+            "aurc": 0.4436465278287241,
+            "auroc": 0.8122343173765914,
+            "error_prevalence": 0.682473098668612,
+            "n": 5483,
+            "risk_at_0.50": 0.4886943836615609,
+            "risk_at_0.80": 0.6245726008661956,
+            "risk_at_0.90": 0.6555217831813577,
+            "risk_at_1.00": 0.682473098668612
+          },
+          "deterministic_fixed": {
+            "auprc": 0.7287697008045126,
+            "aurc": 0.6477437450259028,
+            "auroc": 0.5531859504373258,
+            "error_prevalence": 0.682473098668612,
+            "n": 5483,
+            "risk_at_0.50": 0.6560904449307076,
+            "risk_at_0.80": 0.6674264873489857,
+            "risk_at_0.90": 0.6721377912867275,
+            "risk_at_1.00": 0.682473098668612
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7676206987843767,
+            "aurc": 0.5611321462521266,
+            "auroc": 0.6369946101367006,
+            "error_prevalence": 0.682473098668612,
+            "n": 5483,
+            "risk_at_0.50": 0.6064916119620715,
+            "risk_at_0.80": 0.6592204239799407,
+            "risk_at_0.90": 0.6695035460992907,
+            "risk_at_1.00": 0.682473098668612
+          },
+          "learned_deterministic": {
+            "auprc": 0.7394372287627293,
+            "aurc": 0.6522310392371875,
+            "auroc": 0.5609335143769085,
+            "error_prevalence": 0.682473098668612,
+            "n": 5483,
+            "risk_at_0.50": 0.6415025528811087,
+            "risk_at_0.80": 0.6601322087987235,
+            "risk_at_0.90": 0.6684903748733536,
+            "risk_at_1.00": 0.682473098668612
+          },
+          "learned_fusion": {
+            "auprc": 0.8517391495001858,
+            "aurc": 0.4515680843175191,
+            "auroc": 0.7806607763036351,
+            "error_prevalence": 0.682473098668612,
+            "n": 5483,
+            "risk_at_0.50": 0.5193289569657185,
+            "risk_at_0.80": 0.6357419648962844,
+            "risk_at_0.90": 0.6613981762917933,
+            "risk_at_1.00": 0.682473098668612
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8681257464485629,
+            "aurc": 0.44941701268558054,
+            "auroc": 0.7950963203599423,
+            "error_prevalence": 0.682473098668612,
+            "n": 5483,
+            "risk_at_0.50": 0.5036469730123997,
+            "risk_at_0.80": 0.6289035787554137,
+            "risk_at_0.90": 0.6583586626139818,
+            "risk_at_1.00": 0.682473098668612
+          },
+          "learned_stochastic": {
+            "auprc": 0.8436608164195817,
+            "aurc": 0.4561373931732733,
+            "auroc": 0.7753275530781961,
+            "error_prevalence": 0.682473098668612,
+            "n": 5483,
+            "risk_at_0.50": 0.5182348650619986,
+            "risk_at_0.80": 0.6396170503761113,
+            "risk_at_0.90": 0.6630192502532928,
+            "risk_at_1.00": 0.682473098668612
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.867910858235868,
+            "aurc": 0.4395211924838433,
+            "auroc": 0.8016905143379206,
+            "error_prevalence": 0.682473098668612,
+            "n": 5483,
+            "risk_at_0.50": 0.4959883296863603,
+            "risk_at_0.80": 0.6295874173695007,
+            "risk_at_0.90": 0.6589665653495441,
+            "risk_at_1.00": 0.682473098668612
+          },
+          "stochastic_fixed": {
+            "auprc": 0.773788622188791,
+            "aurc": 0.5116726731770458,
+            "auroc": 0.6689663969330245,
+            "error_prevalence": 0.682473098668612,
+            "n": 5483,
+            "risk_at_0.50": 0.600291757840992,
+            "risk_at_0.80": 0.6587645315705494,
+            "risk_at_0.90": 0.6717325227963525,
+            "risk_at_1.00": 0.682473098668612
+          }
+        },
+        "rows": 5483
+      },
+      "rider": {
+        "error_prevalence": 0.9611856033874383,
+        "methods": {
+          "confidence": {
+            "auprc": 0.9714669157171191,
+            "aurc": 0.9617737932996268,
+            "auroc": 0.5419837137898812,
+            "error_prevalence": 0.9611856033874383,
+            "n": 1417,
+            "risk_at_0.50": 0.9562764456981664,
+            "risk_at_0.80": 0.955026455026455,
+            "risk_at_0.90": 0.9584639498432602,
+            "risk_at_1.00": 0.9611856033874383
+          },
+          "deterministic_fixed": {
+            "auprc": 0.9141708586498617,
+            "aurc": 0.9899777107339589,
+            "auroc": 0.17021759444666937,
+            "error_prevalence": 0.9611856033874383,
+            "n": 1417,
+            "risk_at_0.50": 0.9929478138222849,
+            "risk_at_0.80": 0.9841269841269841,
+            "risk_at_0.90": 0.9772727272727273,
+            "risk_at_1.00": 0.9611856033874383
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.9310074225469845,
+            "aurc": 0.9851979404565101,
+            "auroc": 0.24377252703243893,
+            "error_prevalence": 0.9611856033874383,
+            "n": 1417,
+            "risk_at_0.50": 0.9858956276445698,
+            "risk_at_0.80": 0.9788359788359788,
+            "risk_at_0.90": 0.9686520376175548,
+            "risk_at_1.00": 0.9611856033874383
+          },
+          "learned_deterministic": {
+            "auprc": 0.9202170524380585,
+            "aurc": 0.9907852327221445,
+            "auroc": 0.1664397276732079,
+            "error_prevalence": 0.9611856033874383,
+            "n": 1417,
+            "risk_at_0.50": 0.9943582510578279,
+            "risk_at_0.80": 0.9867724867724867,
+            "risk_at_0.90": 0.9717868338557993,
+            "risk_at_1.00": 0.9611856033874383
+          },
+          "learned_fusion": {
+            "auprc": 0.9413311092749503,
+            "aurc": 0.9817392423774249,
+            "auroc": 0.316045921772794,
+            "error_prevalence": 0.9611856033874383,
+            "n": 1417,
+            "risk_at_0.50": 0.9830747531734838,
+            "risk_at_0.80": 0.9691358024691358,
+            "risk_at_0.90": 0.963166144200627,
+            "risk_at_1.00": 0.9611856033874383
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.9402848865926627,
+            "aurc": 0.9812534022446607,
+            "auroc": 0.3077693231878254,
+            "error_prevalence": 0.9611856033874383,
+            "n": 1417,
+            "risk_at_0.50": 0.9844851904090268,
+            "risk_at_0.80": 0.9708994708994709,
+            "risk_at_0.90": 0.9647335423197492,
+            "risk_at_1.00": 0.9611856033874383
+          },
+          "learned_stochastic": {
+            "auprc": 0.9582329021562926,
+            "aurc": 0.9653359098752204,
+            "auroc": 0.4868775864370578,
+            "error_prevalence": 0.9611856033874383,
+            "n": 1417,
+            "risk_at_0.50": 0.9576868829337094,
+            "risk_at_0.80": 0.9603174603174603,
+            "risk_at_0.90": 0.9615987460815048,
+            "risk_at_1.00": 0.9611856033874383
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.9620270533170544,
+            "aurc": 0.9719297404000914,
+            "auroc": 0.4505940461887598,
+            "error_prevalence": 0.9611856033874383,
+            "n": 1417,
+            "risk_at_0.50": 0.9661495063469676,
+            "risk_at_0.80": 0.9611992945326279,
+            "risk_at_0.90": 0.9592476489028213,
+            "risk_at_1.00": 0.9611856033874383
+          },
+          "stochastic_fixed": {
+            "auprc": 0.961147902232909,
+            "aurc": 0.9694483129694307,
+            "auroc": 0.4569750367107195,
+            "error_prevalence": 0.9611856033874383,
+            "n": 1417,
+            "risk_at_0.50": 0.9675599435825106,
+            "risk_at_0.80": 0.9603174603174603,
+            "risk_at_0.90": 0.9600313479623824,
+            "risk_at_1.00": 0.9611856033874383
+          }
+        },
+        "rows": 1417
+      },
+      "traffic light": {
+        "error_prevalence": 0.6867177646259823,
+        "methods": {
+          "confidence": {
+            "auprc": 0.8884971801517783,
+            "aurc": 0.45745665639589456,
+            "auroc": 0.8146423286213673,
+            "error_prevalence": 0.6867177646259823,
+            "n": 10307,
+            "risk_at_0.50": 0.4819557625145518,
+            "risk_at_0.80": 0.6258792141644434,
+            "risk_at_0.90": 0.6598038158887571,
+            "risk_at_1.00": 0.6867177646259823
+          },
+          "deterministic_fixed": {
+            "auprc": 0.7115023014082257,
+            "aurc": 0.704652055558013,
+            "auroc": 0.5032274970638633,
+            "error_prevalence": 0.6867177646259823,
+            "n": 10307,
+            "risk_at_0.50": 0.6862630966239813,
+            "risk_at_0.80": 0.6713558088770313,
+            "risk_at_0.90": 0.6767273903201466,
+            "risk_at_1.00": 0.6867177646259823
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7281838716576496,
+            "aurc": 0.6390558921754211,
+            "auroc": 0.5558169854624369,
+            "error_prevalence": 0.6867177646259823,
+            "n": 10307,
+            "risk_at_0.50": 0.6655025223127667,
+            "risk_at_0.80": 0.6701430996846957,
+            "risk_at_0.90": 0.6762962164492832,
+            "risk_at_1.00": 0.6867177646259823
+          },
+          "learned_deterministic": {
+            "auprc": 0.6850497388999585,
+            "aurc": 0.7329924126720974,
+            "auroc": 0.44747944660527816,
+            "error_prevalence": 0.6867177646259823,
+            "n": 10307,
+            "risk_at_0.50": 0.7349631354287932,
+            "risk_at_0.80": 0.6828765462042202,
+            "risk_at_0.90": 0.6757572491107039,
+            "risk_at_1.00": 0.6867177646259823
+          },
+          "learned_fusion": {
+            "auprc": 0.8330472490040455,
+            "aurc": 0.5259369574605659,
+            "auroc": 0.7195266810186822,
+            "error_prevalence": 0.6867177646259823,
+            "n": 10307,
+            "risk_at_0.50": 0.5508343034536283,
+            "risk_at_0.80": 0.6388552025224351,
+            "risk_at_0.90": 0.662929826452517,
+            "risk_at_1.00": 0.6867177646259823
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8776912002789421,
+            "aurc": 0.4705377937882218,
+            "auroc": 0.7979505192374384,
+            "error_prevalence": 0.6867177646259823,
+            "n": 10307,
+            "risk_at_0.50": 0.4920450135816841,
+            "risk_at_0.80": 0.6283046325491147,
+            "risk_at_0.90": 0.6593726420178937,
+            "risk_at_1.00": 0.6867177646259823
+          },
+          "learned_stochastic": {
+            "auprc": 0.846536246736852,
+            "aurc": 0.4965187718106302,
+            "auroc": 0.7517628415345495,
+            "error_prevalence": 0.6867177646259823,
+            "n": 10307,
+            "risk_at_0.50": 0.53337213814513,
+            "risk_at_0.80": 0.6387339316032016,
+            "risk_at_0.90": 0.6631454133879487,
+            "risk_at_1.00": 0.6867177646259823
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8523388882350855,
+            "aurc": 0.48142451165390887,
+            "auroc": 0.7617767282952748,
+            "error_prevalence": 0.6867177646259823,
+            "n": 10307,
+            "risk_at_0.50": 0.5242530073729142,
+            "risk_at_0.80": 0.6358234295415959,
+            "risk_at_0.90": 0.6634687937910962,
+            "risk_at_1.00": 0.6867177646259823
+          },
+          "stochastic_fixed": {
+            "auprc": 0.7146342981467738,
+            "aurc": 0.5879741333452002,
+            "auroc": 0.569743912695688,
+            "error_prevalence": 0.6867177646259823,
+            "n": 10307,
+            "risk_at_0.50": 0.6717112922002328,
+            "risk_at_0.80": 0.6868784865389279,
+            "risk_at_0.90": 0.6856742481405627,
+            "risk_at_1.00": 0.6867177646259823
+          }
+        },
+        "rows": 10307
+      },
+      "traffic sign": {
+        "error_prevalence": 0.44975852936594485,
+        "methods": {
+          "confidence": {
+            "auprc": 0.6949411032921388,
+            "aurc": 0.23124272207860827,
+            "auroc": 0.7803863415529686,
+            "error_prevalence": 0.44975852936594485,
+            "n": 6419,
+            "risk_at_0.50": 0.23862928348909657,
+            "risk_at_0.80": 0.37772585669781933,
+            "risk_at_0.90": 0.41761855313257185,
+            "risk_at_1.00": 0.44975852936594485
+          },
+          "deterministic_fixed": {
+            "auprc": 0.6028755233101658,
+            "aurc": 0.3825318543240575,
+            "auroc": 0.6263645835335578,
+            "error_prevalence": 0.44975852936594485,
+            "n": 6419,
+            "risk_at_0.50": 0.35202492211838005,
+            "risk_at_0.80": 0.3925233644859813,
+            "risk_at_0.90": 0.416926272066459,
+            "risk_at_1.00": 0.44975852936594485
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.6188238343414598,
+            "aurc": 0.34046960547929644,
+            "auroc": 0.6551331269434859,
+            "error_prevalence": 0.44975852936594485,
+            "n": 6419,
+            "risk_at_0.50": 0.3470404984423676,
+            "risk_at_0.80": 0.3927180685358255,
+            "risk_at_0.90": 0.416926272066459,
+            "risk_at_1.00": 0.44975852936594485
+          },
+          "learned_deterministic": {
+            "auprc": 0.5928090645222309,
+            "aurc": 0.3988760620795617,
+            "auroc": 0.6035244688475421,
+            "error_prevalence": 0.44975852936594485,
+            "n": 6419,
+            "risk_at_0.50": 0.38006230529595014,
+            "risk_at_0.80": 0.39369158878504673,
+            "risk_at_0.90": 0.41519556940117686,
+            "risk_at_1.00": 0.44975852936594485
+          },
+          "learned_fusion": {
+            "auprc": 0.6442981250009441,
+            "aurc": 0.300803036784637,
+            "auroc": 0.6945662027733178,
+            "error_prevalence": 0.44975852936594485,
+            "n": 6419,
+            "risk_at_0.50": 0.31401869158878504,
+            "risk_at_0.80": 0.38492990654205606,
+            "risk_at_0.90": 0.4170993423329872,
+            "risk_at_1.00": 0.44975852936594485
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.7471638052304748,
+            "aurc": 0.2201793426033035,
+            "auroc": 0.8066735877352337,
+            "error_prevalence": 0.44975852936594485,
+            "n": 6419,
+            "risk_at_0.50": 0.21713395638629285,
+            "risk_at_0.80": 0.36507009345794394,
+            "risk_at_0.90": 0.4061959155417099,
+            "risk_at_1.00": 0.44975852936594485
+          },
+          "learned_stochastic": {
+            "auprc": 0.6279024143971877,
+            "aurc": 0.28843151794645194,
+            "auroc": 0.696709896866533,
+            "error_prevalence": 0.44975852936594485,
+            "n": 6419,
+            "risk_at_0.50": 0.31401869158878504,
+            "risk_at_0.80": 0.39330218068535827,
+            "risk_at_0.90": 0.4205607476635514,
+            "risk_at_1.00": 0.44975852936594485
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.6850901070187146,
+            "aurc": 0.27043220301257537,
+            "auroc": 0.7382864216166429,
+            "error_prevalence": 0.44975852936594485,
+            "n": 6419,
+            "risk_at_0.50": 0.2738317757009346,
+            "risk_at_0.80": 0.37792056074766356,
+            "risk_at_0.90": 0.41208030460366907,
+            "risk_at_1.00": 0.44975852936594485
+          },
+          "stochastic_fixed": {
+            "auprc": 0.5229941008961263,
+            "aurc": 0.342045335993054,
+            "auroc": 0.6067227007780024,
+            "error_prevalence": 0.44975852936594485,
+            "n": 6419,
+            "risk_at_0.50": 0.38317757009345793,
+            "risk_at_0.80": 0.4295171339563863,
+            "risk_at_0.90": 0.43769470404984423,
+            "risk_at_1.00": 0.44975852936594485
+          }
+        },
+        "rows": 6419
+      },
+      "train": {
+        "error_prevalence": 0.997134670487106,
+        "methods": {
+          "confidence": {
+            "auprc": 0.9999585935021646,
+            "aurc": 0.9881077758328037,
+            "auroc": 0.985632183908046,
+            "error_prevalence": 0.997134670487106,
+            "n": 349,
+            "risk_at_0.50": 0.9942857142857143,
+            "risk_at_0.80": 0.9964285714285714,
+            "risk_at_0.90": 0.9968253968253968,
+            "risk_at_1.00": 0.997134670487106
+          },
+          "deterministic_fixed": {
+            "auprc": 0.9987913790741382,
+            "aurc": 0.9969488501996233,
+            "auroc": 0.6551724137931034,
+            "error_prevalence": 0.997134670487106,
+            "n": 349,
+            "risk_at_0.50": 0.9942857142857143,
+            "risk_at_0.80": 0.9964285714285714,
+            "risk_at_0.90": 0.9968253968253968,
+            "risk_at_1.00": 0.997134670487106
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.9998043863126252,
+            "aurc": 0.9922652491214957,
+            "auroc": 0.9339080459770115,
+            "error_prevalence": 0.997134670487106,
+            "n": 349,
+            "risk_at_0.50": 0.9942857142857143,
+            "risk_at_0.80": 0.9964285714285714,
+            "risk_at_0.90": 0.9968253968253968,
+            "risk_at_1.00": 0.997134670487106
+          },
+          "learned_deterministic": {
+            "auprc": 0.9986502384611814,
+            "aurc": 0.9971991557546342,
+            "auroc": 0.6235632183908046,
+            "error_prevalence": 0.997134670487106,
+            "n": 349,
+            "risk_at_0.50": 0.9942857142857143,
+            "risk_at_0.80": 0.9964285714285714,
+            "risk_at_0.90": 0.9968253968253968,
+            "risk_at_1.00": 0.997134670487106
+          },
+          "learned_fusion": {
+            "auprc": 0.9997600403563411,
+            "aurc": 0.9928179125251619,
+            "auroc": 0.9195402298850575,
+            "error_prevalence": 0.997134670487106,
+            "n": 349,
+            "risk_at_0.50": 0.9942857142857143,
+            "risk_at_0.80": 0.9964285714285714,
+            "risk_at_0.90": 0.9968253968253968,
+            "risk_at_1.00": 0.997134670487106
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.9998653429229801,
+            "aurc": 0.9912521760044245,
+            "auroc": 0.9540229885057471,
+            "error_prevalence": 0.997134670487106,
+            "n": 349,
+            "risk_at_0.50": 0.9942857142857143,
+            "risk_at_0.80": 0.9964285714285714,
+            "risk_at_0.90": 0.9968253968253968,
+            "risk_at_1.00": 0.997134670487106
+          },
+          "learned_stochastic": {
+            "auprc": 0.9997867299685462,
+            "aurc": 0.9924992510317154,
+            "auroc": 0.9281609195402298,
+            "error_prevalence": 0.997134670487106,
+            "n": 349,
+            "risk_at_0.50": 0.9942857142857143,
+            "risk_at_0.80": 0.9964285714285714,
+            "risk_at_0.90": 0.9968253968253968,
+            "risk_at_1.00": 0.997134670487106
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.9987152538660843,
+            "aurc": 0.9970880831207917,
+            "auroc": 0.6379310344827587,
+            "error_prevalence": 0.997134670487106,
+            "n": 349,
+            "risk_at_0.50": 0.9942857142857143,
+            "risk_at_0.80": 0.9964285714285714,
+            "risk_at_0.90": 0.9968253968253968,
+            "risk_at_1.00": 0.997134670487106
+          },
+          "stochastic_fixed": {
+            "auprc": 0.9998043863126252,
+            "aurc": 0.9922652491214957,
+            "auroc": 0.9339080459770115,
+            "error_prevalence": 0.997134670487106,
+            "n": 349,
+            "risk_at_0.50": 0.9942857142857143,
+            "risk_at_0.80": 0.9964285714285714,
+            "risk_at_0.90": 0.9968253968253968,
+            "risk_at_1.00": 0.997134670487106
+          }
+        },
+        "rows": 349
+      },
+      "truck": {
+        "error_prevalence": 0.8125235760090532,
+        "methods": {
+          "confidence": {
+            "auprc": 0.9392348528230644,
+            "aurc": 0.6051029339186781,
+            "auroc": 0.827606306361848,
+            "error_prevalence": 0.8125235760090532,
+            "n": 2651,
+            "risk_at_0.50": 0.6764705882352942,
+            "risk_at_0.80": 0.776049033474776,
+            "risk_at_0.90": 0.7967309304274938,
+            "risk_at_1.00": 0.8125235760090532
+          },
+          "deterministic_fixed": {
+            "auprc": 0.8110991766577256,
+            "aurc": 0.8277357825650755,
+            "auroc": 0.4686858383354911,
+            "error_prevalence": 0.8125235760090532,
+            "n": 2651,
+            "risk_at_0.50": 0.8340874811463047,
+            "risk_at_0.80": 0.8203677510608204,
+            "risk_at_0.90": 0.8105616093880972,
+            "risk_at_1.00": 0.8125235760090532
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.8396985742562801,
+            "aurc": 0.7820690356023613,
+            "auroc": 0.550953352426537,
+            "error_prevalence": 0.8125235760090532,
+            "n": 2651,
+            "risk_at_0.50": 0.7933634992458521,
+            "risk_at_0.80": 0.8052805280528053,
+            "risk_at_0.90": 0.8063704945515507,
+            "risk_at_1.00": 0.8125235760090532
+          },
+          "learned_deterministic": {
+            "auprc": 0.8381410640855953,
+            "aurc": 0.8227184407188075,
+            "auroc": 0.5099585442086129,
+            "error_prevalence": 0.8125235760090532,
+            "n": 2651,
+            "risk_at_0.50": 0.8159879336349924,
+            "risk_at_0.80": 0.7972654408297972,
+            "risk_at_0.90": 0.8034367141659682,
+            "risk_at_1.00": 0.8125235760090532
+          },
+          "learned_fusion": {
+            "auprc": 0.9216402246579435,
+            "aurc": 0.6385578827482333,
+            "auroc": 0.773132761284513,
+            "error_prevalence": 0.8125235760090532,
+            "n": 2651,
+            "risk_at_0.50": 0.7073906485671192,
+            "risk_at_0.80": 0.7793493635077794,
+            "risk_at_0.90": 0.7971500419111484,
+            "risk_at_1.00": 0.8125235760090532
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.9314050261696698,
+            "aurc": 0.6324489999012476,
+            "auroc": 0.7938597228683149,
+            "error_prevalence": 0.8125235760090532,
+            "n": 2651,
+            "risk_at_0.50": 0.6855203619909502,
+            "risk_at_0.80": 0.7746346063177746,
+            "risk_at_0.90": 0.7963118189438391,
+            "risk_at_1.00": 0.8125235760090532
+          },
+          "learned_stochastic": {
+            "auprc": 0.9200517612119198,
+            "aurc": 0.6295657654199478,
+            "auroc": 0.7767365567593116,
+            "error_prevalence": 0.8125235760090532,
+            "n": 2651,
+            "risk_at_0.50": 0.7043740573152338,
+            "risk_at_0.80": 0.7812352663837813,
+            "risk_at_0.90": 0.797569153394803,
+            "risk_at_1.00": 0.8125235760090532
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.91902905594822,
+            "aurc": 0.6617313828919043,
+            "auroc": 0.7608735047237931,
+            "error_prevalence": 0.8125235760090532,
+            "n": 2651,
+            "risk_at_0.50": 0.7051282051282052,
+            "risk_at_0.80": 0.7774634606317775,
+            "risk_at_0.90": 0.797569153394803,
+            "risk_at_1.00": 0.8125235760090532
+          },
+          "stochastic_fixed": {
+            "auprc": 0.8571546527689384,
+            "aurc": 0.7391452871518958,
+            "auroc": 0.6052316685629096,
+            "error_prevalence": 0.8125235760090532,
+            "n": 2651,
+            "risk_at_0.50": 0.777526395173454,
+            "risk_at_0.80": 0.7963224893917963,
+            "risk_at_0.90": 0.8038558256496228,
+            "risk_at_1.00": 0.8125235760090532
+          }
+        },
+        "rows": 2651
+      }
+    },
+    "object_size": {
+      "large": {
+        "error_prevalence": 0.48725099601593624,
+        "methods": {
+          "confidence": {
+            "auprc": 0.8685554096653664,
+            "aurc": 0.2137304497796529,
+            "auroc": 0.8852582968145791,
+            "error_prevalence": 0.48725099601593624,
+            "n": 7530,
+            "risk_at_0.50": 0.1752988047808765,
+            "risk_at_0.80": 0.37765604249667994,
+            "risk_at_0.90": 0.4375092223697801,
+            "risk_at_1.00": 0.48725099601593624
+          },
+          "deterministic_fixed": {
+            "auprc": 0.654608492473731,
+            "aurc": 0.3521597737240547,
+            "auroc": 0.6736561087882973,
+            "error_prevalence": 0.48725099601593624,
+            "n": 7530,
+            "risk_at_0.50": 0.3612217795484728,
+            "risk_at_0.80": 0.4387450199203187,
+            "risk_at_0.90": 0.4553637302641287,
+            "risk_at_1.00": 0.48725099601593624
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7183388713148959,
+            "aurc": 0.2714089314770912,
+            "auroc": 0.7647249129941962,
+            "error_prevalence": 0.48725099601593624,
+            "n": 7530,
+            "risk_at_0.50": 0.2950863213811421,
+            "risk_at_0.80": 0.42280876494023906,
+            "risk_at_0.90": 0.4530028036004132,
+            "risk_at_1.00": 0.48725099601593624
+          },
+          "learned_deterministic": {
+            "auprc": 0.7805528538180094,
+            "aurc": 0.3039257834624613,
+            "auroc": 0.7810389644676916,
+            "error_prevalence": 0.48725099601593624,
+            "n": 7530,
+            "risk_at_0.50": 0.2685258964143426,
+            "risk_at_0.80": 0.39591633466135456,
+            "risk_at_0.90": 0.44149328611480004,
+            "risk_at_1.00": 0.48725099601593624
+          },
+          "learned_fusion": {
+            "auprc": 0.8383134418715471,
+            "aurc": 0.22663471578883115,
+            "auroc": 0.85877610271178,
+            "error_prevalence": 0.48725099601593624,
+            "n": 7530,
+            "risk_at_0.50": 0.19575033200531208,
+            "risk_at_0.80": 0.38595617529880477,
+            "risk_at_0.90": 0.44016526486646007,
+            "risk_at_1.00": 0.48725099601593624
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8848331666213494,
+            "aurc": 0.20287991507485784,
+            "auroc": 0.8990636671203583,
+            "error_prevalence": 0.48725099601593624,
+            "n": 7530,
+            "risk_at_0.50": 0.15564409030544488,
+            "risk_at_0.80": 0.37765604249667994,
+            "risk_at_0.90": 0.4355909694555113,
+            "risk_at_1.00": 0.48725099601593624
+          },
+          "learned_stochastic": {
+            "auprc": 0.7863913437102346,
+            "aurc": 0.2480235044916137,
+            "auroc": 0.821145885196035,
+            "error_prevalence": 0.48725099601593624,
+            "n": 7530,
+            "risk_at_0.50": 0.22363877822045153,
+            "risk_at_0.80": 0.40039840637450197,
+            "risk_at_0.90": 0.44665781319167774,
+            "risk_at_1.00": 0.48725099601593624
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8692697925678041,
+            "aurc": 0.20147636885731088,
+            "auroc": 0.8870238611312473,
+            "error_prevalence": 0.48725099601593624,
+            "n": 7530,
+            "risk_at_0.50": 0.1851261620185923,
+            "risk_at_0.80": 0.37749003984063745,
+            "risk_at_0.90": 0.43573852737199353,
+            "risk_at_1.00": 0.48725099601593624
+          },
+          "stochastic_fixed": {
+            "auprc": 0.6468975239027681,
+            "aurc": 0.2821321963907231,
+            "auroc": 0.7276657808137775,
+            "error_prevalence": 0.48725099601593624,
+            "n": 7530,
+            "risk_at_0.50": 0.3399734395750332,
+            "risk_at_0.80": 0.4394090305444887,
+            "risk_at_0.90": 0.46687324774974176,
+            "risk_at_1.00": 0.48725099601593624
+          }
+        },
+        "rows": 7530
+      },
+      "medium": {
+        "error_prevalence": 0.5081899355449115,
+        "methods": {
+          "confidence": {
+            "auprc": 0.7484067772975413,
+            "aurc": 0.2979892027063071,
+            "auroc": 0.7720089602290259,
+            "error_prevalence": 0.5081899355449115,
+            "n": 16911,
+            "risk_at_0.50": 0.2975402081362346,
+            "risk_at_0.80": 0.43513933032744473,
+            "risk_at_0.90": 0.47325886990801574,
+            "risk_at_1.00": 0.5081899355449115
+          },
+          "deterministic_fixed": {
+            "auprc": 0.7001590335097784,
+            "aurc": 0.3731533487565783,
+            "auroc": 0.6959948597225893,
+            "error_prevalence": 0.5081899355449115,
+            "n": 16911,
+            "risk_at_0.50": 0.35726111636707664,
+            "risk_at_0.80": 0.44585704782319463,
+            "risk_at_0.90": 0.47391590013140605,
+            "risk_at_1.00": 0.5081899355449115
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7398515227181821,
+            "aurc": 0.3023917473026306,
+            "auroc": 0.7607045135437764,
+            "error_prevalence": 0.5081899355449115,
+            "n": 16911,
+            "risk_at_0.50": 0.3161069063386944,
+            "risk_at_0.80": 0.439056840860374,
+            "risk_at_0.90": 0.4727989487516426,
+            "risk_at_1.00": 0.5081899355449115
+          },
+          "learned_deterministic": {
+            "auprc": 0.7228858511324833,
+            "aurc": 0.3848214352385152,
+            "auroc": 0.7050046576279034,
+            "error_prevalence": 0.5081899355449115,
+            "n": 16911,
+            "risk_at_0.50": 0.3468543046357616,
+            "risk_at_0.80": 0.4334392785867396,
+            "risk_at_0.90": 0.47049934296977663,
+            "risk_at_1.00": 0.5081899355449115
+          },
+          "learned_fusion": {
+            "auprc": 0.7887836313519969,
+            "aurc": 0.299429864021625,
+            "auroc": 0.7907521315667467,
+            "error_prevalence": 0.5081899355449115,
+            "n": 16911,
+            "risk_at_0.50": 0.27980132450331124,
+            "risk_at_0.80": 0.4236085446078794,
+            "risk_at_0.90": 0.46616294349540077,
+            "risk_at_1.00": 0.5081899355449115
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8229046890251708,
+            "aurc": 0.26568902097307734,
+            "auroc": 0.8270561522366477,
+            "error_prevalence": 0.5081899355449115,
+            "n": 16911,
+            "risk_at_0.50": 0.2556764427625355,
+            "risk_at_0.80": 0.41340823416364847,
+            "risk_at_0.90": 0.4626806833114323,
+            "risk_at_1.00": 0.5081899355449115
+          },
+          "learned_stochastic": {
+            "auprc": 0.7578243377134544,
+            "aurc": 0.3168136514197481,
+            "auroc": 0.7599334397536929,
+            "error_prevalence": 0.5081899355449115,
+            "n": 16911,
+            "risk_at_0.50": 0.31043046357615894,
+            "risk_at_0.80": 0.4295217680538103,
+            "risk_at_0.90": 0.46852825229960576,
+            "risk_at_1.00": 0.5081899355449115
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8135960759838721,
+            "aurc": 0.2560610204160966,
+            "auroc": 0.8246548806990536,
+            "error_prevalence": 0.5081899355449115,
+            "n": 16911,
+            "risk_at_0.50": 0.2716414380321665,
+            "risk_at_0.80": 0.41658659176583634,
+            "risk_at_0.90": 0.46314060446780553,
+            "risk_at_1.00": 0.5081899355449115
+          },
+          "stochastic_fixed": {
+            "auprc": 0.674625797499556,
+            "aurc": 0.3118300395894743,
+            "auroc": 0.7237227437268785,
+            "error_prevalence": 0.5081899355449115,
+            "n": 16911,
+            "risk_at_0.50": 0.35146641438032167,
+            "risk_at_0.80": 0.4607879370241703,
+            "risk_at_0.90": 0.48475689881734557,
+            "risk_at_1.00": 0.5081899355449115
+          }
+        },
+        "rows": 16911
+      },
+      "small": {
+        "error_prevalence": 0.6383752782057867,
+        "methods": {
+          "confidence": {
+            "auprc": 0.7879439147221079,
+            "aurc": 0.45371080398032165,
+            "auroc": 0.7244383776183554,
+            "error_prevalence": 0.6383752782057867,
+            "n": 23364,
+            "risk_at_0.50": 0.4934086629001883,
+            "risk_at_0.80": 0.591375989728226,
+            "risk_at_0.90": 0.6170344302834316,
+            "risk_at_1.00": 0.6383752782057867
+          },
+          "deterministic_fixed": {
+            "auprc": 0.757272411202419,
+            "aurc": 0.5409004248685091,
+            "auroc": 0.6446113767259747,
+            "error_prevalence": 0.6383752782057867,
+            "n": 23364,
+            "risk_at_0.50": 0.5433145009416196,
+            "risk_at_0.80": 0.5937299379413653,
+            "risk_at_0.90": 0.6149895377591782,
+            "risk_at_1.00": 0.6383752782057867
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7701927207184877,
+            "aurc": 0.49492812726538815,
+            "auroc": 0.6735622506310367,
+            "error_prevalence": 0.6383752782057867,
+            "n": 23364,
+            "risk_at_0.50": 0.5315014552302688,
+            "risk_at_0.80": 0.5941579285255725,
+            "risk_at_0.90": 0.6135628685562108,
+            "risk_at_1.00": 0.6383752782057867
+          },
+          "learned_deterministic": {
+            "auprc": 0.7380824239778037,
+            "aurc": 0.5548483752248676,
+            "auroc": 0.6183064112029159,
+            "error_prevalence": 0.6383752782057867,
+            "n": 23364,
+            "risk_at_0.50": 0.5636877247046739,
+            "risk_at_0.80": 0.6041087096083886,
+            "risk_at_0.90": 0.6151322046794749,
+            "risk_at_1.00": 0.6383752782057867
+          },
+          "learned_fusion": {
+            "auprc": 0.8107203070479052,
+            "aurc": 0.47278143309861936,
+            "auroc": 0.7220667381465341,
+            "error_prevalence": 0.6383752782057867,
+            "n": 23364,
+            "risk_at_0.50": 0.4881013525081322,
+            "risk_at_0.80": 0.5812112133533063,
+            "risk_at_0.90": 0.6091401940270116,
+            "risk_at_1.00": 0.6383752782057867
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8544420549330383,
+            "aurc": 0.42151883746787966,
+            "auroc": 0.7857248279565187,
+            "error_prevalence": 0.6383752782057867,
+            "n": 23364,
+            "risk_at_0.50": 0.4430748159561719,
+            "risk_at_0.80": 0.5693879734645838,
+            "risk_at_0.90": 0.6057161879398897,
+            "risk_at_1.00": 0.6383752782057867
+          },
+          "learned_stochastic": {
+            "auprc": 0.7983165014678592,
+            "aurc": 0.4707362971158069,
+            "auroc": 0.713202192389612,
+            "error_prevalence": 0.6383752782057867,
+            "n": 23364,
+            "risk_at_0.50": 0.4997431946584489,
+            "risk_at_0.80": 0.586347100363792,
+            "risk_at_0.90": 0.611755754232452,
+            "risk_at_1.00": 0.6383752782057867
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8481250941079707,
+            "aurc": 0.41618225602932535,
+            "auroc": 0.7814617784996741,
+            "error_prevalence": 0.6383752782057867,
+            "n": 23364,
+            "risk_at_0.50": 0.4523198082520116,
+            "risk_at_0.80": 0.573774876952707,
+            "risk_at_0.90": 0.6069526345824615,
+            "risk_at_1.00": 0.6383752782057867
+          },
+          "stochastic_fixed": {
+            "auprc": 0.7123608968276502,
+            "aurc": 0.5081450568614071,
+            "auroc": 0.6268368190646909,
+            "error_prevalence": 0.6383752782057867,
+            "n": 23364,
+            "risk_at_0.50": 0.5718198938537922,
+            "risk_at_0.80": 0.6191418788786647,
+            "risk_at_0.90": 0.6284477839071714,
+            "risk_at_1.00": 0.6383752782057867
+          }
+        },
+        "rows": 23364
+      }
+    },
+    "scene": {
+      "city street": {
+        "error_prevalence": 0.567034529660886,
+        "methods": {
+          "confidence": {
+            "auprc": 0.7861069851332088,
+            "aurc": 0.3459641223276402,
+            "auroc": 0.7777097192534265,
+            "error_prevalence": 0.567034529660886,
+            "n": 32349,
+            "risk_at_0.50": 0.3614219474497682,
+            "risk_at_0.80": 0.5003477588871715,
+            "risk_at_0.90": 0.5366649493388288,
+            "risk_at_1.00": 0.567034529660886
+          },
+          "deterministic_fixed": {
+            "auprc": 0.6839315335648842,
+            "aurc": 0.48292521159536794,
+            "auroc": 0.6216029066257373,
+            "error_prevalence": 0.567034529660886,
+            "n": 32349,
+            "risk_at_0.50": 0.48228748068006183,
+            "risk_at_0.80": 0.5256182380216383,
+            "risk_at_0.90": 0.5434655675768504,
+            "risk_at_1.00": 0.567034529660886
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7130063684231959,
+            "aurc": 0.42468396380723045,
+            "auroc": 0.6724899868265428,
+            "error_prevalence": 0.567034529660886,
+            "n": 32349,
+            "risk_at_0.50": 0.44680061823802164,
+            "risk_at_0.80": 0.5190108191653787,
+            "risk_at_0.90": 0.5422634380903314,
+            "risk_at_1.00": 0.567034529660886
+          },
+          "learned_deterministic": {
+            "auprc": 0.6922679896553073,
+            "aurc": 0.48746456453913556,
+            "auroc": 0.6208217171340398,
+            "error_prevalence": 0.567034529660886,
+            "n": 32349,
+            "risk_at_0.50": 0.48816074188562597,
+            "risk_at_0.80": 0.5202859350850078,
+            "risk_at_0.90": 0.5403743774686588,
+            "risk_at_1.00": 0.567034529660886
+          },
+          "learned_fusion": {
+            "auprc": 0.8029957782998103,
+            "aurc": 0.3576264075371555,
+            "auroc": 0.7739050068253317,
+            "error_prevalence": 0.567034529660886,
+            "n": 32349,
+            "risk_at_0.50": 0.3651313755795981,
+            "risk_at_0.80": 0.49420401854714063,
+            "risk_at_0.90": 0.5309290743602953,
+            "risk_at_1.00": 0.567034529660886
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8473270135874,
+            "aurc": 0.31768101403888127,
+            "auroc": 0.8253165485911137,
+            "error_prevalence": 0.567034529660886,
+            "n": 32349,
+            "risk_at_0.50": 0.3234003091190108,
+            "risk_at_0.80": 0.4825347758887172,
+            "risk_at_0.90": 0.5274257255710115,
+            "risk_at_1.00": 0.567034529660886
+          },
+          "learned_stochastic": {
+            "auprc": 0.7785250834807971,
+            "aurc": 0.3674203812352618,
+            "auroc": 0.7530228690161362,
+            "error_prevalence": 0.567034529660886,
+            "n": 32349,
+            "risk_at_0.50": 0.38553323029366304,
+            "risk_at_0.80": 0.5011591962905718,
+            "risk_at_0.90": 0.5342950369225485,
+            "risk_at_1.00": 0.567034529660886
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8342660305627001,
+            "aurc": 0.3168918925656179,
+            "auroc": 0.8128114952082164,
+            "error_prevalence": 0.567034529660886,
+            "n": 32349,
+            "risk_at_0.50": 0.3451004636785162,
+            "risk_at_0.80": 0.4866692426584235,
+            "risk_at_0.90": 0.5279065773656191,
+            "risk_at_1.00": 0.567034529660886
+          },
+          "stochastic_fixed": {
+            "auprc": 0.6689694523065886,
+            "aurc": 0.4127679058337182,
+            "auroc": 0.6564253282343019,
+            "error_prevalence": 0.567034529660886,
+            "n": 32349,
+            "risk_at_0.50": 0.4701081916537867,
+            "risk_at_0.80": 0.5389489953632148,
+            "risk_at_0.90": 0.5516743946419371,
+            "risk_at_1.00": 0.567034529660886
+          }
+        },
+        "rows": 32349
+      },
+      "gas stations": {
+        "error_prevalence": 0.5319148936170213,
+        "methods": {},
+        "rows": 47
+      },
+      "highway": {
+        "error_prevalence": 0.5821556633621598,
+        "methods": {
+          "confidence": {
+            "auprc": 0.8042229161248848,
+            "aurc": 0.35379964212086495,
+            "auroc": 0.782343175017741,
+            "error_prevalence": 0.5821556633621598,
+            "n": 9482,
+            "risk_at_0.50": 0.38114321873022566,
+            "risk_at_0.80": 0.5164777221196942,
+            "risk_at_0.90": 0.5510897586126083,
+            "risk_at_1.00": 0.5821556633621598
+          },
+          "deterministic_fixed": {
+            "auprc": 0.7062019720431951,
+            "aurc": 0.4867336991765195,
+            "auroc": 0.6329250844983869,
+            "error_prevalence": 0.5821556633621598,
+            "n": 9482,
+            "risk_at_0.50": 0.49230120227800045,
+            "risk_at_0.80": 0.5387556024255207,
+            "risk_at_0.90": 0.5573002109210218,
+            "risk_at_1.00": 0.5821556633621598
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7539630243886265,
+            "aurc": 0.4112061585793517,
+            "auroc": 0.7089177576469212,
+            "error_prevalence": 0.5821556633621598,
+            "n": 9482,
+            "risk_at_0.50": 0.44399915629614006,
+            "risk_at_0.80": 0.5249143158449776,
+            "risk_at_0.90": 0.5541363955940942,
+            "risk_at_1.00": 0.5821556633621598
+          },
+          "learned_deterministic": {
+            "auprc": 0.7216270152359652,
+            "aurc": 0.49051619092198867,
+            "auroc": 0.6401608304252719,
+            "error_prevalence": 0.5821556633621598,
+            "n": 9482,
+            "risk_at_0.50": 0.4859734233284117,
+            "risk_at_0.80": 0.5303190087002373,
+            "risk_at_0.90": 0.5517928286852589,
+            "risk_at_1.00": 0.5821556633621598
+          },
+          "learned_fusion": {
+            "auprc": 0.8193770550477862,
+            "aurc": 0.3739219081470153,
+            "auroc": 0.7782866580339312,
+            "error_prevalence": 0.5821556633621598,
+            "n": 9482,
+            "risk_at_0.50": 0.37755747732545875,
+            "risk_at_0.80": 0.5105457421566043,
+            "risk_at_0.90": 0.545816733067729,
+            "risk_at_1.00": 0.5821556633621598
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8636693770413577,
+            "aurc": 0.32143705803710565,
+            "auroc": 0.8359738164738933,
+            "error_prevalence": 0.5821556633621598,
+            "n": 9482,
+            "risk_at_0.50": 0.33431765450326933,
+            "risk_at_0.80": 0.4967044555760612,
+            "risk_at_0.90": 0.5418326693227091,
+            "risk_at_1.00": 0.5821556633621598
+          },
+          "learned_stochastic": {
+            "auprc": 0.7988203323018661,
+            "aurc": 0.38043788167629955,
+            "auroc": 0.7596418694993745,
+            "error_prevalence": 0.5821556633621598,
+            "n": 9482,
+            "risk_at_0.50": 0.39717359206918373,
+            "risk_at_0.80": 0.5160822567888215,
+            "risk_at_0.90": 0.5486290133583314,
+            "risk_at_1.00": 0.5821556633621598
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8576751237972959,
+            "aurc": 0.3180193394287799,
+            "auroc": 0.8318231990138197,
+            "error_prevalence": 0.5821556633621598,
+            "n": 9482,
+            "risk_at_0.50": 0.34739506433241935,
+            "risk_at_0.80": 0.5009227524387029,
+            "risk_at_0.90": 0.5421842043590345,
+            "risk_at_1.00": 0.5821556633621598
+          },
+          "stochastic_fixed": {
+            "auprc": 0.7147757936912368,
+            "aurc": 0.39639531607793366,
+            "auroc": 0.700733256699515,
+            "error_prevalence": 0.5821556633621598,
+            "n": 9482,
+            "risk_at_0.50": 0.4532798987555368,
+            "risk_at_0.80": 0.5438966517268653,
+            "risk_at_0.90": 0.5646824466838528,
+            "risk_at_1.00": 0.5821556633621598
+          }
+        },
+        "rows": 9482
+      },
+      "parking lot": {
+        "error_prevalence": 0.5880681818181818,
+        "methods": {
+          "confidence": {
+            "auprc": 0.8091427973750064,
+            "aurc": 0.36553261042046614,
+            "auroc": 0.7754122938530735,
+            "error_prevalence": 0.5880681818181818,
+            "n": 352,
+            "risk_at_0.50": 0.4034090909090909,
+            "risk_at_0.80": 0.5319148936170213,
+            "risk_at_0.90": 0.555205047318612,
+            "risk_at_1.00": 0.5880681818181818
+          },
+          "deterministic_fixed": {
+            "auprc": 0.7330877804842558,
+            "aurc": 0.5143289995600875,
+            "auroc": 0.635415625520573,
+            "error_prevalence": 0.5880681818181818,
+            "n": 352,
+            "risk_at_0.50": 0.5,
+            "risk_at_0.80": 0.5390070921985816,
+            "risk_at_0.90": 0.5488958990536278,
+            "risk_at_1.00": 0.5880681818181818
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7599341339586207,
+            "aurc": 0.449652932148823,
+            "auroc": 0.6780942861902381,
+            "error_prevalence": 0.5880681818181818,
+            "n": 352,
+            "risk_at_0.50": 0.4602272727272727,
+            "risk_at_0.80": 0.5354609929078015,
+            "risk_at_0.90": 0.5457413249211357,
+            "risk_at_1.00": 0.5880681818181818
+          },
+          "learned_deterministic": {
+            "auprc": 0.721082202572948,
+            "aurc": 0.5253890070751546,
+            "auroc": 0.6234216225220722,
+            "error_prevalence": 0.5880681818181818,
+            "n": 352,
+            "risk_at_0.50": 0.5113636363636364,
+            "risk_at_0.80": 0.5425531914893617,
+            "risk_at_0.90": 0.5583596214511041,
+            "risk_at_1.00": 0.5880681818181818
+          },
+          "learned_fusion": {
+            "auprc": 0.8504946425152949,
+            "aurc": 0.37487918920710633,
+            "auroc": 0.7828419123771446,
+            "error_prevalence": 0.5880681818181818,
+            "n": 352,
+            "risk_at_0.50": 0.3977272727272727,
+            "risk_at_0.80": 0.49645390070921985,
+            "risk_at_0.90": 0.5425867507886435,
+            "risk_at_1.00": 0.5880681818181818
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8848289981302836,
+            "aurc": 0.3256632369411838,
+            "auroc": 0.8416458437447942,
+            "error_prevalence": 0.5880681818181818,
+            "n": 352,
+            "risk_at_0.50": 0.3465909090909091,
+            "risk_at_0.80": 0.5,
+            "risk_at_0.90": 0.5425867507886435,
+            "risk_at_1.00": 0.5880681818181818
+          },
+          "learned_stochastic": {
+            "auprc": 0.8277920671098113,
+            "aurc": 0.38287236814257475,
+            "auroc": 0.7743461602532067,
+            "error_prevalence": 0.5880681818181818,
+            "n": 352,
+            "risk_at_0.50": 0.3977272727272727,
+            "risk_at_0.80": 0.5177304964539007,
+            "risk_at_0.90": 0.5457413249211357,
+            "risk_at_1.00": 0.5880681818181818
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8546292342049338,
+            "aurc": 0.3395904521353876,
+            "auroc": 0.8082292187239715,
+            "error_prevalence": 0.5880681818181818,
+            "n": 352,
+            "risk_at_0.50": 0.3806818181818182,
+            "risk_at_0.80": 0.5035460992907801,
+            "risk_at_0.90": 0.5457413249211357,
+            "risk_at_1.00": 0.5880681818181818
+          },
+          "stochastic_fixed": {
+            "auprc": 0.6895296845056551,
+            "aurc": 0.4186777164764099,
+            "auroc": 0.664167916041979,
+            "error_prevalence": 0.5880681818181818,
+            "n": 352,
+            "risk_at_0.50": 0.48863636363636365,
+            "risk_at_0.80": 0.5567375886524822,
+            "risk_at_0.90": 0.5772870662460567,
+            "risk_at_1.00": 0.5880681818181818
+          }
+        },
+        "rows": 352
+      },
+      "residential": {
+        "error_prevalence": 0.5496028080546832,
+        "methods": {
+          "confidence": {
+            "auprc": 0.7317308105624871,
+            "aurc": 0.35328662171474384,
+            "auroc": 0.735006652373829,
+            "error_prevalence": 0.5496028080546832,
+            "n": 5413,
+            "risk_at_0.50": 0.37753971185814555,
+            "risk_at_0.80": 0.4927268529208035,
+            "risk_at_0.90": 0.5236042692939245,
+            "risk_at_1.00": 0.5496028080546832
+          },
+          "deterministic_fixed": {
+            "auprc": 0.6564619182440634,
+            "aurc": 0.4831270036707192,
+            "auroc": 0.6020956700974073,
+            "error_prevalence": 0.5496028080546832,
+            "n": 5413,
+            "risk_at_0.50": 0.4772811230144071,
+            "risk_at_0.80": 0.5105056568921728,
+            "risk_at_0.90": 0.5268883415435139,
+            "risk_at_1.00": 0.5496028080546832
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7077080285489005,
+            "aurc": 0.3942661284732691,
+            "auroc": 0.6848953198999042,
+            "error_prevalence": 0.5496028080546832,
+            "n": 5413,
+            "risk_at_0.50": 0.4203915773919468,
+            "risk_at_0.80": 0.49942276610482567,
+            "risk_at_0.90": 0.5223727422003284,
+            "risk_at_1.00": 0.5496028080546832
+          },
+          "learned_deterministic": {
+            "auprc": 0.6726767501305063,
+            "aurc": 0.48533823289736594,
+            "auroc": 0.610059216467555,
+            "error_prevalence": 0.5496028080546832,
+            "n": 5413,
+            "risk_at_0.50": 0.47210934613963795,
+            "risk_at_0.80": 0.5054259986146387,
+            "risk_at_0.90": 0.5211412151067324,
+            "risk_at_1.00": 0.5496028080546832
+          },
+          "learned_fusion": {
+            "auprc": 0.8069174718836718,
+            "aurc": 0.33839751620972874,
+            "auroc": 0.7839453747044347,
+            "error_prevalence": 0.5496028080546832,
+            "n": 5413,
+            "risk_at_0.50": 0.3365349094939047,
+            "risk_at_0.80": 0.4707919649041792,
+            "risk_at_0.90": 0.5102627257799671,
+            "risk_at_1.00": 0.5496028080546832
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8389222905553465,
+            "aurc": 0.30536028632789824,
+            "auroc": 0.81709846202632,
+            "error_prevalence": 0.5496028080546832,
+            "n": 5413,
+            "risk_at_0.50": 0.3165866272626524,
+            "risk_at_0.80": 0.45924728700069267,
+            "risk_at_0.90": 0.5063628899835796,
+            "risk_at_1.00": 0.5496028080546832
+          },
+          "learned_stochastic": {
+            "auprc": 0.7892329751089071,
+            "aurc": 0.340179296429169,
+            "auroc": 0.7730703635022508,
+            "error_prevalence": 0.5496028080546832,
+            "n": 5413,
+            "risk_at_0.50": 0.347247875877355,
+            "risk_at_0.80": 0.47356268760101594,
+            "risk_at_0.90": 0.5133415435139573,
+            "risk_at_1.00": 0.5496028080546832
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8405170852256454,
+            "aurc": 0.28476066870699496,
+            "auroc": 0.8334530990410931,
+            "error_prevalence": 0.5496028080546832,
+            "n": 5413,
+            "risk_at_0.50": 0.3125230882896195,
+            "risk_at_0.80": 0.4654814130685754,
+            "risk_at_0.90": 0.5082101806239737,
+            "risk_at_1.00": 0.5496028080546832
+          },
+          "stochastic_fixed": {
+            "auprc": 0.6782724264034483,
+            "aurc": 0.3646942164960993,
+            "auroc": 0.6969943678866133,
+            "error_prevalence": 0.5496028080546832,
+            "n": 5413,
+            "risk_at_0.50": 0.41558921315108976,
+            "risk_at_0.80": 0.5144308473793581,
+            "risk_at_0.90": 0.5311986863711001,
+            "risk_at_1.00": 0.5496028080546832
+          }
+        },
+        "rows": 5413
+      },
+      "tunnel": {
+        "error_prevalence": 0.7010309278350515,
+        "methods": {},
+        "rows": 97
+      },
+      "undefined": {
+        "error_prevalence": 0.6153846153846154,
+        "methods": {},
+        "rows": 65
+      }
+    },
+    "timeofday": {
+      "dawn/dusk": {
+        "error_prevalence": 0.5428408767435241,
+        "methods": {
+          "confidence": {
+            "auprc": 0.7780398521639696,
+            "aurc": 0.3183617845654351,
+            "auroc": 0.7820489629542074,
+            "error_prevalence": 0.5428408767435241,
+            "n": 3513,
+            "risk_at_0.50": 0.3346613545816733,
+            "risk_at_0.80": 0.4695837780149413,
+            "risk_at_0.90": 0.5079063883617964,
+            "risk_at_1.00": 0.5428408767435241
+          },
+          "deterministic_fixed": {
+            "auprc": 0.6504272766894967,
+            "aurc": 0.4677290047696967,
+            "auroc": 0.604763468926502,
+            "error_prevalence": 0.5428408767435241,
+            "n": 3513,
+            "risk_at_0.50": 0.47410358565737054,
+            "risk_at_0.80": 0.5026680896478122,
+            "risk_at_0.90": 0.5205566097406704,
+            "risk_at_1.00": 0.5428408767435241
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.697697444828288,
+            "aurc": 0.39241376729740335,
+            "auroc": 0.6802435609516227,
+            "error_prevalence": 0.5428408767435241,
+            "n": 3513,
+            "risk_at_0.50": 0.41832669322709165,
+            "risk_at_0.80": 0.49235147634293847,
+            "risk_at_0.90": 0.5164452877925364,
+            "risk_at_1.00": 0.5428408767435241
+          },
+          "learned_deterministic": {
+            "auprc": 0.6668834485879602,
+            "aurc": 0.4703680152053352,
+            "auroc": 0.610916653007436,
+            "error_prevalence": 0.5428408767435241,
+            "n": 3513,
+            "risk_at_0.50": 0.4746727376209448,
+            "risk_at_0.80": 0.49982212735681253,
+            "risk_at_0.90": 0.5142314990512334,
+            "risk_at_1.00": 0.5428408767435241
+          },
+          "learned_fusion": {
+            "auprc": 0.7976369471057418,
+            "aurc": 0.32650766575182416,
+            "auroc": 0.7859080493247333,
+            "error_prevalence": 0.5428408767435241,
+            "n": 3513,
+            "risk_at_0.50": 0.32669322709163345,
+            "risk_at_0.80": 0.46744930629669157,
+            "risk_at_0.90": 0.5050600885515496,
+            "risk_at_1.00": 0.5428408767435241
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8380010829017861,
+            "aurc": 0.2870133609148017,
+            "auroc": 0.8310089785224654,
+            "error_prevalence": 0.5428408767435241,
+            "n": 3513,
+            "risk_at_0.50": 0.29766647694934545,
+            "risk_at_0.80": 0.45393098541444327,
+            "risk_at_0.90": 0.5003162555344719,
+            "risk_at_1.00": 0.5428408767435241
+          },
+          "learned_stochastic": {
+            "auprc": 0.7776804020516321,
+            "aurc": 0.3295140842112183,
+            "auroc": 0.7720151424815568,
+            "error_prevalence": 0.5428408767435241,
+            "n": 3513,
+            "risk_at_0.50": 0.33807626636311894,
+            "risk_at_0.80": 0.47420846673781575,
+            "risk_at_0.90": 0.5072738772928527,
+            "risk_at_1.00": 0.5428408767435241
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8398258902043891,
+            "aurc": 0.27742094602466133,
+            "auroc": 0.8379317595722909,
+            "error_prevalence": 0.5428408767435241,
+            "n": 3513,
+            "risk_at_0.50": 0.28912919749573135,
+            "risk_at_0.80": 0.45570971184631803,
+            "risk_at_0.90": 0.5015812776723593,
+            "risk_at_1.00": 0.5428408767435241
+          },
+          "stochastic_fixed": {
+            "auprc": 0.6660258960904164,
+            "aurc": 0.3666715804057024,
+            "auroc": 0.6902315060003749,
+            "error_prevalence": 0.5428408767435241,
+            "n": 3513,
+            "risk_at_0.50": 0.4063745019920319,
+            "risk_at_0.80": 0.5076485236570616,
+            "risk_at_0.90": 0.5253004427577482,
+            "risk_at_1.00": 0.5428408767435241
+          }
+        },
+        "rows": 3513
+      },
+      "daytime": {
+        "error_prevalence": 0.5577498288226602,
+        "methods": {
+          "confidence": {
+            "auprc": 0.779852637330728,
+            "aurc": 0.33132884845621374,
+            "auroc": 0.7792489416730499,
+            "error_prevalence": 0.5577498288226602,
+            "n": 27749,
+            "risk_at_0.50": 0.3504864864864865,
+            "risk_at_0.80": 0.4908108108108108,
+            "risk_at_0.90": 0.5271671671671672,
+            "risk_at_1.00": 0.5577498288226602
+          },
+          "deterministic_fixed": {
+            "auprc": 0.6776984830408709,
+            "aurc": 0.46970777414317305,
+            "auroc": 0.6262174429626365,
+            "error_prevalence": 0.5577498288226602,
+            "n": 27749,
+            "risk_at_0.50": 0.46825225225225225,
+            "risk_at_0.80": 0.5167567567567568,
+            "risk_at_0.90": 0.5338538538538539,
+            "risk_at_1.00": 0.5577498288226602
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7284685699208069,
+            "aurc": 0.3906444777159996,
+            "auroc": 0.7038873145153186,
+            "error_prevalence": 0.5577498288226602,
+            "n": 27749,
+            "risk_at_0.50": 0.41254054054054057,
+            "risk_at_0.80": 0.5018918918918919,
+            "risk_at_0.90": 0.5301301301301301,
+            "risk_at_1.00": 0.5577498288226602
+          },
+          "learned_deterministic": {
+            "auprc": 0.6882421450156504,
+            "aurc": 0.47408810209325336,
+            "auroc": 0.6280581506359397,
+            "error_prevalence": 0.5577498288226602,
+            "n": 27749,
+            "risk_at_0.50": 0.47243243243243244,
+            "risk_at_0.80": 0.5097297297297297,
+            "risk_at_0.90": 0.5302502502502503,
+            "risk_at_1.00": 0.5577498288226602
+          },
+          "learned_fusion": {
+            "auprc": 0.8165563063827355,
+            "aurc": 0.33315629159603244,
+            "auroc": 0.7957274353524038,
+            "error_prevalence": 0.5577498288226602,
+            "n": 27749,
+            "risk_at_0.50": 0.33556756756756756,
+            "risk_at_0.80": 0.47927927927927927,
+            "risk_at_0.90": 0.5192792792792793,
+            "risk_at_1.00": 0.5577498288226602
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8528046127383839,
+            "aurc": 0.30019336953657344,
+            "auroc": 0.8358262763461348,
+            "error_prevalence": 0.5577498288226602,
+            "n": 27749,
+            "risk_at_0.50": 0.30508108108108106,
+            "risk_at_0.80": 0.4686036036036036,
+            "risk_at_0.90": 0.5165565565565565,
+            "risk_at_1.00": 0.5577498288226602
+          },
+          "learned_stochastic": {
+            "auprc": 0.7946284084477209,
+            "aurc": 0.34260142652861875,
+            "auroc": 0.7758649458307945,
+            "error_prevalence": 0.5577498288226602,
+            "n": 27749,
+            "risk_at_0.50": 0.35365765765765766,
+            "risk_at_0.80": 0.48477477477477476,
+            "risk_at_0.90": 0.522002002002002,
+            "risk_at_1.00": 0.5577498288226602
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8514527960976697,
+            "aurc": 0.28983673830070955,
+            "auroc": 0.8398270188366318,
+            "error_prevalence": 0.5577498288226602,
+            "n": 27749,
+            "risk_at_0.50": 0.3104144144144144,
+            "risk_at_0.80": 0.4716666666666667,
+            "risk_at_0.90": 0.5162362362362363,
+            "risk_at_1.00": 0.5577498288226602
+          },
+          "stochastic_fixed": {
+            "auprc": 0.699641908329057,
+            "aurc": 0.37147249040115593,
+            "auroc": 0.7036813611171694,
+            "error_prevalence": 0.5577498288226602,
+            "n": 27749,
+            "risk_at_0.50": 0.4193153153153153,
+            "risk_at_0.80": 0.518918918918919,
+            "risk_at_0.90": 0.5380580580580581,
+            "risk_at_1.00": 0.5577498288226602
+          }
+        },
+        "rows": 27749
+      },
+      "night": {
+        "error_prevalence": 0.5914456072036992,
+        "methods": {
+          "confidence": {
+            "auprc": 0.7894389484877636,
+            "aurc": 0.38822415990600007,
+            "auroc": 0.760869877933894,
+            "error_prevalence": 0.5914456072036992,
+            "n": 16436,
+            "risk_at_0.50": 0.40399123874422,
+            "risk_at_0.80": 0.530838847060613,
+            "risk_at_0.90": 0.563644967214223,
+            "risk_at_1.00": 0.5914456072036992
+          },
+          "deterministic_fixed": {
+            "auprc": 0.7068463854636353,
+            "aurc": 0.5116459018411373,
+            "auroc": 0.6165801283968668,
+            "error_prevalence": 0.5914456072036992,
+            "n": 16436,
+            "risk_at_0.50": 0.5155755658311024,
+            "risk_at_0.80": 0.5480264658909423,
+            "risk_at_0.90": 0.5656729534239168,
+            "risk_at_1.00": 0.5914456072036992
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7114937587044334,
+            "aurc": 0.4801695927333403,
+            "auroc": 0.6373321017520619,
+            "error_prevalence": 0.5914456072036992,
+            "n": 16436,
+            "risk_at_0.50": 0.5012168410805549,
+            "risk_at_0.80": 0.5509164194995817,
+            "risk_at_0.90": 0.5691205299803961,
+            "risk_at_1.00": 0.5914456072036992
+          },
+          "learned_deterministic": {
+            "auprc": 0.7119764265278696,
+            "aurc": 0.5151200847837494,
+            "auroc": 0.6165370347972774,
+            "error_prevalence": 0.5914456072036992,
+            "n": 16436,
+            "risk_at_0.50": 0.5155755658311024,
+            "risk_at_0.80": 0.5457449235683322,
+            "risk_at_0.90": 0.5645913607787467,
+            "risk_at_1.00": 0.5914456072036992
+          },
+          "learned_fusion": {
+            "auprc": 0.7928619668456929,
+            "aurc": 0.41098362147037043,
+            "auroc": 0.7378316841822822,
+            "error_prevalence": 0.5914456072036992,
+            "n": 16436,
+            "risk_at_0.50": 0.42273059138476515,
+            "risk_at_0.80": 0.5273404821659442,
+            "risk_at_0.90": 0.5581018049077267,
+            "risk_at_1.00": 0.5914456072036992
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8459489642006399,
+            "aurc": 0.3557115698148207,
+            "auroc": 0.8073184973186758,
+            "error_prevalence": 0.5914456072036992,
+            "n": 16436,
+            "risk_at_0.50": 0.3666342175711852,
+            "risk_at_0.80": 0.5141835881055593,
+            "risk_at_0.90": 0.5537078347867235,
+            "risk_at_1.00": 0.5914456072036992
+          },
+          "learned_stochastic": {
+            "auprc": 0.7678216988046132,
+            "aurc": 0.4213451798077391,
+            "auroc": 0.716472700786799,
+            "error_prevalence": 0.5914456072036992,
+            "n": 16436,
+            "risk_at_0.50": 0.444146994402531,
+            "risk_at_0.80": 0.5345653661875428,
+            "risk_at_0.90": 0.5625633745690529,
+            "risk_at_1.00": 0.5914456072036992
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8211546458413603,
+            "aurc": 0.3696964116421756,
+            "auroc": 0.7755974870901119,
+            "error_prevalence": 0.5914456072036992,
+            "n": 16436,
+            "risk_at_0.50": 0.4021659771233877,
+            "risk_at_0.80": 0.5201916495550992,
+            "risk_at_0.90": 0.555059825593186,
+            "risk_at_1.00": 0.5914456072036992
+          },
+          "stochastic_fixed": {
+            "auprc": 0.6533107792913149,
+            "aurc": 0.48559081327993653,
+            "auroc": 0.602268189409315,
+            "error_prevalence": 0.5914456072036992,
+            "n": 16436,
+            "risk_at_0.50": 0.5294475541494281,
+            "risk_at_0.80": 0.5728952772073922,
+            "risk_at_0.90": 0.5814912458595282,
+            "risk_at_1.00": 0.5914456072036992
+          }
+        },
+        "rows": 16436
+      },
+      "undefined": {
+        "error_prevalence": 0.6822429906542056,
+        "methods": {},
+        "rows": 107
+      }
+    },
+    "weather": {
+      "clear": {
+        "error_prevalence": 0.5751115931750865,
+        "methods": {
+          "confidence": {
+            "auprc": 0.7860417666721893,
+            "aurc": 0.35967378201143185,
+            "auroc": 0.7706638168779651,
+            "error_prevalence": 0.5751115931750865,
+            "n": 23971,
+            "risk_at_0.50": 0.3779409310862673,
+            "risk_at_0.80": 0.5108723992282421,
+            "risk_at_0.90": 0.54510058403634,
+            "risk_at_1.00": 0.5751115931750865
+          },
+          "deterministic_fixed": {
+            "auprc": 0.6913972122514478,
+            "aurc": 0.4904307405883592,
+            "auroc": 0.6209657567412559,
+            "error_prevalence": 0.5751115931750865,
+            "n": 23971,
+            "risk_at_0.50": 0.49299182379442685,
+            "risk_at_0.80": 0.5330343640819732,
+            "risk_at_0.90": 0.5510336516176879,
+            "risk_at_1.00": 0.5751115931750865
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7170173751169295,
+            "aurc": 0.4349025178226699,
+            "auroc": 0.6687118711497246,
+            "error_prevalence": 0.5751115931750865,
+            "n": 23971,
+            "risk_at_0.50": 0.4609544468546638,
+            "risk_at_0.80": 0.528289096313292,
+            "risk_at_0.90": 0.550709186984333,
+            "risk_at_1.00": 0.5751115931750865
+          },
+          "learned_deterministic": {
+            "auprc": 0.7009185446775783,
+            "aurc": 0.4943046622964221,
+            "auroc": 0.622188461667479,
+            "error_prevalence": 0.5751115931750865,
+            "n": 23971,
+            "risk_at_0.50": 0.49441014516936427,
+            "risk_at_0.80": 0.5283933879126036,
+            "risk_at_0.90": 0.5472791322888663,
+            "risk_at_1.00": 0.5751115931750865
+          },
+          "learned_fusion": {
+            "auprc": 0.804574259783633,
+            "aurc": 0.3735219211600373,
+            "auroc": 0.7674098523036861,
+            "error_prevalence": 0.5751115931750865,
+            "n": 23971,
+            "risk_at_0.50": 0.37810779242449527,
+            "risk_at_0.80": 0.5036241330760807,
+            "risk_at_0.90": 0.5392602206359507,
+            "risk_at_1.00": 0.5751115931750865
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8503500058482412,
+            "aurc": 0.3270039592794586,
+            "auroc": 0.8227069987189697,
+            "error_prevalence": 0.5751115931750865,
+            "n": 23971,
+            "risk_at_0.50": 0.33731019522776573,
+            "risk_at_0.80": 0.4912655785576472,
+            "risk_at_0.90": 0.5353202929452119,
+            "risk_at_1.00": 0.5751115931750865
+          },
+          "learned_stochastic": {
+            "auprc": 0.7801980468021728,
+            "aurc": 0.38238109665812386,
+            "auroc": 0.7467893370584133,
+            "error_prevalence": 0.5751115931750865,
+            "n": 23971,
+            "risk_at_0.50": 0.40063407308526616,
+            "risk_at_0.80": 0.5113417114251447,
+            "risk_at_0.90": 0.5426902753314174,
+            "risk_at_1.00": 0.5751115931750865
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8352114629406597,
+            "aurc": 0.32786857631138894,
+            "auroc": 0.8077918154359068,
+            "error_prevalence": 0.5751115931750865,
+            "n": 23971,
+            "risk_at_0.50": 0.36125479726347404,
+            "risk_at_0.80": 0.4963758669239193,
+            "risk_at_0.90": 0.5361546305738388,
+            "risk_at_1.00": 0.5751115931750865
+          },
+          "stochastic_fixed": {
+            "auprc": 0.669753246776269,
+            "aurc": 0.4262765149831296,
+            "auroc": 0.6491754101423106,
+            "error_prevalence": 0.5751115931750865,
+            "n": 23971,
+            "risk_at_0.50": 0.4848156182212581,
+            "risk_at_0.80": 0.5478437711842311,
+            "risk_at_0.90": 0.5622508575136739,
+            "risk_at_1.00": 0.5751115931750865
+          }
+        },
+        "rows": 23971
+      },
+      "foggy": {
+        "error_prevalence": 0.5526315789473685,
+        "methods": {},
+        "rows": 76
+      },
+      "overcast": {
+        "error_prevalence": 0.5443921687661254,
+        "methods": {
+          "confidence": {
+            "auprc": 0.761713380547938,
+            "aurc": 0.324447821542087,
+            "auroc": 0.771169513048359,
+            "error_prevalence": 0.5443921687661254,
+            "n": 6589,
+            "risk_at_0.50": 0.34142640364188165,
+            "risk_at_0.80": 0.4774279210925645,
+            "risk_at_0.90": 0.5140785702242455,
+            "risk_at_1.00": 0.5443921687661254
+          },
+          "deterministic_fixed": {
+            "auprc": 0.6639133899902492,
+            "aurc": 0.45359178964831487,
+            "auroc": 0.6264227806868647,
+            "error_prevalence": 0.5443921687661254,
+            "n": 6589,
+            "risk_at_0.50": 0.4597875569044006,
+            "risk_at_0.80": 0.500948406676783,
+            "risk_at_0.90": 0.5206541898499409,
+            "risk_at_1.00": 0.5443921687661254
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7172230382324223,
+            "aurc": 0.37474971455936507,
+            "auroc": 0.7053527366849754,
+            "error_prevalence": 0.5443921687661254,
+            "n": 6589,
+            "risk_at_0.50": 0.39393019726858874,
+            "risk_at_0.80": 0.48994688922610014,
+            "risk_at_0.90": 0.5162704434328107,
+            "risk_at_1.00": 0.5443921687661254
+          },
+          "learned_deterministic": {
+            "auprc": 0.6759633420141348,
+            "aurc": 0.4545297189738466,
+            "auroc": 0.6298050161522278,
+            "error_prevalence": 0.5443921687661254,
+            "n": 6589,
+            "risk_at_0.50": 0.46009104704097115,
+            "risk_at_0.80": 0.4950682852807284,
+            "risk_at_0.90": 0.5157646265385264,
+            "risk_at_1.00": 0.5443921687661254
+          },
+          "learned_fusion": {
+            "auprc": 0.8019924390162854,
+            "aurc": 0.32068626991316757,
+            "auroc": 0.793606789786272,
+            "error_prevalence": 0.5443921687661254,
+            "n": 6589,
+            "risk_at_0.50": 0.3201820940819423,
+            "risk_at_0.80": 0.46832321699544766,
+            "risk_at_0.90": 0.5069971337042657,
+            "risk_at_1.00": 0.5443921687661254
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8410618830714902,
+            "aurc": 0.2915664449439335,
+            "auroc": 0.8306793705228017,
+            "error_prevalence": 0.5443921687661254,
+            "n": 6589,
+            "risk_at_0.50": 0.291350531107739,
+            "risk_at_0.80": 0.4537177541729894,
+            "risk_at_0.90": 0.5034564154442759,
+            "risk_at_1.00": 0.5443921687661254
+          },
+          "learned_stochastic": {
+            "auprc": 0.7812423173380973,
+            "aurc": 0.33056176900030876,
+            "auroc": 0.7746136903062674,
+            "error_prevalence": 0.5443921687661254,
+            "n": 6589,
+            "risk_at_0.50": 0.3386949924127466,
+            "risk_at_0.80": 0.47306525037936265,
+            "risk_at_0.90": 0.5093576125442589,
+            "risk_at_1.00": 0.5443921687661254
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8394877585593896,
+            "aurc": 0.2757264960288627,
+            "auroc": 0.8391842479514169,
+            "error_prevalence": 0.5443921687661254,
+            "n": 6589,
+            "risk_at_0.50": 0.29377845220030346,
+            "risk_at_0.80": 0.4571320182094082,
+            "risk_at_0.90": 0.5044680492328444,
+            "risk_at_1.00": 0.5443921687661254
+          },
+          "stochastic_fixed": {
+            "auprc": 0.6845551300338635,
+            "aurc": 0.35797444971377246,
+            "auroc": 0.7044504945778179,
+            "error_prevalence": 0.5443921687661254,
+            "n": 6589,
+            "risk_at_0.50": 0.3990895295902883,
+            "risk_at_0.80": 0.5064491654021245,
+            "risk_at_0.90": 0.5250379362670713,
+            "risk_at_1.00": 0.5443921687661254
+          }
+        },
+        "rows": 6589
+      },
+      "partly cloudy": {
+        "error_prevalence": 0.555294807861543,
+        "methods": {
+          "confidence": {
+            "auprc": 0.7789986715815084,
+            "aurc": 0.32838699784488296,
+            "auroc": 0.7788714706452184,
+            "error_prevalence": 0.555294807861543,
+            "n": 3409,
+            "risk_at_0.50": 0.3460410557184751,
+            "risk_at_0.80": 0.48826979472140764,
+            "risk_at_0.90": 0.5262300423590747,
+            "risk_at_1.00": 0.555294807861543
+          },
+          "deterministic_fixed": {
+            "auprc": 0.667660102728855,
+            "aurc": 0.47181526848189836,
+            "auroc": 0.6179895518414601,
+            "error_prevalence": 0.555294807861543,
+            "n": 3409,
+            "risk_at_0.50": 0.47096774193548385,
+            "risk_at_0.80": 0.5150293255131965,
+            "risk_at_0.90": 0.5327468230694037,
+            "risk_at_1.00": 0.555294807861543
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7302905923913774,
+            "aurc": 0.3833504059928319,
+            "auroc": 0.7108350860760446,
+            "error_prevalence": 0.555294807861543,
+            "n": 3409,
+            "risk_at_0.50": 0.40821114369501466,
+            "risk_at_0.80": 0.49780058651026393,
+            "risk_at_0.90": 0.5281850765721734,
+            "risk_at_1.00": 0.555294807861543
+          },
+          "learned_deterministic": {
+            "auprc": 0.6772477044735701,
+            "aurc": 0.47914225061726184,
+            "auroc": 0.6162315822632194,
+            "error_prevalence": 0.555294807861543,
+            "n": 3409,
+            "risk_at_0.50": 0.48035190615835777,
+            "risk_at_0.80": 0.5124633431085044,
+            "risk_at_0.90": 0.5294884327142392,
+            "risk_at_1.00": 0.555294807861543
+          },
+          "learned_fusion": {
+            "auprc": 0.8119492986579149,
+            "aurc": 0.3403870505841116,
+            "auroc": 0.7874808173983584,
+            "error_prevalence": 0.555294807861543,
+            "n": 3409,
+            "risk_at_0.50": 0.3366568914956012,
+            "risk_at_0.80": 0.4783724340175953,
+            "risk_at_0.90": 0.5174323884001303,
+            "risk_at_1.00": 0.555294807861543
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8452224035980197,
+            "aurc": 0.2985607472657998,
+            "auroc": 0.8316304200867799,
+            "error_prevalence": 0.555294807861543,
+            "n": 3409,
+            "risk_at_0.50": 0.30146627565982403,
+            "risk_at_0.80": 0.46920821114369504,
+            "risk_at_0.90": 0.5161290322580645,
+            "risk_at_1.00": 0.555294807861543
+          },
+          "learned_stochastic": {
+            "auprc": 0.7981143626451059,
+            "aurc": 0.34828061689909967,
+            "auroc": 0.7724197745617446,
+            "error_prevalence": 0.555294807861543,
+            "n": 3409,
+            "risk_at_0.50": 0.3501466275659824,
+            "risk_at_0.80": 0.4809384164222874,
+            "risk_at_0.90": 0.5174323884001303,
+            "risk_at_1.00": 0.555294807861543
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8548577430936346,
+            "aurc": 0.28675588455320467,
+            "auroc": 0.8410994122213906,
+            "error_prevalence": 0.555294807861543,
+            "n": 3409,
+            "risk_at_0.50": 0.3073313782991202,
+            "risk_at_0.80": 0.46774193548387094,
+            "risk_at_0.90": 0.5131964809384164,
+            "risk_at_1.00": 0.555294807861543
+          },
+          "stochastic_fixed": {
+            "auprc": 0.7108774075615649,
+            "aurc": 0.35684078466382096,
+            "auroc": 0.7206215232623455,
+            "error_prevalence": 0.555294807861543,
+            "n": 3409,
+            "risk_at_0.50": 0.4046920821114369,
+            "risk_at_0.80": 0.5120967741935484,
+            "risk_at_0.90": 0.5320951449983709,
+            "risk_at_1.00": 0.555294807861543
+          }
+        },
+        "rows": 3409
+      },
+      "rainy": {
+        "error_prevalence": 0.5816164817749604,
+        "methods": {
+          "confidence": {
+            "auprc": 0.8046399058665243,
+            "aurc": 0.34145059921316795,
+            "auroc": 0.7924593344893073,
+            "error_prevalence": 0.5816164817749604,
+            "n": 3155,
+            "risk_at_0.50": 0.3688212927756654,
+            "risk_at_0.80": 0.5182250396196514,
+            "risk_at_0.90": 0.5517605633802817,
+            "risk_at_1.00": 0.5816164817749604
+          },
+          "deterministic_fixed": {
+            "auprc": 0.6663300709022932,
+            "aurc": 0.5328954320920972,
+            "auroc": 0.580033853521592,
+            "error_prevalence": 0.5816164817749604,
+            "n": 3155,
+            "risk_at_0.50": 0.5253485424588086,
+            "risk_at_0.80": 0.5511093502377179,
+            "risk_at_0.90": 0.5598591549295775,
+            "risk_at_1.00": 0.5816164817749604
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7018776378995992,
+            "aurc": 0.4692280996388257,
+            "auroc": 0.6394661877631904,
+            "error_prevalence": 0.5816164817749604,
+            "n": 3155,
+            "risk_at_0.50": 0.4873257287705957,
+            "risk_at_0.80": 0.5431854199683043,
+            "risk_at_0.90": 0.5595070422535211,
+            "risk_at_1.00": 0.5816164817749604
+          },
+          "learned_deterministic": {
+            "auprc": 0.6779990608518499,
+            "aurc": 0.5392192764842854,
+            "auroc": 0.5821294690776979,
+            "error_prevalence": 0.5816164817749604,
+            "n": 3155,
+            "risk_at_0.50": 0.5304182509505704,
+            "risk_at_0.80": 0.544770206022187,
+            "risk_at_0.90": 0.5580985915492958,
+            "risk_at_1.00": 0.5816164817749604
+          },
+          "learned_fusion": {
+            "auprc": 0.790581200066248,
+            "aurc": 0.38420587083246416,
+            "auroc": 0.7473230947072909,
+            "error_prevalence": 0.5816164817749604,
+            "n": 3155,
+            "risk_at_0.50": 0.40874524714828897,
+            "risk_at_0.80": 0.5182250396196514,
+            "risk_at_0.90": 0.546830985915493,
+            "risk_at_1.00": 0.5816164817749604
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8506833882238412,
+            "aurc": 0.32019162791632155,
+            "auroc": 0.829135909503757,
+            "error_prevalence": 0.5816164817749604,
+            "n": 3155,
+            "risk_at_0.50": 0.33840304182509506,
+            "risk_at_0.80": 0.5023771790808241,
+            "risk_at_0.90": 0.5433098591549296,
+            "risk_at_1.00": 0.5816164817749604
+          },
+          "learned_stochastic": {
+            "auprc": 0.7782364641652291,
+            "aurc": 0.3772779681257492,
+            "auroc": 0.7449607794566923,
+            "error_prevalence": 0.5816164817749604,
+            "n": 3155,
+            "risk_at_0.50": 0.4112801013941698,
+            "risk_at_0.80": 0.518621236133122,
+            "risk_at_0.90": 0.5517605633802817,
+            "risk_at_1.00": 0.5816164817749604
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8406762903516252,
+            "aurc": 0.33401822732755565,
+            "auroc": 0.8100627528692924,
+            "error_prevalence": 0.5816164817749604,
+            "n": 3155,
+            "risk_at_0.50": 0.35804816223067176,
+            "risk_at_0.80": 0.5047543581616482,
+            "risk_at_0.90": 0.5433098591549296,
+            "risk_at_1.00": 0.5816164817749604
+          },
+          "stochastic_fixed": {
+            "auprc": 0.6704816992091676,
+            "aurc": 0.4399439342295291,
+            "auroc": 0.6450714226736026,
+            "error_prevalence": 0.5816164817749604,
+            "n": 3155,
+            "risk_at_0.50": 0.4968314321926489,
+            "risk_at_0.80": 0.5566561014263075,
+            "risk_at_0.90": 0.5654929577464789,
+            "risk_at_1.00": 0.5816164817749604
+          }
+        },
+        "rows": 3155
+      },
+      "snowy": {
+        "error_prevalence": 0.5705378020265004,
+        "methods": {
+          "confidence": {
+            "auprc": 0.7901772702380794,
+            "aurc": 0.3531883264142796,
+            "auroc": 0.7738890596883515,
+            "error_prevalence": 0.5705378020265004,
+            "n": 3849,
+            "risk_at_0.50": 0.37454545454545457,
+            "risk_at_0.80": 0.5061688311688312,
+            "risk_at_0.90": 0.5393939393939394,
+            "risk_at_1.00": 0.5705378020265004
+          },
+          "deterministic_fixed": {
+            "auprc": 0.6998558085596859,
+            "aurc": 0.4854082587438313,
+            "auroc": 0.6285961551388048,
+            "error_prevalence": 0.5705378020265004,
+            "n": 3849,
+            "risk_at_0.50": 0.48103896103896104,
+            "risk_at_0.80": 0.5279220779220779,
+            "risk_at_0.90": 0.5422799422799423,
+            "risk_at_1.00": 0.5705378020265004
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7317688026427291,
+            "aurc": 0.4233545583822472,
+            "auroc": 0.6803047282800935,
+            "error_prevalence": 0.5705378020265004,
+            "n": 3849,
+            "risk_at_0.50": 0.44727272727272727,
+            "risk_at_0.80": 0.5204545454545455,
+            "risk_at_0.90": 0.541991341991342,
+            "risk_at_1.00": 0.5705378020265004
+          },
+          "learned_deterministic": {
+            "auprc": 0.7085971323395652,
+            "aurc": 0.4890516108073033,
+            "auroc": 0.6315513990679859,
+            "error_prevalence": 0.5705378020265004,
+            "n": 3849,
+            "risk_at_0.50": 0.48363636363636364,
+            "risk_at_0.80": 0.5201298701298701,
+            "risk_at_0.90": 0.5396825396825397,
+            "risk_at_1.00": 0.5705378020265004
+          },
+          "learned_fusion": {
+            "auprc": 0.8206905073710914,
+            "aurc": 0.3544781195306349,
+            "auroc": 0.7835926730336299,
+            "error_prevalence": 0.5705378020265004,
+            "n": 3849,
+            "risk_at_0.50": 0.36987012987012985,
+            "risk_at_0.80": 0.49253246753246754,
+            "risk_at_0.90": 0.5327561327561328,
+            "risk_at_1.00": 0.5705378020265004
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8579979681835093,
+            "aurc": 0.31933774033726214,
+            "auroc": 0.8282379996848475,
+            "error_prevalence": 0.5705378020265004,
+            "n": 3849,
+            "risk_at_0.50": 0.3288311688311688,
+            "risk_at_0.80": 0.4837662337662338,
+            "risk_at_0.90": 0.529004329004329,
+            "risk_at_1.00": 0.5705378020265004
+          },
+          "learned_stochastic": {
+            "auprc": 0.7933563087986649,
+            "aurc": 0.3650911383705358,
+            "auroc": 0.7613879164338836,
+            "error_prevalence": 0.5705378020265004,
+            "n": 3849,
+            "risk_at_0.50": 0.38441558441558443,
+            "risk_at_0.80": 0.4974025974025974,
+            "risk_at_0.90": 0.5356421356421357,
+            "risk_at_1.00": 0.5705378020265004
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8371971457016708,
+            "aurc": 0.3215429649490755,
+            "auroc": 0.8122126023557102,
+            "error_prevalence": 0.5705378020265004,
+            "n": 3849,
+            "risk_at_0.50": 0.35324675324675325,
+            "risk_at_0.80": 0.4896103896103896,
+            "risk_at_0.90": 0.5318903318903319,
+            "risk_at_1.00": 0.5705378020265004
+          },
+          "stochastic_fixed": {
+            "auprc": 0.6826958980541263,
+            "aurc": 0.41220599213781933,
+            "auroc": 0.6669820947066493,
+            "error_prevalence": 0.5705378020265004,
+            "n": 3849,
+            "risk_at_0.50": 0.4612987012987013,
+            "risk_at_0.80": 0.5399350649350649,
+            "risk_at_0.90": 0.5520923520923521,
+            "risk_at_1.00": 0.5705378020265004
+          }
+        },
+        "rows": 3849
+      },
+      "undefined": {
+        "error_prevalence": 0.5682356423919479,
+        "methods": {
+          "confidence": {
+            "auprc": 0.7837518072780731,
+            "aurc": 0.34563650621543246,
+            "auroc": 0.7763023041849957,
+            "error_prevalence": 0.5682356423919479,
+            "n": 6756,
+            "risk_at_0.50": 0.3641207815275311,
+            "risk_at_0.80": 0.5019426456984274,
+            "risk_at_0.90": 0.5385627363920408,
+            "risk_at_1.00": 0.5682356423919479
+          },
+          "deterministic_fixed": {
+            "auprc": 0.6947493928079922,
+            "aurc": 0.4795136847573948,
+            "auroc": 0.6310361166181164,
+            "error_prevalence": 0.5682356423919479,
+            "n": 6756,
+            "risk_at_0.50": 0.4763173475429248,
+            "risk_at_0.80": 0.525254394079556,
+            "risk_at_0.90": 0.5426739023186976,
+            "risk_at_1.00": 0.5682356423919479
+          },
+          "equal_fixed_fusion": {
+            "auprc": 0.7327936399946919,
+            "aurc": 0.40883830594183684,
+            "auroc": 0.6978645896726156,
+            "error_prevalence": 0.5682356423919479,
+            "n": 6756,
+            "risk_at_0.50": 0.42835997631734757,
+            "risk_at_0.80": 0.5123034227567067,
+            "risk_at_0.90": 0.5410294359480349,
+            "risk_at_1.00": 0.5682356423919479
+          },
+          "learned_deterministic": {
+            "auprc": 0.7026937872561794,
+            "aurc": 0.48325536877137143,
+            "auroc": 0.6335178632805527,
+            "error_prevalence": 0.5682356423919479,
+            "n": 6756,
+            "risk_at_0.50": 0.4769094138543517,
+            "risk_at_0.80": 0.5198889916743756,
+            "risk_at_0.90": 0.5410294359480349,
+            "risk_at_1.00": 0.5682356423919479
+          },
+          "learned_fusion": {
+            "auprc": 0.8177754873386087,
+            "aurc": 0.3471028420409357,
+            "auroc": 0.7894574412349377,
+            "error_prevalence": 0.5682356423919479,
+            "n": 6756,
+            "risk_at_0.50": 0.35346358792184723,
+            "risk_at_0.80": 0.49121184088806663,
+            "risk_at_0.90": 0.5300115112645947,
+            "risk_at_1.00": 0.5682356423919479
+          },
+          "learned_fusion_plus_confidence": {
+            "auprc": 0.8523781061148354,
+            "aurc": 0.31647469727100835,
+            "auroc": 0.8291190417742308,
+            "error_prevalence": 0.5682356423919479,
+            "n": 6756,
+            "risk_at_0.50": 0.3268206039076377,
+            "risk_at_0.80": 0.4823311748381129,
+            "risk_at_0.90": 0.527215918434468,
+            "risk_at_1.00": 0.5682356423919479
+          },
+          "learned_stochastic": {
+            "auprc": 0.7911516000900753,
+            "aurc": 0.3606928643752888,
+            "auroc": 0.7649409114528615,
+            "error_prevalence": 0.5682356423919479,
+            "n": 6756,
+            "risk_at_0.50": 0.37329780935464774,
+            "risk_at_0.80": 0.49879740980573545,
+            "risk_at_0.90": 0.5344515704653839,
+            "risk_at_1.00": 0.5682356423919479
+          },
+          "nonlinear_fusion": {
+            "auprc": 0.8508776982972166,
+            "aurc": 0.3056131152799978,
+            "auroc": 0.8330460443191563,
+            "error_prevalence": 0.5682356423919479,
+            "n": 6756,
+            "risk_at_0.50": 0.3271166370633511,
+            "risk_at_0.80": 0.4856614246068455,
+            "risk_at_0.90": 0.5275448117086006,
+            "risk_at_1.00": 0.5682356423919479
+          },
+          "stochastic_fixed": {
+            "auprc": 0.6997850300488317,
+            "aurc": 0.39139201603656565,
+            "auroc": 0.689841318771324,
+            "error_prevalence": 0.5682356423919479,
+            "n": 6756,
+            "risk_at_0.50": 0.443457667258733,
+            "risk_at_0.80": 0.5306197964847363,
+            "risk_at_0.90": 0.5490873211642822,
+            "risk_at_1.00": 0.5682356423919479
+          }
+        },
+        "rows": 6756
+      }
+    }
+  },
+  "test_images": 1992,
+  "test_partition": "confirmatory",
+  "test_rows": 47805,
+  "test_sequences": 1992,
+  "validation_complementarity": {
+    "fixed_score_spearman": 0.2675398035749593,
+    "opposite_median_quadrant_fraction": 0.4064057300201024,
+    "validation_rows": 59197
+  }
+}

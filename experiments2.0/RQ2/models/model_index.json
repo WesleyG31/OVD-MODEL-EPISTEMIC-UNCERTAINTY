@@ -1,0 +1,418 @@
+{
+  "calibration_groups": 1200,
+  "calibration_rows": 29826,
+  "estimator_fingerprint": "3bc94ab38ea0633c7932f854902be620194fc9b9141a12c4fee866b94ad3cf94",
+  "methods": {
+    "confidence": {
+      "family": "direct_control",
+      "features": [
+        "confidence_uncertainty"
+      ],
+      "heldout_calibration_probability_metrics": {
+        "brier": 0.1843659918974104,
+        "ece": 6.705565725841036e-11,
+        "nll": 0.5506885568438067
+      },
+      "model_sha256": "0f174e9a1cdb2705ad76ef5163f3b0876cc39036e6d0ea972ae82c59f2c1da56",
+      "selected_regularization": null,
+      "selection_auroc": null,
+      "selection_rank_metrics": {
+        "auprc": 0.7900633057379265,
+        "aurc": 0.34281493360102616,
+        "auroc": 0.7800424793128979,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.35618956829633663,
+        "risk_at_0.80": 0.4970421755968847,
+        "risk_at_0.90": 0.5327230082469547,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "deterministic_fixed": {
+      "family": "fixed_empirical_cdf",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step"
+      ],
+      "heldout_calibration_probability_metrics": {
+        "brier": 0.23373263750295542,
+        "ece": 1.0058431341085253e-11,
+        "nll": 0.6591098690766999
+      },
+      "model_sha256": "191dfd33e987820e68a741d1596f2cfac2f1ceb453232113eedbdc2690081113",
+      "selected_regularization": null,
+      "selection_auroc": null,
+      "selection_rank_metrics": {
+        "auprc": 0.6787980052546898,
+        "aurc": 0.4832921358768218,
+        "auroc": 0.6179903211723179,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.48379408960915155,
+        "risk_at_0.80": 0.5244499297782695,
+        "risk_at_0.90": 0.5418778845426345,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "equal_fixed_fusion": {
+      "family": "fixed_equal_late_fusion",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step",
+        "stochastic_mutual_information",
+        "stochastic_predictive_entropy",
+        "stochastic_class_disagreement",
+        "stochastic_score_variance",
+        "stochastic_box_variance",
+        "stochastic_pairwise_iou_loss",
+        "stochastic_embedding_variance",
+        "stochastic_embedding_cosine_instability",
+        "stochastic_absence_rate"
+      ],
+      "heldout_calibration_probability_metrics": {
+        "brier": 0.22009603299729577,
+        "ece": 5.3644506928780104e-11,
+        "nll": 0.6301470600435767
+      },
+      "model_sha256": "2b975dbc14cadcd027c40426bc41ba87f370cef015765eb22c4dc7fe1ecc3a1c",
+      "selected_regularization": null,
+      "selection_auroc": null,
+      "selection_rank_metrics": {
+        "auprc": 0.7157101332275866,
+        "aurc": 0.4184110889270591,
+        "auroc": 0.6778026628403142,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.44253030096690726,
+        "risk_at_0.80": 0.5164063497467762,
+        "risk_at_0.90": 0.5397594007717333,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "learned_deterministic": {
+      "family": "regularized_logistic",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step"
+      ],
+      "heldout_calibration_probability_metrics": {
+        "brier": 0.23285030427235728,
+        "ece": 1.7434465562007875e-10,
+        "nll": 0.6566536344151166
+      },
+      "model_sha256": "3d0b76e242b122dcb45cf48f0de956743b5bc48f9068647c672fe6451596329e",
+      "selected_regularization": 10.0,
+      "selection_auroc": 0.6205825984737224,
+      "selection_rank_metrics": {
+        "auprc": 0.689760720120808,
+        "aurc": 0.48657611813743334,
+        "auroc": 0.6205825984737224,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.4835898134277543,
+        "risk_at_0.80": 0.5193003362131335,
+        "risk_at_0.90": 0.5389271392903079,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "learned_fusion": {
+      "family": "regularized_logistic",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step",
+        "stochastic_mutual_information",
+        "stochastic_predictive_entropy",
+        "stochastic_class_disagreement",
+        "stochastic_score_variance",
+        "stochastic_box_variance",
+        "stochastic_pairwise_iou_loss",
+        "stochastic_embedding_variance",
+        "stochastic_embedding_cosine_instability",
+        "stochastic_absence_rate"
+      ],
+      "heldout_calibration_probability_metrics": {
+        "brier": 0.18835301780478972,
+        "ece": 3.6880604009687984e-11,
+        "nll": 0.5585284789855538
+      },
+      "model_sha256": "2f01cecc6cfa326f825b2c3fab2fc02b2e0b6440ba981ced38c1e9384f5bc630",
+      "selected_regularization": 10.0,
+      "selection_auroc": 0.7731207259574522,
+      "selection_rank_metrics": {
+        "auprc": 0.8044508233223566,
+        "aurc": 0.3585860677775549,
+        "auroc": 0.7731207259574522,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.36156884107313086,
+        "risk_at_0.80": 0.49061582329659104,
+        "risk_at_0.90": 0.5280699099644397,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "learned_fusion_mc02": {
+      "family": "mc_pass_sensitivity",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step",
+        "stochastic_mutual_information_mc02",
+        "stochastic_predictive_entropy_mc02",
+        "stochastic_class_disagreement_mc02",
+        "stochastic_score_variance_mc02",
+        "stochastic_box_variance_mc02",
+        "stochastic_pairwise_iou_loss_mc02",
+        "stochastic_embedding_variance_mc02",
+        "stochastic_embedding_cosine_instability_mc02",
+        "stochastic_absence_rate_mc02"
+      ],
+      "heldout_calibration_probability_metrics": {
+        "brier": 0.20700830445180882,
+        "ece": 2.682225158058567e-11,
+        "nll": 0.6004867236010878
+      },
+      "model_sha256": "641ba49e3c07c7008388e8c542274798025b9298165175ae37d1aa8e1241ad13",
+      "selected_regularization": 10.0,
+      "selection_auroc": 0.725314626803415,
+      "selection_rank_metrics": {
+        "auprc": 0.7631918900208388,
+        "aurc": 0.3941335133927795,
+        "auroc": 0.725314626803415,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.40004085523627947,
+        "risk_at_0.80": 0.500744775928842,
+        "risk_at_0.90": 0.5326851781796171,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "learned_fusion_mc05": {
+      "family": "mc_pass_sensitivity",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step",
+        "stochastic_mutual_information_mc05",
+        "stochastic_predictive_entropy_mc05",
+        "stochastic_class_disagreement_mc05",
+        "stochastic_score_variance_mc05",
+        "stochastic_box_variance_mc05",
+        "stochastic_pairwise_iou_loss_mc05",
+        "stochastic_embedding_variance_mc05",
+        "stochastic_embedding_cosine_instability_mc05",
+        "stochastic_absence_rate_mc05"
+      ],
+      "heldout_calibration_probability_metrics": {
+        "brier": 0.19624016450140214,
+        "ece": 9.38778522943986e-11,
+        "nll": 0.5762688623902389
+      },
+      "model_sha256": "4e66b3f668f89b5a1f03d07ab157e449bf97a22f27970be18a053a84db307532",
+      "selected_regularization": 10.0,
+      "selection_auroc": 0.7568099807093427,
+      "selection_rank_metrics": {
+        "auprc": 0.7914514056193397,
+        "aurc": 0.3714401405220286,
+        "auroc": 0.7568099807093427,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.3747787008034863,
+        "risk_at_0.80": 0.4941481891305273,
+        "risk_at_0.90": 0.529620942725278,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "learned_fusion_mc10": {
+      "family": "mc_pass_sensitivity",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step",
+        "stochastic_mutual_information_mc10",
+        "stochastic_predictive_entropy_mc10",
+        "stochastic_class_disagreement_mc10",
+        "stochastic_score_variance_mc10",
+        "stochastic_box_variance_mc10",
+        "stochastic_pairwise_iou_loss_mc10",
+        "stochastic_embedding_variance_mc10",
+        "stochastic_embedding_cosine_instability_mc10",
+        "stochastic_absence_rate_mc10"
+      ],
+      "heldout_calibration_probability_metrics": {
+        "brier": 0.18835301780478972,
+        "ece": 3.6880604009687984e-11,
+        "nll": 0.5585284789855538
+      },
+      "model_sha256": "1d4b95dff6ed4e73874ce9ced7afe82660ef80da2980ba4e887e598018e104e0",
+      "selected_regularization": 10.0,
+      "selection_auroc": 0.7731207259574522,
+      "selection_rank_metrics": {
+        "auprc": 0.8044508233223566,
+        "aurc": 0.3585860677775549,
+        "auroc": 0.7731207259574522,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.36156884107313086,
+        "risk_at_0.80": 0.49061582329659104,
+        "risk_at_0.90": 0.5280699099644397,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "learned_fusion_plus_confidence": {
+      "family": "regularized_logistic",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step",
+        "stochastic_mutual_information",
+        "stochastic_predictive_entropy",
+        "stochastic_class_disagreement",
+        "stochastic_score_variance",
+        "stochastic_box_variance",
+        "stochastic_pairwise_iou_loss",
+        "stochastic_embedding_variance",
+        "stochastic_embedding_cosine_instability",
+        "stochastic_absence_rate",
+        "confidence_uncertainty"
+      ],
+      "heldout_calibration_probability_metrics": {
+        "brier": 0.1650534522360503,
+        "ece": 8.046677824107756e-11,
+        "nll": 0.5017030410354127
+      },
+      "model_sha256": "df3471522fe76cd87ef4f0ed095a629f707d17f2d43f5180b1889a630dd7ade8",
+      "selected_regularization": 10.0,
+      "selection_auroc": 0.825550471732782,
+      "selection_rank_metrics": {
+        "auprc": 0.8478730479586065,
+        "aurc": 0.3150382118407939,
+        "auroc": 0.825550471732782,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.3218711698215988,
+        "risk_at_0.80": 0.479465463676214,
+        "risk_at_0.90": 0.524740864038738,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "learned_stochastic": {
+      "family": "regularized_logistic",
+      "features": [
+        "stochastic_mutual_information",
+        "stochastic_predictive_entropy",
+        "stochastic_class_disagreement",
+        "stochastic_score_variance",
+        "stochastic_box_variance",
+        "stochastic_pairwise_iou_loss",
+        "stochastic_embedding_variance",
+        "stochastic_embedding_cosine_instability",
+        "stochastic_absence_rate"
+      ],
+      "heldout_calibration_probability_metrics": {
+        "brier": 0.19524880068166509,
+        "ece": 1.0058353730346906e-11,
+        "nll": 0.5748826876070556
+      },
+      "model_sha256": "5896d18b1049fa7c2b0230fa654313c125cd69625380394ccda47f7c813ee6ac",
+      "selected_regularization": 0.1,
+      "selection_auroc": 0.7534590701272426,
+      "selection_rank_metrics": {
+        "auprc": 0.7809014599216839,
+        "aurc": 0.3656688674206945,
+        "auroc": 0.7534590701272426,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.3818602750919243,
+        "risk_at_0.80": 0.4981486998340214,
+        "risk_at_0.90": 0.5310584852841038,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "nonlinear_fusion": {
+      "family": "random_forest_sensitivity",
+      "features": [
+        "deterministic_reference_variance",
+        "deterministic_reference_step",
+        "deterministic_hidden_step",
+        "stochastic_mutual_information",
+        "stochastic_predictive_entropy",
+        "stochastic_class_disagreement",
+        "stochastic_score_variance",
+        "stochastic_box_variance",
+        "stochastic_pairwise_iou_loss",
+        "stochastic_embedding_variance",
+        "stochastic_embedding_cosine_instability",
+        "stochastic_absence_rate"
+      ],
+      "heldout_calibration_probability_metrics": {
+        "brier": 0.16732599970883105,
+        "ece": 9.220143916515579e-10,
+        "nll": 0.5039429415066335
+      },
+      "model_sha256": "df4e72d78ce8c7d14091ad92e29ddc51e83ed4d746290899c4c197f1e718e2c9",
+      "selected_regularization": null,
+      "selection_auroc": 0.8193244384196325,
+      "selection_rank_metrics": {
+        "auprc": 0.8387248645678177,
+        "aurc": 0.3099530712466826,
+        "auroc": 0.8193244384196325,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.3363747787008035,
+        "risk_at_0.80": 0.48325318125718175,
+        "risk_at_0.90": 0.5248543542407506,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    },
+    "stochastic_fixed": {
+      "family": "fixed_empirical_cdf",
+      "features": [
+        "stochastic_mutual_information",
+        "stochastic_predictive_entropy",
+        "stochastic_class_disagreement",
+        "stochastic_score_variance",
+        "stochastic_box_variance",
+        "stochastic_pairwise_iou_loss",
+        "stochastic_embedding_variance",
+        "stochastic_embedding_cosine_instability",
+        "stochastic_absence_rate"
+      ],
+      "heldout_calibration_probability_metrics": {
+        "brier": 0.21479119748205472,
+        "ece": 7.711393775939762e-11,
+        "nll": 0.6185055390928259
+      },
+      "model_sha256": "329eb2cd55d2e142b74e0e91d77382875b7facd199fb56c1a83e9cd359b7bc83",
+      "selected_regularization": null,
+      "selection_auroc": null,
+      "selection_rank_metrics": {
+        "auprc": 0.6731603456183943,
+        "aurc": 0.40094243617801006,
+        "auroc": 0.6680215716655227,
+        "error_prevalence": 0.5651152497361343,
+        "n": 29371,
+        "risk_at_0.50": 0.45757864632983797,
+        "risk_at_0.80": 0.5341532961654679,
+        "risk_at_0.90": 0.5495195581448135,
+        "risk_at_1.00": 0.5651152497361343
+      }
+    }
+  },
+  "operating_score_threshold": 0.2,
+  "raw_train_rows": 1195746,
+  "raw_validation_rows": 510987,
+  "schema_version": 1,
+  "selection_calibration_group_overlap": 0,
+  "selection_groups": 1200,
+  "selection_rows": 29371,
+  "source_tree_sha256": "6546307db0237db2a0bac8fd7b54493da9cd3af2d684181fbb1450085305374c",
+  "train_features_sha256": "cd5c3a26dd659b1810c04cae85f7cd5cb1f89defae7f35c96ec0ca004617fbf6",
+  "train_rows": 137456,
+  "validation_features_sha256": "de9bd6dd5601422bc876403db5e119cae19e198d4fa59d763d7fd332f4d85661",
+  "validation_predictions_sha256": "5de93fac3aa2b62f2b3d6d52dbc9d187f0fae9bf0c25419992fbd39acb5f99d7",
+  "validation_rows": 59197
+}

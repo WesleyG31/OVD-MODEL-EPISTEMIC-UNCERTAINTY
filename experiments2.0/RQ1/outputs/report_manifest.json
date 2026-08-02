@@ -1,0 +1,83 @@
+{
+  "artifacts": {
+    "auroc_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Fig_RQ1_auroc.pdf",
+      "sha256": "23bfca2544c946d6dc50eec3386baabe26360e3e78c254b005d78ef89ee1d823"
+    },
+    "auroc_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Fig_RQ1_auroc.png",
+      "sha256": "21a79495fab79488b81af019a3c9698afd6088799661dade8f7e62f3737c5869"
+    },
+    "calibration": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Table_RQ1_calibration.csv",
+      "sha256": "cbb463397c8c21439a0ae5eed66992b02be88655d8f04dfe7fa8caf23dd26dfe"
+    },
+    "captions": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\figure_captions.md",
+      "sha256": "c9757b4590adfd26cec20fb1757bc2d287dc8db2d090ae51c0e1e1e745f227e2"
+    },
+    "coefficients": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Table_RQ1_fusion_coefficients.csv",
+      "sha256": "98b5e8b0412bb102fec958f8669b765312afc576b459d00298a41d18b991c60a"
+    },
+    "computational_cost": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Table_RQ1_computational_cost.csv",
+      "sha256": "3c97192c634fdaa0e5891b421e1bbbf8f7250c656eff2e4cc5a95306744a3058"
+    },
+    "detector_performance": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Table_RQ1_detector_performance.csv",
+      "sha256": "e5a27f40eec12a7978060bf9e3319c0ff905ac0993f7b3fb8bd40801f6742867"
+    },
+    "feature_complementarity": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Table_RQ1_feature_spearman.csv",
+      "sha256": "5f979a561738c4a89cbd5599406d40c2d8391478327e4cbb5535656ef29d4954"
+    },
+    "image_safety": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Table_RQ1_image_safety.csv",
+      "sha256": "ba2aafa8df766a59b64623c71ecdf21e79a298f89497ad90d735ce92a98a193c"
+    },
+    "mc_pass_sensitivity": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Table_RQ1_mc_pass_sensitivity.csv",
+      "sha256": "c9a4d3f5ceb4a084a433fa29137b208d93b7c09296947f97d4684af56d02d309"
+    },
+    "primary_inference": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Table_RQ1_primary_inference.csv",
+      "sha256": "9ad00d3f4a31ead3849e7120a53b4e15b46696dfb4b8f8fa4eb441c2bcda9f28"
+    },
+    "reliability_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Fig_RQ1_reliability.pdf",
+      "sha256": "86900bff9ac92625bb79cc636edc193fb6cd4ddbd74cfafa9af86685e0850f22"
+    },
+    "reliability_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Fig_RQ1_reliability.png",
+      "sha256": "494f69e593b17c5699f676d0b4472d5e97d26b4fe6e688566f1525d3ae65f585"
+    },
+    "risk_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Fig_RQ1_risk_coverage.pdf",
+      "sha256": "1a15199252ff21d27e9b813ba003689d9b5efa8b0f7568a4bbd84d1edff8b8f7"
+    },
+    "risk_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Fig_RQ1_risk_coverage.png",
+      "sha256": "b3e1a6ff9357426caaca52285ddfc702a9905e3549d805ff8bd566b90a1a5b11"
+    },
+    "robustness": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Table_RQ1_robustness.csv",
+      "sha256": "2d75c7336f23df6de10df4e9774174f95be1d7282a21fc1120cc3bb724609283"
+    },
+    "subgroups": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Table_RQ1_subgroups.csv",
+      "sha256": "190603382583e083ede0b9bcb0dc1bc4f82ed7515d964d30c4a1da00f1a6c3be"
+    },
+    "table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Table_RQ1_main.csv",
+      "sha256": "c6b5410a11e92475a3386f2cb069fd2dc039b474b03941e7d899ac78e72ade76"
+    },
+    "threshold_sensitivity": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ1\\outputs\\Table_RQ1_threshold_sensitivity.csv",
+      "sha256": "e40e60de4d59c67090b09d4afb70a39d389d731dbb0dc1fc3a3f49280e0b54a2"
+    }
+  },
+  "evidence_tier": "confirmatory",
+  "rq1_answer_supported": false,
+  "schema_version": 1
+}

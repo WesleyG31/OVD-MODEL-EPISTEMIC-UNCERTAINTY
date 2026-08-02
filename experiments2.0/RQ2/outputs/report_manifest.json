@@ -1,0 +1,68 @@
+{
+  "artifacts": {
+    "captions": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\figure_captions.md",
+      "sha256": "f4e0e9de31757b12eeec07da03571d630384cde8d1667fd28f32df861670938a"
+    },
+    "complementarity_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\Fig_RQ2_validation_complementarity.pdf",
+      "sha256": "42ce078c027eb206087547b3fe1a1bbefae5efbd8e722b64a7f61bd3ea381718"
+    },
+    "complementarity_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\Fig_RQ2_validation_complementarity.png",
+      "sha256": "5e71293dc68b11452bb1aa5396a197f946a735d13382657f8757901fc8a3b031"
+    },
+    "cost_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\Table_RQ2_computational_cost.csv",
+      "sha256": "065a24cadd85b0254547422abf35158f470ddaa7f03108f38a93da5b628079c7"
+    },
+    "detector_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\Table_RQ2_detector_performance.csv",
+      "sha256": "e5a27f40eec12a7978060bf9e3319c0ff905ac0993f7b3fb8bd40801f6742867"
+    },
+    "main_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\Table_RQ2_main.csv",
+      "sha256": "3f4663e408aeebdad7073849cc8eabfdc562df2221d2708c980bc1768c793922"
+    },
+    "mc_pass_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\Table_RQ2_mc_pass_sensitivity.csv",
+      "sha256": "a75f1607e72fd4532f6fb89cb9f230af79037e559799fc94b18e4c62b3375a7e"
+    },
+    "model_parameter_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\Table_RQ2_model_parameters.csv",
+      "sha256": "bf213c87825c14db6b24a259a40bd1f5e45ba1bd0811a81a68b7a386349be385"
+    },
+    "primary_inference_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\Table_RQ2_primary_inference.csv",
+      "sha256": "743442d60814f40eb66504e057982fdce920edc8b0617c0a4945a8fa1f831f54"
+    },
+    "reliability_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\Fig_RQ2_reliability.pdf",
+      "sha256": "275080e2c45a1cc798074947f192a7bd7fbf3ccf2c918c072df5b69b3eefedbf"
+    },
+    "reliability_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\Fig_RQ2_reliability.png",
+      "sha256": "56cf423dde63dcdd2db98cb1ebe5422197bd2e2ba7ba03c94d03d66469899005"
+    },
+    "risk_coverage_pdf": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\Fig_RQ2_risk_coverage.pdf",
+      "sha256": "39fddbf0dde2ab46dbf7c61786cc550a3795c9ef20129c44bf70f524772ac21b"
+    },
+    "risk_coverage_png": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\Fig_RQ2_risk_coverage.png",
+      "sha256": "73a09a04b17ea5ef2860feffeeb42ce63c2a4cddbac3e2ad7facb260cf7e5b0f"
+    },
+    "subgroup_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\Table_RQ2_subgroups.csv",
+      "sha256": "783db53360b4fde9d077fb14924b20eec0283c7c44fffbd93fa243a94ac17f44"
+    },
+    "threshold_table": {
+      "path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ2\\outputs\\Table_RQ2_threshold_sensitivity.csv",
+      "sha256": "6a1888d2eff46fc01f3dcfac844408472c9e79b1d7773dc56649668902854438"
+    }
+  },
+  "evidence_status": "confirmatory_requires_human_interpretation",
+  "metrics_sha256": "909117e0bb9d735910c2ac6c5cecdff032bb8601dd8f3a1fbddd80db18022ee7",
+  "predictions_sha256": "c7b288c32ae4bf7461470c63babd095685bb559e72f9fdc0d1365e5ac9680900",
+  "schema_version": 1
+}

@@ -1,0 +1,4 @@
+method,baseline,metric,holm_adjusted_p,improvement,lower,one_sided_p,positive_is_better,reject_no_improvement,upper,evidence_tier,rq1_answer_supported
+all_internal,confidence,aurc,1.0,-0.011788249796852779,-0.01525697287222582,1.0,True,False,-0.008244608012024942,confirmatory,False
+all_internal,confidence,auroc,0.8895552223888056,0.0002659968583764716,-0.00506052602751599,0.4447776111944028,True,False,0.005404547554419031,confirmatory,False
+all_internal,confidence,brier_noninferiority,,-0.002664547617718366,-0.004826505750188117,,,True,-0.0005382242562601004,confirmatory,False
