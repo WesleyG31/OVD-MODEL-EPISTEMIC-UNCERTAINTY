@@ -1,0 +1,218 @@
+{
+  "annotation_sha256": "01517714a5ca4b69aae6e86256d017cc5f82fbdf33529e759b267d5ac89f4d47",
+  "checkpoint_sha256": "3b3ca2563c77c69f651d7bd133e97139c186df06231157a64c507099c52bc799",
+  "configuration_fingerprint": "8687e0c143ab40162b9b1511e4bd5a5a6741d6ed71d37409b92abd10c9becd2f",
+  "detections": 1195746,
+  "diagnostic_only": false,
+  "elapsed_seconds": 1526.4792290999903,
+  "environment": {
+    "cuda": {
+      "available": true,
+      "build": "11.8",
+      "cudnn": 90100,
+      "deterministic_algorithms": false,
+      "device": "NVIDIA GeForce RTX 4060 Laptop GPU"
+    },
+    "git_revision": "dce1f07a0ebb70f817f98a8f5945d93c28fb0616",
+    "packages": {
+      "groundingdino-py": "0.4.0",
+      "numpy": "1.26.4",
+      "pandas": "2.2.3",
+      "pycocotools": "2.0.8",
+      "scikit-learn": "1.5.2",
+      "torch": "2.5.1+cu118",
+      "torchvision": "0.20.1+cu118",
+      "transformers": "4.40.2"
+    },
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 13:17:27) [MSC v.1929 64 bit (AMD64)]"
+  },
+  "feature_schema": [
+    "image_id",
+    "file_name",
+    "sequence_id",
+    "timeofday",
+    "weather",
+    "scene",
+    "detection_index",
+    "query_index",
+    "category_index",
+    "category_id",
+    "category_name",
+    "score",
+    "confidence_uncertainty",
+    "bbox_x1",
+    "bbox_y1",
+    "bbox_x2",
+    "bbox_y2",
+    "bbox_area",
+    "object_size",
+    "is_true_positive",
+    "is_error",
+    "matched_iou",
+    "matched_ground_truth_index",
+    "false_negatives_image",
+    "mc_matches",
+    "mc_passes",
+    "localization_iou",
+    "localization_ground_truth_index",
+    "localization_class_agreement",
+    "is_well_localized",
+    "is_well_localized_050",
+    "is_well_localized_075",
+    "spatial_reference_iou_mean",
+    "spatial_reference_iou_std",
+    "spatial_pairwise_iou_loss",
+    "spatial_box_variance",
+    "spatial_absence_rate",
+    "deterministic_reference_variance",
+    "deterministic_reference_step",
+    "bbox_area_fraction",
+    "semantic_mutual_information",
+    "semantic_predictive_entropy",
+    "semantic_class_disagreement",
+    "semantic_score_variance",
+    "representation_embedding_variance",
+    "representation_embedding_cosine_instability",
+    "deterministic_hidden_step",
+    "mc_score_mean",
+    "spatial_reference_iou_mean_mc02",
+    "spatial_reference_iou_std_mc02",
+    "spatial_pairwise_iou_loss_mc02",
+    "spatial_box_variance_mc02",
+    "spatial_absence_rate_mc02",
+    "spatial_reference_iou_mean_mc05",
+    "spatial_reference_iou_std_mc05",
+    "spatial_pairwise_iou_loss_mc05",
+    "spatial_box_variance_mc05",
+    "spatial_absence_rate_mc05",
+    "spatial_reference_iou_mean_mc10",
+    "spatial_reference_iou_std_mc10",
+    "spatial_pairwise_iou_loss_mc10",
+    "spatial_box_variance_mc10",
+    "spatial_absence_rate_mc10"
+  ],
+  "feature_shard_inventory_sha256": "87bf16605eda87c116a5f838887b22862a019aaab3fb7d587c6fa4cd7e332972",
+  "feature_shards_recomputed": 5600,
+  "feature_shards_reused": 0,
+  "features_sha256": "44f10c7805ca15302995d4f0fd157c72669a9b82fdf6379dc78065ff5cbc0c20",
+  "image_summary_path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\RQ3\\outputs\\images_train.parquet",
+  "image_summary_sha256": "a8a2aebe1e974fed36c12d81b0fb64082a708133599a852dec2ddb14ceb67f34",
+  "images_completed": 5600,
+  "images_requested": 5600,
+  "manifest_path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\artifacts\\bdd100k_split_manifest.json",
+  "manifest_sha256": "b1535b25de4f52c26a12cbd82c59a8673e42c58761260baecf0be55cc4ae9df1",
+  "manifest_test_partition": "confirmatory",
+  "materialization_fingerprint": "99cc7af809899184f89a402ea79622623036664b44215932596aedec2a9d32aa",
+  "peak_gpu_memory_bytes": 2029759488,
+  "random_seeds": {
+    "deterministic_image_seed": "project_seed + image_id",
+    "mc_pass_seed": "project_seed + image_id + (pass_index + 1) * mc_seed_stride",
+    "mc_seed_stride": 1009,
+    "project_seed": 20260731
+  },
+  "schema_version": 1,
+  "shared_fingerprint": "94bb3675c7f700e8123ee9db9fcc4d7502e25991f72d99f8fde8282dbd33a710",
+  "shared_namespace": "canonical",
+  "shared_request_metadata_path": "C:\\All_files\\Projects\\OVD-MODEL-EPISTEMIC-UNCERTAINTY\\experiments2.0\\data\\derived\\groundingdino_mc_v1\\canonical\\94bb3675c7f700e8123ee9db9fcc4d7502e25991f72d99f8fde8282dbd33a710\\requests\\ce830f58558ba6f5f058c1796dc60326a3fbf4ede4c5eed4d0ec8a49954e3a04\\1785622856679625700.json",
+  "shared_request_metadata_sha256": "c49f0aa0e3e8b83de3eabf15814e78a7bbcd8d90392168c9e2b449722d5ac97a",
+  "shared_shard_inventory_sha256": "50a6ee5921a0b881791dd267cfb223fb5dedff9c5bcd3cea39f35260d67e2cca",
+  "shared_shards_computed": 0,
+  "shared_shards_reused": 5600,
+  "source_tree_sha256": "60345885d0b01c329dc4a0a902d049328d6325e35bf113bdf33752edde32b4a4",
+  "split": "train",
+  "split_image_ids_sha256": "bf6ed6c78e53ee737c25aa84cbdfe7306543f4f0c9bc47d2159f329bf8a98fcf",
+  "stochastic_modules": [
+    {
+      "name": "transformer.encoder.fusion_layers.0.drop_path",
+      "probability": 0.1,
+      "type": "DropPath"
+    },
+    {
+      "name": "transformer.encoder.fusion_layers.1.drop_path",
+      "probability": 0.1,
+      "type": "DropPath"
+    },
+    {
+      "name": "transformer.encoder.fusion_layers.2.drop_path",
+      "probability": 0.1,
+      "type": "DropPath"
+    },
+    {
+      "name": "transformer.encoder.fusion_layers.3.drop_path",
+      "probability": 0.1,
+      "type": "DropPath"
+    },
+    {
+      "name": "transformer.encoder.fusion_layers.4.drop_path",
+      "probability": 0.1,
+      "type": "DropPath"
+    },
+    {
+      "name": "transformer.encoder.fusion_layers.5.drop_path",
+      "probability": 0.1,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.0.blocks.1.drop_path",
+      "probability": 0.0181818176060915,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.1.blocks.0.drop_path",
+      "probability": 0.036363635212183,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.1.blocks.1.drop_path",
+      "probability": 0.05454545468091965,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.2.blocks.0.drop_path",
+      "probability": 0.072727270424366,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.2.blocks.1.drop_path",
+      "probability": 0.09090908616781235,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.2.blocks.2.drop_path",
+      "probability": 0.10909091681241989,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.2.blocks.3.drop_path",
+      "probability": 0.12727272510528564,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.2.blocks.4.drop_path",
+      "probability": 0.1454545557498932,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.2.blocks.5.drop_path",
+      "probability": 0.16363637149333954,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.3.blocks.0.drop_path",
+      "probability": 0.1818181872367859,
+      "type": "DropPath"
+    },
+    {
+      "name": "backbone.0.layers.3.blocks.1.drop_path",
+      "probability": 0.20000000298023224,
+      "type": "DropPath"
+    }
+  ],
+  "timing_seconds": {
+    "aggregation_seconds": 1390.2607932005194,
+    "deterministic_seconds": 2115.0029900000663,
+    "preprocess_seconds": 117.97698300064076,
+    "stochastic_seconds": 22301.824486899073
+  }
+}

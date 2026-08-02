@@ -1,0 +1,2 @@
+mean_localization_iou,poorly_localized,well_localized_and_true_positive,well_localized_but_detection_error
+0.46738182461939637,22574,20627,4604
